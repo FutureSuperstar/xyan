@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--wangming：w18855525068@163.com -->
+<mapper namespace="com.xyan.blog.dao.ArticleTypeDao">
+
+
+	<sql id="mapSQL">
+		ID as "id"
+		, NAME as "name"
+		, PID as "pId"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, NAME as "name"
+		, PID as "pId"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.blog.model.ArticleTypeModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_article_type
+		WHERE
+		ID=#{id}
+	</select>
+	
+	<select id="selectByParent" resultType="com.xyan.blog.model.ArticleTypeModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_article_type
+		WHERE
+		PID=#{pId}
+	</select>
+
+	<select id="selectModelByExample" resultType="com.xyan.blog.model.ArticleTypeModel"
+		parameterType="com.xyan.blog.model.ArticleTypeModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_article_type
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="name!=null">AND NAME = #{name}</if>
+			<if test="pId !=null">AND PID = #{pId}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.blog.model.ArticleTypeModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_article_type
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="name!=null">AND NAME = #{name}</if>
+			<if test="pId !=null">AND PID = #{pId}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_article_type
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.blog.model.ArticleTypeModel">
+		INSERT INTO xy_article_type
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="id != null">ID,</if>
+			<if test="name != null">NAME,</if>
+			<if test="pId != null">PID,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="name != null">#{name},</if>
+			<if test="pId != null">#{pId},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.blog.model.ArticleTypeModel">
+		UPDATE xy_article_type
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="name != null">NAME = #{name},</if>
+			<if test="pId != null">PID = #{pId},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_article_type t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_article_type
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">ID,</if>
+				<if test="item.name != null">NAME,</if>
+				<if test="item.pId != null">PID,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">#{item.id},</if>
+				<if test="item.name != null">#{item.name},</if>
+				<if test="item.pId != null">#{item.pId},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_article_type
+			<set>
+				<if test="item.id != null">ID = #{item.id},</if>
+				<if test="item.name != null">NAME = #{item.name},</if>
+				<if test="item.pId != null">PID = #{item.pId},</if>
+			</set>
+			WHERE ID=#{item.id}
+		</foreach>
+	</update>
+
+
+</mapper>

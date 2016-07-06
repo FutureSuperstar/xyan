@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xyan.frame.grab.dao.HeadDao">
+
+
+	<sql id="mapSQL">
+		ID as "id"
+		, NAME as "name"
+		, VALUE as "value"
+		, PAGE_ID as "pageId"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, NAME as "name"
+		, VALUE as "value"
+		, PAGE_ID as "pageId"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.frame.grab.model.HeadModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_head
+		WHERE
+		ID=#{id}
+	</select>
+
+	<select id="selectModelByExample" resultType="com.xyan.frame.grab.model.HeadModel"
+		parameterType="com.xyan.frame.grab.model.HeadModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_head
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="name!=null">AND NAME = #{name}</if>
+			<if test="value!=null">AND VALUE = #{value}</if>
+			<if test="pageId!=null">AND PAGE_ID = #{pageId}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.frame.grab.model.HeadModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_head
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="name!=null">AND NAME = #{name}</if>
+			<if test="value!=null">AND VALUE = #{value}</if>
+			<if test="pageId!=null">AND PAGE_ID = #{pageId}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_head
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.frame.grab.model.HeadModel">
+		INSERT INTO xy_head
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="id != null">ID,</if>
+			<if test="name != null">NAME,</if>
+			<if test="value != null">VALUE,</if>
+			<if test="pageId != null">PAGE_ID,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="name != null">#{name},</if>
+			<if test="value != null">#{value},</if>
+			<if test="pageId != null">#{pageId},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.frame.grab.model.HeadModel">
+		UPDATE xy_head
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="name != null">NAME = #{name},</if>
+			<if test="value != null">VALUE = #{value},</if>
+			<if test="pageId != null">PAGE_ID = #{pageId},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_head t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<!--生成器生成代码，需要自己手动修改java属性名 -->
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_head
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="id != null">ID,</if>
+				<if test="name != null">NAME,</if>
+				<if test="value != null">VALUE,</if>
+				<if test="pageId != null">PAGE_ID,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="id != null">#{id},</if>
+				<if test="name != null">#{name},</if>
+				<if test="value != null">#{value},</if>
+				<if test="pageId != null">#{pageId},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<!--生成器生成代码，需要自己手动修改java属性名 -->
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_head
+			<set>
+				<if test="id != null">ID = #{id},</if>
+				<if test="name != null">NAME = #{name},</if>
+				<if test="value != null">VALUE = #{value},</if>
+				<if test="pageId != null">PAGE_ID = #{pageId},</if>
+			</set>
+			WHERE ID=#{id}
+		</foreach>
+	</update>
+
+
+</mapper>

@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+/**页面*/
+
+/*标签*/
+html, body {margin: 0;padding: 0;}
+body {color: #333;font-size: 14px;}
+p, form, ul, ol {list-style-type: none;margin: 0;padding: 0;}
+a {color: #34538b;text-decoration: none;}
+a:link, a:visited {text-decoration: none;color: #333;}
+.clearfix {clear: both;}
+
+.box{
+	border-radius:8px;
+	min-height: 100%;
+	border-bottom: 1px solid #e6ddd0;
+    box-shadow: none;
+    margin: 3px 0;
+    padding: 0;
+    margin-top: 30px;
+}
+.box .box-header{
+	background-color: #e6ddd0;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+    border-image: none;
+    border-style: solid;
+    border-color:#e6ddd0;
+    border-width: 1px;
+    box-sizing: content-box;
+    color: #669fc7;
+    min-height: 38px;
+    padding-left: 12px;
+    position: relative;
+    line-height:3;
+    vertical-align: middle;
+}
+.box .box-header small{
+	float: right;
+	color: #bebebe;
+}
+.box .box-body{
+	background-color: rgba(255, 255, 255, 0.5);
+    border-color: -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+    line-height:3;
+}

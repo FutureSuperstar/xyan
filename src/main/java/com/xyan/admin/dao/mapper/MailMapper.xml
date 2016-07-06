@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--wangming：w18855525068@163.com -->
+<mapper namespace="com.xyan.admin.dao.MailDao">
+
+
+	<sql id="mapSQL">
+		ID as "id"
+		, TO_USER as "toUser"
+		, FROM_USER as "fromUser"
+		, CONTENT as "content"
+		, SUBJECT as "subject"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, TO_USER as "toUser"
+		, FROM_USER as "fromUser"
+		, CONTENT as "content"
+		, SUBJECT as "subject"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.admin.model.MailModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_mail
+		WHERE
+		ID=#{id}
+	</select>
+
+	<select id="selectModelByExample" resultType="com.xyan.admin.model.MailModel"
+		parameterType="com.xyan.admin.model.MailModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_mail
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="toUser!=null">AND TO_USER = #{toUser}</if>
+			<if test="fromUser!=null">AND FROM_USER = #{fromUser}</if>
+			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="subject!=null">AND SUBJECT = #{subject}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.admin.model.MailModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_mail
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="toUser!=null">AND TO_USER = #{toUser}</if>
+			<if test="fromUser!=null">AND FROM_USER = #{fromUser}</if>
+			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="subject!=null">AND SUBJECT = #{subject}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_mail
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.admin.model.MailModel">
+		INSERT INTO xy_mail
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="id != null">ID,</if>
+			<if test="toUser != null">TO_USER,</if>
+			<if test="fromUser != null">FROM_USER,</if>
+			<if test="content != null">CONTENT,</if>
+			<if test="subject != null">SUBJECT,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="toUser != null">#{toUser},</if>
+			<if test="fromUser != null">#{fromUser},</if>
+			<if test="content != null">#{content},</if>
+			<if test="subject != null">#{subject},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.admin.model.MailModel">
+		UPDATE xy_mail
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="toUser != null">TO_USER = #{toUser},</if>
+			<if test="fromUser != null">FROM_USER = #{fromUser},</if>
+			<if test="content != null">CONTENT = #{content},</if>
+			<if test="subject != null">SUBJECT = #{subject},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_mail t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_mail
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">ID,</if>
+				<if test="item.toUser != null">TO_USER,</if>
+				<if test="item.fromUser != null">FROM_USER,</if>
+				<if test="item.content != null">CONTENT,</if>
+				<if test="item.subject != null">SUBJECT,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">#{item.id},</if>
+				<if test="item.toUser != null">#{item.toUser},</if>
+				<if test="item.fromUser != null">#{item.fromUser},</if>
+				<if test="item.content != null">#{item.content},</if>
+				<if test="item.subject != null">#{item.subject},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_mail
+			<set>
+				<if test="item.id != null">ID = #{item.id},</if>
+				<if test="item.toUser != null">TO_USER = #{item.toUser},</if>
+				<if test="item.fromUser != null">FROM_USER = #{item.fromUser},
+				</if>
+				<if test="item.content != null">CONTENT = #{item.content},</if>
+				<if test="item.subject != null">SUBJECT = #{item.subject},</if>
+			</set>
+			WHERE ID=#{item.id}
+		</foreach>
+	</update>
+
+
+</mapper>

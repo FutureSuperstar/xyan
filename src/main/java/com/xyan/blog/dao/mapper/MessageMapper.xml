@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--wangming：w18855525068@163.com -->
+<mapper namespace="com.xyan.blog.dao.MessageDao">
+
+
+	<sql id="mapSQL">
+		ID as "id"
+		, SOURCE as "source"
+		, DEST as "dest"
+		, TITLE as "title"
+		, CONTENT as "content"
+		, CREATE_TIME as "createTime"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, SOURCE as "source"
+		, DEST as "dest"
+		, TITLE as "title"
+		, CONTENT as "content"
+		, CREATE_TIME as "createTime"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.blog.model.MessageModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_message
+		WHERE
+		ID=#{id}
+	</select>
+
+	<select id="selectModelByExample" resultType="com.xyan.blog.model.MessageModel"
+		parameterType="com.xyan.blog.model.MessageModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_message
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="source!=null">AND SOURCE = #{source}</if>
+			<if test="dest!=null">AND DEST = #{dest}</if>
+			<if test="title!=null">AND TITLE = #{title}</if>
+			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.blog.model.MessageModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_message
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="source!=null">AND SOURCE = #{source}</if>
+			<if test="dest!=null">AND DEST = #{dest}</if>
+			<if test="title!=null">AND TITLE = #{title}</if>
+			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_message
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.blog.model.MessageModel">
+		INSERT INTO xy_message
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="id != null">ID,</if>
+			<if test="source != null">SOURCE,</if>
+			<if test="dest != null">DEST,</if>
+			<if test="title != null">TITLE,</if>
+			<if test="content != null">CONTENT,</if>
+			<if test="createTime != null">CREATE_TIME,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="source != null">#{source},</if>
+			<if test="dest != null">#{dest},</if>
+			<if test="title != null">#{title},</if>
+			<if test="content != null">#{content},</if>
+			<if test="createTime != null">#{createTime},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.blog.model.MessageModel">
+		UPDATE xy_message
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="source != null">SOURCE = #{source},</if>
+			<if test="dest != null">DEST = #{dest},</if>
+			<if test="title != null">TITLE = #{title},</if>
+			<if test="content != null">CONTENT = #{content},</if>
+			<if test="createTime != null">CREATE_TIME = #{createTime},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_message t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_message
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">ID,</if>
+				<if test="item.source != null">SOURCE,</if>
+				<if test="item.dest != null">DEST,</if>
+				<if test="item.title != null">TITLE,</if>
+				<if test="item.content != null">CONTENT,</if>
+				<if test="item.createTime != null">CREATE_TIME,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">#{item.id},</if>
+				<if test="item.source != null">#{item.source},</if>
+				<if test="item.dest != null">#{item.dest},</if>
+				<if test="item.title != null">#{item.title},</if>
+				<if test="item.content != null">#{item.content},</if>
+				<if test="item.createTime != null">#{item.createTime},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_message
+			<set>
+				<if test="item.id != null">ID = #{item.id},</if>
+				<if test="item.source != null">SOURCE = #{item.source},</if>
+				<if test="item.dest != null">DEST = #{item.dest},</if>
+				<if test="item.title != null">TITLE = #{item.title},</if>
+				<if test="item.content != null">CONTENT = #{item.content},</if>
+				<if test="item.createTime != null">CREATE_TIME =
+					#{item.createTime},</if>
+			</set>
+			WHERE ID=#{item.id}
+		</foreach>
+	</update>
+
+
+</mapper>

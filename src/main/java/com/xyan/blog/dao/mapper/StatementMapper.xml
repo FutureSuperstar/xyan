@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--wangming：w18855525068@163.com -->
+<mapper namespace="com.xyan.blog.dao.StatementDao">
+
+	<sql id="mapSQL">
+		ID as "id"
+		, TITLE as "title"
+		, CONTENT as "content"
+		, CREATE_TIME as "createTime"
+		, UPDATE_TIME as "updateTime"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, TITLE as "title"
+		, CONTENT as "content"
+		, CREATE_TIME as "createTime"
+		, UPDATE_TIME as "updateTime"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.blog.model.StatementModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_statement
+		WHERE
+		ID=#{id}
+	</select>
+
+	<select id="selectModelByExample" resultType="com.xyan.blog.model.StatementModel"
+		parameterType="com.xyan.blog.model.StatementModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_statement
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="title!=null">AND TITLE = #{title}</if>
+			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
+			<if test="updateTime!=null">AND UPDATE_TIME = #{updateTime}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.blog.model.StatementModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_statement
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="title!=null">AND TITLE = #{title}</if>
+			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
+			<if test="updateTime!=null">AND UPDATE_TIME = #{updateTime}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_statement
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.blog.model.StatementModel">
+		INSERT INTO xy_statement
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="id != null">ID,</if>
+			<if test="title != null">TITLE,</if>
+			<if test="content != null">CONTENT,</if>
+			<if test="createTime != null">CREATE_TIME,</if>
+			<if test="updateTime != null">UPDATE_TIME,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="title != null">#{title},</if>
+			<if test="content != null">#{content},</if>
+			<if test="createTime != null">#{createTime},</if>
+			<if test="updateTime != null">#{updateTime},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.blog.model.StatementModel">
+		UPDATE xy_statement
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="title != null">TITLE = #{title},</if>
+			<if test="content != null">CONTENT = #{content},</if>
+			<if test="createTime != null">CREATE_TIME = #{createTime},</if>
+			<if test="updateTime != null">UPDATE_TIME = #{updateTime},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_statement t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_statement
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">ID,</if>
+				<if test="item.title != null">TITLE,</if>
+				<if test="item.content != null">CONTENT,</if>
+				<if test="item.createTime != null">CREATE_TIME,</if>
+				<if test="item.updateTime != null">UPDATE_TIME,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">#{item.id},</if>
+				<if test="item.title != null">#{item.title},</if>
+				<if test="item.content != null">#{item.content},</if>
+				<if test="item.createTime != null">#{item.createTime},</if>
+				<if test="item.updateTime != null">#{item.updateTime},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_statement
+			<set>
+				<if test="item.id != null">ID = #{item.id},</if>
+				<if test="item.title != null">TITLE = #{item.title},</if>
+				<if test="item.content != null">CONTENT = #{item.content},</if>
+				<if test="item.createTime != null">CREATE_TIME =
+					#{item.createTime},</if>
+				<if test="item.updateTime != null">UPDATE_TIME =
+					#{item.updateTime},</if>
+			</set>
+			WHERE ID=#{item.id}
+		</foreach>
+	</update>
+
+
+</mapper>

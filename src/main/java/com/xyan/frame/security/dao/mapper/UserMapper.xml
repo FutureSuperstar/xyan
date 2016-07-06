@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xyan.frame.security.dao.UserDao">
+
+	<sql id="Base_Column_List">
+		ID as "id"
+		, USER_NAME as "userName"
+		, PASSWORD as "password"
+		, SALT as "salt"
+		, EMAIL as "email"
+		, MOBILE as "mobile"
+		, LOGIN_NAME as "loginName"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.frame.security.model.UserModel"
+		parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from xy_user
+		where
+		ID=#{id}
+	</select>
+
+	<select id="selectByExample" resultType="com.xyan.frame.security.model.UserModel"
+		parameterType="com.xyan.frame.security.model.UserModel">
+		select
+		<include refid="Base_Column_List" />
+		from xy_user
+		<where>
+			<if test="id!=null">and ID=#{id}</if>
+			<if test="userName!=null">and USER_NAME=#{userName}</if>
+			<if test="password!=null">and PASSWORD=#{password}</if>
+			<if test="salt!=null">and SALT=#{salt}</if>
+			<if test="email !=null">and EMAIL=#{email}</if>
+			<if test="loginName !=null">and LOGIN_NAME=#{loginName}</if>
+			<if test="mobile!=null">and MOBILE=#{mobile}</if>
+		</where>
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		delete from
+		xy_user
+		where ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.frame.security.model.UserModel" >
+		insert into xy_user 
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="id != null">ID,</if>
+			<if test="userName != null">USER_NAME,</if>
+			<if test="password != null">PASSWORD,</if>
+			<if test="salt != null">SALT,</if>
+			<if test="email != null">EMAIL,</if>
+			<if test="mobile != null">MOBILE,</if>
+			<if test="loginName != null">LOGIN_NAME,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="userName != null">#{userName},</if>
+			<if test="password != null">#{password},</if>
+			<if test="salt != null">#{salt},</if>
+			<if test="email != null">#{email},</if>
+			<if test="mobile != null">#{mobile},</if>
+			<if test="loginName != null">#{loginName},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.frame.security.model.UserModel">
+		update xy_user
+		<set>
+			<if test="id != null">ID =#{id},</if>
+			<if test="userName != null">USER_NAME =#{userName},</if>
+			<if test="password != null">PASSWORD =#{password},</if>
+			<if test="salt != null">SALT =#{salt},</if>
+			<if test="email != null">EMAIL =#{email},</if>
+			<if test="mobile != null">MOBILE =#{mobile},</if>
+			<if test="loginName != null">LOGIN_NAME =#{loginName},</if>
+		</set>
+		where ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		delete from xy_user t where
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+</mapper>

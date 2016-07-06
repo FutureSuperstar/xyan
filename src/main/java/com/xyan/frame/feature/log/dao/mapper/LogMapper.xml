@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xyan.frame.feature.log.dao.LogDao">
+
+
+	<sql id="mapSQL">
+		ID as "id"
+		, LOG_DATE as "logDate"
+		, LOG_TYPE as "logType"
+		, CONTENT as "content"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, LOG_TYPE as "logType"
+		, LOG_DATE as "logDate"
+		, CONTENT as "content"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.frame.feature.log.model.LogModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_log
+		WHERE
+		ID=#{id}
+	</select>
+
+	<select id="selectModelByExample" resultType="com.xyan.frame.feature.log.model.LogModel"
+		parameterType="com.xyan.frame.feature.log.model.LogModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_log
+		<where>
+			<if test="id !=null">AND ID = #{id}</if>
+			<if test="logDate !=null">AND LOG_DATE = #{logDate}</if>
+			<if test="logType !=null">AND LOG_TYPE = #{logType}</if>
+			<if test="content !=null">AND CONTENT = #{content}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.frame.feature.log.model.LogModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_log
+		<where>
+			<if test="id !=null">AND ID = #{id}</if>
+			<if test="logDate !=null">AND LOG_DATE = #{logDate}</if>
+			<if test="logType !=null">AND LOG_TYPE = #{logType}</if>
+			<if test="content !=null">AND CONTENT = #{content}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_log
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.frame.feature.log.model.LogModel">
+		INSERT INTO xy_log
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="id != null">ID,</if>
+			<if test="logDate != null">LOG_DATE,</if>
+			<if test="logType != null">LOG_TYPE,</if>
+			<if test="content != null">CONTENT,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="logDate != null">#{logDate},</if>
+			<if test="logType != null">#{logType},</if>
+			<if test="content != null">#{content},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.frame.feature.log.model.LogModel">
+		UPDATE xy_log
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="logDate != null">LOG_DATE = #{logDate},</if>
+			<if test="logType != null">LOG_TYPE = #{logType},</if>
+			<if test="content != null">CONTENT = #{content},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_log t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_log
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">ID,</if>
+				<if test="item.logDate != null">LOG_DATE,</if>
+				<if test="item.logType != null">LOG_TYPE,</if>
+				<if test="item.content != null">CONTENT,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">#{item.id},</if>
+				<if test="item.logDate != null">#{item.logDate},</if>
+				<if test="item.logType != null">#{item.logType},</if>
+				<if test="item.content != null">#{item.content},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_log
+			<set>
+				<if test="item.id != null">ID = #{item.id},</if>
+				<if test="item.logDate != null">LOG_DATE = #{item.logDate},</if>
+				<if test="item.logType != null">LOG_TYPE = #{item.logType},</if>
+				<if test="item.content != null">CONTENT = #{item.content},</if>
+			</set>
+			WHERE ID=#{item.id}
+		</foreach>
+	</update>
+
+
+</mapper>

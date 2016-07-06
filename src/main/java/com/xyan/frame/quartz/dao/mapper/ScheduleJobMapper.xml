@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xyan.frame.quartz.dao.ScheduleJobDao">
+
+    
+	<sql id="Base_Column_List">
+	ID as "id"
+	, JOB_NAME as "jobName"
+	, JOB_GROUP as "jobGroup"
+	, JOB_STATUS as "jobStatus"
+	, CRON_EXPRESSION as "cronExpression"
+	, REMARK as "remark"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.frame.quartz.model.ScheduleJobModel"
+		parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from xy_job
+		where
+		ID=#{id}
+	</select>
+
+	<select id="selectByExample" resultType="com.xyan.frame.quartz.model.ScheduleJobModel"
+		parameterType="com.xyan.frame.quartz.model.ScheduleJobModel">
+		select
+		<include refid="Base_Column_List" />
+		from xy_job
+		<where>
+			<if test="id !=null">and ID=#{id}</if>
+			<if test="jobName !=null">and JOB_NAME=#{jobName}</if>
+			<if test="jobGroup !=null">and JOB_GROUP=#{jobGroup}</if>
+			<if test="jobStatus !=null">and JOB_STATUS=#{jobStatus}</if>
+			<if test="cronExpression !=null">and CRON_EXPRESSION=#{cronExpression}</if>
+			<if test="remark !=null">and REMARK=#{remark}</if>
+		</where>
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		delete from xy_job
+		where ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.frame.quartz.model.ScheduleJobModel">
+		insert into xy_job
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">ID,</if>
+			<if test="jobName != null">JOB_NAME,</if>
+			<if test="jobGroup != null">JOB_GROUP,</if>
+			<if test="jobStatus != null">jobStatus,</if>
+			<if test="cronExpression != null">CRON_EXPRESSION,</if>
+			<if test="remark != null">remark,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="jobName != null">#{jobName},</if>
+			<if test="jobGroup != null">#{jobGroup},</if>
+			<if test="jobStatus != null">#{jobStatus},</if>
+			<if test="cronExpression != null">#{cronExpression},</if>
+			<if test="remark != null">#{remark},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.frame.quartz.model.ScheduleJobModel">
+		update xy_job
+		<set>
+			<if test="id !=null">and ID=#{id}</if>
+			<if test="jobName !=null">and JOB_NAME=#{jobName}</if>
+			<if test="jobGroup !=null">and JOB_GROUP=#{jobGroup}</if>
+			<if test="jobStatus !=null">and JOB_STATUS=#{jobStatus}</if>
+			<if test="cronExpression !=null">and CRON_EXPRESSION=#{cronExpression}</if>
+			<if test="remark !=null">and REMARK=#{remark}</if>
+		</set>
+		where ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.lang.Long">
+		delete from xy_job t where
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+</mapper>

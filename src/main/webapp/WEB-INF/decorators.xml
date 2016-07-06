@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/views/layouts/">
+	<excludes>
+		<pattern>/static/**</pattern>
+		<pattern>/api/**</pattern><!-- 此处应该不是必须的，SiteMesh针对text/html做特殊处理 -->
+		<pattern>/**/**/pageData</pattern><!-- 分页数据-->
+		<pattern>/**/**/pageData/**</pattern>
+		<pattern>/**/**/dialog/**</pattern>
+		<pattern>/admin/login</pattern><!-- POST登陆 -->
+		<pattern>/admin/login/**</pattern><!--进入登陆页 -->
+	</excludes>
+	
+	<decorator-mappers>
+		<mapper class="com.opensymphony.module.sitemesh.mapper.PageDecoratorMapper" >
+			<param name="property.1" value="meta.decorator"/>
+		</mapper>
+	</decorator-mappers>
+	<decorator name="nodecorate" />
+	
+	<!--====================后台系统配置管理===================-->
+	<decorator name="sys" page="admin/main.jsp">
+		<pattern>/admin/**</pattern>
+	</decorator>
+	
+	<!-- 前端展示页面 -->
+    <decorator name="front" page="main.jsp">
+     	<pattern>/blog/**</pattern>
+     	<pattern>/index</pattern>
+    </decorator>
+	
+</decorators>

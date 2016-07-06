@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xyan.frame.security.dao.RoleDao">
+
+	<sql id="Base_Column_List">
+		ID as "id"
+		, ROLE_NAME as "roleName"
+		, PID as "pId"
+		,LEVEL as "level"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.frame.security.model.RoleModel"
+		parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from xy_role
+		where
+		ID=#{id}
+	</select>
+
+	<select id="selectByExample" resultType="com.xyan.frame.security.model.RoleModel"
+		parameterType="com.xyan.frame.security.model.RoleModel">
+		select
+		<include refid="Base_Column_List" />
+		from xy_role
+		<where>
+			<if test="id !=null">and ID=#{id}</if>
+			<if test="roleName !=null">and ROLE_NAME=#{roleName}</if>
+			<if test="pId !=null">and PID=#{pId}</if>
+			<if test="level !=null">and LEVEL=#{level}</if>
+		</where>
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		delete from xy_role
+		where ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.frame.security.model.RoleModel">
+		insert into xy_role
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">ID,</if>
+			<if test="roleName != null">ROLE_NAME,</if>
+			<if test="pId != null">PID,</if>
+			<if test="level != null">LEVEL,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="roleName != null">#{roleName},</if>
+			<if test="pId != null">#{pId},</if>
+			<if test="level != null">#{level},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.frame.security.model.RoleModel">
+		update xy_role
+		<set>
+			<if test="id != null">ID =#{id},</if>
+			<if test="roleName != null">ROLE_NAME =#{roleName},</if>
+			<if test="pId != null">PID =#{pId},</if>
+			<if test="level != null">PID =#{level},</if>
+		</set>
+		where ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.lang.Long">
+		delete from xy_role t where
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+	
+	
+	<select id="getUserRoles" resultType="com.xyan.frame.security.model.RoleModel" parameterType="com.xyan.frame.security.model.UserModel">
+		select role.* from xy_role  role left join xy_user_role urole on role.id=urole.ROLE_ID
+		where urole.USER_ID=#{id}
+	</select>
+</mapper>

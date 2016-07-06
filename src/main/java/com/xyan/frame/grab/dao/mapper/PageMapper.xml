@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xyan.frame.grab.dao.PageDao">
+
+
+	<sql id="mapSQL">
+		ID as "id"
+		, URL as "url"
+		, STATUS as "status"
+		, RESULT as "result"
+		, GRAB_DATE as "grabDate"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, URL as "url"
+		, STATUS as "status"
+		, RESULT as "result"
+		, GRAB_DATE as "grabDate"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.frame.grab.model.PageModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_page
+		WHERE
+		ID=#{id}
+	</select>
+
+	<select id="selectModelByExample" resultType="com.xyan.frame.grab.model.PageModel"
+		parameterType="com.xyan.frame.grab.model.PageModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_page
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="url!=null">AND URL = #{url}</if>
+			<if test="status!=null">AND STATUS = #{status}</if>
+			<if test="result!=null">AND RESULT = #{result}</if>
+			<if test="grabDate!=null">AND GRAB_DATE = #{grabDate}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.frame.grab.model.PageModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_page
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="url!=null">AND URL = #{url}</if>
+			<if test="status!=null">AND STATUS = #{status}</if>
+			<if test="result!=null">AND RESULT = #{result}</if>
+			<if test="grabDate!=null">AND GRAB_DATE = #{grabDate}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_page
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.frame.grab.model.PageModel">
+		INSERT INTO xy_page
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="id != null">ID,</if>
+			<if test="url != null">URL,</if>
+			<if test="status != null">STATUS,</if>
+			<if test="result != null">RESULT,</if>
+			<if test="grabDate != null">GRAB_DATE,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="url != null">#{url},</if>
+			<if test="status != null">#{status},</if>
+			<if test="result != null">#{result},</if>
+			<if test="grabDate != null">#{grabDate},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.frame.grab.model.PageModel">
+		UPDATE xy_page
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="url != null">URL = #{url},</if>
+			<if test="status != null">STATUS = #{status},</if>
+			<if test="result != null">RESULT = #{result},</if>
+			<if test="grabDate != null">GRAB_DATE = #{grabDate},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_page t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<!--生成器生成代码，需要自己手动修改java属性名 -->
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_page
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="id != null">ID,</if>
+				<if test="url != null">URL,</if>
+				<if test="status != null">STATUS,</if>
+				<if test="result != null">RESULT,</if>
+				<if test="grabDate != null">GRAB_DATE,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="id != null">#{id},</if>
+				<if test="url != null">#{url},</if>
+				<if test="status != null">#{status},</if>
+				<if test="result != null">#{result},</if>
+				<if test="grabDate != null">#{grabDate},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<!--生成器生成代码，需要自己手动修改java属性名 -->
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_page
+			<set>
+				<if test="id != null">ID = #{id},</if>
+				<if test="url != null">URL = #{url},</if>
+				<if test="status != null">STATUS = #{status},</if>
+				<if test="result != null">RESULT = #{result},</if>
+				<if test="grabDate != null">GRAB_DATE = #{grabDate},</if>
+			</set>
+			WHERE ID=#{id}
+		</foreach>
+	</update>
+
+
+</mapper>

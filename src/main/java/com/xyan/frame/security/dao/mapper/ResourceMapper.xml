@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xyan.frame.security.dao.ResourceDao">
+
+	<sql id="Base_Column_List">
+		ID as "id"
+		, PID as "pId"
+		, RESOURCE_NAME as "resourceName"
+		, RESOURCE_TYPE as "resourceType"
+		, RESOURCE_ICON as "resourceIcon"
+		, ICON_BACK as "iconBack"
+		, RESOURCE_URL as "resourceUrl"
+		,RESOURCE_LEVEL as "resourceLevel"
+		,LEAF as "leaf"
+		, AVAILABLE as "available"
+		, PERMISSION as "permission"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.frame.security.model.ResourceModel"
+		parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from xy_resource
+		where
+		ID=#{id}
+	</select>
+
+	<select id="selectByExample" resultType="com.xyan.frame.security.model.ResourceModel"
+		parameterType="com.xyan.frame.security.model.ResourceModel">
+		select
+		<include refid="Base_Column_List" />
+		from xy_resource
+		<where>
+			<if test="id!=null">AND ID=#{id}</if>
+			<if test="pId !=null">AND PID=#{pId}</if>
+			<if test="resourceName !=null">AND RESOURCE_NAME=#{resourceName}</if>
+			<if test="resourceUrl !=null">AND RESOURCE_URL=#{resourceUrl}</if>
+			<if test="leaf !=null">AND LEAF=#{leaf}</if>
+			<if test="resourceLevel !=null">AND RESOURCE_LEVEL=#{resourceLevel}</if>
+			<if test="permission !=null">AND PERMISSION=#{permission}</if>
+			<if test="available!=null">AND AVAILABLE=#{available}</if>
+		</where>
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_resource
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.frame.security.model.ResourceModel">
+		INSERT INTO xy_resource
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">ID,</if>
+			<if test="pId != null">PID,</if>
+			<if test="resourceName != null">RESOURCE_NAME,</if>
+			<if test="resourceIcon != null">RESOURCE_ICON,</if>
+			<if test="iconBack != null">ICON_BACK,</if>
+			<if test="resourceUrl != null">RESOURCE_URL,</if>
+			<if test="permission != null">PERMISSION,</if>
+			<if test="available != null">AVAILABLE,</if>
+			<if test="resourceLevel != null">RESOURCE_LEVEL,</if>
+			<if test="resourceType != null">RESOURCE_Type,</if>
+			<if test="leaf != null">LEAF,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="pId != null">#{pId},</if>
+			<if test="resourceName != null">#{resourceName},</if>
+			<if test="resourceIcon != null">#{resourceIcon},</if>
+			<if test="iconBack != null">#{iconBack},</if>
+			<if test="resourceUrl != null">#{resourceUrl},</if>
+			<if test="permission != null">#{permission},</if>
+			<if test="available != null">#{available},</if>
+			<if test="resourceLevel != null">#{resourceLevel},</if>
+			<if test="resourceType != null">#{resourceType},</if>
+			<if test="leaf != null">#{leaf},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.frame.security.model.ResourceModel">
+		UPDATE xy_resource
+		<set>
+			<if test="id != null">ID =#{id},</if>
+			<if test="pId != null">PID =#{pId},</if>
+			<if test="resourceName != null">RESOURCE_NAME =#{resourceName},</if>
+			<if test="resourceIcon != null">RESOURCE_ICON =#{resourceIcon},</if>
+			<if test="iconBack != null">ICON_BACK =#{iconBack},</if>
+			<if test="resourceUrl != null">RESOURCE_URL =#{resourceUrl},</if>
+			<if test="permission != null">PERMISSION =#{permission},</if>
+			<if test="available != null">AVAILABLE =#{available},</if>
+			<if test="leaf != null">LEAF =#{leaf},</if>
+			<if test="resourceLevel != null">RESOURCE_LEVEL =#{resourceLevel},</if>
+			<if test="resourceType != null">RESOURCE_Type =#{resourceType},</if>
+		</set>
+		where ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.lang.Long">
+		DELETE FROM xy_resource t where
+		ID
+		IN
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<select id="queryRoleResource" parameterType="com.xyan.frame.security.model.RoleModel">
+		SELECT PERMISSION from xy_resource  res LEFT JOIN xy_role_resource  rres on res.ID=rres.RESOURCE_ID
+		where rres.ROLE_ID in 
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item.roleId}
+		</foreach>
+		
+	</select>
+</mapper>

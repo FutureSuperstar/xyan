@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xyan.blog.dao.ArticleDao">
+
+
+	<sql id="mapSQL">
+		ID as "id"
+		, TITLE as "title"
+		, CONTENT as "content"
+		, USER_ID as "userId"
+		, CREATE_TIME as "createTime"
+		, UPDATE_TIME as "updateTime"
+		, TYPE_ID as "typeId"
+		, KEY_WORD as "keyWord"
+		, PRODUCE1 as "produce1"
+		, READ_COUNT as "readCount"
+		, COMMENT_COUNT as "commentCount"
+		, PRODUCE2 as "produce2"
+		, IMG_URL as "imgUrl"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, TITLE as "title"
+		, CONTENT as "content"
+		, USER_ID as "userId"
+		, CREATE_TIME as "createTime"
+		, UPDATE_TIME as "updateTime"
+		, TYPE_ID as "typeId"
+		, KEY_WORD as "keyWord"
+		, PRODUCE1 as "produce1"
+		, READ_COUNT as "readCount"
+		, COMMENT_COUNT as "commentCount"
+		, PRODUCE2 as "produce2"
+		, IMG_URL as "imgUrl"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.blog.model.ArticleModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_article
+		WHERE
+		ID=#{id}
+	</select>
+
+	<select id="countByExample" parameterType="com.xyan.blog.model.ArticleModel">
+		select count(1) FROM xy_article
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="title!=null">AND TITLE = #{title}</if>
+			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="userId!=null">AND USER_ID = #{userId}</if>
+			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
+			<if test="updateTime!=null">AND UPDATE_TIME = #{updateTime}</if>
+			<if test="typeId!=null">AND TYPE_ID = #{typeId}</if>
+			<if test="keyWord!=null">AND KEY_WORD = #{keyWord}</if>
+			<if test="produce1!=null">AND PRODUCE1 = #{produce1}</if>
+			<if test="readCount!=null">AND READ_COUNT = #{readCount}</if>
+			<if test="commentCount!=null">AND COMMENT_COUNT = #{commentCount}</if>
+			<if test="produce2!=null">AND PRODUCE2 = #{produce2}</if>
+			<if test="imgUrl!=null">AND IMG_URL = #{imgUrl}</if>
+		</where>
+	</select>
+
+	<select id="selectModelByExample" resultType="com.xyan.blog.model.ArticleModel"
+		parameterType="com.xyan.blog.model.ArticleModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_article
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="title!=null">AND TITLE = #{title}</if>
+			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="userId!=null">AND USER_ID = #{userId}</if>
+			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
+			<if test="updateTime!=null">AND UPDATE_TIME = #{updateTime}</if>
+			<if test="typeId!=null">AND TYPE_ID = #{typeId}</if>
+			<if test="keyWord!=null">AND KEY_WORD = #{keyWord}</if>
+			<if test="produce1!=null">AND PRODUCE1 = #{produce1}</if>
+			<if test="readCount!=null">AND READ_COUNT = #{readCount}</if>
+			<if test="commentCount!=null">AND COMMENT_COUNT = #{commentCount}</if>
+			<if test="produce2!=null">AND PRODUCE2 = #{produce2}</if>
+			<if test="imgUrl!=null">AND IMG_URL = #{imgUrl}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.blog.model.ArticleModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_article
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="title!=null">AND TITLE = #{title}</if>
+			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="userId!=null">AND USER_ID = #{userId}</if>
+			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
+			<if test="updateTime!=null">AND UPDATE_TIME = #{updateTime}</if>
+			<if test="typeId!=null">AND TYPE_ID = #{typeId}</if>
+			<if test="keyWord!=null">AND KEY_WORD = #{keyWord}</if>
+			<if test="produce1!=null">AND PRODUCE1 = #{produce1}</if>
+			<if test="readCount!=null">AND READ_COUNT = #{readCount}</if>
+			<if test="commentCount!=null">AND COMMENT_COUNT = #{commentCount}</if>
+			<if test="produce2!=null">AND PRODUCE2 = #{produce2}</if>
+			<if test="imgUrl!=null">AND IMG_URL = #{imgUrl}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_article
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.blog.model.ArticleModel">
+		INSERT INTO xy_article
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+
+			<if test="id != null">ID,</if>
+			<if test="title != null">TITLE,</if>
+			<if test="content != null">CONTENT,</if>
+			<if test="userId != null">USER_ID,</if>
+			<if test="createTime != null">CREATE_TIME,</if>
+			<if test="updateTime != null">UPDATE_TIME,</if>
+			<if test="typeId != null">TYPE_ID,</if>
+			<if test="keyWord != null">KEY_WORD,</if>
+			<if test="produce1 != null">PRODUCE1,</if>
+			<if test="readCount != null">READ_COUNT,</if>
+			<if test="commentCount != null">COMMENT_COUNT,</if>
+			<if test="produce2 != null">PRODUCE2,</if>
+			<if test="imgUrl != null">IMG_URL,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="title != null">#{title},</if>
+			<if test="content != null">#{content},</if>
+			<if test="userId != null">#{userId},</if>
+			<if test="createTime != null">#{createTime},</if>
+			<if test="updateTime != null">#{updateTime},</if>
+			<if test="typeId != null">#{typeId},</if>
+			<if test="keyWord != null">#{keyWord},</if>
+			<if test="produce1 != null">#{produce1},</if>
+			<if test="readCount != null">#{readCount},</if>
+			<if test="commentCount != null">#{commentCount},</if>
+			<if test="produce2 != null">#{produce2},</if>
+			<if test="imgUrl != null">#{imgUrl},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.blog.model.ArticleModel">
+		UPDATE xy_article
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="title != null">TITLE = #{title},</if>
+			<if test="content != null">CONTENT = #{content},</if>
+			<if test="userId != null">USER_ID = #{userId},</if>
+			<if test="createTime != null">CREATE_TIME = #{createTime},</if>
+			<if test="updateTime != null">UPDATE_TIME = #{updateTime},</if>
+			<if test="typeId != null">TYPE_ID = #{typeId},</if>
+			<if test="keyWord != null">KEY_WORD = #{keyWord},</if>
+			<if test="produce1 != null">PRODUCE1 = #{produce1},</if>
+			<if test="readCount != null">READ_COUNT = #{readCount},</if>
+			<if test="commentCount != null">COMMENT_COUNT = #{commentCount},
+			</if>
+			<if test="produce2 != null">PRODUCE2 = #{produce2},</if>
+			<if test="imgUrl != null">IMG_URL = #{imgUrl},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_article t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<!--生成器生成代码，需要自己手动修改java属性名 -->
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_article
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">item.ID,</if>
+				<if test="item.title != null">item.TITLE,</if>
+				<if test="item.content != null">item.CONTENT,</if>
+				<if test="item.userId != null">item.USER_ID,</if>
+				<if test="item.createTime != null">item.CREATE_TIME,</if>
+				<if test="item.updateTime != null">item.UPDATE_TIME,</if>
+				<if test="item.typeId != null">item.TYPE_ID,</if>
+				<if test="item.keyWord != null">item.KEY_WORD,</if>
+				<if test="item.produce1 != null">item.PRODUCE1,</if>
+				<if test="item.readCount != null">item.READ_COUNT,</if>
+				<if test="item.commentCount != null">item.COMMENT_COUNT,</if>
+				<if test="item.produce2 != null">item.PRODUCE2,</if>
+				<if test="item.imgUrl != null">item.IMG_URL,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">#{item.id},</if>
+				<if test="item.title != null">#{item.title},</if>
+				<if test="item.content != null">#{item.content},</if>
+				<if test="item.userId != null">#{item.userId},</if>
+				<if test="item.createTime != null">#{item.createTime},</if>
+				<if test="item.updateTime != null">#{item.updateTime},</if>
+				<if test="item.typeId != null">#{item.typeId},</if>
+				<if test="item.keyWord != null">#{item.keyWord},</if>
+				<if test="item.produce1 != null">#{item.produce1},</if>
+				<if test="item.readCount != null">#{item.readCount},</if>
+				<if test="item.commentCount != null">#{item.commentCount},</if>
+				<if test="item.produce2 != null">#{item.produce2},</if>
+				<if test="item.imgUrl != null">#{item.imgUrl},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<!--生成器生成代码，需要自己手动修改java属性名 -->
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_article
+			<set>
+				<if test="item.id != null">ID = #{item.id},</if>
+				<if test="item.title != null">TITLE = #{item.title},</if>
+				<if test="item.content != null">CONTENT = #{item.content},</if>
+				<if test="item.userId != null">USER_ID = #{item.userId},</if>
+				<if test="item.createTime != null">CREATE_TIME =
+					#{item.createTime},</if>
+				<if test="item.updateTime != null">UPDATE_TIME =
+					#{item.updateTime},</if>
+				<if test="item.typeId != null">TYPE_ID = #{item.typeId},</if>
+				<if test="item.keyWord != null">KEY_WORD = #{item.keyWord},</if>
+				<if test="item.produce1 != null">PRODUCE1 = #{item.produce1},
+				</if>
+				<if test="item.readCount != null">READ_COUNT = #{item.readCount},
+				</if>
+				<if test="item.commentCount != null">COMMENT_COUNT =
+					#{item.commentCount},</if>
+				<if test="item.produce2 != null">PRODUCE2 = #{item.produce2},
+				</if>
+				<if test="item.imgUrl != null">IMG_URL = #{item.imgUrl},</if>
+			</set>
+			WHERE ID=#{item.id}
+		</foreach>
+	</update>
+
+
+</mapper>
