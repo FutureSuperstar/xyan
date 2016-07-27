@@ -20,7 +20,7 @@ import com.xyan.frame.util.PropertiesUtil;
  * @author wangming
  */
 @Controller
-@RequestMapping
+@RequestMapping("/admin")
 public class AdminLoginController {
 	
 	@Autowired
@@ -28,7 +28,7 @@ public class AdminLoginController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public String toLogin(HttpServletRequest request,HttpServletResponse response){
-		String cookieValue=SecureUtil.md5(PropertiesUtil.getProperties("system.code"))+System.currentTimeMillis();
+		String cookieValue=SecureUtil.md5(SecureUtil.md5(PropertiesUtil.getProperties("system.code"))+System.currentTimeMillis());
 		Cookie cookie=new Cookie("id",cookieValue);
 		response.addCookie(cookie);
 		request.getSession().setMaxInactiveInterval(1000000);
