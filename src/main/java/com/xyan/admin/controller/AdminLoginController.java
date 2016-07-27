@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.security.SecureUtil;
@@ -26,7 +27,7 @@ public class AdminLoginController {
 	@Autowired
 	private UserService userService;
 	
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(value="login",method=RequestMethod.GET)
 	public String toLogin(HttpServletRequest request,HttpServletResponse response){
 		String cookieValue=SecureUtil.md5(SecureUtil.md5(PropertiesUtil.getProperties("system.code"))+System.currentTimeMillis());
 		Cookie cookie=new Cookie("id",cookieValue);
@@ -36,7 +37,8 @@ public class AdminLoginController {
 		return "user/login";
 	}
 	
-	@RequestMapping(method=RequestMethod.POST)
+	@RequestMapping(value="login",method=RequestMethod.POST)
+	@ResponseBody
 	public ResponseModel login(HttpServletRequest request,UserModel user){
 		request.getSession().removeAttribute("id");
 		return userService.login(user);
