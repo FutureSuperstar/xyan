@@ -51,7 +51,7 @@ public class UserServiceImpl extends GenericServiceImpl<UserModel, Long> impleme
 		if(userModel.getLockTime()>3&&DateUtil.getBetween(userModel.getLockDate())<1800){
 			return new ResponseModel(false,"密码错误次数过度，账户锁住半小时");
 		}
-		String pass=SecureUtil.md5(SecureUtil.md5(user.getPassword())+userModel.getSalt());
+		String pass=SecureUtil.md5(user.getPassword().toLowerCase()+userModel.getSalt());
 		if(userModel.getPassword().equals(pass)){
 			userModel.setPassword("");
 			//做登陆相关的事情
@@ -59,7 +59,7 @@ public class UserServiceImpl extends GenericServiceImpl<UserModel, Long> impleme
 			SessionUtil.getSession().setAttribute("LOGIN_USER", userModel);
 			userModel.setLockTime(0);
 			userDao.update(userModel);
-			return new ResponseModel(true,true);
+			return new ResponseModel(true,true,"/admin/index");
 		}else{
 			//更新锁
 			userModel.setLockTime(userModel.getLockTime()+1);

@@ -52,6 +52,12 @@ public class ResponseModel{
 		this.login=login;
 	}
 	
+	public ResponseModel(boolean success,boolean login,String message) {
+		this.success=success;
+		this.login=login;
+		this.message=message;
+	}
+	
 	public long getTimestamp() {
 		return timestamp;
 	}

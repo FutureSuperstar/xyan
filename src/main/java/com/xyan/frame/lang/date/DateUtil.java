@@ -45,13 +45,13 @@ public class DateUtil {
 
     /**
      * @Author:wangming
-     * @Description 获取与当前时间间隔的毫秒数
+     * @Description 获取与当前时间间隔的秒数
      * @param date 
      * @return
      * @since 2016年7月5日下午5:54:05
      */
     public static long getBetween(Date date){
-    	return Math.abs(date.getTime()-System.currentTimeMillis());
+    	return Math.abs(date.getTime()-System.currentTimeMillis())/1000;
     }
     
     /**
