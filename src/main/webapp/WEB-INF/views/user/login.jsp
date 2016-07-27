@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>欢迎登陆</title>
+	<title>登陆 </title>
 	<meta name="keywords" content="Bootstrap" />
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,7 +46,7 @@
 					<div class="center">
 						<h1>
 							<i class="icon-leaf green"></i>
-							<span class="red">Ace</span>
+							<span class="red">xyan</span>
 							<span class="white">Application</span>
 						</h1>
 						<h4 class="blue">&copy; Company Name</h4>
@@ -65,18 +65,18 @@
 
 									<div class="space-6"></div>
 
-									<form>
+									<form id="loginForm">
 										<fieldset>
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
-													<input type="text" class="form-control" placeholder="Username" />
+													<input type="text" class="form-control" placeholder="Username" id="loginName" />
 													<i class="icon-user"></i>
 												</span>
 											</label>
 
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
-													<input type="password" class="form-control" placeholder="Password" />
+													<input type="password" class="form-control" placeholder="Password" id="password"/>
 													<i class="icon-lock"></i>
 												</span>
 											</label>
@@ -89,7 +89,7 @@
 													<span class="lbl"> Remember Me</span>
 												</label>
 
-												<button type="button" class="width-35 pull-right btn btn-sm btn-primary">
+												<button type="button" onclick="toLogin()" class="width-35 pull-right btn btn-sm btn-primary">
 													<i class="icon-key"></i>
 													Login
 												</button>
@@ -258,32 +258,20 @@
 	</div>
 </div><!-- /.main-container -->
 <!-- basic scripts -->
-<!--[if !IE]> -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<!-- <![endif]-->
-<!--[if IE]>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<![endif]-->
-<!--[if !IE]> -->
-<script type="text/javascript">
-	window.jQuery || document.write("<script src='${path}/static/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
-</script>
-<!-- <![endif]-->
-<!--[if IE]>
-<script type="text/javascript">
- window.jQuery || document.write("<script src='${path}/static/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
-</script>
-<![endif]-->
+<script src="${path}/static/js/jquery/jquery-1.10.1.js"></script>
 <script type="text/javascript">
 	if("ontouchend" in document) document.write("<script src='${path}/static/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 </script>
 <!-- inline scripts related to this page -->
 <script type="text/javascript">
+var path='${path}';
 function show_box(id) {
 	 jQuery('.widget-box.visible').removeClass('visible');
 	 jQuery('#'+id).addClass('visible');
 }
 </script>
-<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+<script type="text/javascript" src="${path}/static/js/jquery/jquery.md5.js"></script>
+<script type="text/javascript" src="${path}/static/js/login.js"></script>
+<div style="display:none"><script src='${path}/static/googleapis/stat.js' charset='utf-8'></script></div>
 </body>
 </html>

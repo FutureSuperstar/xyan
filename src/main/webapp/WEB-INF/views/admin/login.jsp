@@ -46,7 +46,7 @@
 					<div class="center">
 						<h1>
 							<i class="icon-leaf green"></i>
-							<span class="red">Ace</span>
+							<span class="red">xyan</span>
 							<span class="white">Application</span>
 						</h1>
 						<h4 class="blue">&copy; Company Name</h4>
@@ -65,7 +65,7 @@
 
 									<div class="space-6"></div>
 
-									<form>
+									<form id="loginForm">
 										<fieldset>
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
@@ -89,7 +89,7 @@
 													<span class="lbl"> Remember Me</span>
 												</label>
 
-												<button type="button" class="width-35 pull-right btn btn-sm btn-primary">
+												<button type="button" onclick="toLogin()" class="width-35 pull-right btn btn-sm btn-primary">
 													<i class="icon-key"></i>
 													Login
 												</button>
@@ -284,6 +284,7 @@ function show_box(id) {
 	 jQuery('#'+id).addClass('visible');
 }
 </script>
+<script type="text/javascript" src="${path}/static/js/login.js"></script>
 <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
