@@ -259,6 +259,7 @@
 		</div><!-- /.row -->
 	</div>
 </div><!-- /.main-container -->
+<input type="hidden" value="${saveUrl}" id="saveUrl"/>
 <!-- basic scripts -->
 <script src="${path}/static/js/jquery/jquery-1.10.1.js"></script>
 <script type="text/javascript">

@@ -10,7 +10,7 @@ function toLogin(){
 		success:function(data){
 			if(data.success){
 				$("#loginError").text("登陆成功").removeClass("red").addClass("green");
-				location=path+data.message;
+				location=$("#saveUrl").val();
 			}else{
 				$("#loginError").text(data.message);
 			}

@@ -30,41 +30,43 @@
 <div class="page-content">
 	<div class="mar-bottom-5 relative">
 		<div class="row ui-tables-pro2" style="height: auto;">
-			<div class="sol-sm-6 sol-xs-3">
-				<div class="form-group form-horizontal mar-top-15">
-					<label class="sol-xs-5 control-label pad-right-0  align-right">标题：</label>
-					<div class="sol-xs-7">
-						<input type="text" class="sol-xs-11 " name="code" id="code" />
+			<form action="" id="queryForm">
+				<div class="sol-sm-6 sol-xs-3">
+					<div class="form-group form-horizontal mar-top-15">
+						<label class="sol-xs-5 control-label pad-right-0  align-right">标题：</label>
+						<div class="sol-xs-7">
+							<input type="text" class="sol-xs-11 " name="code" id="code" />
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="sol-sm-6 sol-xs-3">
-				<div class="form-group form-horizontal mar-top-15">
-					<label class="sol-xs-5 control-label pad-right-0  align-right">内容：</label>
-					<div class="sol-xs-7">
-						<input type="text" class="sol-xs-11 " id="tarCode" name="tarCode" />
-	
+				<div class="sol-sm-6 sol-xs-3">
+					<div class="form-group form-horizontal mar-top-15">
+						<label class="sol-xs-5 control-label pad-right-0  align-right">内容：</label>
+						<div class="sol-xs-7">
+							<input type="text" class="sol-xs-11 " id="tarCode" name="tarCode" />
+		
+						</div>
 					</div>
 				</div>
-			</div>
-	
-			<div class="sol-sm-6 sol-xs-3">
-				<div class="form-group form-horizontal mar-top-15">
-					<label class="sol-xs-5 control-label pad-right-0  align-right">类别：</label>
-					<div class="sol-xs-7">
-						<input type="text" class="sol-xs-11 " id="tarName" name="tarName" />
+		
+				<div class="sol-sm-6 sol-xs-3">
+					<div class="form-group form-horizontal mar-top-15">
+						<label class="sol-xs-5 control-label pad-right-0  align-right">类别：</label>
+						<div class="sol-xs-7">
+							<input type="text" class="sol-xs-11 " id="tarName" name="tarName" />
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="sol-sm-6 sol-xs-2">
-				<div class="form-group form-horizontal mar-top-15 mar-left-20">
-					<button type="button" class="width-65 pull-right btn btn-sm btn-success" style="line-height: 1.05;">
-						查询
-						<!-- <i class="icon-arrow-right icon-on-right"></i> -->
-					</button>
+				<div class="sol-sm-6 sol-xs-2">
+					<div class="form-group form-horizontal mar-top-15 mar-left-20">
+						<button type="button" id="submit" class="width-65 pull-right btn btn-sm btn-success" style="line-height: 1.05;">
+							查询
+							<!-- <i class="icon-arrow-right icon-on-right"></i> -->
+						</button>
+					</div>
+					<div class="clearfix"></div>
 				</div>
-				<div class="clearfix"></div>
-			</div>
+			</form>
 		</div>
 	</div>
 	<div class="table-responsive">
