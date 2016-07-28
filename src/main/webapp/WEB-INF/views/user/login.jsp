@@ -60,7 +60,7 @@
 								<div class="widget-main">
 									<h4 class="header blue lighter bigger">
 										<i class="icon-coffee green"></i>
-										Please Enter Your Information
+										请输入您的登陆信息
 									</h4>
 
 									<div class="space-6"></div>
@@ -69,14 +69,14 @@
 										<fieldset>
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
-													<input type="text" class="form-control" placeholder="Username" id="loginName" />
+													<input type="text" class="form-control" placeholder="用户名" id="loginName" />
 													<i class="icon-user"></i>
 												</span>
 											</label>
 
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
-													<input type="password" class="form-control" placeholder="Password" id="password"/>
+													<input type="password" class="form-control" placeholder="密码" id="password"/>
 													<i class="icon-lock"></i>
 												</span>
 											</label>
@@ -91,12 +91,12 @@
 											<div class="clearfix">
 												<label class="inline">
 													<input type="checkbox" class="ace" />
-													<span class="lbl"> Remember Me</span>
+													<span class="lbl">记住我</span>
 												</label>
 
 												<button type="button" onclick="toLogin()" class="width-35 pull-right btn btn-sm btn-primary">
 													<i class="icon-key"></i>
-													Login
+													登陆
 												</button>
 											</div>
 
@@ -105,7 +105,7 @@
 									</form>
 
 									<div class="social-or-login center">
-										<span class="bigger-110">Or Login Using</span>
+										<span class="bigger-110">或者用下面的方式</span>
 									</div>
 
 									<div class="social-login center">
@@ -127,13 +127,13 @@
 									<div>
 										<a href="#" onclick="show_box('forgot-box'); return false;" class="forgot-password-link">
 											<i class="icon-arrow-left"></i>
-											I forgot my password
+											忘记密码
 										</a>
 									</div>
 
 									<div>
 										<a href="#" onclick="show_box('signup-box'); return false;" class="user-signup-link">
-											I want to register
+											注册
 											<i class="icon-arrow-right"></i>
 										</a>
 									</div>
@@ -146,19 +146,16 @@
 								<div class="widget-main">
 									<h4 class="header red lighter bigger">
 										<i class="icon-key"></i>
-										Retrieve Password
+										取回密码
 									</h4>
 
 									<div class="space-6"></div>
-									<p>
-										Enter your email and to receive instructions
-									</p>
-
+									<p>输入您的注册邮箱</p>
 									<form>
 										<fieldset>
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
-													<input type="email" class="form-control" placeholder="Email" />
+													<input type="email" class="form-control" placeholder="邮箱" />
 													<i class="icon-envelope"></i>
 												</span>
 											</label>
@@ -166,7 +163,7 @@
 											<div class="clearfix">
 												<button type="button" class="width-35 pull-right btn btn-sm btn-danger">
 													<i class="icon-lightbulb"></i>
-													Send Me!
+													发送
 												</button>
 											</div>
 										</fieldset>
@@ -175,7 +172,7 @@
 
 								<div class="toolbar center">
 									<a href="#" onclick="show_box('login-box'); return false;" class="back-to-login-link">
-										Back to login
+										返回登陆
 										<i class="icon-arrow-right"></i>
 									</a>
 								</div>
@@ -187,38 +184,38 @@
 								<div class="widget-main">
 									<h4 class="header green lighter bigger">
 										<i class="icon-group blue"></i>
-										New User Registration
+										注册信息
 									</h4>
 
 									<div class="space-6"></div>
-									<p> Enter your details to begin: </p>
+									<p>开始注册： </p>
 
 									<form>
 										<fieldset>
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
-													<input type="email" class="form-control" placeholder="Email" />
+													<input type="email" class="form-control" placeholder="邮箱" />
 													<i class="icon-envelope"></i>
 												</span>
 											</label>
 
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
-													<input type="text" class="form-control" placeholder="Username" />
+													<input type="text" class="form-control" placeholder="用户名" />
 													<i class="icon-user"></i>
 												</span>
 											</label>
 
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
-													<input type="password" class="form-control" placeholder="Password" />
+													<input type="password" class="form-control" placeholder="密码" />
 													<i class="icon-lock"></i>
 												</span>
 											</label>
 
 											<label class="block clearfix">
 												<span class="block input-icon input-icon-right">
-													<input type="password" class="form-control" placeholder="Repeat password" />
+													<input type="password" class="form-control" placeholder="再确认您的密码" />
 													<i class="icon-retweet"></i>
 												</span>
 											</label>
@@ -226,8 +223,8 @@
 											<label class="block">
 												<input type="checkbox" class="ace" />
 												<span class="lbl">
-													I accept the
-													<a href="#">User Agreement</a>
+													我同意
+													<a href="#">xxxx协议</a>
 												</span>
 											</label>
 
@@ -236,11 +233,11 @@
 											<div class="clearfix">
 												<button type="reset" class="width-30 pull-left btn btn-sm">
 													<i class="icon-refresh"></i>
-													Reset
+													重置
 												</button>
 
 												<button type="button" class="width-65 pull-right btn btn-sm btn-success">
-													Register
+													注册
 													<i class="icon-arrow-right icon-on-right"></i>
 												</button>
 											</div>
@@ -251,7 +248,7 @@
 								<div class="toolbar center">
 									<a href="#" onclick="show_box('login-box'); return false;" class="back-to-login-link">
 										<i class="icon-arrow-left"></i>
-										Back to login
+										返回登陆
 									</a>
 								</div>
 							</div><!-- /widget-body -->
