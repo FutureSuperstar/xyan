@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50621
 File Encoding         : 65001
 
-Date: 2016-07-04 16:00:34
+Date: 2016-07-28 20:29:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -43,6 +43,7 @@ INSERT INTO `xy_article` VALUES ('1', 'Web之路，经历了心酸之后', '<p>�
 INSERT INTO `xy_article` VALUES ('12', '实验成功！', '<p>呵呵哒<br></p><p><img src=\"/xyan/attach/viewPic?path=2016-06-13&name=2509619467090254.jpg\" alt=\"mm1\" style=\"max-width:100%;\"></p><p><br></p>', '1', '2016-06-07 15:55:15', '2016-06-14 09:56:49', '9998', '', '起风了，早上开始热闹了。', '1', '1', '人们忙着欢笑', '/xyan/attach/viewPic?path=2016-06-14&name=1-140GF13350451.jpg');
 INSERT INTO `xy_article` VALUES ('13', '生活总是会不经意的撩起往事', '', '1', '2016-06-07 15:57:15', '2016-06-14 09:57:15', '9998', '', '往事如雨', '1', '1', '浮沉', '/xyan/attach/viewPic?path=2016-06-14&name=298-5-1366x768.jpg');
 INSERT INTO `xy_article` VALUES ('14', '正则表达式集合', '<strong>一、校验数字的表达式</strong><p><img style=\"max-width:100%;\" src=\"http://p1.pstatp.com/large/7fc000340e0f4fe0b57\"></p><strong>二、校验字符的表达式<br><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7fc000340ff43420eeb\"><br></strong><strong>三、特殊需求表达式</strong><p><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7fc000341457d2f3cce\"></p><p><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7f900033f7b8e976067\"></p><p><br></p>', '1', '2016-06-17 14:30:42', '2016-06-17 14:31:55', null, '', '', '1', '1', '', '/xyan/attach/viewPic?path=2016-06-17&name=mm1.jpg');
+INSERT INTO `xy_article` VALUES ('15', '离职的感言', '<p>什么也么有啊</p>', '1', '2016-07-27 21:53:41', '2016-07-27 21:53:41', '9999', '无聊啊,你好说', '这是一个快速流转的社会', '1', '1', '', '/xyan/attach/viewPic?path=2016-07-27&name=8c1271fc5a8d12814f6aa2560539969d737394a1fb27-CBEKph_fw658.jpg');
 
 -- ----------------------------
 -- Table structure for xy_article_type
@@ -75,7 +76,7 @@ CREATE TABLE `xy_code` (
 -- ----------------------------
 -- Records of xy_code
 -- ----------------------------
-INSERT INTO `xy_code` VALUES ('ArticleModel', '14');
+INSERT INTO `xy_code` VALUES ('ArticleModel', '15');
 INSERT INTO `xy_code` VALUES ('ArticleTypeModel', '2');
 INSERT INTO `xy_code` VALUES ('LogModel', '14');
 INSERT INTO `xy_code` VALUES ('PageModel', '425');
@@ -343,13 +344,15 @@ CREATE TABLE `xy_user` (
   `EMAIL` varchar(30) DEFAULT NULL COMMENT '邮箱',
   `MOBILE` varchar(15) DEFAULT NULL COMMENT '手机号',
   `LOGIN_NAME` varchar(30) NOT NULL COMMENT '登陆名',
+  `LOCK_TIME` int(11) DEFAULT '0' COMMENT '锁次数',
+  `LOCK_DATE` datetime DEFAULT NULL COMMENT '锁日期',
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户表';
 
 -- ----------------------------
--- Records of xy_user
+-- Records of xy_user  密码：123456
 -- ----------------------------
-INSERT INTO `xy_user` VALUES ('1', '王明', 'e56419914765c6d22dc5018114d73a28', '123456', '1255321142@qq.com', '18136442251', 'admin');
+INSERT INTO `xy_user` VALUES ('1', '王明', '', '123456', '1255321142@qq.com', '18136442251', 'admin', '0', '2016-07-27 23:13:57');
 
 -- ----------------------------
 -- Table structure for xy_user_role
