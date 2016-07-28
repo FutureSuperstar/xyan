@@ -20,7 +20,7 @@ import com.xyan.frame.security.web.util.SessionUtil;
 public class UserServiceImpl extends GenericServiceImpl<UserModel, Long> implements UserService{
 	
 	public static void main(String[] args) {
-		//System.out.println(SecureUtil.md5(SecureUtil.md5("123456").toLowerCase()+"123456"));
+		System.out.println(SecureUtil.md5(SecureUtil.md5("123456").toLowerCase()+"123456"));
 	}
 
 	@Autowired
@@ -57,12 +57,12 @@ public class UserServiceImpl extends GenericServiceImpl<UserModel, Long> impleme
 		}
 		String pass=SecureUtil.md5(user.getPassword().toLowerCase()+userModel.getSalt());
 		if(userModel.getPassword().equals(pass)){
-			userModel.setPassword("");
-			//做登陆相关的事情
-			//登陆成功，加入session，并清除用户锁
-			SessionUtil.getSession().setAttribute("LOGIN_USER", userModel);
+			//登陆成功，并清除用户锁
 			userModel.setLockTime(0);
 			userDao.update(userModel);
+			//加入session，做登陆相关的事情
+			userModel.setPassword("");
+			SessionUtil.getSession().setAttribute("LOGIN_USER", userModel);
 			return new ResponseModel(true,true,"/admin/index");
 		}else{
 			//更新锁

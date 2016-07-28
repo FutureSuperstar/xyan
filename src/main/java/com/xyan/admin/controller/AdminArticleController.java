@@ -52,6 +52,7 @@ public class AdminArticleController {
 	
 	@RequestMapping(value="pageData",method=RequestMethod.POST)
 	public ModelAndView pageData(ArticleModel query,Page<HashMap<String, Object>> page){
+		logger.warn("/admin/article/pageData");
 		return new ModelAndView("/admin/article/articleData")
 			.addObject("page", articleService.selectByPage(query, page));
 	}

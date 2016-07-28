@@ -4,23 +4,6 @@
 
 <mapper namespace="com.xyan.blog.dao.ArticleDao">
 
-
-	<sql id="mapSQL">
-		ID as "id"
-		, TITLE as "title"
-		, CONTENT as "content"
-		, USER_ID as "userId"
-		, CREATE_TIME as "createTime"
-		, UPDATE_TIME as "updateTime"
-		, TYPE_ID as "typeId"
-		, KEY_WORD as "keyWord"
-		, PRODUCE1 as "produce1"
-		, READ_COUNT as "readCount"
-		, COMMENT_COUNT as "commentCount"
-		, PRODUCE2 as "produce2"
-		, IMG_URL as "imgUrl"
-	</sql>
-
 	<sql id="objectSQL">
 		ID as "id"
 		, TITLE as "title"
@@ -41,9 +24,7 @@
 		parameterType="java.lang.Long">
 		SELECT
 		<include refid="mapSQL" />
-		FROM xy_article
-		WHERE
-		ID=#{id}
+		FROM xy_article	WHERE	ID=#{id}
 	</select>
 
 	<select id="countByExample" parameterType="com.xyan.blog.model.ArticleModel">
@@ -90,8 +71,21 @@
 	<select id="selectByExample" resultType="java.util.HashMap"
 		parameterType="com.xyan.blog.model.ArticleModel">
 		SELECT
-		<include refid="mapSQL" />
-		FROM xy_article
+		article.ID as "id"
+		, article.TITLE as "title"
+		, article.CONTENT as "content"
+		, article.USER_ID as "userId"
+		, article.CREATE_TIME as "createTime"
+		, article.UPDATE_TIME as "updateTime"
+		, article.TYPE_ID as "typeId"
+		, atype.NAME as "typeName"
+		, article.KEY_WORD as "keyWord"
+		, article.PRODUCE1 as "produce1"
+		, article.READ_COUNT as "readCount"
+		, article.COMMENT_COUNT as "commentCount"
+		, article.PRODUCE2 as "produce2"
+		, article.IMG_URL as "imgUrl"
+		FROM xy_article article left join xy_article_type  atype on article.TYPE_ID=atype.id
 		<where>
 			<if test="id!=null">AND ID = #{id}</if>
 			<if test="title!=null">AND TITLE = #{title}</if>
