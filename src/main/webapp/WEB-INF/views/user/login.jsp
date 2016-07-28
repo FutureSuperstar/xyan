@@ -80,6 +80,11 @@
 													<i class="icon-lock"></i>
 												</span>
 											</label>
+											
+											<label class="block clearfix">
+												<span id="loginError" class="block input-icon input-icon-right red text-center">
+												</span>
+											</label>
 
 											<div class="space"></div>
 
