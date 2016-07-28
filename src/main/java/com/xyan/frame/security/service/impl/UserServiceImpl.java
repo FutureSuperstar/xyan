@@ -63,7 +63,7 @@ public class UserServiceImpl extends GenericServiceImpl<UserModel, Long> impleme
 			//加入session，做登陆相关的事情
 			userModel.setPassword("");
 			SessionUtil.getSession().setAttribute("LOGIN_USER", userModel);
-			return new ResponseModel(true,true,"/admin/index");
+			return new ResponseModel(true,true);
 		}else{
 			//更新锁
 			userModel.setLockTime(userModel.getLockTime()+1);

@@ -4,6 +4,23 @@
 
 <mapper namespace="com.xyan.blog.dao.ArticleDao">
 
+
+	<sql id="mapSQL">
+		ID as "id"
+		, TITLE as "title"
+		, CONTENT as "content"
+		, USER_ID as "userId"
+		, CREATE_TIME as "createTime"
+		, UPDATE_TIME as "updateTime"
+		, TYPE_ID as "typeId"
+		, KEY_WORD as "keyWord"
+		, PRODUCE1 as "produce1"
+		, READ_COUNT as "readCount"
+		, COMMENT_COUNT as "commentCount"
+		, PRODUCE2 as "produce2"
+		, IMG_URL as "imgUrl"
+	</sql>
+
 	<sql id="objectSQL">
 		ID as "id"
 		, TITLE as "title"
@@ -24,7 +41,9 @@
 		parameterType="java.lang.Long">
 		SELECT
 		<include refid="mapSQL" />
-		FROM xy_article	WHERE	ID=#{id}
+		FROM xy_article
+		WHERE
+		ID=#{id}
 	</select>
 
 	<select id="countByExample" parameterType="com.xyan.blog.model.ArticleModel">

@@ -50,6 +50,7 @@ public class SecureFilter implements Filter {
 		if(check(url,user)){
 			chain.doFilter(request, response);
 		}else{
+			request.setAttribute("saveUrl", url);
 			request.getRequestDispatcher(errorPage).forward(request, response);
 		}
 		

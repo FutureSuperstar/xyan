@@ -34,6 +34,7 @@ public class AdminLoginController {
 		response.addCookie(cookie);
 		request.getSession().setMaxInactiveInterval(1000000);
 		request.getSession().setAttribute("id", cookieValue);
+		System.out.println(request.getAttribute("saveUrl"));
 		return "user/login";
 	}
 	
