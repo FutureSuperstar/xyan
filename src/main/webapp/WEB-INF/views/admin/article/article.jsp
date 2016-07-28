@@ -58,6 +58,10 @@
 			</div>
 			<div class="sol-sm-6 sol-xs-2">
 				<div class="form-group form-horizontal mar-top-15 mar-left-20">
+					<button type="button" class="width-65 pull-right btn btn-sm btn-success" style="line-height: 1.05;">
+						查询
+						<!-- <i class="icon-arrow-right icon-on-right"></i> -->
+					</button>
 				</div>
 				<div class="clearfix"></div>
 			</div>

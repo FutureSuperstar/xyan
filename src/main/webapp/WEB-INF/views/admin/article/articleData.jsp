@@ -5,8 +5,8 @@
 <c:forEach items="${page.result}" var="data">
 	<tr class="odd">
 		<td class="text-left" style="width: 7%;">${data.title}</td> 
-		<td class="text-center" style="width: 7%;">${data.typeId}</td> 
-		<td class="text-center getDictValue" style="width: 7%;" >${data.userId}</td> 
+		<td class="text-center" style="width: 7%;">${data.typeName}</td> 
+		<td class="text-center getDictValue" style="width: 7%;" >${data.userName}</td> 
 		<td class="text-center"> 
 			<a href="${path}/admin/article/edit?id=${data.id}" class="table-panle" title="修改">编辑</a>
 			<a href="${path}/blog/article/view/${data.id}" target="_blank" class="table-panle" title="拒绝 ">查看</a>
