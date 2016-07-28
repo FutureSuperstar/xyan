@@ -61,13 +61,13 @@ public class SecureFilter implements Filter {
 	}
 
 	private boolean check(String url,UserModel user){
-		return true;
-		/*if(user!=null&&user.getId().longValue()==1L){
+		//return true;
+		if(user!=null&&user.getId().longValue()==1L){
 			return true;
 		}else if(url.endsWith("admin/login")){
 			return true;
 		}else{
 			return false;
-		}*/
+		}
 	}
 }

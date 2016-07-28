@@ -18,6 +18,10 @@ import com.xyan.frame.security.web.util.SessionUtil;
 
 @Service
 public class UserServiceImpl extends GenericServiceImpl<UserModel, Long> implements UserService{
+	
+	public static void main(String[] args) {
+		//System.out.println(SecureUtil.md5(SecureUtil.md5("123456").toLowerCase()+"123456"));
+	}
 
 	@Autowired
 	private UserDao userDao;
