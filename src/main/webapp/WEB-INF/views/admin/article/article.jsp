@@ -35,7 +35,7 @@
 					<div class="form-group form-horizontal mar-top-15">
 						<label class="sol-xs-5 control-label pad-right-0  align-right">标题：</label>
 						<div class="sol-xs-7">
-							<input type="text" class="sol-xs-11 " name="code" id="code" />
+							<input type="text" class="sol-xs-11 " name="title" id="title" />
 						</div>
 					</div>
 				</div>
@@ -43,7 +43,7 @@
 					<div class="form-group form-horizontal mar-top-15">
 						<label class="sol-xs-5 control-label pad-right-0  align-right">内容：</label>
 						<div class="sol-xs-7">
-							<input type="text" class="sol-xs-11 " id="tarCode" name="tarCode" />
+							<input type="text" class="sol-xs-11 " id="content" name="content" />
 		
 						</div>
 					</div>
@@ -53,7 +53,7 @@
 					<div class="form-group form-horizontal mar-top-15">
 						<label class="sol-xs-5 control-label pad-right-0  align-right">类别：</label>
 						<div class="sol-xs-7">
-							<input type="text" class="sol-xs-11 " id="tarName" name="tarName" />
+							<input type="text" class="sol-xs-11 " id="typeName" name="typeName" />
 						</div>
 					</div>
 				</div>

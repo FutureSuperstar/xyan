@@ -4,41 +4,46 @@
 <div class="content">
 	<div class="mar15">
 		<div class="col-xs-12">
-			<textarea name="content" id="content" class="sol-xs-12 mar-left-5" style="height: 200px">${model.content}</textarea>		
+			<button>发表</button>
+			<textarea name="content" id="content" class="sol-xs-12 mar-left-5" style="height:400px; max-height:600px;">${model.content}</textarea>		
 		</div>
 	</div>
 	<div class="mar15">
-		<div class="box">
-			<div class="box-header">
-				博主你好：
+		<div class="mbox" style="width:768px;">
+			<div class="mbox-left" style="float: left;width:14%" >
+				<img src="${path}/static/img/head/girl-1.jpg" class="user-head"/>
 			</div>
-			<div class="box-body">
-				<div class="">我有一个问题请教wqeeeeeeee十多个是代理公司的怪兽电力公司的个好老师的更合适的两个函数的两个还是领导尽快赶回是德国华盛顿国会山来的后果 时都会感受到了规划落实贷款eeee,qweqw qwe qwhhsgdjghsdkgh slhdglk shd g hsdklgsdag你</div>
+			<div class="mbox-right" style="float: left;width:83%">
+				<div class="mbox-text">博主，您做这个网站花了多长时间？我也想做，你能教我吗？</div>
 			</div>
+			<div class="clearfix"></div>
 		</div>
-		<div class="box">
-			<div class="box-header">
-				博主你好：
+		<div class="mbox" style="width:768px;">
+			<div class="mbox-left" style="float: left;width:14%" >
+				<img src="${path}/static/img/head/girl-2.jpg" class="user-head"/>
 			</div>
-			<div class="box-body">
-				<div class="">我有一个问题请教你</div>
+			<div class="mbox-right" style="float: left;width:83%">
+				<div class="mbox-text">做的不错，赞一个。哈哈！</div>
 			</div>
+			<div class="clearfix"></div>
 		</div>
-		<div class="box">
-			<div class="box-header">
-				博主你好：
+		<div class="mbox" style="width:768px;">
+			<div class="mbox-left" style="float: left;width:14%" >
+				<img src="${path}/static/img/head/girl-3.jpg" class="user-head"/>
 			</div>
-			<div class="box-body">
-				<div class="">我有11111111111111111111111111111111111111111111111111111111111111111</div>
+			<div class="mbox-right" style="float: left;width:83%">
+				<div class="mbox-text">您好，我有一个技术问题，可以私下请教一下么？</div>
 			</div>
+			<div class="clearfix"></div>
 		</div>
-		<div class="box">
-			<div class="box-header">
-				博主你好：
+		<div class="mbox" style="width:768px;">
+			<div class="mbox-left" style="float: left;width:14%" >
+				<img src="${path}/static/img/head/girl-4.jpg" class="user-head"/>
 			</div>
-			<div class="box-body">
-				<div class="">xxxxxxxxxxxxxxxxxx</div>
+			<div class="mbox-right" style="float: left;width:83%">
+				<div class="mbox-text">博主，您的留言板用的什么编辑器啊？</div>
 			</div>
+			<div class="clearfix"></div>
 		</div>
 	</div>
 </div>
@@ -50,5 +55,8 @@ $(function(){
 	editor=new wangEditor('content');
 	editor.config.uploadImgUrl = '${path}/index/wangEditor/upload';
 	editor.create();
+	$(".wangEditor-container .menu-group").removeClass("clearfix");
+	$(".wangEditor-container .menu-group div").removeClass("clearfix");
+	$(".wangEditor-container .wangEditor-txt").height(248);
 });
 </script>
