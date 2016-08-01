@@ -9,4 +9,15 @@ import com.xyan.blog.model.ArticleModel;
  */
 public class ArticleVO extends ArticleModel {
 	
+	private String typeName;
+
+	public String getTypeName() {
+		return typeName;
+	}
+
+	public void setTypeName(String typeName) {
+		this.typeName = typeName;
+	}
+	
+	
 }

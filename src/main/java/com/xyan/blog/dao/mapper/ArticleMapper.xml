@@ -47,11 +47,11 @@
 	</select>
 
 	<select id="countByExample" parameterType="com.xyan.blog.model.ArticleModel">
-		select count(1) FROM xy_article
+		select count(1) FROM xy_article 
 		<where>
 			<if test="id!=null">AND ID = #{id}</if>
-			<if test="title!=null">AND TITLE = #{title}</if>
-			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="title !=null and title !='' ">AND instr(TITLE ,#{title})>0</if>
+			<if test="content !=null and content !='' ">AND instr(CONTENT,#{content})>0</if>
 			<if test="userId!=null">AND USER_ID = #{userId}</if>
 			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
 			<if test="updateTime!=null">AND UPDATE_TIME = #{updateTime}</if>
@@ -107,12 +107,13 @@
 		FROM xy_article article left join xy_article_type  atype on article.TYPE_ID=atype.id
 		<where>
 			<if test="id!=null">AND ID = #{id}</if>
-			<if test="title!=null">AND TITLE = #{title}</if>
-			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="title !=null and title !='' ">AND instr(TITLE,#{title})>0</if>
+			<if test="content !=null and content !='' ">AND CONTENT = #{content}</if>
 			<if test="userId!=null">AND USER_ID = #{userId}</if>
 			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
 			<if test="updateTime!=null">AND UPDATE_TIME = #{updateTime}</if>
-			<if test="typeId!=null">AND TYPE_ID = #{typeId}</if>
+			<if test="typeId!=null">AND article.TYPE_ID = #{typeId}</if>
+			<if test="typeName !=null and typeName !=''">AND instr(atype.name,#{typeName})>0</if>
 			<if test="keyWord!=null">AND KEY_WORD = #{keyWord}</if>
 			<if test="produce1!=null">AND PRODUCE1 = #{produce1}</if>
 			<if test="readCount!=null">AND READ_COUNT = #{readCount}</if>

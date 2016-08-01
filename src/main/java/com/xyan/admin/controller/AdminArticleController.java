@@ -20,6 +20,7 @@ import com.xyan.blog.model.ArticleModel;
 import com.xyan.blog.model.ArticleTypeModel;
 import com.xyan.blog.service.ArticleService;
 import com.xyan.blog.service.ArticleTypeService;
+import com.xyan.blog.vo.ArticleVO;
 import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 import com.xyan.frame.feature.web.MediaTypes;
@@ -51,7 +52,7 @@ public class AdminArticleController {
 	}
 	
 	@RequestMapping(value="pageData",method=RequestMethod.POST)
-	public ModelAndView pageData(ArticleModel query,Page<HashMap<String, Object>> page){
+	public ModelAndView pageData(ArticleVO query,Page<HashMap<String, Object>> page){
 		logger.warn("/admin/article/pageData");
 		return new ModelAndView("/admin/article/articleData")
 			.addObject("page", articleService.selectByPage(query, page));

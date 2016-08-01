@@ -64,7 +64,7 @@ public interface GenericService<Model extends BaseModel, PK> {
     
     /**
      *@Auhor:wangming
-     *@Description:分页查询
+     *@Description:分页查询,默认查询1，10
      *@param model 查询对象
      *@param page 分页对象
      *@return 分页数据
