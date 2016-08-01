@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50621
 File Encoding         : 65001
 
-Date: 2016-07-28 20:29:41
+Date: 2016-08-01 22:28:56
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -39,11 +39,11 @@ CREATE TABLE `xy_article` (
 -- ----------------------------
 -- Records of xy_article
 -- ----------------------------
-INSERT INTO `xy_article` VALUES ('1', 'Web之路，经历了心酸之后', '<p>清理电脑里的时候，看到以前专业课的作业。看修改日期最早的一个压缩包还是06年的，7年的时间就这样过去了，这3年的学习成果就是这电脑里面的7个压缩包。</p>\r\n<p>“什么是母校？母校就是那个你一天骂他八遍却不许别人骂一遍的地方”当听到不少学弟学妹在抱怨学校差的时候，至今我也没后悔过，因为我经历了我认为最苦的那一段时期。</p><p>校园时代总是美好的，少男少女，纵情欢笑。<br></p><p><br></p>', '1', '2016-05-10 10:15:12', '2016-06-14 16:12:37', '1', 'web,心酸', '<p>清理电脑里的时候，看到以前专业课的作业。看修改日期最早的一个压缩包还是06年的，7年的时间就这样过去了，这3年的学习成果就是这电脑里面的7个压缩包。</p>', '123', '224', '<p>“什么是母校？母校就是那个你一天骂他八遍却不许别人骂一遍的地方”当听到不少学弟学妹在抱怨学校差的时候，至今我也没后悔过，因为我经历了我认为最苦的那一段时期。</p>', '/xyan/attach/viewPic?path=2016-06-14&name=a20969737_01000.jpg');
-INSERT INTO `xy_article` VALUES ('12', '实验成功！', '<p>呵呵哒<br></p><p><img src=\"/xyan/attach/viewPic?path=2016-06-13&name=2509619467090254.jpg\" alt=\"mm1\" style=\"max-width:100%;\"></p><p><br></p>', '1', '2016-06-07 15:55:15', '2016-06-14 09:56:49', '9998', '', '起风了，早上开始热闹了。', '1', '1', '人们忙着欢笑', '/xyan/attach/viewPic?path=2016-06-14&name=1-140GF13350451.jpg');
-INSERT INTO `xy_article` VALUES ('13', '生活总是会不经意的撩起往事', '', '1', '2016-06-07 15:57:15', '2016-06-14 09:57:15', '9998', '', '往事如雨', '1', '1', '浮沉', '/xyan/attach/viewPic?path=2016-06-14&name=298-5-1366x768.jpg');
-INSERT INTO `xy_article` VALUES ('14', '正则表达式集合', '<strong>一、校验数字的表达式</strong><p><img style=\"max-width:100%;\" src=\"http://p1.pstatp.com/large/7fc000340e0f4fe0b57\"></p><strong>二、校验字符的表达式<br><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7fc000340ff43420eeb\"><br></strong><strong>三、特殊需求表达式</strong><p><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7fc000341457d2f3cce\"></p><p><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7f900033f7b8e976067\"></p><p><br></p>', '1', '2016-06-17 14:30:42', '2016-06-17 14:31:55', null, '', '', '1', '1', '', '/xyan/attach/viewPic?path=2016-06-17&name=mm1.jpg');
-INSERT INTO `xy_article` VALUES ('15', '离职的感言', '<p>什么也么有啊</p>', '1', '2016-07-27 21:53:41', '2016-07-27 21:53:41', '9999', '无聊啊,你好说', '这是一个快速流转的社会', '1', '1', '', '/xyan/attach/viewPic?path=2016-07-27&name=8c1271fc5a8d12814f6aa2560539969d737394a1fb27-CBEKph_fw658.jpg');
+INSERT INTO `xy_article` VALUES ('1', 'Web之路，经历了心酸之后', '<p>清理电脑里的时候，看到以前专业课的作业。看修改日期最早的一个压缩包还是06年的，7年的时间就这样过去了，这3年的学习成果就是这电脑里面的7个压缩包。</p>\r\n<p>“什么是母校？母校就是那个你一天骂他八遍却不许别人骂一遍的地方”当听到不少学弟学妹在抱怨学校差的时候，至今我也没后悔过，因为我经历了我认为最苦的那一段时期。</p><p>校园时代总是美好的，少男少女，纵情欢笑。<br></p><p><br></p>', '1', '2016-05-10 10:15:12', '2016-08-01 21:46:47', '99999', 'web,心酸', '<p>清理电脑里的时候，看到以前专业课的作业。看修改日期最早的一个压缩包还是06年的，7年的时间就这样过去了，这3年的学习成果就是这电脑里面的7个压缩包。</p>', '123', '224', '<p>“什么是母校？母校就是那个你一天骂他八遍却不许别人骂一遍的地方”当听到不少学弟学妹在抱怨学校差的时候，至今我也没后悔过，因为我经历了我认为最苦的那一段时期。</p>', '/xyan/attach/viewPic?path=2016-08-01&name=02.jpg');
+INSERT INTO `xy_article` VALUES ('12', '实验成功！', '<p>呵呵哒<br></p><p><img src=\"/xyan/attach/viewPic?path=2016-06-13&name=2509619467090254.jpg\" alt=\"mm1\" style=\"max-width:100%;\"></p><p><br></p>', '1', '2016-06-07 15:55:15', '2016-08-01 21:47:32', '99997', '', '起风了，早上开始热闹了。', '1', '1', '人们忙着欢笑', '/xyan/attach/viewPic?path=2016-08-01&name=03.jpg');
+INSERT INTO `xy_article` VALUES ('13', '生活总是会不经意的撩起往事', '<p>浮生往事，一起。<br></p>', '1', '2016-06-07 15:57:15', '2016-08-01 21:48:14', '99999', '', '往事如雨', '1', '1', '浮沉', '/xyan/attach/viewPic?path=2016-08-01&name=39efac717c2c9e9f23a5f01e8979e5597df10ffabe95-FM3nxU_fw658.jpg');
+INSERT INTO `xy_article` VALUES ('14', '正则表达式集合', '<strong>一、校验数字的表达式</strong><p><img style=\"max-width:100%;\" src=\"http://p1.pstatp.com/large/7fc000340e0f4fe0b57\"></p><strong>二、校验字符的表达式<br><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7fc000340ff43420eeb\"><br></strong><strong>三、特殊需求表达式</strong><p><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7fc000341457d2f3cce\"></p><p><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7f900033f7b8e976067\"></p><p><br></p>', '1', '2016-06-17 14:30:42', '2016-06-17 14:31:55', '99997', '', '', '1', '1', '', '/xyan/attach/viewPic?path=2016-06-17&name=mm1.jpg');
+INSERT INTO `xy_article` VALUES ('15', '离职的感言', '<p>什么也么有啊</p>', '1', '2016-07-27 21:53:41', '2016-07-27 21:53:41', '99999', '无聊啊,你好说', '这是一个快速流转的社会', '1', '1', '', '/xyan/attach/viewPic?path=2016-07-27&name=8c1271fc5a8d12814f6aa2560539969d737394a1fb27-CBEKph_fw658.jpg');
 
 -- ----------------------------
 -- Table structure for xy_article_type
@@ -60,8 +60,10 @@ CREATE TABLE `xy_article_type` (
 -- Records of xy_article_type
 -- ----------------------------
 INSERT INTO `xy_article_type` VALUES ('2', 'n', '9998');
-INSERT INTO `xy_article_type` VALUES ('9998', '技术博客', '0');
-INSERT INTO `xy_article_type` VALUES ('9999', '心得笔记', '0');
+INSERT INTO `xy_article_type` VALUES ('3', '前端博客', '99998');
+INSERT INTO `xy_article_type` VALUES ('99997', '闲言碎语', '0');
+INSERT INTO `xy_article_type` VALUES ('99998', '技术探讨', '0');
+INSERT INTO `xy_article_type` VALUES ('99999', '慢生活', '0');
 
 -- ----------------------------
 -- Table structure for xy_code
@@ -77,7 +79,7 @@ CREATE TABLE `xy_code` (
 -- Records of xy_code
 -- ----------------------------
 INSERT INTO `xy_code` VALUES ('ArticleModel', '15');
-INSERT INTO `xy_code` VALUES ('ArticleTypeModel', '2');
+INSERT INTO `xy_code` VALUES ('ArticleTypeModel', '3');
 INSERT INTO `xy_code` VALUES ('LogModel', '14');
 INSERT INTO `xy_code` VALUES ('PageModel', '425');
 INSERT INTO `xy_code` VALUES ('ResourceModel', '45');
@@ -350,9 +352,9 @@ CREATE TABLE `xy_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户表';
 
 -- ----------------------------
--- Records of xy_user  密码：123456
+-- Records of xy_user
 -- ----------------------------
-INSERT INTO `xy_user` VALUES ('1', '王明', '', '123456', '1255321142@qq.com', '18136442251', 'admin', '0', '2016-07-27 23:13:57');
+INSERT INTO `xy_user` VALUES ('1', '王明', '5F1D7A84DB00D2FCE00B31A7FC73224F', '123456', '1255321142@qq.com', '18136442251', 'admin', '0', '2016-07-30 22:16:18');
 
 -- ----------------------------
 -- Table structure for xy_user_role
