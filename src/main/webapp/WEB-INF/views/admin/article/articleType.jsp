@@ -16,7 +16,7 @@ var setting = {
 	async: {
 		enable: true,
 		url:"${path}/admin/article/getChildren",
-		autoParam:["pId"],
+		autoParam:["id"],
 		type:"get"
 		//dataFilter: filter
 	},

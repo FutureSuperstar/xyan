@@ -18,7 +18,7 @@
         <description>这个标签的作用是用来根据键输出国际化信息</description>
         <name>message</name>
         <!-- 标签对应的处理器类-->
-        <tag-class>com.xyan.core.feature.web.jsp.ResourceTag</tag-class>
+        <tag-class>com.xyan.frame.feature.web.jsp.ResourceTag</tag-class>
         <body-content>empty</body-content> 
         <attribute>
         	<name>key</name>

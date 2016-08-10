@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="sitemesh"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 <!doctype html>
 <html>
 <head>
@@ -37,9 +37,9 @@
 			<p>博客分类</p>
 		</h2>
 		<ul class="news">
-			<li><a href="${path}">慢生活(3)</a></li>
-			<li><a href="${path}">程序人生(25)</a></li>
-			<li><a href="${path}">经典美文(39)</a></li>
+			<c:forEach items="${articleTypeList}" var="item">
+				<li><a href="${path}/blog/article?typeId=${item.id}">${item.name}</a></li>
+			</c:forEach>
 		</ul>
 		<h2>
 			<p>近期文章</p>

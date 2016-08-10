@@ -20,6 +20,7 @@ import org.springframework.web.multipart.MultipartRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.xyan.blog.service.ArticleService;
+import com.xyan.common.cache.Cache;
 import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 import com.xyan.frame.security.web.controller.UserController;
@@ -41,7 +42,8 @@ public class IndexController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public ModelAndView index(){
-		return new ModelAndView("index").addObject("page", articleService.selectByPage(null, new Page<HashMap<String,Object>>()));
+		return new ModelAndView("index")
+				.addObject("page", articleService.selectByPage(null, new Page<HashMap<String,Object>>()));
 	}
 	
 	@RequestMapping(value="about",method=RequestMethod.GET)

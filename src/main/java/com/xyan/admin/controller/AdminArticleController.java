@@ -21,6 +21,7 @@ import com.xyan.blog.model.ArticleTypeModel;
 import com.xyan.blog.service.ArticleService;
 import com.xyan.blog.service.ArticleTypeService;
 import com.xyan.blog.vo.ArticleVO;
+import com.xyan.common.cache.Cache;
 import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 import com.xyan.frame.feature.web.MediaTypes;
@@ -114,7 +115,8 @@ public class AdminArticleController {
 	 */
 	@RequestMapping(value="getChildren",method=RequestMethod.GET,produces=MediaTypes.JSON_UTF_8)
 	@ResponseBody
-	public List<ArticleTypeModel> getChildren(Long pId){
+	public List<ArticleTypeModel> getChildren(Long id){
+		Long pId=id;
 		if(pId==null){
 			pId=0L;
 		}
@@ -145,6 +147,7 @@ public class AdminArticleController {
 		}else{
 			articleTypeService.update(model);
 		}
+		Cache.initArticleTypeCache();
 		return new ResponseModel(true);
 	}
 	

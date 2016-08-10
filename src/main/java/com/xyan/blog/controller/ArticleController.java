@@ -37,10 +37,10 @@ public class ArticleController {
 	
 	/**列表查询*/
 	@RequestMapping(method = RequestMethod.GET)
-	public ModelAndView list(){
+	public ModelAndView list(Long typeId){
 		//技术类博客，查询ID不是慢生活和闲言碎语的
 		ArticleModel query=new ArticleVO();
-		query.setTypeId(ArticleType.TYPE_TALK.getCode());
+		query.setTypeId(typeId==null?ArticleType.TYPE_TALK.getCode():typeId);
 		return new ModelAndView("blog/article/articleList")
 				.addObject("page", articleService.selectByPage(query, null));
 	}
