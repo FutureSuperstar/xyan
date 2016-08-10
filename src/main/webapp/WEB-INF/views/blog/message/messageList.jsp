@@ -4,8 +4,14 @@
 <div class="content">
 	<div class="mar15">
 		<div class="col-xs-12">
-			<button>发表</button>
-			<textarea name="content" id="content" class="sol-xs-12 mar-left-5" style="height:400px; max-height:600px;">${model.content}</textarea>		
+			<div class="col-xs-12">
+				<button>发表</button>
+				<input type="checkbox"/>
+				<small style="font-size: 10px;color:#555;">勾选表示紧急留言，博主就会收到紧急邮件啦</small>
+				<div class="col-xs-12">
+					<textarea name="content" id="content" class="sol-xs-12 mar-left-5" style="height:400px; max-height:600px;">${model.content}</textarea>		
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="mar15">
