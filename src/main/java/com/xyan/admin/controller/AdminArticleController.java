@@ -147,7 +147,7 @@ public class AdminArticleController {
 		}else{
 			articleTypeService.update(model);
 		}
-		Cache.initArticleTypeCache();
+		//Cache.initArticleTypeCache();
 		return new ResponseModel(true);
 	}
 	

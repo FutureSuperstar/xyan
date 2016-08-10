@@ -22,9 +22,7 @@ public class SpringListener implements ApplicationListener<ContextRefreshedEvent
 		System.out.println("spring启动成功。。。");
 		ApplicationContext applicationContext=event.getApplicationContext();
 		if(applicationContext instanceof WebApplicationContext){
-			WebApplicationContext webApplicationContext=(WebApplicationContext)applicationContext;
 			System.out.println("当前是web环境");
-			webApplicationContext.getServletContext().setAttribute("articleTypeList",Cache.articleTypeCache);
 		}
 	}
 	
