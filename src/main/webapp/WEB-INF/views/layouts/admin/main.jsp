@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib prefix="sitemesh" uri="http://www.opensymphony.com/sitemesh/decorator"%>
+<%@ taglib prefix="d" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -179,45 +180,24 @@
 				<li class="green">
 					<a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
 						<i class="icon-envelope icon-animated-vertical"></i> 
-						<span class="badge badge-success">5</span>
+						<span class="badge badge-success" id="messCount1">5</span>
 					</a>
 					<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
-						<li class="dropdown-header"><i class="icon-envelope-alt"></i> 5条消息</li>
-						<li>
-							<a href="#"> 
-								<img src="${path}/static/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" /> 
-								<span class="msg-body">
-									<span class="msg-title"> 
-										<span class="blue">Alex:</span> 不知道写啥 ...
-									</span> 
-									<span class="msg-time"><i class="icon-time"></i><span>1分钟以前</span></span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#"> 
-								<img src="${path}/static/assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" /> 
-								<span class="msg-body"> 
-									<span class="msg-title"> 
-										<span class="blue">Susan:</span> 不知道翻译...
-									</span> 
-									<span class="msg-time"><i class="icon-time"></i> <span>20分钟以前</span>
+						<li class="dropdown-header"><i class="icon-envelope-alt"></i><span id="messCount2">5</span>条消息</li>
+						<d:forEach var="item" items="${messageList}">
+							<li>
+								<a href="#"> 
+									<img src="${path}/static/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" /> 
+									<span class="msg-body">
+										<span class="msg-title"> 
+											<span class="blue">Alex:</span> 不知道写啥 ...
+										</span> 
+										<span class="msg-time"><i class="icon-time"></i><span>1分钟以前</span></span>
 									</span>
-								</span>
-							</a>
-						</li>
-						<li><a href="#"> <img src="${path}/static/assets/avatars/avatar4.png"
-								class="msg-photo" alt="Bob's Avatar" /> <span class="msg-body">
-									<span class="msg-title"> <span class="blue">Bob:</span>
-										到底是不是英文 ...
-								</span> <span class="msg-time"> <i class="icon-time"></i> <span>下午3:15</span>
-								</span>
-							</span>
-						</a></li>
-
-						<li><a href="inbox.html"> 查看所有消息 <i
-								class="icon-arrow-right"></i>
-						</a></li>
+								</a>
+							</li>
+						</d:forEach>
+						<li><a href="inbox.html"> 查看所有消息 <i class="icon-arrow-right"></i></a></li>
 					</ul>
 				</li>
 				<li class="light-blue">
