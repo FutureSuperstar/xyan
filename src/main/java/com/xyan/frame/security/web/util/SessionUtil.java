@@ -3,6 +3,9 @@ package com.xyan.frame.security.web.util;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.xyan.frame.feature.web.constant.Constant;
+import com.xyan.frame.security.model.UserModel;
+
 
 /**
  * @Description  Session工具类
@@ -13,10 +16,21 @@ public class SessionUtil {
 	
 	private static ThreadLocal<HttpServletRequest> local=new ThreadLocal<>();
 	
+	/**
+	 * @Author:wangming
+	 * @Description：设置request
+	 * @param request
+	 * @since 2016年8月11日下午9:22:05
+	 */
 	public static void setRequest(HttpServletRequest request){
 		local.set(request);
 	}
 	
+	/**
+	 * @Author:wangming
+	 * @Description：移除request
+	 * @since 2016年8月11日下午9:21:48
+	 */
 	public static void removeRequest(){
 		local.remove();;
 	}
@@ -44,6 +58,15 @@ public class SessionUtil {
 	}
 	
 	
+	/**
+	 * @Author:wangming
+	 * @Description:获取当前登录人
+	 * @return
+	 * @since 2016年8月11日下午9:21:25
+	 */
+	public static UserModel getLoginUser(){
+		return  (UserModel) local.get().getSession().getAttribute(Constant.lOGIN_USER);
+	}
 	
 	
 }

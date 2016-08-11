@@ -31,6 +31,7 @@ import com.xyan.common.enums.LogType;
 import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.log.model.LogModel;
 import com.xyan.frame.feature.log.service.LogService;
+import com.xyan.frame.feature.web.constant.Constant;
 import com.xyan.frame.util.PropertiesUtil;
 
 /**
@@ -92,7 +93,7 @@ public class AnnotationHandlerMethodExceptionResolver extends ExceptionHandlerEx
                 // 如果没有ExceptionHandler注解那么returnValue就为空
                 if (returnValue == null) {
                     ResponseModel respn =ResponseModel.from(exception);
-                    Object user=request.getSession().getAttribute("LOGIN_USER");
+                    Object user=request.getSession().getAttribute(Constant.lOGIN_USER);
                     respn.setLogin(user!=null);
                     handleResponseError(respn, request, response);
                     return new ModelAndView();

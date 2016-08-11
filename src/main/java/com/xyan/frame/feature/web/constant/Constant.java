@@ -7,10 +7,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.xyan.frame.feature.web.MultiViewResover;
+import com.xyan.frame.util.PropertiesUtil;
 
 public class Constant implements ServletContextListener{
 
 	private final Logger log = LoggerFactory.getLogger(Constant.class);  
+	
+	public static String lOGIN_USER;
+	
+	static{
+		lOGIN_USER=PropertiesUtil.getProperties("LOGIN_USER");
+	}
 	
 	@Override
 	public void contextDestroyed(ServletContextEvent arg0) {

@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.xyan.frame.feature.web.constant.Constant;
 import com.xyan.frame.security.model.UserModel;
 import com.xyan.frame.util.PropertiesUtil;
 
@@ -37,7 +38,7 @@ public class SecureFilter implements Filter {
 		/*
 		 * 1、拿到请求中的user
 		 */
-		String LOGIN_KEY=PropertiesUtil.getProperties("LOGIN_USER");
+		String LOGIN_KEY=Constant.lOGIN_USER;
 		HttpServletRequest req=(HttpServletRequest) request;
 		UserModel user=(UserModel) req.getSession().getAttribute(LOGIN_KEY);
 		

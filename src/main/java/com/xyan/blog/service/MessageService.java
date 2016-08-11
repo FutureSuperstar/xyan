@@ -1,6 +1,9 @@
 package com.xyan.blog.service;
 
+import java.util.List;
+
 import com.xyan.blog.model.MessageModel;
+import com.xyan.blog.vo.MessageVO;
 import com.xyan.frame.base.service.GenericService;
 
 /**
@@ -10,5 +13,11 @@ import com.xyan.frame.base.service.GenericService;
  */
 public interface MessageService extends GenericService<MessageModel, Long>{
 	
-	
+	/**
+	 * @Author:wangming
+	 * @Description：查询显示消息
+	 * @return
+	 * @since 2016年8月11日下午10:03:26
+	 */
+	public List<MessageVO> selectShowMess();
 }

@@ -13,10 +13,12 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.xyan.blog.model.MessageModel;
 import com.xyan.blog.service.MessageService;
+import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 
 
@@ -57,6 +59,12 @@ public class MessageController {
 				.addObject("page", page);
 	}
 	
+	@RequestMapping(method=RequestMethod.POST,value="saveMess")
+	@ResponseBody
+	public ResponseModel saveMess(MessageModel message){
+		messageService.insert(message);
+		return new ResponseModel(true);
+	}
 
 	
 }

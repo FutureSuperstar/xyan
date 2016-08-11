@@ -14,6 +14,7 @@
 		, LOGIN_NAME as "loginName"
 		,LOCK_DATE as "lockDate"
 		,LOCK_TIME as "lockTime"
+		,HEAD
 	</sql>
 
 	<select id="selectByPrimaryKey" resultType="com.xyan.frame.security.model.UserModel"
@@ -63,17 +64,19 @@
 			<if test="loginName != null">LOGIN_NAME,</if>
 			<if test="lockTime !=null">LOCK_TIME,</if>
 			<if test="lockDate !=null">LOCK_DATE,</if>
+			<if test="head !=null and head !='' ">HEAD,</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides=",">
 			<if test="id != null">#{id},</if>
-			<if test="userName != null">#{userName},</if>
-			<if test="password != null">#{password},</if>
-			<if test="salt != null">#{salt},</if>
-			<if test="email != null">#{email},</if>
-			<if test="mobile != null">#{mobile},</if>
-			<if test="loginName != null">#{loginName},</if>
+			<if test="userName != null and userName !='' ">#{userName},</if>
+			<if test="password != null and password !='' ">#{password},</if>
+			<if test="salt != null and salt !='' ">#{salt},</if>
+			<if test="email != null and email !='' ">#{email},</if>
+			<if test="mobile != null and mobile !='' ">#{mobile},</if>
+			<if test="loginName != null and loginName !='' ">#{loginName},</if>
 			<if test="lockTime !=null">#{lockTime},</if>
 			<if test="lockDate !=null">#{lockDate},</if>
+			<if test="head !=null and head !='' ">#{head},</if>
 		</trim>
 	</insert>
 
@@ -89,6 +92,7 @@
 			<if test="loginName != null">LOGIN_NAME =#{loginName},</if>
 			<if test="lockTime !=null">LOCK_TIME=#{lockTime},</if>
 			<if test="lockDate !=null">LOCK_DATE=#{lockDate},</if>
+			<if test="head !=null">HEAD=#{head},</if>
 		</set>
 		where ID=#{id}
 	</update>

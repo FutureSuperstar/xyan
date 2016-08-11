@@ -142,18 +142,20 @@ public class ResponseModel{
 	public BaseModel getModelData() {
 		return modelData;
 	}
-	public void setModelData(BaseModel modelData) {
+	public ResponseModel setModelData(BaseModel modelData) {
 		this.modelData = modelData;
+		return this;
 	}
 	@SuppressWarnings("rawtypes")
 	public List getListData() {
 		return listData;
 	}
 	@SuppressWarnings("rawtypes")
-	public void setListData(List listData) {
+	public ResponseModel setListData(List listData) {
 		this.listData = listData;
+		return this;
 	}
-	
+
 	public static ResponseModel from(Exception e){
 		ResponseModel response=new ResponseModel();
 		response.setSuccess(false);

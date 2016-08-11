@@ -5,13 +5,14 @@
 <!--wangming：w18855525068@163.com -->
 <mapper namespace="com.xyan.blog.dao.MessageDao">
 
-
 	<sql id="mapSQL">
 		ID as "id"
 		, SOURCE as "source"
 		, DEST as "dest"
 		, TITLE as "title"
 		, CONTENT as "content"
+		, MERGE as "merge"
+		, READ as "read"
 		, CREATE_TIME as "createTime"
 	</sql>
 
@@ -21,6 +22,8 @@
 		, DEST as "dest"
 		, TITLE as "title"
 		, CONTENT as "content"
+		, MERGE as "merge"
+		, READ as "read"
 		, CREATE_TIME as "createTime"
 	</sql>
 
@@ -33,6 +36,11 @@
 		ID=#{id}
 	</select>
 
+	<select id="selectShowMess" resultType="com.xyan.blog.vo.MessageVO">
+		select sou.ID as "id",sou.CONTENT as "content", sou.CREATE_TIME as "createTime",u.user_name as "sourName",u.head as "sourceHead"
+		from xy_message sou left join xy_user u on sou.source=u.id
+	</select>
+	
 	<select id="selectModelByExample" resultType="com.xyan.blog.model.MessageModel"
 		parameterType="com.xyan.blog.model.MessageModel">
 		SELECT
@@ -43,7 +51,9 @@
 			<if test="source!=null">AND SOURCE = #{source}</if>
 			<if test="dest!=null">AND DEST = #{dest}</if>
 			<if test="title!=null">AND TITLE = #{title}</if>
-			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="content !=null">AND CONTENT = #{content}</if>
+			<if test="merge !=null and merge !='' ">AND MERGE = #{merge}</if>
+			<if test="read !=null and read !='' ">AND READ = #{read}</if>
 			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
 		</where>
 	</select>
@@ -55,10 +65,12 @@
 		FROM xy_message
 		<where>
 			<if test="id!=null">AND ID = #{id}</if>
-			<if test="source!=null">AND SOURCE = #{source}</if>
-			<if test="dest!=null">AND DEST = #{dest}</if>
-			<if test="title!=null">AND TITLE = #{title}</if>
-			<if test="content!=null">AND CONTENT = #{content}</if>
+			<if test="source !=null">AND SOURCE = #{source}</if>
+			<if test="dest !=null">AND DEST = #{dest}</if>
+			<if test="title !=null">AND TITLE = #{title}</if>
+			<if test="content !=null">AND CONTENT = #{content}</if>
+			<if test="merge !=null and merge !='' ">AND MERGE = #{merge}</if>
+			<if test="read !=null and read !='' ">AND READ = #{read}</if>
 			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
 		</where>
 	</select>
@@ -73,12 +85,13 @@
 	<insert id="insert" parameterType="com.xyan.blog.model.MessageModel">
 		INSERT INTO xy_message
 		<trim prefix="(" suffix=")" suffixOverrides=",">
-
 			<if test="id != null">ID,</if>
 			<if test="source != null">SOURCE,</if>
 			<if test="dest != null">DEST,</if>
 			<if test="title != null">TITLE,</if>
 			<if test="content != null">CONTENT,</if>
+			<if test="merge !=null and merge !='' ">MERGE,</if>
+			<if test="read !=null and read !='' ">READ,</if>
 			<if test="createTime != null">CREATE_TIME,</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -87,6 +100,8 @@
 			<if test="dest != null">#{dest},</if>
 			<if test="title != null">#{title},</if>
 			<if test="content != null">#{content},</if>
+			<if test="merge !=null and merge !='' ">#{merge}</if>
+			<if test="read !=null and read !='' ">#{read}</if>
 			<if test="createTime != null">#{createTime},</if>
 		</trim>
 	</insert>
@@ -99,6 +114,8 @@
 			<if test="dest != null">DEST = #{dest},</if>
 			<if test="title != null">TITLE = #{title},</if>
 			<if test="content != null">CONTENT = #{content},</if>
+			<if test="merge !=null and merge !='' ">MERGE = #{merge}</if>
+			<if test="read !=null and read !='' ">READ = #{read}</if>
 			<if test="createTime != null">CREATE_TIME = #{createTime},</if>
 		</set>
 		WHERE ID=#{id}
@@ -125,6 +142,8 @@
 				<if test="item.dest != null">DEST,</if>
 				<if test="item.title != null">TITLE,</if>
 				<if test="item.content != null">CONTENT,</if>
+				<if test="item.merge !=null and item.merge !='' ">MERGE,</if>
+				<if test="item.read !=null and item.read !='' ">READ,</if>
 				<if test="item.createTime != null">CREATE_TIME,</if>
 			</trim>
 			<trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -133,6 +152,8 @@
 				<if test="item.dest != null">#{item.dest},</if>
 				<if test="item.title != null">#{item.title},</if>
 				<if test="item.content != null">#{item.content},</if>
+				<if test="item.merge !=null and item.merge !='' ">#{item.merge}</if>
+				<if test="item.read !=null and item.read !='' ">#{item.read}</if>
 				<if test="item.createTime != null">#{item.createTime},</if>
 			</trim>
 		</foreach>
@@ -148,8 +169,9 @@
 				<if test="item.dest != null">DEST = #{item.dest},</if>
 				<if test="item.title != null">TITLE = #{item.title},</if>
 				<if test="item.content != null">CONTENT = #{item.content},</if>
-				<if test="item.createTime != null">CREATE_TIME =
-					#{item.createTime},</if>
+				<if test="item.merge !=null and item.merge !='' ">MERGE = #{item.merge},</if>
+				<if test="item.read !=null and item.read !='' ">MERGE = #{item.read},</if>
+				<if test="item.createTime != null">CREATE_TIME =#{item.createTime},</if>
 			</set>
 			WHERE ID=#{item.id}
 		</foreach>

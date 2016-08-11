@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.xyan.frame.base.dao.GenericDao;
 import com.xyan.frame.base.service.impl.GenericServiceImpl;
 import com.xyan.frame.base.web.ResponseModel;
+import com.xyan.frame.feature.web.constant.Constant;
 import com.xyan.frame.lang.date.DateUtil;
 import com.xyan.frame.security.SecureUtil;
 import com.xyan.frame.security.dao.UserDao;
@@ -62,7 +63,7 @@ public class UserServiceImpl extends GenericServiceImpl<UserModel, Long> impleme
 			userDao.update(userModel);
 			//加入session，做登陆相关的事情
 			userModel.setPassword("");
-			SessionUtil.getSession().setAttribute("LOGIN_USER", userModel);
+			SessionUtil.getSession().setAttribute(Constant.lOGIN_USER, userModel);
 			return new ResponseModel(true,true);
 		}else{
 			//更新锁

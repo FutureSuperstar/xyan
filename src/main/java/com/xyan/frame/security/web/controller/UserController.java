@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.xyan.frame.base.web.ResponseModel;
+import com.xyan.frame.feature.web.constant.Constant;
 import com.xyan.frame.security.model.UserModel;
 import com.xyan.frame.security.service.UserService;
 import com.xyan.frame.security.web.util.SessionUtil;
@@ -68,7 +69,7 @@ public class UserController {
 
 	@RequestMapping(value = "logout", method = RequestMethod.GET)
 	public String logout(HttpServletRequest request) {
-		request.getSession().removeAttribute(PropertiesUtil.getProperties("LOGIN_USER"));
+		request.getSession().removeAttribute(Constant.lOGIN_USER);
 		return "index";
 	}
 

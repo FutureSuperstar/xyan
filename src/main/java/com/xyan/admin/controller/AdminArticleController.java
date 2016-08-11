@@ -21,7 +21,6 @@ import com.xyan.blog.model.ArticleTypeModel;
 import com.xyan.blog.service.ArticleService;
 import com.xyan.blog.service.ArticleTypeService;
 import com.xyan.blog.vo.ArticleVO;
-import com.xyan.common.cache.Cache;
 import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 import com.xyan.frame.feature.web.MediaTypes;

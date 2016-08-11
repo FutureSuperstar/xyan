@@ -19,6 +19,7 @@ public class UserModel extends BaseModel {
 	private String mobile;//手机号
 	private Integer lockTime;//锁的次数，三次即锁住半小时
 	private Date lockDate;//锁住日期
+	private String head;//头像地址
 	
 	
 	public UserModel() {
@@ -71,5 +72,11 @@ public class UserModel extends BaseModel {
 	}
 	public void setLockDate(Date lockDate) {
 		this.lockDate = lockDate;
+	}
+	public String getHead() {
+		return head;
+	}
+	public void setHead(String head) {
+		this.head = head;
 	}
 }
