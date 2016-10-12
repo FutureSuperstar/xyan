@@ -15,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.xyan.frame.feature.web.constant.Constant;
 import com.xyan.frame.security.model.UserModel;
-import com.xyan.frame.util.PropertiesUtil;
 
 /**
  * @author wangming

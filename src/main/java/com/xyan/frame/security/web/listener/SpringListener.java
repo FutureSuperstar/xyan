@@ -1,5 +1,6 @@
 package com.xyan.frame.security.web.listener;
 
+import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Lazy;
@@ -7,22 +8,21 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.xyan.common.cache.Cache;
-
 @Component
 @Lazy(value=false)
 public class SpringListener implements ApplicationListener<ContextRefreshedEvent>{
+	private static Logger logger=Logger.getLogger(SpringListener.class);
 	
 	public SpringListener() {
-		System.out.println("spring创建对象");
+		logger.info("spring创建对象");
 	}
 
 	@Override
 	public void onApplicationEvent(ContextRefreshedEvent event) {
-		System.out.println("spring启动成功。。。");
+		logger.info("spring启动成功。。。");
 		ApplicationContext applicationContext=event.getApplicationContext();
 		if(applicationContext instanceof WebApplicationContext){
-			System.out.println("当前是web环境");
+			logger.info("当前是web环境");
 		}
 	}
 	
