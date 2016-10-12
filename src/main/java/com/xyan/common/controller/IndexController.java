@@ -20,7 +20,6 @@ import org.springframework.web.multipart.MultipartRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.xyan.blog.service.ArticleService;
-import com.xyan.common.cache.Cache;
 import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 import com.xyan.frame.security.web.controller.UserController;
