@@ -5,7 +5,7 @@ import com.xyan.frame.base.model.BaseModel;
 /**
  * @Description: 实体类 xy_article_type
  * @Author：wangming
- * @email：w18855525068@163.com
+ * @email：18136442251@163.com
  * @Date:2016-06-07 14:11:45
  */
 public class ArticleTypeModel extends BaseModel {

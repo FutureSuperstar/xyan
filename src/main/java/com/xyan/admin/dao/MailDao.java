@@ -7,7 +7,7 @@ import com.xyan.frame.feature.mybatis.annotation.MyBatisRepository;
 /**
  * @description  邮件--dao层接口
  * @author wangming
- * @email：w18855525068@163.com
+ * @email：18136442251@163.com
  * @Date:2016-06-14 11:02:12
  */
 @MyBatisRepository

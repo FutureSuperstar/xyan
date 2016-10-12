@@ -10,7 +10,7 @@ import com.xyan.frame.base.model.BaseModel;
  *@Description: 消息  实体类 
  *				xy_message
  *@Author：wangming
- *@email：w18855525068@163.com
+ *@email：18136442251@163.com
  *@Date:2016-05-30 15:25:02
  */
 public class MessageModel extends BaseModel{

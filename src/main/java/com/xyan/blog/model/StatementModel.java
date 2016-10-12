@@ -5,7 +5,7 @@ import com.xyan.frame.base.model.BaseModel;
 /**
  * @Description: 闲言碎语 实体类 xy_statement
  * @Author：wangming
- * @email：w18855525068@163.com
+ * @email：18136442251@163.com
  * @Date:2016-06-16 15:07:58
  */
 public class StatementModel extends BaseModel {

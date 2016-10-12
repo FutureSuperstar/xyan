@@ -14,7 +14,7 @@ import com.xyan.frame.util.MailUtil;
 /**
  *@Description：邮件 -- Servcie实现类
  *@Author：wangming
- *@email：w18855525068@163.com
+ *@email：18136442251@163.com
  *@Date:2016-06-14 11:02:12
  */
 @Service

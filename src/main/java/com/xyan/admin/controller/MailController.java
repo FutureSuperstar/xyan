@@ -14,7 +14,7 @@ import com.xyan.frame.base.web.ResponseModel;
 /**
  *@description  邮件--控制器
  *@Author：wangming
- *@email：w18855525068@163.com
+ *@email：18136442251@163.com
  *@Date:2016-06-14 11:02:12
  */
 @Controller
