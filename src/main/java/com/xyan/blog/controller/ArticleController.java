@@ -1,15 +1,8 @@
 package com.xyan.blog.controller;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -39,6 +32,7 @@ public class ArticleController {
 	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView list(Long typeId){
 		//技术类博客，查询ID不是慢生活和闲言碎语的
+		logger.info("闲言碎语");
 		ArticleModel query=new ArticleVO();
 		query.setTypeId(typeId==null?ArticleType.TYPE_TALK.getCode():typeId);
 		return new ModelAndView("blog/article/articleList")

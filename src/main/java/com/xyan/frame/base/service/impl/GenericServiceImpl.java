@@ -3,12 +3,9 @@ package com.xyan.frame.base.service.impl;
 import java.util.HashMap;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.xyan.frame.base.dao.GenericDao;
 import com.xyan.frame.base.model.BaseModel;
 import com.xyan.frame.base.service.GenericService;
-import com.xyan.frame.feature.log.service.LogService;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 import com.xyan.frame.feature.mybatis.intercept.PageHelper;
 import com.xyan.frame.feature.primary.service.impl.CodeServiceImpl;
