@@ -1,4 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" import="java.util.List"%>
+<%@ page import="com.xyan.blog.model.DictModel"%>
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="sitemesh"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 <!doctype html>
@@ -33,9 +34,9 @@
 			<p class="address">现居：上海市—浦东新区</p>
 			<p class="role">职业：网站设计、网站制作</p>
 		</div>
-		<h2>
+		<!-- <h2>
 			<p>博客分类</p>
-		</h2>
+		</h2> -->
 		<ul class="news">
 			<c:forEach items="${articleTypeList}" var="item">
 				<li><a href="${path}/blog/article?typeId=${item.id}">${item.name}</a></li>
@@ -44,7 +45,7 @@
 		<h2>
 			<p>近期文章</p>
 		</h2>
-		<ul class="news">
+		<ul class="news" id="lastAritcle">
 			<li><a href="${path}">女孩都有浪漫的小情怀</a></li>
 			<li><a href="${path}">也许下个路口就会遇见希望</a></li>
 			<li><a href="${path}">6月毕业季，祝福送给你</a></li>
@@ -55,10 +56,10 @@
 		<h2>
 			<p>文章归档</p>
 		</h2>
-		<ul class="news">
-			<li><a href="${path}">2008 年三月</a></li>
-			<li><a href="${path}">2008 年四月</a></li>
-			<li><a href="${path}">2008 年六月</a></li>
+		<ul class="news" id="gdUL">
+			<c:forEach items="${dictList}" var="item">
+				<li><a href="${path}/blog/gdList?date=${item.name}">${item.remark}</a></li>
+			</c:forEach> 
 		</ul>
 		<h2>
 			<p>友情链接</p>
@@ -76,9 +77,7 @@ $(function () {
     $(window).scroll(function(){  
         if ($(window).scrollTop()>100){  
             $("#back-to-top").fadeIn(1500);  
-        }  
-        else  
-        {  
+        }else{  
             $("#back-to-top").fadeOut(1500);  
         }  
     });  
@@ -88,6 +87,37 @@ $(function () {
         $('body,html').animate({scrollTop:0},1000);  
         return false;  
     });  
+    
+    $.ajax({
+    	url:path+"/blog/getGdList",
+    	success:function(data){
+    		var html="";
+    		$(data).each(function(index,value){
+    			html+="<li><a href='"+path+"/blog/gdList?date="+value.name+"'>"+value.remark+"</a></li>";
+    		});
+    		$("#gdUL").empty().append(html);
+    	}
+    });
+    $.ajax({
+    	url:path+"/blog/getLastArticle",
+    	success:function(data){
+    		var html="";
+    		$(data.result).each(function(index,value){
+    			html+="<li><a href='"+path+"/blog/article/view/"+value.id+"'>"+value.title+"</a></li>";
+    		});
+    		$("#lastAritcle").empty().append(html);
+    	}
+    });
+    $.ajax({
+    	url:path+"/blog/getGdList",
+    	success:function(data){
+    		var html="";
+    		$(data).each(function(index,value){
+    			html+="<li><a href='"+path+"/blog/gdList?date="+value.name+"'>"+value.remark+"</a></li>";
+    		});
+    		$("#gdUL").empty().append(html);
+    	}
+    });
 });  
 </script>
 </body>

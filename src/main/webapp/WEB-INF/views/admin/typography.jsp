@@ -2,16 +2,31 @@
 <title>文字排版</title>
 <!-- page specific plugin styles -->
 <link rel="stylesheet" href="${path}/static/assets/css/prettify.css" />
-<div class="page-header">
-	<h1>
-		Typography <small> <i class="icon-double-angle-right"></i>
-			This is page-header (.page-header &gt; h1)
-		</small>
-	</h1>
-</div>
-<!-- /.page-header -->
+<div class="breadcrumbs" id="breadcrumbs">
+	<script type="text/javascript">
+		try {
+			ace.settings.check('breadcrumbs', 'fixed')
+		} catch (e) {
+		}
+	</script>
 
-<div class="row">
+	<ul class="breadcrumb">
+		<li><i class="icon-home home-icon"></i> <a href="${path}/admin/index">首页</a></li>
+		<li class="active">文字排版</li>
+	</ul>
+	<!-- .breadcrumb -->
+
+	<div class="nav-search" id="nav-search">
+		<form class="form-search">
+			<span class="input-icon"> 
+				<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" /> <i class="icon-search nav-search-icon"></i>
+			</span>
+		</form>
+	</div>
+	<!-- #nav-search -->
+</div>
+
+<div class="page-content">
 	<div class="col-xs-12">
 		<!-- PAGE CONTENT BEGINS -->
 
