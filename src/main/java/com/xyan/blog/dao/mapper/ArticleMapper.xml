@@ -88,7 +88,7 @@
 	</select>
 
 	<select id="selectByExample" resultType="java.util.HashMap"
-		parameterType="com.xyan.blog.model.ArticleModel">
+		parameterType="com.xyan.blog.vo.ArticleVO">
 		SELECT
 		article.ID as "id"
 		, article.TITLE as "title"
@@ -111,6 +111,8 @@
 			<if test="content !=null and content !='' ">AND CONTENT = #{content}</if>
 			<if test="userId!=null">AND USER_ID = #{userId}</if>
 			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
+			<if test="createTimeStart !=null">AND CREATE_TIME  &gt;= #{createTimeStart}</if>
+			<if test="createTimeEnd !=null">AND CREATE_TIME &lt;= #{createTimeEnd}</if>
 			<if test="updateTime!=null">AND UPDATE_TIME = #{updateTime}</if>
 			<if test="typeId!=null">AND article.TYPE_ID = #{typeId}</if>
 			<if test="typeName !=null and typeName !=''">AND instr(atype.name,#{typeName})>0</if>
@@ -121,6 +123,7 @@
 			<if test="produce2!=null">AND PRODUCE2 = #{produce2}</if>
 			<if test="imgUrl!=null">AND IMG_URL = #{imgUrl}</if>
 		</where>
+		order by article.CREATE_TIME desc
 	</select>
 
 

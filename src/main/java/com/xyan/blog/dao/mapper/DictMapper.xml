@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--wangming：1813642251@163.com -->
+<mapper namespace="com.xyan.blog.dao.DictDao">
+
+	<sql id="mapSQL">
+		ID as "id"
+		, NAME as "name"
+		, TYPE as "type"
+		, REMARK as "remark"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, NAME as "name"
+		, TYPE as "type"
+		, REMARK as "remark"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.blog.model.DictModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_dict
+		WHERE
+		ID=#{id}
+	</select>
+	
+	<select id="selectModelByExample" resultType="com.xyan.blog.model.DictModel"
+		parameterType="com.xyan.blog.model.DictModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_dict
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="name !=null">AND NAME = #{name}</if>
+			<if test="type !=null">AND TYPE = #{type}</if>
+			<if test="remark">AND REMARK = #{remark}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.blog.model.DictModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_dict
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="name !=null">AND NAME = #{name}</if>
+			<if test="type !=null">AND TYPE = #{type}</if>
+			<if test="remark">AND REMARK = #{remark}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_dict
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.blog.model.DictModel">
+		INSERT INTO xy_dict
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">ID,</if>
+			<if test="name != null">NAME,</if>
+			<if test="type != null">TYPE,</if>
+			<if test="remark != null">REMARK,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="name != null">#{name},</if>
+			<if test="type != null">#{type},</if>
+			<if test="remark != null">#{remark},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.blog.model.DictModel">
+		UPDATE xy_dict
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="name != null">NAME = #{name},</if>
+			<if test="type != null">TYPE = #{type},</if>
+			<if test="remark != null">REMARK = #{remark},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_dict t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_dict
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">ID,</if>
+				<if test="item.name != null">NAME,</if>
+				<if test="item.type != null">TYPE,</if>
+				<if test="item.remark != null">REMARK,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">#{item.id},</if>
+				<if test="item.name != null">#{item.name},</if>
+				<if test="item.type != null">#{item.type},</if>
+				<if test="item.remark != null">#{item.remark},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_dict
+			<set>
+				<if test="item.id != null">ID = #{item.id},</if>
+				<if test="item.name != null">SOURCE = #{item.name},</if>
+				<if test="item.type != null">DEST = #{item.type},</if>
+				<if test="item.remark != null">TITLE = #{item.remark},</if>
+			</set>
+			WHERE ID=#{item.id}
+		</foreach>
+	</update>
+
+
+</mapper>

@@ -1,5 +1,7 @@
 package com.xyan.blog.vo;
 
+import java.util.Date;
+
 import com.xyan.blog.model.ArticleModel;
 
 /**
@@ -10,6 +12,9 @@ import com.xyan.blog.model.ArticleModel;
 public class ArticleVO extends ArticleModel {
 	
 	private String typeName;
+	
+	private Date createTimeStart;
+	private Date createTimeEnd;
 
 	public String getTypeName() {
 		return typeName;
@@ -17,6 +22,22 @@ public class ArticleVO extends ArticleModel {
 
 	public void setTypeName(String typeName) {
 		this.typeName = typeName;
+	}
+
+	public Date getCreateTimeStart() {
+		return createTimeStart;
+	}
+
+	public void setCreateTimeStart(Date createTimeStart) {
+		this.createTimeStart = createTimeStart;
+	}
+
+	public Date getCreateTimeEnd() {
+		return createTimeEnd;
+	}
+
+	public void setCreateTimeEnd(Date createTimeEnd) {
+		this.createTimeEnd = createTimeEnd;
 	}
 	
 	

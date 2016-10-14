@@ -9,33 +9,40 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
-import com.xyan.blog.model.ArticleTypeModel;
-import com.xyan.blog.service.ArticleTypeService;
+import com.xyan.blog.model.DictModel;
+import com.xyan.blog.service.DictService;
+import com.xyan.common.enums.DictType;
+import com.xyan.frame.security.web.util.SessionUtil;
+import com.xyan.frame.util.SpringUtil;
 
 @Component
 public class Task {
 	
 	private static Logger logger=Logger.getLogger(Task.class);
 	@Autowired
-	private ArticleTypeService typeService;
+	private DictService dictService;
 	
-	@Scheduled(cron = "${scheduled.articleType}")
+	//@Scheduled(cron = "${scheduled.articleType}")
 	public void articleType(){
 		logger.info("检查更新博客分类start。。。");
-		ArticleTypeModel example=new ArticleTypeModel();
+		DictModel example=new DictModel();
 		Calendar now=Calendar.getInstance(Locale.CHINA);
-		example.setName(now.get(Calendar.YEAR)+"年"+numToMonth(now.get(Calendar.MONTH))+"月");
+		example.setType(DictType.DICT_GD.getCode());
+		int month=now.get(Calendar.MONTH)+1;
+		example.setName(now.get(Calendar.YEAR)+""+(month<10?("0"+month):(month+"")));
+		example.setRemark(now.get(Calendar.YEAR)+"年"+numToMonth(now.get(Calendar.MONTH))+"月");
 		//生成博客分类
-		List<ArticleTypeModel> typeList=typeService.selectByExample(example);
+		List<DictModel> typeList=dictService.selectByExample(example);
 		if(CollectionUtils.isEmpty(typeList)){
 			logger.info("更新博客分类");
-			example.setpId(-1L);
-			example.setHidden(false);
-			example.setHalfCheck(false);
-			example.setIsParent(false);
-			example.setOpen(true);
-			typeService.insert(example);
+			dictService.insert(example);
+			
+			DictModel model=new DictModel();
+			model.setType(DictType.DICT_GD.getCode());
+			List<DictModel> dictList=dictService.selectByExample(model);
+			SpringUtil.getWebApplicationContext().getServletContext().setAttribute("gdList", dictList);
 		}
 		logger.info("检查更新博客分类end。。。");
 	}

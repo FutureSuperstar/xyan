@@ -1,0 +1,16 @@
+package com.xyan.blog.dao;
+
+import com.xyan.blog.model.DictModel;
+import com.xyan.frame.base.dao.GenericDao;
+import com.xyan.frame.feature.mybatis.annotation.MyBatisRepository;
+
+/**
+ * @description 闲言碎语 --dao层接口
+ * @author wangming
+ * @email：18136442251@163.com
+ * @Date:2016-06-16 15:07:58
+ */
+@MyBatisRepository
+public interface DictDao extends GenericDao<DictModel, Long> {
+	
+ }

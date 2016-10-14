@@ -22,6 +22,7 @@ public class AttachController {
 	public void viewPic(HttpServletRequest request,
             HttpServletResponse response,String path,String name) throws IOException{
 		String basePath =PropertiesUtil.getProperties("file.upload.path");
+		name=new String(name.getBytes("iso-8859-1"),"utf-8");
 		File file = new File(basePath+path+File.separator+name);
 		response.setHeader("Pragma", "No-cache");
 		response.setHeader("Cache-Control", "no-cache");

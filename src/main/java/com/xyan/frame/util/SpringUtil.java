@@ -4,6 +4,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.WebApplicationContext;
 
 /**SpringBean工具类*/
 @Component
@@ -17,6 +18,13 @@ public final class SpringUtil implements ApplicationContextAware {
 
 	public static ApplicationContext getApplicationContext(){
 		return ctx;
+	}
+	
+	public static WebApplicationContext getWebApplicationContext(){
+		if(ctx instanceof WebApplicationContext){
+			return (WebApplicationContext)ctx;
+		}
+		return null;
 	}
 	
 	/**
