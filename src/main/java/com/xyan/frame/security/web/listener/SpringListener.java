@@ -13,6 +13,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.xyan.blog.model.DictModel;
 import com.xyan.blog.service.DictService;
+import com.xyan.common.cache.CacheUtil;
 import com.xyan.common.enums.DictType;
 
 @Component
@@ -39,6 +40,7 @@ public class SpringListener implements ApplicationListener<ContextRefreshedEvent
 			List<DictModel> dictList=dictService.selectModelByExample(example);
 			webApplicationContext.getServletContext().setAttribute("gdList", dictList);
 		}
+		CacheUtil.initCache();
 	}
 	
 }
