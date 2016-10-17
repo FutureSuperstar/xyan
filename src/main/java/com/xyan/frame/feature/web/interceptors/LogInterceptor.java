@@ -11,7 +11,6 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.xyan.admin.model.PreferenceModel;
-import com.xyan.admin.service.PreferenceService;
 import com.xyan.common.cache.CacheUtil;
 import com.xyan.common.enums.LogType;
 import com.xyan.common.enums.PreferenceType;
