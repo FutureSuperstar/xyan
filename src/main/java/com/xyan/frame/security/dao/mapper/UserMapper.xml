@@ -26,7 +26,25 @@
 		ID=#{id}
 	</select>
 
-	<select id="selectByExample" resultType="com.xyan.frame.security.model.UserModel"
+	<select id="selectModelByExample" resultType="com.xyan.frame.security.model.UserModel"
+		parameterType="com.xyan.frame.security.model.UserModel">
+		select
+		<include refid="Base_Column_List" />
+		from xy_user
+		<where>
+			<if test="id!=null">and ID=#{id}</if>
+			<if test="userName!=null">and USER_NAME=#{userName}</if>
+			<if test="password!=null">and PASSWORD=#{password}</if>
+			<if test="salt!=null">and SALT=#{salt}</if>
+			<if test="email !=null">and EMAIL=#{email}</if>
+			<if test="loginName !=null">and LOGIN_NAME=#{loginName}</if>
+			<if test="mobile !=null">and MOBILE=#{mobile}</if>
+			<if test="lockTime !=null">and LOCK_TIME=#{lockTime}</if>
+			<if test="lockDate !=null">and LOCK_DATE=#{lockDate}</if>
+		</where>
+	</select>
+	
+	<select id="selectByExample" resultType="java.util.HashMap"
 		parameterType="com.xyan.frame.security.model.UserModel">
 		select
 		<include refid="Base_Column_List" />
