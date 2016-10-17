@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.xyan.admin.model.PreferenceModel;
 import com.xyan.admin.service.PreferenceService;
+import com.xyan.common.cache.CacheUtil;
 import com.xyan.common.enums.LogType;
 import com.xyan.common.enums.PreferenceType;
 import com.xyan.frame.feature.log.model.LogModel;
@@ -19,7 +20,6 @@ import com.xyan.frame.feature.log.service.LogService;
 import com.xyan.frame.security.web.util.SessionUtil;
 import com.xyan.frame.util.ApplicationUtils;
 import com.xyan.frame.util.DateUtil;
-import com.xyan.frame.util.PropertiesUtil;
   
 /**
  * @Description:访问监控
@@ -33,11 +33,6 @@ public class LogInterceptor implements HandlerInterceptor {
   
 	 @Autowired
 	 private LogService logService;
-	 
-	 @Autowired
-	 private PreferenceService preferenceService;
-	 
-	 
 	 
     /** 
      * preHandle方法是进行处理器拦截用的，顾名思义，该方法将在Controller处理之前进行调用，SpringMVC中的Interceptor拦截器是链式的，可以同时存在 
@@ -53,7 +48,7 @@ public class LogInterceptor implements HandlerInterceptor {
     	PreferenceModel model=new PreferenceModel();
     	model.setKind(PreferenceType.SWITCH.getCode());
     	model.setName("log");
-    	log=log==null?Boolean.valueOf(preferenceService.selectModelByExample(model).get(0).getValue()):Boolean.FALSE;
+    	log=Boolean.valueOf(CacheUtil.getCache("log",PreferenceType.SWITCH.getCode()));
     	if(log){
     		LogModel logModel=new LogModel();
     		logModel.setLogDate(new Date());

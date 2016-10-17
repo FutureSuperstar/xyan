@@ -27,12 +27,13 @@ import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver;
 
+import com.xyan.common.cache.CacheUtil;
 import com.xyan.common.enums.LogType;
+import com.xyan.common.enums.PreferenceType;
 import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.log.model.LogModel;
 import com.xyan.frame.feature.log.service.LogService;
 import com.xyan.frame.feature.web.constant.Constant;
-import com.xyan.frame.util.PropertiesUtil;
 
 /**
  * 不必在Controller中对异常进行处理，抛出即可，由此异常解析器统一控制。<br>
@@ -42,7 +43,7 @@ import com.xyan.frame.util.PropertiesUtil;
  * Controller中需要有专门处理异常的方法。
  */
 public class AnnotationHandlerMethodExceptionResolver extends ExceptionHandlerExceptionResolver {
-	private static boolean log=PropertiesUtil.getProperties("logOpen").equals("1");
+	private static Boolean log=null;
 	
     private String defaultErrorView;
     
@@ -58,6 +59,7 @@ public class AnnotationHandlerMethodExceptionResolver extends ExceptionHandlerEx
     }
 
     protected ModelAndView doResolveHandlerMethodException(HttpServletRequest request, HttpServletResponse response, HandlerMethod handlerMethod, Exception exception) {
+    	log=Boolean.valueOf(CacheUtil.getCache("log", PreferenceType.SWITCH.getCode()));
     	if(log){
     		LogModel logModel=new LogModel();
     		logModel.setLogDate(new Date());
