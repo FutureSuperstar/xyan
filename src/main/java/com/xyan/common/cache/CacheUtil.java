@@ -1,5 +1,14 @@
 package com.xyan.common.cache;
 
+/*
+ * 缓存提供获取和移除的功能。
+ * 
+ * 首先需要初始化缓存，初始化缓存为从数据库中拉取信息。
+ * 然后提供了获取缓存的功能，获取缓存需要提供name和kind
+ * 移除缓存时也需要提高name和kind
+ * 
+ * 本系统缓存不支持程序更新，如果有需要要先编写数据库脚本，然后登陆后台管理，再去访问缓存地址（缓存地址不在菜单中提供）
+ */
 import java.util.HashMap;
 import java.util.List;
 
@@ -12,7 +21,7 @@ import com.xyan.admin.service.PreferenceService;
 import com.xyan.frame.util.SpringUtil;
 
 /**
- *@description 文章（博客） --控制器
+ *@description 缓存
  *@Author：wangming
  *@Date:2016-10-17 10:32:51
  */
