@@ -1,5 +1,7 @@
 package com.xyan.frame.feature.log.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,5 +29,11 @@ public class LogServiceImpl extends GenericServiceImpl<LogModel, Long> implement
 	@Override
 	public GenericDao<LogModel, Long> getDao() {
 		return  logService;
+	}
+
+
+	@Override
+	public List<LogModel> selectModelByExample(LogModel model) {
+		return null;
 	}
 }

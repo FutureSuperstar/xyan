@@ -1,5 +1,6 @@
 package com.xyan.frame.base.dao;
 
+import java.util.HashMap;
 import java.util.List;
 
 import com.xyan.frame.base.model.BaseModel;
@@ -48,7 +49,14 @@ public interface GenericDao<Model extends BaseModel,PK> {
      * @param Model 例子对象
      * @return
      */
-    List<Model> selectByExample(Model model);
+    List<HashMap<String, Object>> selectByExample(Model model);
+    
+    /**
+     * 根据例子查询对象
+     * @param Model 例子对象
+     * @return
+     */
+    List<Model> selectModelByExample(Model model);
     
     /**
      * 根据例子查询符合条件的个数

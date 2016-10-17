@@ -57,7 +57,7 @@ public class ResourceController {
 			model.setpId(model.getId());
 			model.setId(null);
 		}
-		List<ResourceModel> list=resourceService.selectByExample(model);
+		List<ResourceModel> list=resourceService.selectModelByExample(model);
 		return list;
 	}
 }

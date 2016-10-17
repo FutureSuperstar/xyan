@@ -72,8 +72,12 @@ public abstract class GenericServiceImpl<Model extends BaseModel, PK> implements
         return getDao().selectByPrimaryKey(id);
     }
     
-    public List<Model> selectByExample(Model model){
+    public List<HashMap<String,Object>> selectByExample(Model model){
     	return getDao().selectByExample(model);
+    }
+    
+    public List<Model> selectModelByExample(Model model){
+    	return getDao().selectModelByExample(model);
     }
     
     public int countByExample(Model model){

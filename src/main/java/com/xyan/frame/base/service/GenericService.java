@@ -49,9 +49,15 @@ public interface GenericService<Model extends BaseModel, PK> {
 
     /**
      * 查询多个对象
+     * @return Hash集合
+     */
+    List<HashMap<String, Object>> selectByExample(Model model);
+    
+    /**
+     * 查询多个对象
      * @return 对象集合
      */
-    List<Model> selectByExample(Model model);
+    List<Model> selectModelByExample(Model model);
     
      /**
       * @Author:wangming

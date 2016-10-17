@@ -36,7 +36,7 @@ public class BlogController {
 	public List<DictModel> getGdList(){
 		DictModel model=new DictModel();
 		model.setType(DictType.DICT_GD.getCode());
-		return dictService.selectByExample(model);
+		return dictService.selectModelByExample(model);
 	}
 	@RequestMapping("getLastArticle")
 	@ResponseBody

@@ -73,7 +73,7 @@ public class ResourceServiceImpl extends GenericServiceImpl<ResourceModel, Long>
 	private List<ResourceModel> getChildren(Long pId){
 		ResourceModel rootQuery=new ResourceModel();
 		rootQuery.setpId(pId);
-		List<ResourceModel> childList=resourceDao.selectByExample(rootQuery);
+		List<ResourceModel> childList=resourceDao.selectModelByExample(rootQuery);
 		return childList;
 	}
 

@@ -27,7 +27,7 @@ public class InitialListener implements ServletContextListener{
 			ScheduleJobService jobService= SpringUtil.getBean(ScheduleJobServiceImpl.class);
 			ScheduleJobModel queryVo=new ScheduleJobModel();
 			queryVo.setJobStatus("1");//启用状态的任务
-			List<ScheduleJobModel> jobList=jobService.selectByExample(queryVo);
+			List<ScheduleJobModel> jobList=jobService.selectModelByExample(queryVo);
 			try {
 				JobUtils.addJob(jobList);
 			} catch (SchedulerException e) {

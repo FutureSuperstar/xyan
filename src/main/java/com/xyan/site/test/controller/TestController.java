@@ -44,7 +44,7 @@ public class TestController {
 	@ResponseBody
 	public String testJob() throws SchedulerException {
 		logger.warn("xxxxxxxxxxxxx");
-		List<ScheduleJobModel> jobList=jobServicee.selectByExample(null);
+		List<ScheduleJobModel> jobList=jobServicee.selectModelByExample(null);
 		JobUtils.addJob(jobList);
 		return "test";
 	}

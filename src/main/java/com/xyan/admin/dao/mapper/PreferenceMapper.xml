@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--wangming：w18855525068@163.com -->
+<mapper namespace="com.xyan.admin.dao.PreferenceDao">
+
+
+	<sql id="mapSQL">
+		ID as "id"
+		, NAME as "name"
+		, KIND as "kind"
+		, VALUE as "value"
+		, REMARK as "remark"
+	</sql>
+
+	<sql id="objectSQL">
+		ID as "id"
+		, NAME as "name"
+		, KIND as "kind"
+		, VALUE as "value"
+		, REMARK as "remark"
+	</sql>
+
+	<select id="selectByPrimaryKey" resultType="com.xyan.admin.model.PreferenceModel"
+		parameterType="java.lang.Long">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_preference
+		WHERE
+		ID=#{id}
+	</select>
+
+	<select id="selectModelByExample" resultType="com.xyan.admin.model.PreferenceModel"
+		parameterType="com.xyan.admin.model.PreferenceModel">
+		SELECT
+		<include refid="objectSQL" />
+		FROM xy_preference
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="name !=null and name !=''">AND name = #{name}</if>
+			<if test="value !=null and value !=''">AND value = #{value}</if>
+			<if test="remark !=null and remark !=''">AND remark = #{remark}</if>
+			<if test="kind !=null and kind !=''">AND kind = #{kind}</if>
+		</where>
+	</select>
+
+	<select id="selectByExample" resultType="java.util.HashMap"
+		parameterType="com.xyan.admin.model.PreferenceModel">
+		SELECT
+		<include refid="mapSQL" />
+		FROM xy_preference
+		<where>
+			<if test="id!=null">AND ID = #{id}</if>
+			<if test="name !=null and name !=''">AND name = #{name}</if>
+			<if test="value !=null and value !=''">AND value = #{value}</if>
+			<if test="remark !=null and remark !=''">AND remark = #{remark}</if>
+			<if test="kind !=null and kind !=''">AND kind = #{kind}</if>
+		</where>
+	</select>
+
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		DELETE FROM xy_preference
+		WHERE ID=#{id}
+	</delete>
+
+
+	<insert id="insert" parameterType="com.xyan.admin.model.PreferenceModel">
+		INSERT INTO xy_preference
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">ID,</if>
+			<if test="name != null">NAME,</if>
+			<if test="value != null">VALUE,</if>
+			<if test="kind != null">KIND,</if>
+			<if test="remark != null">REMARK,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">#{id},</if>
+			<if test="name != null">#{name},</if>
+			<if test="value != null">#{value},</if>
+			<if test="kind != null">#{kind},</if>
+			<if test="remark != null">#{remark},</if>
+		</trim>
+	</insert>
+
+	<update id="update" parameterType="com.xyan.admin.model.PreferenceModel">
+		UPDATE xy_preference
+		<set>
+			<if test="id != null">ID = #{id},</if>
+			<if test="name != null">NAME = #{name},</if>
+			<if test="value != null">VALUE = #{value},</if>
+			<if test="kind != null">KIND = #{kind},</if>
+			<if test="remark != null">REMARK = #{remark},</if>
+		</set>
+		WHERE ID=#{id}
+	</update>
+
+
+	<delete id="deleteByIds" parameterType="java.math.BigDecimal">
+		DELETE FROM xy_preference t WHERE
+		ID
+		in
+		<foreach collection="list" item="item" index="index" open="("
+			close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_preference
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">ID,</if>
+				<if test="item.name != null">NAME,</if>
+				<if test="item.value != null">VALUE,</if>
+				<if test="item.kind != null">KIND,</if>
+				<if test="item.remark != null">REMARK,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">#{item.id},</if>
+				<if test="item.name != null">#{item.name},</if>
+				<if test="item.value != null">#{item.value},</if>
+				<if test="item.kind != null">#{item.kind},</if>
+				<if test="item.remark != null">#{item.remark},</if>
+			</trim>
+		</foreach>
+	</insert>
+
+	<update id="updateModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			UPDATE xy_preference
+			<set>
+				<if test="item.id != null">ID = #{item.id},</if>
+				<if test="item.name != null">NAME = #{item.name},</if>
+				<if test="item.value != null">VALUE = #{item.value},</if>
+				<if test="item.kind != null">KIND = #{item.kind},</if>
+				<if test="item.remark != null">REMARK = #{item.remark},</if>
+			</set>
+			WHERE ID=#{item.id}
+		</foreach>
+	</update>
+
+
+</mapper>

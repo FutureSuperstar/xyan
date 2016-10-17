@@ -36,7 +36,7 @@ public class UserServiceImpl extends GenericServiceImpl<UserModel, Long> impleme
 	public UserModel getUser(String loginName) {
 		UserModel model=new UserModel();
 		model.setLoginName(loginName);
-		List<UserModel> list=userDao.selectByExample(model);
+		List<UserModel> list=userDao.selectModelByExample(model);
 		if(list==null||list.size()<1){
 			return null;
 		}
@@ -47,7 +47,7 @@ public class UserServiceImpl extends GenericServiceImpl<UserModel, Long> impleme
 	public ResponseModel login(UserModel user) {
 		UserModel queryUser=new UserModel();
 		queryUser.setLoginName(user.getLoginName());
-		List<UserModel> userList=userDao.selectByExample(queryUser);
+		List<UserModel> userList=userDao.selectModelByExample(queryUser);
 		if(userList==null||userList.size()!=1){
 			return new ResponseModel(false,"用户名错误");
 		}

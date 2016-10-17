@@ -36,7 +36,7 @@ public class SpringListener implements ApplicationListener<ContextRefreshedEvent
 			WebApplicationContext webApplicationContext=(WebApplicationContext)applicationContext;
 			DictModel example=new DictModel();
 			example.setType(DictType.DICT_GD.getCode());
-			List<DictModel> dictList=dictService.selectByExample(example);
+			List<DictModel> dictList=dictService.selectModelByExample(example);
 			webApplicationContext.getServletContext().setAttribute("gdList", dictList);
 		}
 	}

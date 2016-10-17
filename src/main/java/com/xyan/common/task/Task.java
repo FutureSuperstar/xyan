@@ -34,14 +34,14 @@ public class Task {
 		example.setName(now.get(Calendar.YEAR)+""+(month<10?("0"+month):(month+"")));
 		example.setRemark(now.get(Calendar.YEAR)+"年"+numToMonth(now.get(Calendar.MONTH))+"月");
 		//生成博客分类
-		List<DictModel> typeList=dictService.selectByExample(example);
+		List<DictModel> typeList=dictService.selectModelByExample(example);
 		if(CollectionUtils.isEmpty(typeList)){
 			logger.info("更新博客分类");
 			dictService.insert(example);
 			
 			DictModel model=new DictModel();
 			model.setType(DictType.DICT_GD.getCode());
-			List<DictModel> dictList=dictService.selectByExample(model);
+			List<DictModel> dictList=dictService.selectModelByExample(model);
 			SpringUtil.getWebApplicationContext().getServletContext().setAttribute("gdList", dictList);
 		}
 		logger.info("检查更新博客分类end。。。");

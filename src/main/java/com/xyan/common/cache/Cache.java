@@ -20,7 +20,7 @@ public class Cache {
 		ArticleTypeService typeService=SpringUtil.getBean(ArticleTypeServiceImpl.class);
 		ArticleTypeModel example=new ArticleTypeModel();
 		example.setpId(ArticleType.TYPE_TECHNOLOGY.getCode());
-		articleTypeCache=typeService.selectByExample(example);
+		articleTypeCache=typeService.selectModelByExample(example);
 		logger.info("初始化分类完成。。。");
 	}
 }
