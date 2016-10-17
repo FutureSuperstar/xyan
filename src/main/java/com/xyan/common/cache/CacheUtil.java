@@ -9,7 +9,6 @@ import org.springframework.util.CollectionUtils;
 
 import com.xyan.admin.model.PreferenceModel;
 import com.xyan.admin.service.PreferenceService;
-import com.xyan.admin.service.impl.PreferenceServiceImpl;
 import com.xyan.frame.util.SpringUtil;
 
 /**
