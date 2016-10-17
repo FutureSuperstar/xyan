@@ -71,7 +71,6 @@
 					<th width="9%" class="align-center">类别</th>
 					<th width="10%" class="align-center">值</th>
 					<th width="11%" class="align-center">备注</th>
-					<th width="11%" class="align-center">操作</th>
 				</tr>
 			</thead>
 			<tbody id="tbody">
@@ -105,14 +104,4 @@
 			});
 		}
 	});
-	
-	function config(name,kind,value){
-		$.dialogCenter({
-			id:"preference",
-			bg:true,
-			url:"${path}/admin/preference/dialog/config?name="+name+"&kind="+kind+"&value="+value,
-			title:"配置"
-		});
-	}
 </script>
-<script type="text/javascript" src="${path}/static/js/dialog.js"></script>
