@@ -281,6 +281,9 @@
 				<li>
 					<a href="${path}/admin/article" class="dropdown-toggle"><i class="icon-desktop"></i> <span class="menu-text">文章管理</span></a>
 				</li>
+				<li>
+					<a href="${path}/admin/preference" class="dropdown-toggle"><i class="icon-globe"></i> <span class="menu-text">配置管理</span></a>
+				</li>
 				
 				<li><a href="${path}/admin/typography"> <i class="icon-text-width"></i><span class="menu-text"> 文字排版 </span></a></li>
 				<li>

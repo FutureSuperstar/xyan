@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
-<title>jqueryÍø¸ñ²å¼þ</title>
+<title>jqueryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</title>
 
 <!-- page specific plugin styles -->
 
@@ -17,7 +17,7 @@
 </div>
 <!-- /.page-header -->
 
-<div class="row">
+<div class="page-content">
 	<div class="col-xs-12">
 		<!-- PAGE CONTENT BEGINS -->
 

@@ -5,7 +5,7 @@
 	<h1>Wysiwyg &amp; Markdown Editor</h1>
 </div>
 <!-- /.page-header -->
-<div class="row">
+<div class="page-content">
 	<div class="col-xs-12">
 		<!-- PAGE CONTENT BEGINS -->
 		<h4 class="header green clearfix">

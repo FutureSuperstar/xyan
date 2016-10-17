@@ -14,7 +14,7 @@
 </div>
 <!-- /.page-header -->
 
-<div class="row">
+<div class="page-content">
 	<div class="col-xs-12">
 		<!-- PAGE CONTENT BEGINS -->
 
