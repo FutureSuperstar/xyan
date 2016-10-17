@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.xyan.admin.model.PreferenceModel;
 import com.xyan.admin.service.PreferenceService;
-import com.xyan.blog.vo.ArticleVO;
+import com.xyan.common.cache.CacheUtil;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 
 /**
@@ -31,8 +31,9 @@ public class PreferenceController {
 	
 	@RequestMapping(value="pageData",method=RequestMethod.POST)
 	public ModelAndView pageData(PreferenceModel query,Page<HashMap<String, Object>> page){
+		
 		return new ModelAndView("/admin/preference/preferenceData")
-			.addObject("page", preferenceService.selectByPage(query, page));
+			.addObject("cache", CacheUtil.getAllCache());
 	}
 	
 	@RequestMapping(value="dialog/config",method=RequestMethod.GET)
