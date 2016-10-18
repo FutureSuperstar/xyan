@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -106,6 +107,14 @@ public class AdminArticleController {
 		attributes.addFlashAttribute("message", "保存成功");
 		return "redirect:/admin/article";
 	}
+	
+	@RequestMapping(value="del{id}",method=RequestMethod.GET)
+	public String save(@PathVariable Long id,HttpServletRequest request,RedirectAttributes attributes){
+		articleService.delete(id);
+		attributes.addFlashAttribute("message", "删除成功");
+		return "redirect:/admin/article";
+	}
+	
 	
 	/**
 	 * 文章树

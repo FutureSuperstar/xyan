@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 
 import com.xyan.admin.dao.MailDao;
 import com.xyan.admin.model.MailModel;
@@ -32,6 +33,9 @@ public class MailServiceImpl extends GenericServiceImpl<MailModel, Long> impleme
 
 	@Override
 	public int updateModels(List<MailModel> list) {
+		if(CollectionUtils.isEmpty(list)){
+			return 0;
+		}
 		return mailDao.updateModels(list);
 	}
 }
