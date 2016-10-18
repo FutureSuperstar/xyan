@@ -68,6 +68,7 @@ function sendMess(){
 		data:$("#messageForm").serialize(),
 		success:function(data){
 			if(data.success){
+				$(".wangEditor-container .wangEditor-txt").html("");
 				location.reload();
 			}else{
 				$("<div class='exception' id='exception'>"+data.message+"</div>").prependTo("body").fadeOut(2000);

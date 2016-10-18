@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <style type="text/css">
 	.pageInfo{margin-top: 15px;height: 24px;}
@@ -12,6 +13,7 @@
 			<img src="${data.sourceHead}" class="user-head"/>
 		</div>
 		<div class="mbox-right" style="float: left;width:83%">
+			<div class="mbox-head">时间：<fmt:formatDate value="${data.createTime}" pattern="yyyy-MM-dd HH:mm:ss"/></div>
 			<div class="mbox-text">${data.content}</div>
 		</div>
 		<div class="clearfix"></div>
