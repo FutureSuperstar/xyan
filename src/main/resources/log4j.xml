@@ -11,14 +11,6 @@
 		</layout>
 	</appender>
 
- 	<appender name="activexAppender" class="org.apache.log4j.DailyRollingFileAppender">       
-        <param name="File" value="d:/tmp/activex.log" />         
-        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />         
-        <layout class="org.apache.log4j.PatternLayout">       
-         <param name="ConversionPattern"         
-            value="[%d{MMdd HH:mm:ss SSS\} %-5p] [%t] %c{3\} - %m%n" />       
-        </layout>         
-    </appender>  
 	<!-- WARNING: Setting the org.springframework logger to DEBUG displays debug 
 		information about the request parameter values being bound to the command 
 		objects. This could expose your password in the logger file. If you are sharing 
@@ -30,6 +22,7 @@
 	<!-- <logger name="com.ibatis">
 		<level value="DEBUG" />
 	</logger> -->
+
 	<!-- <logger name="com.apache.ibatis.jdbc.ScriptRunner">
 		<level value="DEBUG" />
 	</logger> -->
