@@ -10,5 +10,6 @@ import com.xyan.frame.base.service.GenericService;
  *@Date:2016-06-14 11:02:12
  */
 public interface PreferenceService extends GenericService<PreferenceModel, Long>{
-
+	
+	public String selectValue(String name,String kind);
 }

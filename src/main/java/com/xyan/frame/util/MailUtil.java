@@ -10,13 +10,15 @@ import javax.mail.Message.RecipientType;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import com.xyan.admin.model.MailModel;
+
 /**
  * @author wangming
  * 邮件工具
  */
 public class MailUtil {
 	
-	public static String send(String subject,String content){
+	public static String send(MailModel mail){
 		String result=null;
 		final Properties props=new Properties();
 		try {
@@ -52,28 +54,24 @@ public class MailUtil {
 	        message.setFrom(form);
 
 	        // 设置收件人
-	        InternetAddress to = new InternetAddress("1255321142@qq.com");
+	        InternetAddress to = new InternetAddress(mail.getToUser());
 	        message.setRecipient(RecipientType.TO, to);
-
 	        // 设置抄送
-	        InternetAddress cc = new InternetAddress("wang_ming@fulan.com.cn");
+	        InternetAddress cc = new InternetAddress("543095204@qq.com");
 	        message.setRecipient(RecipientType.CC, cc);
 
-	        // 设置密送，其他的收件人不能看到密送的邮件地址
-	        InternetAddress bcc = new InternetAddress("543095204@qq.com");
-	        message.setRecipient(RecipientType.BCC, bcc);
-
 	        // 设置邮件标题
-	        message.setSubject(subject);
+	        message.setSubject(mail.getSubject());
 
 	        // 设置邮件的内容体
-	        message.setContent(content, "text/html;charset=UTF-8");
+	        message.setContent(mail.getContent(), "text/html;charset=UTF-8");
 
 	        // 发送邮件
 	        Transport.send(message);
+	        result="success";
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new RuntimeException("邮件发送失败！");
+			throw new RuntimeException("邮件发送失败！",e);
 		}
 		return result;
 	}

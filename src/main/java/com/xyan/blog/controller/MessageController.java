@@ -50,6 +50,20 @@ public class MessageController {
 		return "blog/message/messageList";
 	}
 	
+	/**
+	 * @Author:wangming
+	 * @Description 保存信息
+	 * @param model
+	 * @return
+	 * @since 2016年10月17日下午5:24:12
+	 */
+	@RequestMapping(method = RequestMethod.POST)
+	@ResponseBody
+	public ResponseModel save(MessageModel model){
+		messageService.insert(model);
+		return new ResponseModel(true);
+	}
+	
 	/**分页数据*/
 	@RequestMapping(value="pageData")
 	public ModelAndView data(MessageModel entity,Page<HashMap<String, Object>> page){

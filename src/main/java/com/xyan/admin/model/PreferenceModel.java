@@ -33,6 +33,16 @@ public class PreferenceModel extends BaseModel {
 	 * database column xy_preference.REMARK_. 备注
 	 */
 	private String remark;
+	
+	public PreferenceModel() {
+		
+	}
+
+	public PreferenceModel(String name, String kind) {
+		super();
+		this.name = name;
+		this.kind = kind;
+	}
 
 	public String getName() {
 		return name;

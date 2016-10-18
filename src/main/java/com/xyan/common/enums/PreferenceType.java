@@ -12,7 +12,8 @@ public enum PreferenceType {
 	/**
 	 * 开关
 	 */
-    SWITCH("开关", "switch");
+    SWITCH("开关", "switch"),
+    MAIL("邮件","mail");
 	
     /**
      * 名称

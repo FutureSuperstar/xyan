@@ -1,5 +1,7 @@
 package com.xyan.admin.service;
 
+import java.util.List;
+
 import com.xyan.admin.model.MailModel;
 import com.xyan.frame.base.service.GenericService;
 
@@ -10,6 +12,6 @@ import com.xyan.frame.base.service.GenericService;
  *@Date:2016-06-14 11:02:12
  */
 public interface MailService extends GenericService<MailModel, Long>{
-
-	void send();
+	
+	public int updateModels(List<MailModel> list);
 }

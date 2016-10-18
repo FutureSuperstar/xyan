@@ -12,6 +12,7 @@
 		, FROM_USER as "fromUser"
 		, CONTENT as "content"
 		, SUBJECT as "subject"
+		, STATE as "state"
 	</sql>
 
 	<sql id="objectSQL">
@@ -20,6 +21,7 @@
 		, FROM_USER as "fromUser"
 		, CONTENT as "content"
 		, SUBJECT as "subject"
+		, STATE as "state"
 	</sql>
 
 	<select id="selectByPrimaryKey" resultType="com.xyan.admin.model.MailModel"
@@ -37,11 +39,12 @@
 		<include refid="objectSQL" />
 		FROM xy_mail
 		<where>
-			<if test="id!=null">AND ID = #{id}</if>
-			<if test="toUser!=null">AND TO_USER = #{toUser}</if>
-			<if test="fromUser!=null">AND FROM_USER = #{fromUser}</if>
-			<if test="content!=null">AND CONTENT = #{content}</if>
-			<if test="subject!=null">AND SUBJECT = #{subject}</if>
+			<if test="id !=null">AND ID = #{id}</if>
+			<if test="toUser !=null">AND TO_USER = #{toUser}</if>
+			<if test="fromUser !=null">AND FROM_USER = #{fromUser}</if>
+			<if test="content !=null">AND CONTENT = #{content}</if>
+			<if test="subject !=null and subject !=''">AND SUBJECT = #{subject}</if>
+			<if test="state !=null and state !=''">AND STATE = #{state}</if>
 		</where>
 	</select>
 
@@ -51,11 +54,12 @@
 		<include refid="mapSQL" />
 		FROM xy_mail
 		<where>
-			<if test="id!=null">AND ID = #{id}</if>
-			<if test="toUser!=null">AND TO_USER = #{toUser}</if>
-			<if test="fromUser!=null">AND FROM_USER = #{fromUser}</if>
-			<if test="content!=null">AND CONTENT = #{content}</if>
-			<if test="subject!=null">AND SUBJECT = #{subject}</if>
+			<if test="id !=null">AND ID = #{id}</if>
+			<if test="toUser !=null">AND TO_USER = #{toUser}</if>
+			<if test="fromUser !=null">AND FROM_USER = #{fromUser}</if>
+			<if test="content !=null">AND CONTENT = #{content}</if>
+			<if test="subject !=null and subject !=''">AND SUBJECT = #{subject}</if>
+			<if test="state !=null and state !=''">AND STATE = #{state}</if>
 		</where>
 	</select>
 
@@ -75,6 +79,7 @@
 			<if test="fromUser != null">FROM_USER,</if>
 			<if test="content != null">CONTENT,</if>
 			<if test="subject != null">SUBJECT,</if>
+			<if test="state != null">STATE,</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides=",">
 			<if test="id != null">#{id},</if>
@@ -82,6 +87,7 @@
 			<if test="fromUser != null">#{fromUser},</if>
 			<if test="content != null">#{content},</if>
 			<if test="subject != null">#{subject},</if>
+			<if test="state != null">#{state},</if>
 		</trim>
 	</insert>
 
@@ -89,10 +95,11 @@
 		UPDATE xy_mail
 		<set>
 			<if test="id != null">ID = #{id},</if>
-			<if test="toUser != null">TO_USER = #{toUser},</if>
-			<if test="fromUser != null">FROM_USER = #{fromUser},</if>
+			<if test="toUser != null and toUser !='' ">TO_USER = #{toUser},</if>
+			<if test="fromUser != null and fromUser !=''">FROM_USER = #{fromUser},</if>
 			<if test="content != null">CONTENT = #{content},</if>
-			<if test="subject != null">SUBJECT = #{subject},</if>
+			<if test="subject != null and subject !=''">SUBJECT = #{subject},</if>
+			<if test="state != null and state !=''">STATE = #{state},</if>
 		</set>
 		WHERE ID=#{id}
 	</update>
@@ -118,6 +125,7 @@
 				<if test="item.fromUser != null">FROM_USER,</if>
 				<if test="item.content != null">CONTENT,</if>
 				<if test="item.subject != null">SUBJECT,</if>
+				<if test="item.state != null">STATE,</if>
 			</trim>
 			<trim prefix="values (" suffix=")" suffixOverrides=",">
 				<if test="item.id != null">#{item.id},</if>
@@ -125,6 +133,7 @@
 				<if test="item.fromUser != null">#{item.fromUser},</if>
 				<if test="item.content != null">#{item.content},</if>
 				<if test="item.subject != null">#{item.subject},</if>
+				<if test="item.state != null">#{item.state},</if>
 			</trim>
 		</foreach>
 	</insert>
@@ -135,11 +144,11 @@
 			UPDATE xy_mail
 			<set>
 				<if test="item.id != null">ID = #{item.id},</if>
-				<if test="item.toUser != null">TO_USER = #{item.toUser},</if>
-				<if test="item.fromUser != null">FROM_USER = #{item.fromUser},
-				</if>
+				<if test="item.toUser != null and item.toUser !='' ">TO_USER = #{item.toUser},</if>
+				<if test="item.fromUser != null and item.fromUser != '' ">FROM_USER = #{item.fromUser},</if>
+				<if test="item.state != null and item.state !=''">STATE = #{item.state},</if>
 				<if test="item.content != null">CONTENT = #{item.content},</if>
-				<if test="item.subject != null">SUBJECT = #{item.subject},</if>
+				<if test="item.subject != null and item.subject !=''">SUBJECT = #{item.subject},</if>
 			</set>
 			WHERE ID=#{item.id}
 		</foreach>

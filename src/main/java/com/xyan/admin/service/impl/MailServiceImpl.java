@@ -1,5 +1,7 @@
 package com.xyan.admin.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -9,7 +11,6 @@ import com.xyan.admin.model.MailModel;
 import com.xyan.admin.service.MailService;
 import com.xyan.frame.base.dao.GenericDao;
 import com.xyan.frame.base.service.impl.GenericServiceImpl;
-import com.xyan.frame.util.MailUtil;
 
 /**
  *@Description：邮件 -- Servcie实现类
@@ -30,8 +31,7 @@ public class MailServiceImpl extends GenericServiceImpl<MailModel, Long> impleme
 	}
 
 	@Override
-	public void send() {
-		MailUtil.send("您有新的留言了", "您有新的留言了");
+	public int updateModels(List<MailModel> list) {
+		return mailDao.updateModels(list);
 	}
-
 }

@@ -60,18 +60,17 @@
 
 	<select id="selectByExample" resultType="java.util.HashMap"
 		parameterType="com.xyan.blog.model.MessageModel">
-		SELECT
-		<include refid="mapSQL" />
-		FROM xy_message
+		SELECT sou.ID as "id",sou.CONTENT as "content", sou.CREATE_TIME as "createTime",u.user_name as "sourName",u.head as "sourceHead"
+		FROM xy_message sou LEFT JOIN xy_user u ON sou.source=u.id
 		<where>
-			<if test="id!=null">AND ID = #{id}</if>
-			<if test="source !=null">AND SOURCE = #{source}</if>
-			<if test="dest !=null">AND DEST = #{dest}</if>
-			<if test="title !=null">AND TITLE = #{title}</if>
-			<if test="content !=null">AND CONTENT = #{content}</if>
-			<if test="merge !=null and merge !='' ">AND MERGE = #{merge}</if>
-			<if test="read !=null and read !='' ">AND READ = #{read}</if>
-			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
+			<if test="id!=null">AND sou.ID = #{id}</if>
+			<if test="source !=null">AND sou.SOURCE = #{source}</if>
+			<if test="dest !=null">AND sou.DEST = #{dest}</if>
+			<if test="title !=null">AND sou.TITLE = #{title}</if>
+			<if test="content !=null">AND sou.CONTENT = #{content}</if>
+			<if test="merge !=null and merge !='' ">AND sou.MERGE = #{merge}</if>
+			<if test="read !=null and read !='' ">AND sou.READ = #{read}</if>
+			<if test="createTime!=null">AND sou.CREATE_TIME = #{createTime}</if>
 		</where>
 	</select>
 
@@ -100,8 +99,8 @@
 			<if test="dest != null">#{dest},</if>
 			<if test="title != null">#{title},</if>
 			<if test="content != null">#{content},</if>
-			<if test="merge !=null and merge !='' ">#{merge}</if>
-			<if test="read !=null and read !='' ">#{read}</if>
+			<if test="merge !=null and merge !='' ">#{merge},</if>
+			<if test="read !=null and read !='' ">#{read},</if>
 			<if test="createTime != null">#{createTime},</if>
 		</trim>
 	</insert>
@@ -152,8 +151,8 @@
 				<if test="item.dest != null">#{item.dest},</if>
 				<if test="item.title != null">#{item.title},</if>
 				<if test="item.content != null">#{item.content},</if>
-				<if test="item.merge !=null and item.merge !='' ">#{item.merge}</if>
-				<if test="item.read !=null and item.read !='' ">#{item.read}</if>
+				<if test="item.merge !=null and item.merge !='' ">#{item.merge},</if>
+				<if test="item.read !=null and item.read !='' ">#{item.read},</if>
 				<if test="item.createTime != null">#{item.createTime},</if>
 			</trim>
 		</foreach>

@@ -1,5 +1,7 @@
 package com.xyan.admin.dao;
 
+import java.util.List;
+
 import com.xyan.admin.model.MailModel;
 import com.xyan.frame.base.dao.GenericDao;
 import com.xyan.frame.feature.mybatis.annotation.MyBatisRepository;
@@ -13,5 +15,13 @@ import com.xyan.frame.feature.mybatis.annotation.MyBatisRepository;
 @MyBatisRepository
 public interface MailDao extends GenericDao<MailModel, Long>{
 
+	/**
+	 * @Author:wangming
+	 * @Description: 批量更新
+	 * @param list
+	 * @return
+	 * @since 2016年10月18日上午10:34:30
+	 */
+	public int updateModels(List list);
 	
  }

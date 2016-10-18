@@ -9,12 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.context.support.WebApplicationContextUtils;
 
+import com.xyan.admin.model.MailModel;
+import com.xyan.admin.service.MailService;
 import com.xyan.blog.model.DictModel;
 import com.xyan.blog.service.DictService;
 import com.xyan.common.enums.DictType;
-import com.xyan.frame.security.web.util.SessionUtil;
+import com.xyan.frame.util.MailUtil;
 import com.xyan.frame.util.SpringUtil;
 
 @Component
@@ -23,6 +24,22 @@ public class Task {
 	private static Logger logger=Logger.getLogger(Task.class);
 	@Autowired
 	private DictService dictService;
+	@Autowired
+	private MailService mailService;
+	
+	
+	@Scheduled(cron = "${scheduled.mailSend}")
+	public void mailSend(){
+		logger.info("检查邮件start。。。");
+		MailModel model=new MailModel();
+		model.setState("00");
+		List<MailModel> dbList=mailService.selectModelByExample(model);
+		for (MailModel mailModel : dbList) {
+			MailUtil.send(mailModel);
+			mailModel.setState("10");
+		}
+		mailService.updateModels(dbList);
+	}
 	
 	//@Scheduled(cron = "${scheduled.articleType}")
 	public void articleType(){

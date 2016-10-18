@@ -24,7 +24,7 @@ public  class Page<E> {
 	}
     
     public Page(Integer pageNum, Integer pageSize) {
-        this.pageNum = pageNum;
+        this.pageNum = pageNum<1?1:pageNum;
         this.pageSize = pageSize;
         this.startRow = pageNum > 0 ? (pageNum - 1) * pageSize : 0;
         this.endRow = pageNum * pageSize;
@@ -55,7 +55,7 @@ public  class Page<E> {
     }
 
     public Integer getPageNum() {
-        return pageNum;
+        return pageNum<1?1:pageNum;
     }
 
     public void setPageNum(Integer pageNum) {
