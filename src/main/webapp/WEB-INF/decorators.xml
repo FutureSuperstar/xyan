@@ -4,7 +4,7 @@
 		<pattern>/static/**</pattern>
 		<pattern>/api/**</pattern><!-- 此处应该不是必须的，SiteMesh针对text/html做特殊处理 -->
 		<pattern>/**/**/pageData</pattern><!-- 分页数据-->
-		<pattern>/**/**/pageData/**</pattern>
+		<pattern>/**/**/pageData**</pattern>
 		<pattern>/**/**/dialog/**</pattern>
 		<pattern>/admin/login</pattern><!-- POST登陆 -->
 		<pattern>/admin/login/**</pattern><!--进入登陆页 -->
