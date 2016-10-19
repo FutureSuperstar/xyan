@@ -11,19 +11,17 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.xyan.frame.feature.web.constant.Constant;
 import com.xyan.frame.security.model.UserModel;
 
 /**
  * @author wangming
- * 安全过滤器，暂未启用
+ * 安全过滤器，拦截后台访问。
  */
 public class SecureFilter implements Filter {
 	
 	private static Logger logger=Logger.getLogger(SecureFilter.class);
-	@Autowired
 	private String errorPage=null;
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {

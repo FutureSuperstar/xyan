@@ -1,8 +1,11 @@
 package com.xyan.common.task;
 
 import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map.Entry;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +18,8 @@ import com.xyan.admin.service.MailService;
 import com.xyan.blog.model.DictModel;
 import com.xyan.blog.service.DictService;
 import com.xyan.common.enums.DictType;
+import com.xyan.frame.security.Cache;
+import com.xyan.frame.util.DateUtil;
 import com.xyan.frame.util.MailUtil;
 import com.xyan.frame.util.SpringUtil;
 
@@ -39,6 +44,24 @@ public class Task {
 			mailModel.setState("10");
 		}
 		mailService.updateModels(dbList);
+	}
+	
+	/**
+	 * @Author:wangming
+	 * @Description 清理拦截访问
+	 * @since 2016年10月19日上午11:13:29
+	 */
+	@Scheduled(cron = "${scheduled.blogClear}")
+	public void blogClear(){
+		logger.info("清理拦截start。。。");
+		HashMap<String, Date> cache=new HashMap<>();
+		for (Entry<String, Date> entry: Cache.getCache().entrySet()) {
+			if(DateUtil.getDiff(new Date(), entry.getValue())<30000){
+				cache.put(entry.getKey(), entry.getValue());
+			}
+		}
+		Cache.reset(cache);
+		logger.info("清理拦截end。。。"+cache.size());
 	}
 	
 	//@Scheduled(cron = "${scheduled.articleType}")

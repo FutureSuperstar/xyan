@@ -11,8 +11,8 @@
 		, DEST as "dest"
 		, TITLE as "title"
 		, CONTENT as "content"
-		, MERGE as "merge"
-		, READ as "read"
+		, MERGE_ as "merge"
+		, READ_ as "read"
 		, CREATE_TIME as "createTime"
 	</sql>
 
@@ -22,8 +22,8 @@
 		, DEST as "dest"
 		, TITLE as "title"
 		, CONTENT as "content"
-		, MERGE as "merge"
-		, READ as "read"
+		, MERGE_ as "merge"
+		, READ_ as "read"
 		, CREATE_TIME as "createTime"
 	</sql>
 
@@ -52,8 +52,8 @@
 			<if test="dest!=null">AND DEST = #{dest}</if>
 			<if test="title!=null">AND TITLE = #{title}</if>
 			<if test="content !=null">AND CONTENT = #{content}</if>
-			<if test="merge !=null and merge !='' ">AND MERGE = #{merge}</if>
-			<if test="read !=null and read !='' ">AND READ = #{read}</if>
+			<if test="merge !=null and merge !='' ">AND MERGE_ = #{merge}</if>
+			<if test="read !=null and read !='' ">AND READ_ = #{read}</if>
 			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
 		</where>
 	</select>
@@ -68,10 +68,11 @@
 			<if test="dest !=null">AND sou.DEST = #{dest}</if>
 			<if test="title !=null">AND sou.TITLE = #{title}</if>
 			<if test="content !=null">AND sou.CONTENT = #{content}</if>
-			<if test="merge !=null and merge !='' ">AND sou.MERGE = #{merge}</if>
-			<if test="read !=null and read !='' ">AND sou.READ = #{read}</if>
+			<if test="merge !=null and merge !='' ">AND sou.MERGE_ = #{merge}</if>
+			<if test="read !=null and read !='' ">AND sou.READ_ = #{read}</if>
 			<if test="createTime!=null">AND sou.CREATE_TIME = #{createTime}</if>
 		</where>
+		order by sou.CREATE_TIME desc 
 	</select>
 
 
@@ -89,8 +90,8 @@
 			<if test="dest != null">DEST,</if>
 			<if test="title != null">TITLE,</if>
 			<if test="content != null">CONTENT,</if>
-			<if test="merge !=null and merge !='' ">MERGE,</if>
-			<if test="read !=null and read !='' ">READ,</if>
+			<if test="merge !=null and merge !='' ">MERGE_,</if>
+			<if test="read !=null and read !='' ">READ_,</if>
 			<if test="createTime != null">CREATE_TIME,</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -113,8 +114,7 @@
 			<if test="dest != null">DEST = #{dest},</if>
 			<if test="title != null">TITLE = #{title},</if>
 			<if test="content != null">CONTENT = #{content},</if>
-			<if test="merge !=null and merge !='' ">MERGE = #{merge}</if>
-			<if test="read !=null and read !='' ">READ = #{read}</if>
+			<if test="read !=null and read !='' ">READ_ = #{read}</if>
 			<if test="createTime != null">CREATE_TIME = #{createTime},</if>
 		</set>
 		WHERE ID=#{id}
@@ -141,8 +141,8 @@
 				<if test="item.dest != null">DEST,</if>
 				<if test="item.title != null">TITLE,</if>
 				<if test="item.content != null">CONTENT,</if>
-				<if test="item.merge !=null and item.merge !='' ">MERGE,</if>
-				<if test="item.read !=null and item.read !='' ">READ,</if>
+				<if test="item.merge !=null and item.merge !='' ">MERGE_,</if>
+				<if test="item.read !=null and item.read !='' ">READ_,</if>
 				<if test="item.createTime != null">CREATE_TIME,</if>
 			</trim>
 			<trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -168,8 +168,7 @@
 				<if test="item.dest != null">DEST = #{item.dest},</if>
 				<if test="item.title != null">TITLE = #{item.title},</if>
 				<if test="item.content != null">CONTENT = #{item.content},</if>
-				<if test="item.merge !=null and item.merge !='' ">MERGE = #{item.merge},</if>
-				<if test="item.read !=null and item.read !='' ">MERGE = #{item.read},</if>
+				<if test="item.read !=null and item.read !='' ">READ_ = #{item.read},</if>
 				<if test="item.createTime != null">CREATE_TIME =#{item.createTime},</if>
 			</set>
 			WHERE ID=#{item.id}
