@@ -8,9 +8,8 @@
 				<form id="messageForm" method="POST">
 					<button class="btn" type="button" onclick="sendMess()">发表</button>
 					<input type="checkbox" name="merge" value="true"/>
-					<input type="hidden" name="source" value="1"/>
 					<input type="hidden" name="dest" value="-1"/>
-					<input type="hidden" name="title" value="测试留言"/>
+					<input type="hidden" name="title" value="【留言版】"/>
 					<small style="font-size: 10px;color:#555;">勾选表示紧急留言，博主就会收到紧急邮件啦</small>
 					<div class="col-xs-12">
 						<textarea name="content" id="content" class="sol-xs-12 mar-left-5" style="height:400px; max-height:600px;">${model.content}</textarea>		
@@ -39,7 +38,7 @@ $(function(){
 	$("#messageForm textarea").text("");
 	//初始化编辑器
 	editor=new wangEditor('content');
-	editor.config.uploadImgUrl = '${path}/index/wangEditor/upload';
+	editor.config.uploadImgUrl = '${path}/attach/wangEditor/upload';
 	editor.create();
 	$(".wangEditor-container .menu-group").removeClass("clearfix");
 	$(".wangEditor-container .menu-group div").removeClass("clearfix");

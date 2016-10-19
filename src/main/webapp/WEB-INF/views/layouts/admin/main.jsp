@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib prefix="sitemesh" uri="http://www.opensymphony.com/sitemesh/decorator"%>
-<%@ taglib prefix="d" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -180,24 +181,24 @@
 				<li class="green">
 					<a data-toggle="dropdown" class="dropdown-toggle" href="#"> 
 						<i class="icon-envelope icon-animated-vertical"></i> 
-						<span class="badge badge-success" id="messCount1">5</span>
+						<span class="badge badge-success" id="messCount1">${messageSize}</span>
 					</a>
 					<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
-						<li class="dropdown-header"><i class="icon-envelope-alt"></i><span id="messCount2">5</span>条消息</li>
-						<d:forEach var="item" items="${messageList}">
+						<li class="dropdown-header"><i class="icon-envelope-alt"></i><span id="messCount2">${messageSize}</span>条消息</li>
+						<c:forEach var="item" items="${messageList}">
 							<li>
 								<a href="#"> 
-									<img src="${path}/static/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" /> 
+									<img src="${item.sourceHead }" class="msg-photo" alt="Alex's Avatar" /> 
 									<span class="msg-body">
 										<span class="msg-title"> 
-											<span class="blue">Alex:</span> 不知道写啥 ...
+											<span class="blue">${item.sourName}:</span>${item.title} ...
 										</span> 
-										<span class="msg-time"><i class="icon-time"></i><span>1分钟以前</span></span>
+										<span class="msg-time"><i class="icon-time"></i><span><fmt:formatDate value="${item.createTime}" pattern="yyyy-MM-dd HH:mm:ss"/></span></span>
 									</span>
 								</a>
 							</li>
-						</d:forEach>
-						<li><a href="inbox.html"> 查看所有消息 <i class="icon-arrow-right"></i></a></li>
+						</c:forEach>
+						<li><a href="inbox"> 查看所有消息 <i class="icon-arrow-right"></i></a></li>
 					</ul>
 				</li>
 				<li class="light-blue">
@@ -279,7 +280,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="${path}/admin/article" class="dropdown-toggle"><i class="icon-desktop"></i> <span class="menu-text">文章管理</span></a>
+					<a href="${path}/admin/article" class="dropdown-toggle"><i class="icon-book"></i> <span class="menu-text">文章管理</span></a>
 				</li>
 				<li>
 					<a href="${path}/admin/preference" class="dropdown-toggle"><i class="icon-globe"></i> <span class="menu-text">配置管理</span></a>

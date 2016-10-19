@@ -57,7 +57,7 @@
 			<p>文章归档</p>
 		</h2>
 		<ul class="news" id="gdUL">
-			<c:forEach items="${dictList}" var="item">
+			<c:forEach items="${gdList}" var="item">
 				<li><a href="${path}/blog/gdList?date=${item.name}">${item.remark}</a></li>
 			</c:forEach> 
 		</ul>
@@ -89,33 +89,14 @@ $(function () {
     });  
     
     $.ajax({
-    	url:path+"/blog/getGdList",
-    	success:function(data){
-    		var html="";
-    		$(data).each(function(index,value){
-    			html+="<li><a href='"+path+"/blog/gdList?date="+value.name+"'>"+value.remark+"</a></li>";
-    		});
-    		$("#gdUL").empty().append(html);
-    	}
-    });
-    $.ajax({
     	url:path+"/blog/getLastArticle",
+    	cache:true,
     	success:function(data){
     		var html="";
     		$(data.result).each(function(index,value){
     			html+="<li><a href='"+path+"/blog/article/view/"+value.id+"'>"+value.title+"</a></li>";
     		});
     		$("#lastAritcle").empty().append(html);
-    	}
-    });
-    $.ajax({
-    	url:path+"/blog/getGdList",
-    	success:function(data){
-    		var html="";
-    		$(data).each(function(index,value){
-    			html+="<li><a href='"+path+"/blog/gdList?date="+value.name+"'>"+value.remark+"</a></li>";
-    		});
-    		$("#gdUL").empty().append(html);
     	}
     });
 });  

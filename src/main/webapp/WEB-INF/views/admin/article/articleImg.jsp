@@ -26,7 +26,7 @@ $("#preview").onload=function(){
 		var formData = new FormData();
 		formData.append('file', $('#toSelect')[0].files[0]);
 		$.ajax({
-		    url: '${path}/index/wangEditor/upload',
+		    url: '${path}/attach/wangEditor/upload',
 		    type: 'POST',
 		    cache: false,
 		    data: formData,

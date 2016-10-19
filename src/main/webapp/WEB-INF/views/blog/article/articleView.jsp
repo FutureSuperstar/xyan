@@ -57,7 +57,7 @@
 					<button class="btn" type="button" onclick="sendMess()">发表</button>
 					<input type="hidden" name="source" value="1"/>
 					<input type="hidden" name="dest" value="${model.id}"/>
-					<input type="hidden" name="title" value="${model.title}"/>
+					<input type="hidden" name="title" value="【评论】${model.title}"/>
 					<div class="col-xs-12">
 						<textarea name="content" id="content" class="sol-xs-12 mar-left-5" style="height:400px; max-height:600px;">${model.content}</textarea>		
 					</div>

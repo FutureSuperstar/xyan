@@ -11,7 +11,7 @@
 				<p>${item.produce1}</p>
 				<p>${item.produce2}</p>
 				<figure>
-					<img src="${item.imgUrl}">
+					<img src="${item.imgUrl}" alt="资源正在加载">
 				</figure>
 				<p class="dateview">
 					<span>
