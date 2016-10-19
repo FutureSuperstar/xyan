@@ -1,6 +1,5 @@
 package com.xyan.frame.feature.log.dao;
 
-import com.xyan.frame.base.dao.GenericDao;
 import com.xyan.frame.feature.log.model.LogModel;
 import com.xyan.frame.feature.mybatis.annotation.MyBatisRepository;
 
@@ -10,7 +9,12 @@ import com.xyan.frame.feature.mybatis.annotation.MyBatisRepository;
  * @Date:2016-04-14 17:18:14
  */
 @MyBatisRepository
-public interface LogDao extends GenericDao<LogModel, Long>{
-
+public interface LogDao{
+	 /**
+     * 插入单个对象
+     * @param model 对象
+     */
+    int insert(LogModel model);
+  
 	
 }

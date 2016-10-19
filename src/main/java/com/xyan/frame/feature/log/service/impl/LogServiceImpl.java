@@ -1,13 +1,11 @@
 package com.xyan.frame.feature.log.service.impl;
 
-import java.util.List;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.xyan.frame.base.dao.GenericDao;
-import com.xyan.frame.base.service.impl.GenericServiceImpl;
 import com.xyan.frame.feature.log.dao.LogDao;
 import com.xyan.frame.feature.log.model.LogModel;
 import com.xyan.frame.feature.log.service.LogService;
@@ -19,21 +17,17 @@ import com.xyan.frame.feature.log.service.LogService;
  */
 @Service
 @Transactional
-public class LogServiceImpl extends GenericServiceImpl<LogModel, Long> implements LogService{
+public class LogServiceImpl implements LogService{
 
  	
 	@Autowired
-	private LogDao  logService;//日志
-	
-	
-	@Override
-	public GenericDao<LogModel, Long> getDao() {
-		return  logService;
-	}
-
+	private LogDao  logDao;//日志
 
 	@Override
-	public List<LogModel> selectModelByExample(LogModel model) {
-		return null;
+	public int insert(LogModel model) {
+		model.setId(UUID.randomUUID().toString());
+		return logDao.insert(model);
 	}
+	
+	
 }

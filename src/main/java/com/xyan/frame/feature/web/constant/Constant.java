@@ -31,5 +31,7 @@ public class Constant implements ServletContextListener{
 		MultiViewResover.setViewPath(sc.getServletContext().getRealPath("/")+"WEB-INF\\views\\");
 		String path=sc.getServletContext().getContextPath();
 		sc.getServletContext().setAttribute("path", path);
+		
+		
 	}
 }

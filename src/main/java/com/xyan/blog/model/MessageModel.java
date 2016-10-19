@@ -6,6 +6,7 @@ package com.xyan.blog.model;
  * 这两种消息都会推送给管理员，并且留言的紧急消息会发送邮件
  */
 import java.util.Date;
+import java.util.HashMap;
 
 import com.xyan.frame.base.model.BaseModel;
 
@@ -185,4 +186,16 @@ public class MessageModel extends BaseModel{
 	}
 		
 	
+	public HashMap<String,Object> toHashMap(){
+		HashMap<String,Object> map=new HashMap<>();
+		map.put("id", super.getId());
+		map.put("content",this.content);
+		map.put("createTime",this.createTime);
+		map.put("dest",this.dest);
+		map.put("merge",this.merge);
+		map.put("read",this.read);
+		map.put("source",this.source);
+		map.put("title",this.title);
+		return map;
+	}
 }

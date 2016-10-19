@@ -60,7 +60,9 @@ public class Task {
 				cache.put(entry.getKey(), entry.getValue());
 			}
 		}
-		Cache.reset(cache);
+		if(cache.size()>0){
+			Cache.reset(cache);
+		}
 		logger.info("清理拦截end。。。"+cache.size());
 	}
 	

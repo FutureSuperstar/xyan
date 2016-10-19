@@ -5,13 +5,19 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartRequest;
 
+import com.xyan.frame.util.FileUtil;
 import com.xyan.frame.util.PropertiesUtil;
 
 @Controller
@@ -46,6 +52,35 @@ public class AttachController {
 			out.close();
 		}
         return;
-
+	}
+	
+	@RequestMapping(value="wangEditor/upload")
+	public void ueConfig(HttpServletRequest request,HttpServletResponse response) throws IOException{
+		String imageUrl=PropertiesUtil.getProperties("image.url");
+		String basePath =PropertiesUtil.getProperties("file.upload.path");//上传路径
+		//String basePath=request.getSession().getServletContext().getRealPath("/").replace("xyan", imageUrl)+"upload\\";
+		
+		String now=new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+		
+		MultipartRequest multipartRequest = (MultipartRequest) request;
+		MultipartFile mfile = (MultipartFile) multipartRequest.getFileMap().values().toArray()[0];
+		// 文件全名称
+		String fileName = mfile.getOriginalFilename();
+		// 文件后缀
+		String suffix = fileName.substring(fileName.lastIndexOf(".")+1);
+		String prefix=fileName.substring(0, fileName.lastIndexOf("."));
+		// 真正文件夹
+		String realFolder = basePath+now+"/";
+		// 真正文件路径
+		String realFile = realFolder+fileName;
+		prefix=UUID.randomUUID().toString();
+		prefix=FileUtil.getFileName(realFolder, fileName, suffix, prefix);
+		realFile=realFolder+prefix+"."+suffix;
+		// 保存文件
+		FileUtil.writeFile(mfile.getBytes(), realFile);
+		
+		response.setContentType("text/plain;charset=utf-8");
+		//输出文件访问路径
+		response.getWriter().write(imageUrl+"/"+now+"/"+prefix+"."+suffix);
 	}
 }

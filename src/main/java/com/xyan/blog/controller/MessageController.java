@@ -4,6 +4,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,10 +63,16 @@ public class MessageController {
 				.addObject("page", page);
 	}
 	
+	@SuppressWarnings("unchecked")
 	@RequestMapping(method=RequestMethod.POST,value="saveMess")
 	@ResponseBody
-	public ResponseModel saveMess(MessageModel message){
+	public ResponseModel saveMess(MessageModel message,HttpServletRequest request){
 		messageService.insert(message);
+		int size=(int) request.getSession().getServletContext().getAttribute("messageSize");
+		request.getSession().getServletContext().setAttribute("messageSize",size+1);
+		List<HashMap<String, Object>> messageList=(List<HashMap<String, Object>>) request.getSession().getServletContext().getAttribute("messageList");
+		messageList.add(message.toHashMap());
+		request.getSession().getServletContext().setAttribute("messageList",messageList);
 		return new ResponseModel(true);
 	}
 

@@ -49,6 +49,7 @@ public class MessageServiceImpl extends GenericServiceImpl<MessageModel, Long> i
 		if(user==null){
 			throw new XyanException("尚未登陆！");
 		}
+		model.setRead("false");
 		model.setCreateTime(new Date());
 		model.setSource(user.getId());
 		if("true".equals(model.getMerge())){

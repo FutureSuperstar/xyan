@@ -37,7 +37,7 @@
 	</select>
 
 	<select id="selectShowMess" resultType="com.xyan.blog.vo.MessageVO">
-		select sou.ID as "id",sou.CONTENT as "content", sou.CREATE_TIME as "createTime",u.user_name as "sourName",u.head as "sourceHead"
+		select sou.ID as "id",sou.CONTENT as "content", sou.CREATE_TIME as "createTime",u.user_name as "sourName",u.head as "sourceHead",sou.TITLE as "title"
 		from xy_message sou left join xy_user u on sou.source=u.id
 	</select>
 	
@@ -60,7 +60,7 @@
 
 	<select id="selectByExample" resultType="java.util.HashMap"
 		parameterType="com.xyan.blog.model.MessageModel">
-		SELECT sou.ID as "id",sou.CONTENT as "content", sou.CREATE_TIME as "createTime",u.user_name as "sourName",u.head as "sourceHead"
+		SELECT sou.ID as "id",sou.CONTENT as "content", sou.CREATE_TIME as "createTime",u.user_name as "sourName",u.head as "sourceHead",sou.TITLE as "title"
 		FROM xy_message sou LEFT JOIN xy_user u ON sou.source=u.id
 		<where>
 			<if test="id!=null">AND sou.ID = #{id}</if>

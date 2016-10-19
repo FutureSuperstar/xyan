@@ -1,5 +1,6 @@
 package com.xyan.frame.security.web.listener;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -12,7 +13,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.xyan.blog.model.DictModel;
+import com.xyan.blog.model.MessageModel;
 import com.xyan.blog.service.DictService;
+import com.xyan.blog.service.MessageService;
 import com.xyan.common.cache.CacheUtil;
 import com.xyan.common.enums.DictType;
 
@@ -23,6 +26,9 @@ public class SpringListener implements ApplicationListener<ContextRefreshedEvent
 	
 	@Autowired
 	private DictService dictService;
+	
+	@Autowired
+	private MessageService messageService;
 	
 	public SpringListener() {
 		logger.info("spring创建对象");
@@ -39,6 +45,11 @@ public class SpringListener implements ApplicationListener<ContextRefreshedEvent
 			example.setType(DictType.DICT_GD.getCode());
 			List<DictModel> dictList=dictService.selectModelByExample(example);
 			webApplicationContext.getServletContext().setAttribute("gdList", dictList);
+			MessageModel message=new MessageModel();
+			message.setRead("false");
+			List<HashMap<String, Object>> messageList=messageService.selectByExample(message);
+			webApplicationContext.getServletContext().setAttribute("messageList",messageList );
+			webApplicationContext.getServletContext().setAttribute("messageSize",messageList.size());
 		}
 		CacheUtil.initCache();
 	}
