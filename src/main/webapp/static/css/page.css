@@ -81,6 +81,17 @@ a:link, a:visited {text-decoration: none;color: #333;}
     top: 217px;
     z-index: 20;
 }
+.exception_bottom {
+    background-color: red;
+    font-size: 18px;
+    height: 35px;
+    left: 719px;
+    line-height: 35px;
+    position: fixed;
+    text-align: center;
+    bottom: 5px;
+    z-index: 20;
+}
 
 /*
 响应式

@@ -63,15 +63,17 @@ function sendMess(){
 		return ;
 	}
 	$.ajax({
-		url:"",
+		url:path+"/blog/board/saveMess",
 		type:"POST",
 		data:$("#messageForm").serialize(),
 		success:function(data){
 			if(data.success){
 				$(".wangEditor-container .wangEditor-txt").html("");
 				location.reload();
-			}else{
+			}else if(!!data.message){
 				$("<div class='exception' id='exception'>"+data.message+"</div>").prependTo("body").fadeOut(2000);
+			}else{
+				$("<div class='exception' id='exception'>访问速度太快，请稍后！</div>").prependTo("body").fadeOut(2000);
 			}
 		}
 	});

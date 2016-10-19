@@ -43,10 +43,10 @@ h1 {font-size: 40px;margin-bottom: 35px;}
 	<div id="errorBox">
 		<div id="errorText">
 			<h1>Sorry..服务器开小差了！</h1>
-			<p>似乎你所寻找的网页已故障了。
+			<p>似乎你所寻找的网页已故障了。</p>
 			<p>或者也许你只是键入错误了一些东西。</p>
-			请不要担心，这没事。如果这对你很重要，请与管理员联系。
-			</p>
+			<p>${message}</p>
+			<p>请不要担心，这没事。如果这对你很重要，请与管理员联系。</p>
 			<p>火星不太安全，我可以免费送你回地球</p>
 			<a href="${path}" title="返回首页">返回首页</a> 
 			<a href="${path}/contactUs" title="联系管理员">联系管理员</a>
