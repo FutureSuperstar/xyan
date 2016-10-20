@@ -44,6 +44,8 @@
 </li>
 </ul>	
 
-	
-	
-整个网站是比较简单的，前段注意效果展示，后端需要严格控制入侵。
+
+项目部署：
+	1、在tomcat中server.xml的host节点中增加<Context docBase="D:\tmp" path="/img" reloadable="true"/>
+	       其中docBase的目录要和application.properties中的file.upload.path保持一致，否则会导致文件上传问题。
+	2、导入xyan.sql
