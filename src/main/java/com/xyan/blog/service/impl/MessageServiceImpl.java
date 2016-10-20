@@ -59,6 +59,7 @@ public class MessageServiceImpl extends GenericServiceImpl<MessageModel, Long> i
 			mail.setToUser(CacheUtil.getCache("mail", PreferenceType.MAIL.getCode()));
 			mail.setState("00");
 			mail.setSubject("网站留言");
+			mail.setCreateTime(new Date());
 			mailService.insert(mail);
 		}
 		return super.insert(model);

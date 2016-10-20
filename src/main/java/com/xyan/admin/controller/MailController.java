@@ -1,7 +1,12 @@
 package com.xyan.admin.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.xyan.admin.service.MailService;
 
 
 /**
@@ -14,5 +19,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value = "/admin/mail")
 public class MailController {
 
+	@Autowired
+	private MailService mailService;
 	
+	@RequestMapping(method=RequestMethod.GET)
+	public ModelAndView index(){
+		return new ModelAndView("admin/mail/mail").addObject("mailList", mailService.selectByExample(null));
+	}
 }

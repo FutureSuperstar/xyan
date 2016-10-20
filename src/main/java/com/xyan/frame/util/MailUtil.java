@@ -10,6 +10,8 @@ import javax.mail.Message.RecipientType;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.apache.log4j.Logger;
+
 import com.xyan.admin.model.MailModel;
 
 /**
@@ -18,7 +20,10 @@ import com.xyan.admin.model.MailModel;
  */
 public class MailUtil {
 	
+	private static Logger logger=Logger.getLogger(MailUtil.class);
+	
 	public static String send(MailModel mail){
+		logger.info("准备发送邮件。。。");
 		String result=null;
 		final Properties props=new Properties();
 		try {
@@ -49,8 +54,7 @@ public class MailUtil {
 	        // 创建邮件消息
 	        MimeMessage message = new MimeMessage(mailSession);
 	        // 设置发件人
-	        InternetAddress form = new InternetAddress(
-	                props.getProperty("mail.user"));
+	        InternetAddress form = new InternetAddress(props.getProperty("mail.user"));
 	        message.setFrom(form);
 
 	        // 设置收件人
@@ -69,7 +73,9 @@ public class MailUtil {
 	        // 发送邮件
 	        Transport.send(message);
 	        result="success";
+	        logger.info("邮件发送成功。。。");
 		} catch (Exception e) {
+			logger.error("邮件发送失败！。。。"+e);
 			e.printStackTrace();
 			throw new RuntimeException("邮件发送失败！",e);
 		}

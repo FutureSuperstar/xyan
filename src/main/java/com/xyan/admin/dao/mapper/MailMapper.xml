@@ -13,6 +13,7 @@
 		, CONTENT as "content"
 		, SUBJECT as "subject"
 		, STATE as "state"
+		, CREATE_TIME as "createTime"
 	</sql>
 
 	<sql id="objectSQL">
@@ -22,6 +23,7 @@
 		, CONTENT as "content"
 		, SUBJECT as "subject"
 		, STATE as "state"
+		, CREATE_TIME as "createTime"
 	</sql>
 
 	<select id="selectByPrimaryKey" resultType="com.xyan.admin.model.MailModel"
@@ -46,6 +48,7 @@
 			<if test="subject !=null and subject !=''">AND SUBJECT = #{subject}</if>
 			<if test="state !=null and state !=''">AND STATE = #{state}</if>
 		</where>
+		order by CREATE_TIME desc 
 	</select>
 
 	<select id="selectByExample" resultType="java.util.HashMap"
@@ -61,6 +64,7 @@
 			<if test="subject !=null and subject !=''">AND SUBJECT = #{subject}</if>
 			<if test="state !=null and state !=''">AND STATE = #{state}</if>
 		</where>
+		order by CREATE_TIME desc 
 	</select>
 
 
@@ -80,6 +84,7 @@
 			<if test="content != null">CONTENT,</if>
 			<if test="subject != null">SUBJECT,</if>
 			<if test="state != null">STATE,</if>
+			<if test="createTime != null">CREATE_TIME,</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides=",">
 			<if test="id != null">#{id},</if>
@@ -88,6 +93,7 @@
 			<if test="content != null">#{content},</if>
 			<if test="subject != null">#{subject},</if>
 			<if test="state != null">#{state},</if>
+			<if test="createTime != null">#{createTime},</if>
 		</trim>
 	</insert>
 
