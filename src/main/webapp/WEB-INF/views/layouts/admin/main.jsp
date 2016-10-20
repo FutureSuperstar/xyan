@@ -198,7 +198,7 @@
 								</a>
 							</li>
 						</c:forEach>
-						<li><a href="inbox"> 查看所有消息 <i class="icon-arrow-right"></i></a></li>
+						<li><a href="${path}/admin/message"> 查看所有消息 <i class="icon-arrow-right"></i></a></li>
 					</ul>
 				</li>
 				<li class="light-blue">
@@ -277,6 +277,13 @@
 					<ul class="submenu">
 						<li><a href="${path}/admin/authority/role"><i class="icon-double-angle-right"></i>角色</a></li>
 						<li><a href="${path}/admin/authority/resource"><i class="icon-double-angle-right"></i>资源</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="dropdown-toggle"><i class="icon-tasks"></i> <span class="menu-text">消息邮件</span><b class="arrow icon-angle-down"></b></a>
+					<ul class="submenu">
+						<li><a href="${path}/admin/mail"><i class="icon-envelope"></i>邮件</a></li>
+						<li><a href="${path}/admin/message"><i class="icon-bell"></i>消息</a></li>
 					</ul>
 				</li>
 				<li>
