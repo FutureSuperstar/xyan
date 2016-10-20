@@ -66,7 +66,7 @@ public class Task {
 		logger.info("清理拦截end。。。"+cache.size());
 	}
 	
-	//@Scheduled(cron = "${scheduled.articleType}")
+	@Scheduled(cron = "${scheduled.articleType}")
 	public void articleType(){
 		logger.info("检查更新博客分类start。。。");
 		DictModel example=new DictModel();
