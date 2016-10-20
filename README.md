@@ -12,7 +12,7 @@
 
 ------------------------------
 项目部署：
-	1、在tomcat中server.xml的host节点中增加<Context docBase="D:\tmp" path="/img" reloadable="true"/><br/>
+	1、在tomcat中server.xml的host节点中增加 &lt;Context docBase="D:\tmp" path="/img" reloadable="true"/&gt;&lt;br&gt;
 	   其中docBase的目录要和application.properties中的file.upload.path保持一致，否则会导致文件上传问题。<br/>
 	2、导入xyan.sql<br/>
 ------------------------------
