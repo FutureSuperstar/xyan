@@ -20,7 +20,7 @@ header p{margin:17px 0 0 0;text-shadow:#000 1px 1px 1px;color:#fff}
 #nav ul li a{ display:block; color:#FFF; }/* 背景颜色过渡效果 */
 #nav ul li a:hover{  color: #FFF; font-weight:bold;}
 #nav ul li a#nav_current {color: #FFF; font-weight:bold; border-radius:50px 0} /* nav高亮显示背景颜色 */
-.content{ width:745px; float:left;overflow: hidden;}/* left form */
+.content{ width:745px;overflow: hidden;margin:22px 0 15px;background-color:#fff; border: 1px solid #fcd3cf;border-radius:5px }/* left form */
 /* bloglist index */
 .bloglist{ width:99%; margin:20px 5px 20px 5px;clear:both; overflow:hidden; }
 .bloglist h2{ background: url(../images/index/blogbgs.png) no-repeat right; line-height:29px; height:29px; font-size:14px; color:#3b3b3b; padding:10px 0 10px 20px;}

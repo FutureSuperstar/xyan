@@ -93,6 +93,17 @@ a:link, a:visited {text-decoration: none;color: #333;}
     z-index: 20;
 }
 
+.produce {
+    background-color: #f6f6f6;
+    margin-bottom: 15px;
+    min-height: 25px;
+    padding-top: 5px;
+    text-indent: 2em;
+    border-radius:3px
+}
+.articleBody{font-size: 14px;}
+.articleBody p{text-indent: 2em;}
+
 /*
 响应式
 */
