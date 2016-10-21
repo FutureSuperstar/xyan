@@ -53,8 +53,18 @@ public class MathUtil {
 		}
 	}
 	
+	/**
+	 * @Author:wangming
+	 * @Description：判断是否奇数
+	 * @param num
+	 * @return
+	 * @since 2016年10月21日上午10:58:22
+	 */
+	public static boolean isOdd(int num){
+		return (num&1)!=0;
+	}
+	
 	public static void main(String[] args) {
-		String xx="xx";
-		System.out.println(str2Long(xx));
+		System.out.println(isOdd(5));
 	}
 }
