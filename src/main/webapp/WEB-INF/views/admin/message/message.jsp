@@ -39,7 +39,7 @@
 												</label> 
 												<i class="message-star icon-star-empty light-grey"></i> 
 												<span class="sender" title="John Doe">${item.sourName}</span> 
-												<span class="time"><fmt:formatDate value="${item.createTime}" pattern="yyyy-MM-dd HH:mm:ss"/></span> 
+												<span class="time"  style="width: 120px;"><fmt:formatDate value="${item.createTime}" pattern="yyyy-MM-dd HH:mm:ss"/></span> 
 												<span class="attachment"> <i class="icon-paper-clip"></i></span> 
 												<span class="summary"><span class="text" data-id="${item.id}">${item.title}</span></span>
 											</div>
@@ -123,7 +123,7 @@
 					</div>
 					<div class="action-buttons pull-right">
 						<!-- 删除邮件 -->
-						<a href="#"><i class="icon-trash red icon-only bigger-130"></i></a>
+						<a href="${path}/admin/message/del${item.id}"><i class="icon-trash red icon-only bigger-130"></i></a>
 					</div>
 				</div>
 				<div class="hr hr-double"></div>

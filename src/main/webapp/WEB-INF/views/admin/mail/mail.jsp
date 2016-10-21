@@ -123,7 +123,7 @@
 					</div>
 					<div class="action-buttons pull-right">
 						<!-- 删除邮件 -->
-						<a href="#"><i class="icon-trash red icon-only bigger-130"></i></a>
+						<a href="${path}/admin/mail/del${item.id}"><i class="icon-trash red icon-only bigger-130"></i></a>
 					</div>
 				</div>
 	

@@ -110,7 +110,7 @@ var editor =null;
 $(function(){
 	//初始化编辑器
 	editor=new wangEditor('content');
-	editor.config.uploadImgUrl = '${path}/index/wangEditor/upload';
+	editor.config.uploadImgUrl = '${path}/attach/wangEditor/upload';
 	editor.create();
 	//种类
 	$("#typeName").on("click",function(){
