@@ -3,66 +3,72 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <title>${model.title}</title>
 <link rel="stylesheet" type="text/css" href="${path}/static/plugin/wangEditor-2.1.12/css/wangEditor.min.css">
-<div class="content">
-	<div class="page-header">
-		<h3 class="text-center">${model.title}</h3>
-	</div>
-	<div class="row">
-		<p class="dateview">
-			<span>
-				<fmt:formatDate value="${model.updateTime}" pattern="yyyy-MM-dd"/>
-			</span>
-			<span>作者：xyan</span>
-			<span>分类：<a target="_blank" href="${path}/blog/type">心灵记录</a></span>
-			<span>阅读(${model.readCount})</span>
-			<span>评论(${model.commentCount})</span>
-		</p>
-		<br>
-	</div>
-	<div>
-		${model.produce1}
-	</div>
-	<c:if test="${not empty model.imgUrl}">
-		<div>
-			<img src="${model.imgUrl}">
+<div class="content2">
+	<section class="article" style="padding: 20px">
+		<div class="page-header">
+			<h3 class="text-center">${model.title}</h3>
 		</div>
-	</c:if>
-	<div>
-		${model.produce2}
-	</div>
-	<div>
-		${model.content }
-	</div>
-	<div class="row">
-		<div style="border: 2px dashed #ccc;margin-top: 20px;">评论区：</div>
-	</div>
-	<div class="row">
-		<c:forEach items="${discussList}" var="data">
-			<div class="mbox" style="width:768px;">
-				<div class="mbox-left" style="float: left;width:14%" >
-					<img src="${data.sourceHead}" class="user-head"/>
-				</div>
-				<div class="mbox-right" style="float: left;width:83%">
-					<div class="mbox-head">时间：<fmt:formatDate value="${data.createTime}" pattern="yyyy-MM-dd HH:mm:ss"/></div>
-					<div class="mbox-text">${data.content}</div>
-				</div>
-				<div class="clearfix"></div>
+		<div class="row">
+			<p class="dateview">
+				<span>
+					<fmt:formatDate value="${model.updateTime}" pattern="yyyy-MM-dd"/>
+				</span>
+				<span>作者：xyan</span>
+				<span>分类：<a target="_blank" href="${path}/blog/type">心灵记录</a></span>
+				<span>阅读(${model.readCount})</span>
+				<span>评论(${model.commentCount})</span>
+			</p>
+			<br>
+		</div>
+		<c:if test="${not empty model.produce1}">
+			<div class="produce">
+				${model.produce1}
 			</div>
-		</c:forEach>
-	</div>
-	<div class="mar15">
+		</c:if>
+		<c:if test="${not empty model.imgUrl}">
+			<div>
+				<img src="${model.imgUrl}">
+			</div>
+		</c:if>
+		<c:if test="${not empty model.produce2}">
+			<div class="produce">
+				${model.produce2}
+			</div>
+		</c:if>
+		<div class="articleBody">
+			${model.content }
+		</div>
+	</section>
+</div>
+<div class="row">
+	<div style="border: 2px dashed #ccc;margin-top: 20px;">评论区：</div>
+</div>
+<div class="row">
+	<c:forEach items="${discussList}" var="data">
+		<div class="mbox" style="width:768px;">
+			<div class="mbox-left" style="float: left;width:14%" >
+			<img src="${data.sourceHead}" class="user-head"/>
+			</div>
+			<div class="mbox-right" style="float: left;width:83%">
+				<div class="mbox-head">时间：<fmt:formatDate value="${data.createTime}" pattern="yyyy-MM-dd HH:mm:ss"/></div>
+				<div class="mbox-text">${data.content}</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</c:forEach>
+</div>
+<div class="mar15">
+	<div class="col-xs-12">
 		<div class="col-xs-12">
-			<div class="col-xs-12">
-				<form id="messageForm" method="POST">
-					<button class="btn" type="button" onclick="sendMess()">发表</button>
-					<input type="hidden" name="source" value="1"/>
-					<input type="hidden" name="dest" value="${model.id}"/>
-					<input type="hidden" name="title" value="【评论】${model.title}"/>
-					<div class="col-xs-12">
-						<textarea name="content" id="content" class="sol-xs-12 mar-left-5" style="height:400px; max-height:600px;">${model.content}</textarea>		
-					</div>
-				</form>
-			</div>
+			<form id="messageForm" method="POST">
+				<button class="btn" type="button" onclick="sendMess()">发表</button>
+				<input type="hidden" name="source" value="1"/>
+				<input type="hidden" name="dest" value="${model.id}"/>
+				<input type="hidden" name="title" value="【评论】${model.title}"/>
+				<div class="col-xs-12">
+					<textarea name="content" id="content" class="sol-xs-12 mar-left-5" style="height:400px; max-height:600px;">${model.content}</textarea>		
+				</div>
+			</form>
 		</div>
 	</div>
 </div>

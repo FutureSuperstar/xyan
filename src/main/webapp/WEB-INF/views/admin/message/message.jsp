@@ -174,18 +174,18 @@
 			var that=$(this);
 			var messageId=$(this).data("id");
 			$('.message-container').append('<div class="message-loading-overlay"><i class="icon-spin icon-spinner orange2 bigger-160"></i></div>');
+			$.ajax({
+				url:path+"/admin/message/read"+messageId,
+				success:function(){
+					that.parents(".message-item").removeClass("message-unread");
+				}
+			});
 			setTimeout(function() {
 				$('.message-container').find('.message-loading-overlay').remove();
 				message.addClass('message-inline-open').append('<div class="message-content" />')
 				var content = message.find('.message-content:last').html($('#id-message-content'+messageId).html());
 				content.find('.message-body').slimScroll({height : 200,railVisible : true});
 			}, 500 + parseInt(Math.random() * 500));
-			$.ajax({
-				url:pat+"/admin/message/read"+messageId,
-				success:function(){
-					that.parents(".message-item").removeClass("message-unread");
-				}
-			});
 		});
 
 

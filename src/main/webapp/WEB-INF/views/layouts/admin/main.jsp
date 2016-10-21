@@ -216,7 +216,7 @@
 
 						<li class="divider"></li>
 
-						<li><a href="#"> <i class="icon-off"></i> 退出
+						<li><a href="${path}/admin/logout"> <i class="icon-off"></i> 退出
 						</a></li>
 					</ul>
 				</li>
