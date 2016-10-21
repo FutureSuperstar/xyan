@@ -29,6 +29,17 @@ public class AdminMessageController {
 		return new ModelAndView("admin/message/message");
 	}
 	
+	@RequestMapping(value="del{id}",method=RequestMethod.GET)
+	public String del(@PathVariable Long id,HttpServletRequest request){
+		messageService.delete(id);
+		MessageModel message=new MessageModel();
+		message.setRead("false");
+		List<HashMap<String, Object>> messageList=messageService.selectByExample(message);
+		request.getSession().getServletContext().setAttribute("messageList",messageList );
+		request.getSession().getServletContext().setAttribute("messageSize",messageList.size());
+		return "redirect:/admin/message";
+	}
+	
 	@RequestMapping("read{id}")
 	@ResponseBody
 	public ResponseModel getshowMess(@PathVariable Long id,HttpServletRequest request){
