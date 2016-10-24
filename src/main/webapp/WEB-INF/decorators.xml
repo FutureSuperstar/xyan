@@ -27,5 +27,11 @@
      	<pattern>/blog/**</pattern>
      	<pattern>/index</pattern>
     </decorator>
+    
+    <!-- 插件 -->
+    <decorator name="plug" page="plug/main.jsp">
+     	<pattern>/plug/**</pattern>
+     	<pattern>/plug</pattern>
+    </decorator>
 	
 </decorators>

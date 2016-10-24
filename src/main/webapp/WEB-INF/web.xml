@@ -5,10 +5,15 @@
 	id="WebApp_ID" version="3.0">
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>
-            classpath*:applicationContext.xml
-    </param-value>
+			<param-value>
+	            classpath*:applicationContext.xml
+	    </param-value>
 	</context-param>
+	
+	<listener>
+		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+	</listener>
+	
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
@@ -74,9 +79,7 @@
 		<param-name>log4jRefreshInterval</param-name>
 		<param-value>60000</param-value>
 	</context-param>
-	<listener>
-		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
-	</listener>
+	
 	<!-- 由tomcat处理静态资源 -->
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
