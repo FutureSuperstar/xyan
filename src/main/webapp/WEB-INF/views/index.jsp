@@ -3,6 +3,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <div class="content">
 	<div class="bloglist">
+		<c:if test="${empty page.result}">
+			<ul class="text-center">暂无匹配资源</ul>
+		</c:if>
 		<c:forEach items="${page.result}" var="item">
 			<ul>
 				<h2>
