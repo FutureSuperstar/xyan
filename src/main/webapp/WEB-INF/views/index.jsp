@@ -11,8 +11,12 @@
 				<h2>
 					<a title="${item.title}" href="${path}/blog/article/view/${item.id}" target="_blank">${item.title}</a>
 				</h2>
-				<p>${item.produce1}</p>
-				<p>${item.produce2}</p>
+				<c:if test="${not empty item.produce1}">
+					<p class="datap">${item.produce1}</p>
+				</c:if>
+				<c:if test="${not empty item.produce2}">
+					<p class="datap">${item.produce2}</p>
+				</c:if>
 				<figure>
 					<img src="${item.imgUrl}" alt="资源正在加载">
 				</figure>
