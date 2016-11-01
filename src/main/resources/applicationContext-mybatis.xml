@@ -21,8 +21,9 @@
     http://www.springframework.org/schema/util
     http://www.springframework.org/schema/util/spring-util.xsd ">
     
-	<!-- 启用对事务注解的支持 -->
+    <!-- 启用注解 -->
 	<context:annotation-config /> 
+	<!-- 启用对事务注解的支持 -->
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	
 	
@@ -59,11 +60,11 @@
 		<property name="filters" value="stat" />
 	</bean>
 
-	<!-- mybatis文件配置，扫描所有mapper文件 -->
 	<!-- sqlSession工厂类 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
 		<property name="dataSource" ref="dataSource" />
+		<!-- mybatis文件配置，扫描所有mapper文件 -->
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:com/xyan/**/mapper/*.xml</value>
@@ -71,6 +72,7 @@
 		</property>
 		<property name="plugins">  
 			<list>
+				<!-- 分页插件 -->
 	        	<bean class="com.xyan.frame.feature.mybatis.intercept.PageHelper" >  
 	        		<property name="databaseType">
 	        			<value>mysql</value>
