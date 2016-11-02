@@ -2,6 +2,7 @@ package com.xyan.frame.security;
 
 import java.security.MessageDigest;
 
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.DigestUtils;
 
 /**
@@ -70,8 +71,30 @@ public class SecureUtil {
         return DigestUtils.sha256Hex(value);
     }
     
+    /**
+     * @Author:wangming
+     * @Description:base64加密
+     * @param str
+     * @return
+     * @since 2016年11月1日下午3:04:54
+     */
+    public static String base64Encode(String str){
+    	return Base64.encodeBase64String(str.getBytes());
+    }
+    /**
+     * @Author:wangming
+     * @Description:base64加密
+     * @param str
+     * @return
+     * @since 2016年11月1日下午3:04:54
+     */
+    public static String base64Decode(String str){
+    	return new String(Base64.decodeBase64(str));
+    }
+    
     public static void main(String[] args) {
-		System.out.println(md5Hex(md5Hex("admin")+"123456"));
-		System.out.println(md5("hellow"));
+    	String str="你好。。。";
+    	System.out.println(base64Encode(str));
+    	System.out.println(base64Decode(base64Encode(str)));
 	}
 }
