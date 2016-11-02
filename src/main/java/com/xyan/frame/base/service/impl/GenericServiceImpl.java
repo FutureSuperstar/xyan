@@ -9,7 +9,7 @@ import com.xyan.frame.base.service.GenericService;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 import com.xyan.frame.feature.mybatis.intercept.PageHelper;
 import com.xyan.frame.feature.primary.service.impl.CodeServiceImpl;
-import com.xyan.frame.util.SpringBeanUtil;
+import com.xyan.frame.util.SpringUtil;
 
 /**
  * GenericService的实现类, 其他的自定义 ServiceImpl, 继承自它,可以获得常用的增删查改操作,
@@ -34,7 +34,7 @@ public abstract class GenericServiceImpl<Model extends BaseModel, PK> implements
      * @param model 对象
      */
     public int insert(Model model) {
-    	CodeServiceImpl codeService=(CodeServiceImpl) SpringBeanUtil.getBean("codeServiceImpl");
+    	CodeServiceImpl codeService=(CodeServiceImpl) SpringUtil.getBean("codeServiceImpl");
     	Long id=codeService.selectPrimaryKey(model.getClass().getSimpleName());
     	model.setId(id);
         return getDao().insert(model);
