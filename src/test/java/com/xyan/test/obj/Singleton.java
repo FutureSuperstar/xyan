@@ -1,20 +1,15 @@
 package com.xyan.test.obj;
 
-public class Singleton{
+public class Singleton {
+
+	private Singleton() {
+	}
+
+	public static final Singleton getInstance() {
+		return SingletonHolder.INSTANCE;
+	}
 	
-	enum Holder {
-		
-		INSTANCE;
-		
-		private Singleton instance;
-		
-		Holder() {
-			instance = new Singleton();
-		}
-		
-		public Singleton getInstance() {
-			return instance;
-		}
+	private static class SingletonHolder {
+		private static final Singleton INSTANCE = new Singleton();
 	}
 }
-
