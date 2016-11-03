@@ -14,7 +14,7 @@
 					<fmt:formatDate value="${model.updateTime}" pattern="yyyy-MM-dd"/>
 				</span>
 				<span>作者：xyan</span>
-				<span>分类：<a target="_blank" href="${path}/blog/type">心灵记录</a></span>
+				<span>分类：<a target="_blank" href="${path}/blog/type/${model.typeId}">${typeName}</a></span>
 				<span>阅读(${model.readCount})</span>
 				<span>评论(${model.commentCount})</span>
 			</p>

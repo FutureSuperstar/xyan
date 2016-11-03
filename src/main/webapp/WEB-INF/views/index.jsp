@@ -25,7 +25,7 @@
 						<fmt:formatDate value="${item.createTime}" pattern="yyyy-MM-dd"/>
 					</span>
 					<span>作者：${item.userName}</span>
-					<span>分类：<a href="${path}" target="_blank">${item.typeName}</a></span>
+					<span>分类：<a href="${path}/blog/type/${item.typeId}" target="_blank">${item.typeName}</a></span>
 					<span>阅读(${item.readCount})</span>
 					<span>评论(${item.commentCount})</span>
 				</p>

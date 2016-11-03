@@ -36,6 +36,13 @@
 	<script src="${path}/static/assets/js/html5shiv.js"></script>
 	<script src="${path}/static/assets/js/respond.min.js"></script>
 	<![endif]-->
+	<style type="text/css">
+		.borderRequried{
+		    border-color: rgb(239,28,16) !important;
+		    box-shadow: none;
+		    outline: 0 none;
+		}
+	</style>
 </head>
 <body class="login-layout">
 <div class="main-container">
