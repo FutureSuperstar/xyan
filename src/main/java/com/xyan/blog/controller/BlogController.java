@@ -62,7 +62,7 @@ public class BlogController {
 				.addObject("page", articleService.selectByPage(vo, page));
 	}
 	
-	@RequestMapping(value="type/{id}",method = RequestMethod.GET)
+	@RequestMapping(value="type/{typeId}",method = RequestMethod.GET)
 	public ModelAndView type(ArticleVO vo,Page<HashMap<String, Object>> page,@PathVariable Long typeId){
 		//技术类博客，查询ID不是慢生活和闲言碎语的
 		vo.setTypeId(typeId);

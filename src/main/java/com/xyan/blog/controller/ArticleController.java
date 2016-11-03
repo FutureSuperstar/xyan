@@ -11,11 +11,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.xyan.blog.model.ArticleModel;
+import com.xyan.blog.model.ArticleTypeModel;
 import com.xyan.blog.model.MessageModel;
 import com.xyan.blog.service.ArticleService;
+import com.xyan.blog.service.ArticleTypeService;
 import com.xyan.blog.service.MessageService;
 import com.xyan.blog.vo.ArticleVO;
-import com.xyan.common.enums.ArticleType;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 
 
@@ -32,6 +33,8 @@ public class ArticleController {
 
 	@Autowired
 	private ArticleService articleService;//文章
+	@Autowired
+	private ArticleTypeService articleTypeService;//文章类别
 	
 	@Autowired
 	private MessageService  messageService;
@@ -55,15 +58,18 @@ public class ArticleController {
 	/**进入查看*/
 	@RequestMapping(value="view/{id}", method = RequestMethod.GET)
 	public ModelAndView toView(@PathVariable Long id){
+		logger.info("查看文章详细。。。");
 		ArticleModel entity=articleService.selectByPrimaryKey(id);
 		if(entity==null){
 			throw new NullPointerException("没有找到指定的文章（博客）");
 		}
+		ArticleTypeModel typeModel=articleTypeService.selectByPrimaryKey(entity.getTypeId());
 		MessageModel model=new MessageModel();
 		model.setDest(entity.getId());
 		return new ModelAndView("blog/article/articleView")
 			.addObject("discussList", messageService.selectByExample(model))
 			.addObject("title","文章（博客）查看")
+			.addObject("typeName", typeModel.getName())
 			.addObject("model", entity);
 	}
 }
