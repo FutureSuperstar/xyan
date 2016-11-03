@@ -106,22 +106,27 @@
 		, article.IMG_URL as "imgUrl"
 		FROM xy_article article left join xy_article_type  atype on article.TYPE_ID=atype.id
 		<where>
-			<if test="id!=null">AND ID = #{id}</if>
-			<if test="title !=null and title !='' ">AND instr(TITLE,#{title})>0</if>
-			<if test="content !=null and content !='' ">AND CONTENT = #{content}</if>
-			<if test="userId!=null">AND USER_ID = #{userId}</if>
-			<if test="createTime!=null">AND CREATE_TIME = #{createTime}</if>
-			<if test="createTimeStart !=null">AND CREATE_TIME  &gt;= #{createTimeStart}</if>
-			<if test="createTimeEnd !=null">AND CREATE_TIME &lt;= #{createTimeEnd}</if>
-			<if test="updateTime!=null">AND UPDATE_TIME = #{updateTime}</if>
-			<if test="typeId!=null">AND article.TYPE_ID = #{typeId}</if>
+			<if test="id !=null">AND article.ID = #{id}</if>
+			<if test="title !=null and title !='' ">AND instr(article.TITLE,#{title})>0</if>
+			<if test="content !=null and content !='' ">AND article.CONTENT = #{content}</if>
+			<if test="userId!=null">AND article.USER_ID = #{userId}</if>
+			<if test="createTime!=null">AND article.CREATE_TIME = #{createTime}</if>
+			<if test="createTimeStart !=null">AND article.CREATE_TIME  &gt;= #{createTimeStart}</if>
+			<if test="createTimeEnd !=null">AND article.CREATE_TIME &lt;= #{createTimeEnd}</if>
+			<if test="updateTime!=null">AND article.UPDATE_TIME = #{updateTime}</if>
+			<if test="typeId !=null">AND article.TYPE_ID = #{typeId}</if>
+			<if test="typeIds !=null">AND article.TYPE_ID in 
+				<foreach collection="typeIds" item="item" open="(" close=")" separator=",">
+					${item}
+				</foreach>
+			</if>
 			<if test="typeName !=null and typeName !=''">AND instr(atype.name,#{typeName})>0</if>
-			<if test="keyWord!=null">AND KEY_WORD = #{keyWord}</if>
-			<if test="produce1!=null">AND PRODUCE1 = #{produce1}</if>
-			<if test="readCount!=null">AND READ_COUNT = #{readCount}</if>
-			<if test="commentCount!=null">AND COMMENT_COUNT = #{commentCount}</if>
-			<if test="produce2!=null">AND PRODUCE2 = #{produce2}</if>
-			<if test="imgUrl!=null">AND IMG_URL = #{imgUrl}</if>
+			<if test="keyWord!=null">AND article.KEY_WORD = #{keyWord}</if>
+			<if test="produce1!=null">AND article.PRODUCE1 = #{produce1}</if>
+			<if test="readCount!=null">AND article.READ_COUNT = #{readCount}</if>
+			<if test="commentCount!=null">AND article.COMMENT_COUNT = #{commentCount}</if>
+			<if test="produce2!=null">AND article.PRODUCE2 = #{produce2}</if>
+			<if test="imgUrl!=null">AND article.IMG_URL = #{imgUrl}</if>
 		</where>
 		order by article.CREATE_TIME desc
 	</select>

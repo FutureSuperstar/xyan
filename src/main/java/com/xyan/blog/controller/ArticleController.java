@@ -1,5 +1,7 @@
 package com.xyan.blog.controller;
 
+import java.util.HashMap;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,6 +16,7 @@ import com.xyan.blog.service.ArticleService;
 import com.xyan.blog.service.MessageService;
 import com.xyan.blog.vo.ArticleVO;
 import com.xyan.common.enums.ArticleType;
+import com.xyan.frame.feature.mybatis.intercept.Page;
 
 
 /**
@@ -33,14 +36,10 @@ public class ArticleController {
 	@Autowired
 	private MessageService  messageService;
 	/**列表查询*/
-	@RequestMapping(method = RequestMethod.GET)
-	public ModelAndView list(Long typeId){
-		//技术类博客，查询ID不是慢生活和闲言碎语的
-		logger.info("闲言碎语");
-		ArticleModel query=new ArticleVO();
-		query.setTypeId(typeId==null?ArticleType.TYPE_TALK.getCode():typeId);
+	@RequestMapping
+	public ModelAndView index(ArticleVO vo,Page<HashMap<String, Object>> page){
 		return new ModelAndView("blog/article/articleList")
-				.addObject("page", articleService.selectByPage(query, null));
+				.addObject("page", articleService.selectTalkByPage(vo, page));
 	}
 	
 	
