@@ -30,7 +30,7 @@ header p{margin:17px 0 0 0;text-shadow:#000 1px 1px 1px;color:#fff}
 .bloglist ul{ line-height:24px; padding:10px; margin-bottom:10px; background:rgba(255,255,255,0.5);  border-radius:10px}
 .bloglist ul p{ text-indent:2em;font-size: 14px;}
 .bloglist figure{ text-align:center}
-.datap{background-color: #c7c7c7;border-radius:5px;margin-bottom: 5px;display: inline-block;font-size: 12px !important;}
+.datap{background-color: rgba(236,240,246,0.5);border-radius:5px;margin-bottom: 5px;display: inline-block;font-size: 12px !important;}
 .dateview{ border:#ccc 1px dashed; line-height:24px; height:24px; color:#666; margin:0 10px}
 .dateview a{color:#838383;}
 .dateview a:hover{ color:#333;}

@@ -46,7 +46,7 @@
 			<p>近期文章</p>
 		</h2>
 		<ul class="news" id="lastAritcle">
-			<li><a href="${path}">女孩都有浪漫的小情怀</a></li>
+			<li><a href="${path}/blog/article/view/1">女孩都有浪漫的小情怀</a></li>
 			<li><a href="${path}">也许下个路口就会遇见希望</a></li>
 			<li><a href="${path}">6月毕业季，祝福送给你</a></li>
 			<li><a href="${path}">生活常有缺席的-可搞笑从来不缺席</a></li>
@@ -58,7 +58,7 @@
 		</h2>
 		<ul class="news" id="gdUL">
 			<c:forEach items="${gdList}" var="item">
-				<li><a href="${path}/blog/gdList?date=${item.name}">${item.remark}</a></li>
+				<li><a href="${path}/blog/date/${item.name}">${item.remark}</a></li>
 			</c:forEach> 
 		</ul>
 		<h2>

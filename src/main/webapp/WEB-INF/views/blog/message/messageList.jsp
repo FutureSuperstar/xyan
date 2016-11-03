@@ -6,7 +6,7 @@
 		<div class="col-xs-12">
 			<div class="col-xs-12">
 				<form id="messageForm" method="POST">
-					<button class="btn" type="button" onclick="sendMess()">发表</button>
+					<button class="btn" type="button" onclick="sendMess()">发表</button>			
 					<input type="checkbox" name="merge" value="true"/>
 					<input type="hidden" name="dest" value="-1"/>
 					<input type="hidden" name="title" value="【留言版】"/>
@@ -70,7 +70,12 @@ function sendMess(){
 				$(".wangEditor-container .wangEditor-txt").html("");
 				location.reload();
 			}else if(!!data.message){
-				$("<div class='exception' id='exception'>"+data.message+"</div>").prependTo("body").fadeOut(2000);
+				if(data.login){
+					$("<div class='exception' id='exception'>"+data.message+"</div>").prependTo("body").fadeOut(2000);
+				}else{
+					$("<div class='exception' id='exception'><a href='${path}/admin/login'>"+data.message+"</a></div>").prependTo("body").fadeOut(5000);
+				}
+				
 			}else{
 				$("<div class='exception' id='exception'>访问速度太快，请稍后！</div>").prependTo("body").fadeOut(2000);
 			}

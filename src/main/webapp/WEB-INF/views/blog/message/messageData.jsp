@@ -2,8 +2,8 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <style type="text/css">
-	.pageInfo{margin-top: 15px;height: 24px;}
-	.pageInfo span{display:inline-block;float: right;cursor: pointer;line-height: 2.2;border: 1px solid #eee;height: 24px;}	
+	.pageInfo{margin-top: 15px;margin-right: 20px;height: 24px;}
+	.pageInfo span{display:inline-block;float: right;cursor: pointer;line-height: 2.2;border: 1px solid #eee;height: 24px;background-color: rgb(213,213,213);}
 	.pageInfo .down{border-top-right-radius:3px; border-bottom-right-radius:3px; }
 	.pageInfo .up{border-top-left-radius:3px; border-bottom-left-radius:3px }
 </style>
