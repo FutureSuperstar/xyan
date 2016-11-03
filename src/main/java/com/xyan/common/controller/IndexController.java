@@ -19,7 +19,10 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartRequest;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.xyan.blog.model.ArticleModel;
 import com.xyan.blog.service.ArticleService;
+import com.xyan.blog.vo.ArticleVO;
+import com.xyan.common.enums.ArticleType;
 import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.mybatis.intercept.Page;
 import com.xyan.frame.security.web.controller.UserController;
@@ -41,8 +44,17 @@ public class IndexController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public ModelAndView index(){
+		ArticleVO queryModel=new ArticleVO();
+		queryModel.setTypeId(ArticleType.TYPE_LIFE.getCode());
+		Page<HashMap<String, Object>> page=articleService.selectByPage(queryModel, new Page<HashMap<String,Object>>(1,2));
+		queryModel.setTypeId(ArticleType.TYPE_TALK.getCode());
+		Page<HashMap<String, Object>> page2=articleService.selectByPage(queryModel, new Page<HashMap<String,Object>>(1,2));
+		queryModel.setTypeId(ArticleType.TYPE_TECHNOLOGY.getCode());
+		Page<HashMap<String, Object>> page3=articleService.selectByPage(queryModel, new Page<HashMap<String,Object>>(1,2));
+		page.getResult().addAll(page2.getResult());
+		page.getResult().addAll(page3.getResult());
 		return new ModelAndView("index")
-				.addObject("page", articleService.selectByPage(null, new Page<HashMap<String,Object>>()));
+				.addObject("page", page);
 	}
 	
 	@RequestMapping(value="about",method=RequestMethod.GET)

@@ -39,6 +39,7 @@
 			<if test="type !=null">AND TYPE = #{type}</if>
 			<if test="remark">AND REMARK = #{remark}</if>
 		</where>
+		order by NAME desc 
 	</select>
 
 	<select id="selectByExample" resultType="java.util.HashMap"
@@ -52,6 +53,7 @@
 			<if test="type !=null">AND TYPE = #{type}</if>
 			<if test="remark">AND REMARK = #{remark}</if>
 		</where>
+		order by NAME desc 
 	</select>
 
 

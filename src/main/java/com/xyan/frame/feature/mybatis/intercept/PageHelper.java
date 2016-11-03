@@ -210,16 +210,20 @@ public class PageHelper implements Interceptor {
         } catch (SQLException e) {
             logger.error("Ignore this exception", e);
         } finally {
-            try {
-                rs.close();
-            } catch (SQLException e) {
-                logger.error("Ignore this exception", e);
-            }
-            try {
-                countStmt.close();
-            } catch (SQLException e) {
-                logger.error("Ignore this exception", e);
-            }
+        	if(rs!=null){
+        		try {
+        			rs.close();
+        		} catch (SQLException e) {
+        			logger.error("Ignore this exception", e);
+        		}
+        	}
+        	if(countStmt!=null){
+        		try {
+        			countStmt.close();
+        		} catch (SQLException e) {
+        			logger.error("Ignore this exception", e);
+        		}
+        	}
         }
     }
 

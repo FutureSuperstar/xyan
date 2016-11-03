@@ -39,7 +39,7 @@ public class ArticleController {
 	@RequestMapping
 	public ModelAndView index(ArticleVO vo,Page<HashMap<String, Object>> page){
 		return new ModelAndView("blog/article/articleList")
-				.addObject("page", articleService.selectTalkByPage(vo, page));
+				.addObject("page", articleService.selectTechnologyByPage(vo, page));
 	}
 	
 	

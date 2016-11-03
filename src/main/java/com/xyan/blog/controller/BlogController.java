@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -43,10 +44,9 @@ public class BlogController {
 	}
 	
 	/**列表查询*/
-	@RequestMapping(value="gdList",method = RequestMethod.GET)
-	public ModelAndView list(String date){
+	@RequestMapping(value="date/{date}",method = RequestMethod.GET)
+	public ModelAndView list(ArticleVO vo,Page<HashMap<String, Object>> page,@PathVariable String date){
 		//技术类博客，查询ID不是慢生活和闲言碎语的
-		ArticleVO query=new ArticleVO();
 		int year=Integer.parseInt(date.substring(0, 4));
 		int month=Integer.parseInt(date.substring(4, 6));
 		Calendar start=Calendar.getInstance();
@@ -54,12 +54,20 @@ public class BlogController {
 		start.set(Calendar.HOUR_OF_DAY, 0);
 		start.set(Calendar.MINUTE, 0);
 		start.set(Calendar.SECOND, 0);
-		query.setCreateTimeStart(start.getTime());
-		query.setCreateTimeStart(start.getTime());
+		vo.setCreateTimeStart(start.getTime());
+		vo.setCreateTimeStart(start.getTime());
 		start.add(Calendar.MONTH, 1);
-		query.setCreateTimeEnd(start.getTime());
+		vo.setCreateTimeEnd(start.getTime());
 		return new ModelAndView("blog/article/articleList")
-				.addObject("page", articleService.selectByPage(query, new Page<HashMap<String,Object>>(1,10)));
+				.addObject("page", articleService.selectByPage(vo, page));
+	}
+	
+	@RequestMapping(value="type/{id}",method = RequestMethod.GET)
+	public ModelAndView type(ArticleVO vo,Page<HashMap<String, Object>> page,@PathVariable Long typeId){
+		//技术类博客，查询ID不是慢生活和闲言碎语的
+		vo.setTypeId(typeId);
+		return new ModelAndView("blog/article/articleList")
+				.addObject("page", articleService.selectByPage(vo, page));
 	}
 }
 
