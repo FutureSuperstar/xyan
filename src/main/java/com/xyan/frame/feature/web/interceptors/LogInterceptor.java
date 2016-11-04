@@ -1,28 +1,12 @@
 package com.xyan.frame.feature.web.interceptors;
 
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.Collections;
 import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.MethodParameter;
-import org.springframework.core.annotation.AnnotationUtils;
-import org.springframework.http.HttpInputMessage;
-import org.springframework.http.HttpOutputMessage;
-import org.springframework.http.MediaType;
-import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.server.ServletServerHttpRequest;
-import org.springframework.http.server.ServletServerHttpResponse;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -30,7 +14,6 @@ import com.xyan.admin.model.PreferenceModel;
 import com.xyan.common.cache.CacheUtil;
 import com.xyan.common.enums.LogType;
 import com.xyan.common.enums.PreferenceType;
-import com.xyan.frame.base.web.ResponseModel;
 import com.xyan.frame.feature.log.model.LogModel;
 import com.xyan.frame.feature.log.service.LogService;
 import com.xyan.frame.security.web.util.SessionUtil;
@@ -85,7 +68,6 @@ public class LogInterceptor implements HandlerInterceptor {
      * 只是Struts2里面的intercept方法中要手动的调用ActionInvocation的invoke方法，Struts2中调用ActionInvocation的invoke方法就是调用下一个
      * Interceptor或者是调用action，然后要在Interceptor之前调用的内容都写在调用invoke之前，要在Interceptor之后调用的内容都写在调用invoke方法之后。 
      */  
-	@SuppressWarnings("unchecked")
 	@Override  
     public void postHandle(HttpServletRequest request,  
             HttpServletResponse response, Object handler,  
