@@ -74,6 +74,13 @@ $("#preview").onload=function(){
              pic.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='image',src=\"" + reallocalpath + "\")";
              // 设置img的src为base64编码的透明图片 取消显示浏览器默认图片
              pic.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+             var pic = document.getElementById("preview");
+             pic.src=this.result;
+             var height=$(window).height();
+     		 var width=$(window).width();
+     		 var h=$("#showImg").height();
+     		 var w=$("#showImg").width();
+     		 $("#showImg").css({"left":(width-w)/2,top:(height-h)/2});
          }
      }else {
         html5Reader(file);
@@ -85,8 +92,8 @@ $("#preview").onload=function(){
      var reader = new FileReader();
      reader.readAsDataURL(file);
      reader.onload = function(e){
-         var pic = document.getElementById("preview");
-         pic.src=this.result;
+        var pic = document.getElementById("preview");
+        pic.src=this.result;
         var height=$(window).height();
 		var width=$(window).width();
 		var h=$("#showImg").height();

@@ -17,9 +17,11 @@
 				<c:if test="${not empty item.produce2}">
 					<p class="datap">${item.produce2}</p>
 				</c:if>
-				<figure>
-					<img src="${item.imgUrl}" alt="资源正在加载">
-				</figure>
+				<c:if test="${not empty item.imgUrl}">
+					<figure>
+						<img src="${item.imgUrl}" alt="资源正在加载">
+					</figure>
+				</c:if>
 				<p class="dateview">
 					<span>
 						<fmt:formatDate value="${item.createTime}" pattern="yyyy-MM-dd"/>

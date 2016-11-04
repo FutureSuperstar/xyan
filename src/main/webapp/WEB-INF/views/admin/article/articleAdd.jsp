@@ -61,8 +61,8 @@
 							<td style="width: 12%" class="text-right bold">图片：</td>
 							<td style="width: 21%" colspan="5" class="text-left pad-right-0">
 								<div class="sol-xs-12 form_date">
-									<input type="text" value="${model.imgUrl}" name="imgUrl"  id="imgUrl" class="sol-xs-3 mar20">
-									<a class="btn btn-green mar15" onclick="show()" href="javascript:;">预览</a> 
+									<input type="text" value="${model.imgUrl}" name="imgUrl"  id="imgUrl" class="sol-xs-3">
+									<a class="btn btn-green mar-left-15" style="line-height: 0.7;" onclick="show()" href="javascript:;">预览</a> 
 								</div>
 							</td>
 						</tr>

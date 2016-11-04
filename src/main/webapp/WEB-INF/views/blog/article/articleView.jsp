@@ -26,7 +26,7 @@
 			</div>
 		</c:if>
 		<c:if test="${not empty model.imgUrl}">
-			<div>
+			<div style="text-align: center;vertical-align: middle;">
 				<img src="${model.imgUrl}">
 			</div>
 		</c:if>

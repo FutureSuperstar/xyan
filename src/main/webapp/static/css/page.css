@@ -9,101 +9,31 @@ a {color: #34538b;text-decoration: none;}
 a:link, a:visited {text-decoration: none;color: #333;}
 .clearfix {clear: both;}
 
-.box{
-	border-radius:8px;
-	min-height: 100%;
-	border-bottom: 1px solid #e6ddd0;
-    box-shadow: none;
-    margin: 3px 0;
-    padding: 0;
-    margin-top: 30px;
-}
-.box .box-header{
-	background-color: #e6ddd0;
-	border-top-left-radius: 14px;
-	border-top-right-radius: 14px;
-    border-image: none;
-    border-style: solid;
-    border-color:#e6ddd0;
-    border-width: 1px;
-    box-sizing: content-box;
-    color: #669fc7;
-    min-height: 38px;
-    padding-left: 12px;
-    position: relative;
-    line-height:3;
-    vertical-align: middle;
-}
-.box .box-header small{
-	float: right;
-	color: #bebebe;
-}
-.box .box-body{
-	background-color: rgba(255, 255, 255, 0.5);
-    border-color: -moz-use-text-color #ccc #ccc;
-    border-image: none;
-    border-style: none solid solid;
-    border-width: 0 1px 1px;
-    border-bottom-left-radius: 14px;
-	border-bottom-right-radius: 14px;
-    line-height:3;
-}
+.box{border-radius:8px;min-height: 100%;border-bottom: 1px solid #e6ddd0;box-shadow: none;margin: 3px 0;padding: 0;margin-top: 30px;}
+.box .box-header{background-color: #e6ddd0;border-top-left-radius: 14px;border-top-right-radius: 14px;border-image: none;border-style: solid;border-color:#e6ddd0;border-width: 1px;box-sizing: content-box;color: #669fc7;min-height: 38px;padding-left: 12px;position: relative;line-height:3;vertical-align: middle;}
+.box .box-header small{float: right;color: #bebebe;}
+.box .box-body{background-color: rgba(255, 255, 255, 0.5);border-color: -moz-use-text-color #ccc #ccc;border-image: none;border-style: none solid solid;border-width: 0 1px 1px;border-bottom-left-radius: 14px;border-bottom-right-radius: 14px;line-height:3;}
+
 .text-center{text-align: center;vertical-align: middle;}
 .text-left{text-align: left;}
 .text-right{text-align: right;}
-.mbox{
-	margin-top: 15px;
-	margin-bottom: 5px;
-	background-color: #f1defc;
-}
-.mbox-text{
-	text-indent: 2em;
-	margin: 1px 5px;
-}
-.mbox-head{
-	text-align: right;
-	border-bottom: 1px dashed #ccc; 
-}
-.user-head{
-	width: 100px;
-	height: 80px;
-	vertical-align: middle;
-	font-size: 0;
-}
+/*盒子*/
+.mbox{margin-top: 15px;margin-bottom: 5px;background-color: #f1defc;}
+.mbox-text{text-indent: 2em;margin: 1px 5px;}
+.mbox-head{text-align: right;border-bottom: 1px dashed #ccc;}
+.user-head{width: 100px;height: 80px;vertical-align: middle;font-size: 0;}
 
+/*异常信息*/
+.exception {background-color: red;font-size: 18px;height: 35px;left: 719px;line-height: 35px;position: absolute;text-align: center;top: 217px;z-index: 20;}
+.exception_bottom {background-color: red;font-size: 18px;height: 35px;left: 719px;line-height: 35px;position: fixed;text-align: center;bottom: 5px;z-index: 20;}
 
-.exception {
-    background-color: red;
-    font-size: 18px;
-    height: 35px;
-    left: 719px;
-    line-height: 35px;
-    position: absolute;
-    text-align: center;
-    top: 217px;
-    z-index: 20;
-}
-.exception_bottom {
-    background-color: red;
-    font-size: 18px;
-    height: 35px;
-    left: 719px;
-    line-height: 35px;
-    position: fixed;
-    text-align: center;
-    bottom: 5px;
-    z-index: 20;
-}
-
-.produce {
-    background-color: #f6f6f6;
-    margin-bottom: 15px;
-    min-height: 25px;
-    padding-top: 5px;
-    text-indent: 2em;
-    border-radius:3px
-}
-.articleBody{font-size: 14px;}
+/*文章查看*/
+.produce{background-color: #f6f6f6;margin-bottom: 15px;min-height: 25px;padding-top: 5px;text-indent: 2em;border-radius:3px}
+.articleBody{font-size: 14px;margin-top: 25px;}
+.articleBody a{text-decoration: underline !important;color:rgb(47,108,236);}
+.articleBody blockquote{background-color: #f1f1f1;border-left: 8px solid #d0e5f2;display: block;font-size: 100%;line-height: 1.4;margin: 10px 0;padding: 5px 10px;}
+.articleBody pre{background-color: #f8f8f8;border: 1px solid #ccc;border-radius: 3px;font-size: 0.8em;margin: 5px 0;padding: 10px;}
+.articleBody pre code{line-height: 1.5;}
 .articleBody p{text-indent: 2em;}
 
 /*
@@ -111,13 +41,9 @@ a:link, a:visited {text-decoration: none;color: #333;}
 */
  
 @media only screen and (min-width: 650px) and (max-width:1349px) {
-    .mbox{
-        width:458px;
-    }
+    .mbox{width:458px;}
 }
 
 @media only screen and  (max-width:649px) {
-    .mbox{
-        width:458px;
-    }
+    .mbox{width:458px;}
 }
