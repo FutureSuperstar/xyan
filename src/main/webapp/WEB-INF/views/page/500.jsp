@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<title>这个.. 服务器开小差了！！！_SJ5D.COM</title>
-
+<title>这个.. 服务器开小差了！！！</title>
 <style type="text/css">
 body {
 	margin: 0;
@@ -38,7 +37,6 @@ div#errorText p {
 }
 h1 {font-size: 40px;margin-bottom: 35px;}
 </style>
-
 <div id="mother">
 	<div id="errorBox">
 		<div id="errorText">
