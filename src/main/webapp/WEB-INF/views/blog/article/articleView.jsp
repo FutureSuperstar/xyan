@@ -57,7 +57,7 @@
 		</div>
 	</c:forEach>
 </div>
-<div class="mar15">
+<div class="mar-bot-15">
 	<div class="col-xs-12">
 		<div class="col-xs-12">
 			<form id="messageForm" method="POST">

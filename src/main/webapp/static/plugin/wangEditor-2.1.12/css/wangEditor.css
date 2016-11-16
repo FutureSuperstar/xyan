@@ -1,9 +1,9 @@
-/* 编辑器边框颜色 */
-/* 菜单颜色、上边框颜色 */
-/* 菜单选中状态的颜色 */
-/* input focus 时的颜色 */
-/* 按钮颜色 */
-/* tab selected 状态下的颜色 */
+/* 缂栬緫鍣ㄨ竟妗嗛鑹� */
+/* 鑿滃崟棰滆壊銆佷笂杈规棰滆壊 */
+/* 鑿滃崟閫変腑鐘舵�佺殑棰滆壊 */
+/* input focus 鏃剁殑棰滆壊 */
+/* 鎸夐挳棰滆壊 */
+/* tab selected 鐘舵�佷笅鐨勯鑹� */
 .wangEditor-container {
   position: relative;
   background-color: #fff;
@@ -173,18 +173,6 @@
   border-radius: 2px;
   box-shadow: 1px 1px 5px #999;
   display: none;
-  /*// 小三角
-        .tip-triangle {
-            display: block;
-            position: absolute;
-            width: 0;
-            height: 0;
-            border:5px solid;
-            border-color: transparent transparent @fore-color transparent;
-            top: -10px;
-            left: 50%;
-            margin-left: -5px;
-        }*/
 }
 .wangEditor-menu-container .menu-tip-40 {
   width: 40px;
@@ -195,7 +183,6 @@
   margin-left: -25px;
 }
 .wangEditor-menu-shadow {
-  /*border-bottom-width: 0;*/
   border-bottom: 1px\9 solid\9 #f1f1f1\9;
   box-shadow: 0 1px 3px #999;
 }

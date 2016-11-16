@@ -9,7 +9,8 @@
 .page-header {
 	border-bottom: 1px dotted #e2e2e2;
 }
-
+.mar-bot-15{margin-bottom: 15px}
+.mar-left-15{margin-left: 15px}
 /*returnTop*/
 p#back-to-top {	position: fixed;display: none;bottom: 100px;right: 80px;}
 p#back-to-top a {

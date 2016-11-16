@@ -3,7 +3,7 @@
 
 /*标签*/
 html, body {margin: 0;padding: 0;}
-body {color: #333;font-size: 14px;}
+body {color: #333;font-size: 14px;line-height: 1.336}
 p, form, ul, ol {list-style-type: none;margin: 0;padding: 0;}
 a {color: #34538b;text-decoration: none;}
 a:link, a:visited {text-decoration: none;color: #333;}
