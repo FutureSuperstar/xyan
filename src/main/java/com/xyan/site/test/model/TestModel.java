@@ -6,7 +6,11 @@ public class TestModel extends BaseModel {
 	
 	private String name;
 	
+	
 	public TestModel() {
+	}
+	public TestModel(String name) {
+		this.name=name;
 	}
 
 	public String getName() {

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -48,6 +49,20 @@ public class TestController {
 		JobUtils.addJob(jobList);
 		return "test";
 	}
+	
+	@RequestMapping(value = "insertTest")
+	@ResponseBody
+	public String insert() throws SchedulerException {
+		for (int j = 0; j< 2000; j++) {
+			List<TestModel> testList=new LinkedList<>();
+			for (int i = 0; i < 100; i++) {
+				testList.add(new TestModel("测试"+i));
+			}
+			service.insertModels(testList);
+		}
+		return "test";
+	}
+	
 	
 	@RequestMapping(value = "pauseJob")
 	@ResponseBody

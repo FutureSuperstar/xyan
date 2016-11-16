@@ -44,6 +44,21 @@
 			<if test="name != null">#{name},</if>
 		</trim>
 	</insert>
+	
+	<insert id="insertModels" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="begin"
+			close=";end;" separator=";">
+			INSERT INTO xy_test
+			<trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">ID,</if>
+				<if test="item.name != null">NAME,</if>
+			</trim>
+			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="item.id != null">#{item.id},</if>
+				<if test="item.name != null">#{item.name},</if>
+			</trim>
+		</foreach>
+	</insert>
 
 	<update id="update" parameterType="com.xyan.site.test.model.TestModel">
 		update xy_test
