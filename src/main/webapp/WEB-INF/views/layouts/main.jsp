@@ -93,10 +93,9 @@ $(function () {
     		$(this).hide();
     	}
     });
-    $("img").error(function(){
+    /* $("img").error(function(){
    	  $(this).hide();
-   	});
-    
+   	}); */
     $.ajax({
     	url:path+"/blog/getLastArticle",
     	cache:true,
