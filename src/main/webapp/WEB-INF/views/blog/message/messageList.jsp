@@ -73,7 +73,7 @@ function sendMess(){
 				if(data.login){
 					$("<div class='exception' id='exception'>"+data.message+"</div>").prependTo("body").fadeOut(2000);
 				}else{
-					$("<div class='exception' id='exception'><a href='${path}/admin/login'>"+data.message+"</a></div>").prependTo("body").fadeOut(5000);
+					$("<div class='exception' id='exception'><a href='${path}/admin/login?saveUrl=/blog/board'>"+data.message+"</a></div>").prependTo("body").fadeOut(5000);
 				}
 				
 			}else{
