@@ -7,6 +7,10 @@ import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.util.Iterator;
 
+/**
+ * @author wangming
+ * 主服务器
+ */
 public class HttpServer {
 	
 	public static void main(String[] args) throws IOException {
@@ -18,7 +22,7 @@ public class HttpServer {
 		serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
 		
 		while(true){
-			if(selector.select(3000)==0){
+			if(selector.select(3000)==0){//每三秒检查一次，如果没有就继续
 				continue;
 			}
 			Iterator<SelectionKey> keys=selector.selectedKeys().iterator();

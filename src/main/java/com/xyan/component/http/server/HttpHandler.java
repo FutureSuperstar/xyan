@@ -7,6 +7,10 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
 
+/**
+ * @author wangming
+ * 消息处理
+ */
 public class HttpHandler implements Runnable {
 	
 
@@ -62,16 +66,16 @@ public class HttpHandler implements Runnable {
 	
 	@Override
 	public void run() {
-			try {
-				if(key.isAcceptable()){
-					accept();
-				}
-				if(key.isReadable()){
-					read();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
+		try {
+			if(key.isAcceptable()){
+				accept();
 			}
+			if(key.isReadable()){
+				read();//这里仅作测试，实际的http服务器远比这个复杂。要根据不同的url返回不同的结果。另外这里也只是返回了html。
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
