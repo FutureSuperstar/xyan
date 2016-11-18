@@ -3,10 +3,13 @@ package com.xyan.admin.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.xyan.frame.base.web.ResponseModel;
@@ -26,8 +29,11 @@ public class AdminLoginController {
 	private UserService userService;
 	
 	@RequestMapping(value="login",method=RequestMethod.GET)
-	public String toLogin(HttpServletRequest request,HttpServletResponse response){
+	public String toLogin(Model model, @RequestParam(required=false) String saveUrl,HttpServletRequest request,HttpServletResponse response){
 		System.out.println(request.getAttribute("saveUrl"));
+		if(StringUtils.isNotBlank(saveUrl)){
+			model.addAttribute("saveUrl", saveUrl);
+		}
 		return "user/login";
 	}
 	
