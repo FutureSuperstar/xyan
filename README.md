@@ -11,12 +11,12 @@
 其中留言、评论以及后台需要登录。后台为系统账户登录，其它为合作方登录。系统登录有三次错误密码机会，否则将会锁住账号。<br/>
 
 ------------------------------
-项目部署：
+项目部署：<br>
 	1、在tomcat中server.xml的host节点中增加 &lt;Context docBase="D:\tmp" path="/img" reloadable="true"/&gt;<br/>
 	   其中docBase的目录要和application.properties中的file.upload.path保持一致，否则会导致文件上传问题。
 	   <br/>
 	2、导入xyan.sql<br/>
 ------------------------------
-访问：
-	前端入口：localhosst:8080/xyan
-	后端入口：localhosst:8080/xyan/admin/index
+访问：<br>
+	前端入口：localhosst:8080/xyan<br>
+	后端入口：localhosst:8080/xyan/admin/index<br>
