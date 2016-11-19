@@ -7,6 +7,7 @@ import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.util.Iterator;
 
+
 /**
  * @author wangming
  * 主服务器
@@ -14,7 +15,9 @@ import java.util.Iterator;
 public class HttpServer {
 	
 	public static void main(String[] args) throws IOException {
+		
 		ServerSocketChannel serverSocketChannel=ServerSocketChannel.open();
+		
 		serverSocketChannel.socket().bind(new InetSocketAddress(8080));
 		serverSocketChannel.configureBlocking(false);
 		Selector selector=Selector.open();
