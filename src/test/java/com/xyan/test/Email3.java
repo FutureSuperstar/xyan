@@ -20,7 +20,7 @@ public class Email3 {
   
     public static void main(String[] args) throws Exception {  
         String user = "w18855525068@163.com";// 邮箱的用户名  
-        String password = "wy_dl_1255"; // 邮箱的密码  
+        String password = ""; // 邮箱的密码  
   
         Properties prop = System.getProperties();  
         prop.put("mail.store.protocol", "imap");  

@@ -25,7 +25,7 @@ public class Email2 {
         props.setProperty("mail.pop3.host", "pop3.163.com");  
         Session session = Session.getDefaultInstance(props);  
         Store store = session.getStore("pop3");  
-        store.connect("w18855525068@163.com", "wy_dl_1255");  
+        store.connect("w18855525068@163.com", "");  
         Folder folder = store.getFolder("INBOX");  
         folder.open(Folder.READ_WRITE);  
   
