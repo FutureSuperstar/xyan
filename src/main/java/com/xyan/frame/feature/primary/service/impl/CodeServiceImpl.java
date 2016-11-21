@@ -39,8 +39,8 @@ public class CodeServiceImpl implements CodeService{
 				model.setValue(id+"");
 				codeDao.update(model);
 			}
-		} catch (XyanException e) {
-			e.printStackTrace();
+		} catch (Exception e) {
+			throw e;
 		}
 		return id;
 	}
