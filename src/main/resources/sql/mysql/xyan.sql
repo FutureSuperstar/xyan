@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50634
 File Encoding         : 65001
 
-Date: 2016-11-19 21:25:21
+Date: 2016-11-22 09:47:14
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -39,10 +39,11 @@ CREATE TABLE `xy_article` (
 -- ----------------------------
 -- Records of xy_article
 -- ----------------------------
-INSERT INTO `xy_article` VALUES ('1', 'Web之路，经历了心酸之后', '<p>清理电脑里的时候，看到以前专业课的作业。看修改日期最早的一个压缩包还是06年的，7年的时间就这样过去了，这3年的学习成果就是这电脑里面的7个压缩包。</p>\r\n<p>“什么是母校？母校就是那个你一天骂他八遍却不许别人骂一遍的地方”当听到不少学弟学妹在抱怨学校差的时候，至今我也没后悔过，因为我经历了我认为最苦的那一段时期。</p><p>校园时代总是美好的，少男少女，纵情欢笑。<br></p><p><br></p>', '1', '2016-05-10 10:15:12', '2016-10-19 15:40:17', '99999', 'web,心酸', '<p>清理电脑里的时候，看到以前专业课的作业。看修改日期最早的一个压缩包还是06年的，7年的时间就这样过去了，这3年的学习成果就是这电脑里面的7个压缩包。</p>', '123', '224', '<p>“什么是母校？母校就是那个你一天骂他八遍却不许别人骂一遍的地方”当听到不少学弟学妹在抱怨学校差的时候，至今我也没后悔过，因为我经历了我认为最苦的那一段时期。</p>', '/img/2016-10-19/638eda10-eb84-4857-8f9b-08095ca28f0b.jpg');
+INSERT INTO `xy_article` VALUES ('1', 'Web之路，经历了心酸之后', '<p>清理电脑里的时候，看到以前专业课的作业。看修改日期最早的一个压缩包还是06年的，7年的时间就这样过去了，这3年的学习成果就是这电脑里面的7个压缩包。</p>\r\n<p>“什么是母校？母校就是那个你一天骂他八遍却不许别人骂一遍的地方”当听到不少学弟学妹在抱怨学校差的时候，至今我也没后悔过，因为我经历了我认为最苦的那一段时期。</p><p>校园时代总是美好的，少男少女，纵情欢笑。<br></p><p><br></p>', '1', '2016-05-10 10:15:12', '2016-11-19 21:51:55', '99999', 'web,心酸', '<p>清理电脑里的时候，看到以前专业课的作业。看修改日期最早的一个压缩包还是06年的，7年的时间就这样过去了，这3年的学习成果就是这电脑里面的7个压缩包。</p>', '123', '224', '<p>“什么是母校？母校就是那个你一天骂他八遍却不许别人骂一遍的地方”当听到不少学弟学妹在抱怨学校差的时候，至今我也没后悔过，因为我经历了我认为最苦的那一段时期。</p>', '/img/2016-11-19/a4979d5d-ef48-4d88-a83d-a80e9e30fb95.jpeg');
 INSERT INTO `xy_article` VALUES ('14', '正则表达式集合', '<strong>一、校验数字的表达式</strong><p><img style=\"max-width:100%;\" src=\"http://p1.pstatp.com/large/7fc000340e0f4fe0b57\"></p><strong>二、校验字符的表达式<br><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7fc000340ff43420eeb\"><br></strong><strong>三、特殊需求表达式</strong><p><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7fc000341457d2f3cce\"></p><p><img style=\"max-width:100%;\" src=\"http://p3.pstatp.com/large/7f900033f7b8e976067\"></p><p><br></p>', '1', '2016-06-17 14:30:42', '2016-10-19 15:33:07', '99997', '', '', '1', '1', '', '/img/2016-10-19/f1a22019440f9cfc7d3984a537a7719900f55fd57e18f-bJurIE_fw658.png');
 INSERT INTO `xy_article` VALUES ('15', '感言', '<p>什么也么有啊</p>', '1', '2016-07-27 21:53:41', '2016-10-19 15:32:39', '99998', '无聊啊,你好说', '这是一个快速流转的社会', '1', '1', '', '/img/2016-10-19/image-1.jpg');
 INSERT INTO `xy_article` VALUES ('17', '孙允珠', '<p><img src=\"/img/2016-11-16/98fc9adb-b684-43e8-9568-b23f2d7540e6.jpg\" alt=\"1b6a68f1059886dfe6cbf6e7bd5c0170\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/f499850b-9800-455a-8eb1-ae29566f225d.jpg\" alt=\"1B99EBAF4F9B44CC027F947AAAF413A5\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/b65a73f5-29e9-45c7-affa-1a6e0bc6e427.jpg\" alt=\"0D5F988ABDEE6002F650E9C4CFE8687D\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/700ec486-cdfa-4655-b602-3621aa9dd3d7.jpg\" alt=\"0F6A001C6CB0B4214D5F3DCC30698E91\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/7d1d069d-c708-48bb-975d-fa65a82026bc.jpg\" alt=\"0FA009A54F82934B1C91E19F57667EBB\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/42124a77-18de-4425-96b7-f1ae801974e4.jpg\" alt=\"1AC330ADD3181EC5E34F8544A49F13F1\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/243fe52a-f9e8-4bc8-9c6c-f568be49104c.jpg\" alt=\"1B7D799400D7CD28897EDCA02830FD56\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/52102f0e-29ae-41e1-abed-1f16dd98dc74.jpg\" alt=\"1B35854E5F09193FD9D982D13B436CB7\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/81c7899d-b308-4646-9671-2266905925e4.jpg\" alt=\"0BCDCD54D36EA40647052CE161E39512\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/7b688387-1f45-41eb-a483-e398cc5133fa.jpg\" alt=\"2D625774845BE91D4C06B6553FC4F7DB\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/31c31333-e1bc-4608-95ed-5ff5c3cf57ae.jpg\" alt=\"2D49732E1B0D42ECC5E422BB2B95D639\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/90de9884-e728-4709-be0d-1a6620f36488.jpg\" alt=\"2B6EAA68C07C6CB978570C7EB3F9EA19\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/8b083d78-6174-40f8-a9a7-dc9e1c96a087.jpg\" alt=\"1F42A1B188445B99B111AE8D7E2AF011\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/f365d1df-3c5d-4498-a544-cca90fd7e583.jpg\" alt=\"1E5028B756C1ED564FC1C2AA38B0C6E7\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/4e75cb78-168f-405f-8d8d-cad78aad599c.jpg\" alt=\"2DA261B65C5A11202FEE207C62B2AF13\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/154512bf-1a82-41a4-a32e-bc41fbf9389c.jpg\" alt=\"1DB90262B0B9422A96F5B838D090E4F2\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/00e5d296-f101-44b2-8fec-3c30df851720.jpg\" alt=\"2CDFAEC3D2B0B0C61B53BADCB3D86BC7\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/057afe96-7953-4829-999a-4ab55113e504.jpg\" alt=\"1DCA8695A6EF44A03F22E6B046506AA4\" style=\"max-width:100%;\"></p><p><img src=\"/img/2016-11-16/ba53b4e8-3776-42d7-9b24-51a58a407679.jpg\" alt=\"0F5C8A00E98546FD5DCEE56EEB8B5244\" style=\"max-width:100%;\"></p><p><br></p>', '1', '2016-10-20 14:03:42', '2016-11-16 09:26:23', '6', '美女,孙允珠', '美女就是养眼，看起来舒服。', '1', '1', '', '/img/2016-10-20/5de301d0-166c-4fab-9c93-a0f8ff643e33.jpg');
+INSERT INTO `xy_article` VALUES ('18', 'Java中的BIO、NIO、AIO（NIO2）', '<span>在高性能的IO体系设计中，有几个名词概念常常会使我们感到迷惑不解。具体如下：</span><br><table class=\"\" height=\"231\" width=\"588\"><tbody><tr><td><span>&nbsp;序号</span></td><td><span>&nbsp;问题</span></td></tr><tr><td><span>&nbsp;1</span></td><td><span>&nbsp;什么是同步</span></td></tr><tr><td><span>&nbsp;2</span></td><td><span>&nbsp;什么是异步</span></td></tr><tr><td><span>&nbsp;3</span></td><td><span>&nbsp;什么是阻塞</span></td></tr><tr><td><span>&nbsp;4</span></td><td><span>&nbsp;什么是非阻塞</span></td></tr><tr><td><span>&nbsp;5</span></td><td><span>&nbsp;什么是同步阻塞</span></td></tr><tr><td><span>&nbsp;6</span></td><td><span>&nbsp;什么是同步非阻塞</span></td></tr><tr><td><span>&nbsp;7</span></td><td><span>&nbsp;什么是异步阻塞</span></td></tr><tr><td><span>&nbsp;8</span></td><td><span>&nbsp;什么是异步非阻塞</span></td></tr></tbody></table><p><br></p><span>在弄清楚上面的几个问题之前，我们首先得明白什么是同步，异步，阻塞，非阻塞，只有这几个单个概念理解清楚了，然后在组合理解起来，就相对比较容易了。&nbsp;</span><br><br><span>1,同步和异步是针对应用程序和内核的交互而言的。&nbsp;</span><br><br><span>2,阻塞和非阻塞是针对于进程在访问数据的时候，根据IO操作的就绪状态来采取的不同方式，说白了是一种读取或者写入操作函数的实现方式，阻塞方式下读取或者写入函数将一直等待，而非阻塞方式下，读取或者写入函数会立即返回一个状态值。&nbsp;&nbsp;</span><br><br><span>由上描述基本可以总结一句简短的话，同步和异步是目的，阻塞和非阻塞是实现方式。<br><br></span><table class=\"\"><tbody><tr><td><span>&nbsp;序号&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br></span></td><td><span>&nbsp;名词</span></td><td><span>&nbsp;解释</span></td><td><span>&nbsp;举例</span></td></tr><tr><td><span>&nbsp;1</span></td><td><span>&nbsp;同步</span></td><td><span>&nbsp;指的是用户进程触发IO操作，并等待或轮询的去查看IO操作是否就绪</span></td><td><span></span><span>自己上街买衣服，自己亲自干这件事，别的事干不了。</span></td></tr><tr><td><span>&nbsp;2</span></td><td><span>&nbsp;异步</span></td><td><span>&nbsp; <br></span><span>异步是指用户进程触发IO操作以后便开始做自己的事情，而当IO操作已经完成的时候会得到IO完成的通知（异步的特点就是通知）</span></td><td><span>&nbsp; <br></span><span>告诉朋友自己合适衣服的尺寸，大小，颜色，让朋友委托去卖，然后自己可以去干别的事。（使用异步IO时，Java将IO读写委托给OS处理，需要将数据缓冲区地址和大小传给OS）</span></td></tr><tr><td><span>&nbsp;3</span></td><td><span>&nbsp;阻塞</span></td><td><span>&nbsp; <br></span><span>所谓阻塞方式的意思是指, 当试图对该文件描述符进行读写时, 如果当时没有东西可读,或者暂时不可写, 程序就进入等待 状态, 直到有东西可读或者可写为止</span></td><td><span>&nbsp; <br></span><span>去公交站充值，发现这个时候，充值员不在（可能上厕所去了），然后我们就在这里等待，一直等到充值员回来为止。（当然现实社会，可不是这样，但是在计算机里确实如此。）</span></td></tr><tr><td><span>&nbsp;4</span></td><td><span>&nbsp;非阻塞</span></td><td><span>&nbsp; <br></span><span>非阻塞状态下, 如果没有东西可读, 或者不可写, 读写函数马上返回, 而不会等待，</span></td><td><span>&nbsp; <br></span><span>银行里取款办业务时，领取一张小票，领取完后我们自己可以玩玩手机，或者与别人聊聊天，当轮我们时，银行的喇叭会通知，这时候我们就可以去了。</span></td></tr></tbody></table><p><br></p><span><span><span>下面我们再来理解组合方式的IO类型，就好理解多了。&nbsp;</span><br><br><span>同步阻塞IO（JAVA BIO）：&nbsp;</span><br><span>&nbsp;&nbsp;&nbsp; 同步并阻塞，服务器实现模式为一个连接一个线程，即客户端有连接请求时服务器端就需要启动一个线程进行处理，如果这个连接不做任何事情会造成不必要的线程开销，当然可以通过线程池机制改善。&nbsp;</span><br><br><span>同步非阻塞IO(Java NIO) ： 同步非阻塞，服务器实现模式为一个请求一个线程，即客户端发送的连接请求都会注册到多路复用器上，多路复用器轮询到连接有I/O请求时才启动一个线程进行处理。用户进程也需要时不时的询问IO操作是否就绪，这就要求用户进程不停的去询问。&nbsp;</span><br><br><span>异步阻塞IO（Java NIO）：&nbsp;&nbsp;</span><br><span>&nbsp;&nbsp; 此种方式下是指应用发起一个IO操作以后，不等待内核IO操作的完成，等内核完成IO操作以后会通知应用程序，这其实就是同步和异步最关键的区别，同步必须等待或者主动的去询问IO是否完成，那么为什么说是阻塞的呢？因为此时是通过select系统调用来完成的，而select函数本身的实现方式是阻塞的，而采用select函数有个好处就是它可以同时监听多个文件句柄（如果从UNP的角度看，select属于同步操作。因为select之后，进程还需要读写数据），从而提高系统的并发性！&nbsp;&nbsp;</span><br><br><br><span>（Java AIO(NIO.2)）异步非阻塞IO:&nbsp;&nbsp;</span><br><span>&nbsp;&nbsp; 在此种模式下，用户进程只需要发起一个IO操作然后立即返回，等IO操作真正的完成以后，应用程序会得到IO操作完成的通知，此时用户进程只需要对数据进行处理就好了，不需要进行实际的IO读写操作，因为真正的IO读取或者写入操作已经由内核完成了。&nbsp;&nbsp;&nbsp;&nbsp;</span><br><br><br><span>BIO、NIO、AIO适用场景分析:&nbsp;</span><br><br><span>&nbsp;&nbsp;&nbsp; BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，</span><span>JDK1.4以前</span><span>的唯一选择，但程序直观简单易理解。&nbsp;</span><br><br><span>&nbsp;&nbsp;&nbsp; NIO方式适用于连接数目多且连接比较短（轻操作）的架构，比如聊天服务器，并发局限于应用中，编程比较复杂，</span><span>JDK1.4</span><span>开始支持。&nbsp;</span><br><br><span>&nbsp;&nbsp;&nbsp; AIO方式使用于连接数目多且连接比较长（重操作）的架构，比如相册服务器，充分调用OS参与并发操作，编程比较复杂，</span><span>JDK7</span><span>开始支持。&nbsp;</span><br></span></span><span></span><br><span><span><span>搞清楚了以上概念以后，我们再回过头来看看，Reactor模式和Proactor模式。&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>（其实阻塞与非阻塞都可以理解为同步范畴下才有的概念，对于异步，就不会再去分阻塞非阻塞。对于用户进程，接到异步通知后，就直接操作进程用户态空间里的数据好了。）&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>首先来看看Reactor模式，Reactor模式应用于同步I/O的场景。我们分别以读操作和写操作为例来看看Reactor中的具体步骤：&nbsp;&nbsp;<br>读取操作：&nbsp;&nbsp;<br>1. 应用程序注册读就绪事件和相关联的事件处理器&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>2. 事件分离器等待事件的发生&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>3. 当发生读就绪事件的时候，事件分离器调用第一步注册的事件处理器&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>4. 事件处理器首先执行实际的读取操作，然后根据读取到的内容进行进一步的处理&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>写入操作类似于读取操作，只不过第一步注册的是写就绪事件。&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>下面我们来看看Proactor模式中读取操作和写入操作的过程：&nbsp;&nbsp;<br>读取操作：&nbsp;&nbsp;<br>1. 应用程序初始化一个异步读取操作，然后注册相应的事件处理器，此时事件处理器不关注读取就绪事件，而是关注读取完成事件，这是区别于Reactor的关键。&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>2. 事件分离器等待读取操作完成事件&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>3. 在事件分离器等待读取操作完成的时候，操作系统调用内核线程完成读取操作（异步IO都是操作系统负责将数据读写到应用传递进来的缓冲区供应用程序操作，操作系统扮演了重要角色），并将读取的内容放入用户传递过来的缓存区中。这也是区别于Reactor的一点，Proactor中，应用程序需要传递缓存区。&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>4. 事件分离器捕获到读取完成事件后，激活应用程序注册的事件处理器，事件处理器直接从缓存区读取数据，而不需要进行实际的读取操作。&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>Proactor中写入操作和读取操作类似，只不过感兴趣的事件是写入完成事件。&nbsp;&nbsp;<br>&nbsp;&nbsp;<br>从上面可以看出，Reactor和Proactor模式的主要区别就是真正的读取和写入操作是有谁来完成的，Reactor中需要应用程序自己读取或者写入数据，而Proactor模式中，应用程序不需要进行实际的读写过程，它只需要从缓存区读取或者写入即可，操作系统会读取缓存区或者写入缓存区到真正的IO设备.&nbsp; <br><br></span></span></span><span>如果你想吃一份宫保鸡丁盖饭：&nbsp;</span><br><font color=\"#ff0000\"><br><font color=\"#00ff00\"><span>同步阻塞：你到饭馆点餐，然后在那等着，还要一边喊：好了没啊！&nbsp;</span><br><br><span>同步非阻塞：在饭馆点完餐，就去遛狗了。不过溜一会儿，就回饭馆喊一声：好了没啊！&nbsp;</span><br><br><span>异步阻塞：遛狗的时候，接到饭馆电话，说饭做好了，让您亲自去拿。&nbsp;</span><br><br><span>异步非阻塞：饭馆打电话说，我们知道您的位置，一会给你送过来，安心遛狗就可以了。</span></font></font><span><span><span><br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 综上所述，同步和异步是相对于应用和内核的交互方式而言的，同步 需要主动去询问，而异步的时候内核在IO事件发生的时候通知应用程序，而阻塞和非阻塞仅仅是系统在调用系统调用的时候函数的实现方式而已。&nbsp;&nbsp;</span></span></span><span><span>“<font color=\"#ff0000\">一个IO操作其实分成了两个步骤：发起IO请求和实际的IO操作。&nbsp;<br>同步IO和异步IO的区别就在于第二个步骤是否阻塞，如果实际的IO读写阻塞请求进程，那么就是同步IO。&nbsp;<br>阻塞IO和非阻塞IO的区别在于第一步，发起IO请求是否会被阻塞，如果阻塞直到完成那么就是传统的阻塞IO，如果不阻塞，那么就是非阻塞IO。&nbsp;</font><br><br>同步和异步是针对应用程序和内核的交互而言的，同步指的是用户进程触发IO操作并等待或者轮询的去查看IO操作是否就绪，而异步是指用户进程触发IO操作以后便开始做自己的事情，而当IO操作已经完成的时候会得到IO完成的通知。而阻塞和非阻塞是针对于进程在访问数据的时候，根据IO操作的就绪状态来采取的不同方式，说白了是一种读取或者写入操作函数的实现方式，阻塞方式下读取或者写入函数将一直等待，而非阻塞方式下，读取或者写入函数会立即返回一个状态值。&nbsp;<br>所以,IO操作可以分为3类：同步阻塞（即早期的IO操作）、同步非阻塞（NIO）、异步（AIO）。&nbsp;<br>同步阻塞：&nbsp;<br>在此种方式下，用户进程在发起一个IO操作以后，必须等待IO操作的完成，只有当真正完成了IO操作以后，用户进程才能运行。JAVA传统的IO模型属于此种方式。&nbsp;<br>同步非阻塞：&nbsp;<br>在此种方式下，用户进程发起一个IO操作以后边可返回做其它事情，但是用户进程需要时不时的询问IO操作是否就绪，这就要求用户进程不停的去询问，从而引入不必要的CPU资源浪费。其中目前JAVA的NIO就属于同步非阻塞IO。&nbsp;<br></span></span><span></span><p>异步：&nbsp;</p><span><span>此种方式下是指应用发起一个IO操作以后，不等待内核IO操作的完成，等内核完成IO操作以后会通知应用程序。<br><br><br><br><br>源文链接：<a href=\"http://blog.csdn.net/zhangzeyuaaa/article/details/50520458\" target=\"_blank\">http://blog.csdn.net/zhangzeyuaaa/article/details/50520458</a><span> <br></span></span></span><p><br></p>', '1', '2016-11-19 21:54:21', '2016-11-22 09:45:51', '99998', 'IO,NIO,NIO2', 'IO是程序的最核心部分，任何一个程序都需要IO', '1', '1', '', '/img/2016-11-19/324d85cc-8c37-4f00-8abf-d0d728b69242.jpg');
 
 -- ----------------------------
 -- Table structure for xy_article_type
@@ -80,12 +81,12 @@ CREATE TABLE `xy_code` (
 -- ----------------------------
 -- Records of xy_code
 -- ----------------------------
-INSERT INTO `xy_code` VALUES ('ArticleModel', '17');
+INSERT INTO `xy_code` VALUES ('ArticleModel', '18');
 INSERT INTO `xy_code` VALUES ('ArticleTypeModel', '6');
 INSERT INTO `xy_code` VALUES ('DictModel', '14');
 INSERT INTO `xy_code` VALUES ('LogModel', '1');
-INSERT INTO `xy_code` VALUES ('MailModel', '6');
-INSERT INTO `xy_code` VALUES ('MessageModel', '100');
+INSERT INTO `xy_code` VALUES ('MailModel', '7');
+INSERT INTO `xy_code` VALUES ('MessageModel', '102');
 INSERT INTO `xy_code` VALUES ('PageModel', '425');
 INSERT INTO `xy_code` VALUES ('ResourceModel', '45');
 INSERT INTO `xy_code` VALUES ('TestModel', '2');
@@ -278,6 +279,7 @@ INSERT INTO `xy_log` VALUES ('0533b150-81e3-4ed6-9ff3-cb6c4c0ab4dd', '2016-10-21
 INSERT INTO `xy_log` VALUES ('053e26a1-cdb5-48d3-953f-27f00ffff9c1', '2016-10-21 15:24:15', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('0545ee6c-f276-442b-aa85-923b364ff410', '2016-11-16 09:25:07', '10.60.141.145【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('054e8e0a-1848-4379-9793-6b8ca1a0b912', '2016-10-21 16:39:07', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
+INSERT INTO `xy_log` VALUES ('055f0d72-371b-4e14-8cd2-dfd35bc3d1e3', '2016-11-19 21:54:16', '192.168.156.103【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('056e10df-3d29-4f7c-ac54-1ba0986dee04', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('056e6b7c-e268-43bb-b999-dd95e3beb7b6', '2016-10-21 15:55:29', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('05769085-4380-4581-acac-9daaf7df0474', '2016-10-21 15:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -297,6 +299,7 @@ INSERT INTO `xy_log` VALUES ('05f86ed4-a1ea-4fc9-95f7-fbcff7d5c3f2', '2016-10-20
 INSERT INTO `xy_log` VALUES ('060849d1-1acb-455b-92cb-ededa7e988ea', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('0611001b-e5be-44b7-8c0f-a9faa9044c01', '2016-11-02 17:26:27', '10.60.140.147【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('06174a62-639a-462d-93e8-39f6ab9600de', '2016-11-15 17:29:24', '10.60.141.145【访问】/xyan/blog/article/view/14', 'LV');
+INSERT INTO `xy_log` VALUES ('0636034e-2d43-46db-acc4-f79c604a2dc4', '2016-11-19 21:49:23', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('0668f362-e3f4-456f-8ab6-1ffc291de772', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('066da372-62b1-4cf4-b9d5-77e2c3534a98', '2016-11-02 17:01:49', '10.60.140.147【访问】/xyan/blog/article', 'LV');
 INSERT INTO `xy_log` VALUES ('0671100c-bf67-476d-8021-305da9b1c5bf', '2016-10-21 15:25:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -319,6 +322,7 @@ INSERT INTO `xy_log` VALUES ('073ad2a1-df84-443d-a105-f0bf619612d6', '2016-10-21
 INSERT INTO `xy_log` VALUES ('073fdebe-209e-449a-b8df-21510babbc06', '2016-10-21 14:41:32', '10.60.140.212【访问】/xyan/blog/talk', 'LV');
 INSERT INTO `xy_log` VALUES ('074d10c2-51b7-4931-8785-0b66806efb9e', '2016-11-03 10:17:19', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('0759d739-4804-4f4c-8f06-09d899012207', '2016-11-15 17:20:59', '10.60.141.145【访问】/xyan/blog/talk', 'LV');
+INSERT INTO `xy_log` VALUES ('075a0aed-927e-4ecc-bad8-49b3d4c9a8e1', '2016-11-22 09:33:32', '10.60.141.33【访问】/xyan/admin/article/dialog/img', 'LV');
 INSERT INTO `xy_log` VALUES ('075b7127-2d7a-4f0e-9824-460272b8a7b5', '2016-10-21 15:55:29', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('076365f2-2279-44b6-9271-749ca29ff504', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('0763e9ac-2fde-4c28-a74e-47655f5b998d', '2016-11-02 17:01:47', '10.60.140.147【访问】/xyan/blog/talk', 'LV');
@@ -359,6 +363,7 @@ INSERT INTO `xy_log` VALUES ('089e86b6-541e-44c8-bd11-489e23c5fcf0', '2016-10-21
 INSERT INTO `xy_log` VALUES ('08a4eb84-3eac-4268-9c9a-06ec6821cced', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('08a8f60e-590e-40b6-932a-f95dd565d890', '2016-10-21 15:24:17', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('08a935d8-06cd-400e-8d62-c0a90d2ba3c7', '2016-10-31 11:11:32', '10.60.140.147【访问】/xyan/blog/board/pageData', 'LV');
+INSERT INTO `xy_log` VALUES ('08a93658-1367-432b-86ec-25763448f36c', '2016-11-19 21:50:35', '192.168.156.103【访问】/xyan/admin/article/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('08b2d4c0-422a-40c3-86e7-42b70bac1090', '2016-10-21 15:57:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('08c304e2-2e9f-4c70-be1e-4a52724d8345', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('08f06f3d-3b2d-4575-bc3d-00b64dc4b06e', '2016-10-24 17:04:17', '10.60.140.146【访问】/xyan/blog/board/saveMess', 'LV');
@@ -397,6 +402,7 @@ INSERT INTO `xy_log` VALUES ('0a55ad6c-92d7-4e76-b4ad-87eac9501449', '2016-10-21
 INSERT INTO `xy_log` VALUES ('0a610f79-7527-41cb-8236-fc21de526dcd', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('0a632908-1d3e-42f2-a6e2-7e470bdb21f8', '2016-10-21 15:25:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('0a7adfff-7810-42cd-bf7f-70c1d712f968', '2016-10-21 16:52:27', '10.60.140.212【访问】/xyan/blog/talk', 'LV');
+INSERT INTO `xy_log` VALUES ('0a86902a-db00-47b5-935e-144cd359cd4c', '2016-11-19 21:54:59', '192.168.156.103【访问】/xyan/blog/date/201610', 'LV');
 INSERT INTO `xy_log` VALUES ('0a8a985d-27d5-4287-9a6f-e32d88acb59e', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('0a8f07a7-3df5-4730-856a-d4ec291b09cd', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('0a90e468-a59c-401b-9e36-bff4b16cd35a', '2016-10-21 15:24:14', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -423,6 +429,7 @@ INSERT INTO `xy_log` VALUES ('0b64caf7-899f-47c0-ade5-6f1360e2b08c', '2016-10-21
 INSERT INTO `xy_log` VALUES ('0b706cc5-1723-41ec-b1ed-024a2cd97fa8', '2016-10-21 15:24:24', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('0b739b3e-06ef-444c-aacb-dcfc8cb1c354', '2016-10-21 15:57:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('0b743e94-1acb-4189-a666-c5198e2cede9', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('0b74517f-f6f1-4fd8-b380-c81d1e4587e6', '2016-11-19 21:51:52', '192.168.156.103【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('0b76e8e3-ce9f-4752-a0e2-44206c8b4c7c', '2016-10-31 11:21:14', '10.60.140.147【访问】/xyan/', 'LV');
 INSERT INTO `xy_log` VALUES ('0b7880d0-dcf5-4f84-8708-0870161d24fc', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('0b7f338f-8d0b-44b3-8c18-4b8523ac309c', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -676,6 +683,7 @@ INSERT INTO `xy_log` VALUES ('16994620-ea38-4f3c-b66e-02ac7d95891e', '2016-10-21
 INSERT INTO `xy_log` VALUES ('169b51f2-4f3e-4a9f-95bb-dc98d664a349', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('16a0663c-c476-4c21-a594-25f56e38e9c6', '2016-10-21 16:10:52', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
 INSERT INTO `xy_log` VALUES ('16bb951f-6671-4530-b9e2-d3a7bc8a3977', '2016-10-21 15:24:18', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('16bc30fe-1b0d-4d7b-b9e5-762de13fdaa0', '2016-11-19 21:55:33', '192.168.156.103【访问】/xyan/blog/board', 'LV');
 INSERT INTO `xy_log` VALUES ('16bea30b-d124-4932-a3ac-9368e3a708b0', '2016-11-15 17:21:08', '10.60.141.145【访问】/xyan/blog/article', 'LV');
 INSERT INTO `xy_log` VALUES ('16c43337-a74b-4f34-aa81-9decb0283438', '2016-10-24 12:14:00', '10.60.140.146【访问】/xyan/plug/img/lunbo', 'LV');
 INSERT INTO `xy_log` VALUES ('16cb3bfc-7fbc-4a56-b278-f3c6c06d1033', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -695,9 +703,11 @@ INSERT INTO `xy_log` VALUES ('1782e748-05a6-4ced-9c45-b4b9a256d1b3', '2016-10-31
 INSERT INTO `xy_log` VALUES ('178dd47b-fcbc-4d28-94fe-5276ffba79ee', '2016-11-03 10:17:11', '10.60.140.113【访问】/xyan/blog/article', 'LV');
 INSERT INTO `xy_log` VALUES ('179fb806-2852-424a-b37e-c1a99370bbd6', '2016-10-20 14:33:32', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('17a89462-7652-4501-989a-5f028f097366', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('17aaa35e-02d2-4674-bdba-faf7f9844b88', '2016-11-22 09:43:43', '10.60.141.33【访问】/xyan/admin/article', 'LV');
 INSERT INTO `xy_log` VALUES ('17aece27-fadc-48b5-a4b8-ea433dbec769', '2016-11-15 17:29:24', '10.60.141.145【访问】/xyan/blog/article/view/14', 'LV');
 INSERT INTO `xy_log` VALUES ('17b384c2-3605-46ef-885b-f26eb7573ee7', '2016-11-03 11:16:03', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('17bb67c8-8a3f-4cdc-945f-10bbb1b90e49', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('17c1c398-ec93-42a4-839b-dab50dcf7e17', '2016-11-19 21:55:34', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('17c397e4-6dfe-4b94-a1f6-48781d763bc8', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('17cd5bfc-82e8-40dd-9333-3bae08259de2', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('17cf9b2d-5201-4f99-858f-bf744a43a74f', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -719,8 +729,10 @@ INSERT INTO `xy_log` VALUES ('186ac567-e10a-4a93-92a9-4b0b1e86a43c', '2016-10-21
 INSERT INTO `xy_log` VALUES ('188f8927-2359-42e3-9c28-322c400d46f9', '2016-11-02 11:09:52', '10.60.140.147【访问】/xyan/admin/index', 'LV');
 INSERT INTO `xy_log` VALUES ('189ed5fb-ad28-43f7-86ff-50363282c39a', '2016-10-21 15:24:00', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('18a1b0ca-d715-4ea6-9654-d3b5adecb88e', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('18a8f224-2e88-4474-b3fc-de3663562bfb', '2016-11-19 21:55:34', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('18b89c6a-a06a-4df6-b05b-3a6b599f92ce', '2016-10-21 16:07:21', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('18c081ae-3635-48a5-8974-70670b92bc0f', '2016-11-02 17:26:43', '10.60.140.147【访问】/xyan/index', 'LV');
+INSERT INTO `xy_log` VALUES ('18c79ce0-50f2-4c68-a238-3112df74b07d', '2016-11-19 21:55:34', '192.168.156.103【访问】/xyan/blog/board/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('18ccc386-1179-4089-b0e3-9a54d31e0a15', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('1902f2e8-5d0c-4e76-b18e-085b5089192f', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('1907056e-a7cb-4409-9b10-49ae3b7a572c', '2016-11-03 10:18:37', '10.60.140.113【访问】/xyan/blog/life', 'LV');
@@ -744,6 +756,7 @@ INSERT INTO `xy_log` VALUES ('19d32d16-ff62-4d7c-bb84-645a599d0b7e', '2016-10-21
 INSERT INTO `xy_log` VALUES ('19d499a7-0127-4480-93c2-7cf9cdbcd444', '2016-11-03 10:43:40', '10.60.140.113【访问】/xyan/blog/life', 'LV');
 INSERT INTO `xy_log` VALUES ('19e04d88-798d-4edb-94d9-3ecad57e41ee', '2016-10-21 15:58:10', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('19f9d463-425d-4f68-991e-d7678cab4d1b', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('1a113b77-acd3-4063-b068-7d375eb7fd4f', '2016-11-19 21:54:56', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('1a129d0e-8b13-407d-a3be-8887a40b84ec', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('1a220844-63d1-4b0b-a13c-d567b5b54b04', '2016-10-21 15:10:55', '【异常】d:\\tmp\\2016-10-18\\8932863669185714.jpg (系统找不到指定的路径。)', 'LE');
 INSERT INTO `xy_log` VALUES ('1a25aa20-029b-458a-b9c3-e83b04640be9', '2016-10-21 15:24:24', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -837,6 +850,7 @@ INSERT INTO `xy_log` VALUES ('1d897574-34e0-4b13-b6e2-47176046dc50', '2016-10-21
 INSERT INTO `xy_log` VALUES ('1d8b15ef-b12a-481a-84ad-d79f5ef9f52d', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('1d99b732-9a2e-4b39-9f17-fd199e8bd875', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('1db96121-9c09-4abb-abcf-52e5837d4faf', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('1dc06fd0-e4d7-4a89-a409-37305d6ecdfc', '2016-11-19 21:55:59', '192.168.156.103【访问】/xyan/page/500', 'LV');
 INSERT INTO `xy_log` VALUES ('1dc531f5-c82d-4c34-9c42-2de48e60ff14', '2016-10-21 15:24:14', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('1dc77df0-a087-451c-8627-b60d1efbd94e', '2016-11-17 10:51:19', '10.60.141.145【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('1df24a8d-2799-4442-9461-a1a7e44af28b', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -887,8 +901,10 @@ INSERT INTO `xy_log` VALUES ('2009bc7f-24c5-4271-a4f5-df66778ef338', '2016-10-21
 INSERT INTO `xy_log` VALUES ('202633d1-65e0-4609-8a8d-97e2a69886df', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('202c79fe-872e-480a-ad99-c878030449f0', '2016-10-20 14:27:50', '10.60.140.212【访问】/xyan/blog/article', 'LV');
 INSERT INTO `xy_log` VALUES ('2033a0f9-1ca2-4941-93c9-85c7eb971c2f', '2016-10-21 16:20:20', '10.60.140.212【访问】/xyan/page/400', 'LV');
+INSERT INTO `xy_log` VALUES ('20650757-ce30-4365-80ec-7f3ff0f50ee3', '2016-11-22 09:45:50', '10.60.141.33【访问】/xyan/admin/article/save', 'LV');
 INSERT INTO `xy_log` VALUES ('206754be-9f7e-4031-862a-fc87c56fc082', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('206ee06f-e3cf-408e-b953-232ca8ae1160', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('2072575f-dad5-4b3d-9eb9-ce73356dccd4', '2016-11-19 21:59:59', '192.168.156.103【访问】/xyan/blog/board', 'LV');
 INSERT INTO `xy_log` VALUES ('2074a5ad-dd85-4350-be90-188674320c62', '2016-11-15 17:37:38', '10.60.141.145【访问】/xyan/blog/article/view/1', 'LV');
 INSERT INTO `xy_log` VALUES ('2078b521-7b98-429b-8471-90fb2f238d6e', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('207b4d91-43c6-420c-be83-e579de080fad', '2016-10-21 16:07:46', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
@@ -972,6 +988,7 @@ INSERT INTO `xy_log` VALUES ('238abd16-27dc-4094-aee3-918e5b621bb4', '2016-10-21
 INSERT INTO `xy_log` VALUES ('2392d9c4-fb88-40d0-8fc8-265e52f65618', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('23967e59-a87d-42e5-9025-3bacc05be17e', '2016-10-21 15:09:33', '10.60.140.212【访问】/xyan/admin/logout', 'LV');
 INSERT INTO `xy_log` VALUES ('23ab3d74-6372-40ae-a1f1-bb18ba7fe14f', '2016-10-21 15:24:06', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('23acf531-7d22-4025-bf06-8a116e5e0953', '2016-11-22 09:32:51', '10.60.141.33【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('23b58148-4d93-4bff-9951-ff6cf7a8ac16', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('23c488ee-1b69-4cca-b199-9b6b5f784e77', '2016-10-21 15:23:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('23c79d96-73c6-43ee-aea5-f44c723eb422', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1085,6 +1102,7 @@ INSERT INTO `xy_log` VALUES ('28157d78-ffb5-469b-acf1-ef7cf399455d', '2016-10-21
 INSERT INTO `xy_log` VALUES ('28281ad0-3f39-4ed9-9329-e0cdc92c204d', '2016-10-21 16:46:40', '10.60.140.212【访问】/xyan/blog/board', 'LV');
 INSERT INTO `xy_log` VALUES ('2837eaa7-2cb3-4429-97a3-69251e15ab02', '2016-10-20 14:23:45', '【异常】d:\\tmp\\2016-10-20\\6906515154307121.jpg (系统找不到指定的路径。)', 'LE');
 INSERT INTO `xy_log` VALUES ('28483eac-bd9d-4390-8c37-78f7f2b12641', '2016-10-21 15:24:08', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('2858e210-8f48-4597-85e9-719237d451fa', '2016-11-19 21:54:22', '192.168.156.103【访问】/xyan/admin/article/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('28600668-352b-428f-bea2-fd298f3592f1', '2016-11-15 17:39:35', '10.60.141.145【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('286d3dcc-69ea-49b1-880b-aad7175010f3', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('28711ac4-bc1f-472d-8476-9df6ca9ae7de', '2016-10-21 16:52:28', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
@@ -1194,6 +1212,7 @@ INSERT INTO `xy_log` VALUES ('2cc96382-ef1f-4900-bb92-63906fb0f452', '2016-10-21
 INSERT INTO `xy_log` VALUES ('2ccbee0f-d4d0-44e1-983f-816514e27679', '2016-11-03 10:46:32', '10.60.140.113【访问】/xyan/blog/life', 'LV');
 INSERT INTO `xy_log` VALUES ('2ccd0184-2187-4f8f-b574-52398b75708b', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('2cd03599-8191-4ec2-abfd-1ef463427151', '2016-10-21 15:57:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('2cdf8a91-3c6f-4eaf-9557-057f2229b8af', '2016-11-19 21:50:45', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('2cec9b67-7afe-44b5-b9f9-6f4c9ac0c46f', '2016-10-20 14:25:38', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('2cf065dc-06e9-4aca-b7ea-f55e0b06c0e7', '2016-11-03 11:16:13', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('2cffd45a-68fc-4ea0-aa74-5583ac215705', '2016-10-21 15:24:08', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
@@ -1224,6 +1243,7 @@ INSERT INTO `xy_log` VALUES ('2ddcac09-476c-450c-a226-ba2a54c188a7', '2016-10-20
 INSERT INTO `xy_log` VALUES ('2de36535-9e85-414f-a05e-bedcaaaae3e3', '2016-10-21 15:37:44', '10.60.140.212【访问】/xyan/blog/talk', 'LV');
 INSERT INTO `xy_log` VALUES ('2df00127-3d90-48a0-aecf-ccf27c1478a3', '2016-10-21 14:42:58', '【异常】d:\\tmp\\2016-10-20\\4401975850036871.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('2df74580-97f9-4292-9890-7c3ff1e5a232', '2016-10-21 15:23:23', '【异常】d:\\tmp\\2016-10-20\\6906515154307121.jpg (系统找不到指定的文件。)', 'LE');
+INSERT INTO `xy_log` VALUES ('2df9ffc3-b715-4bc6-8e6f-5630b183a608', '2016-11-19 21:49:18', '192.168.156.103【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('2e0284e0-8d45-42f2-96cb-a2e2f042ac98', '2016-11-15 17:34:24', '10.60.141.145【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('2e095998-0273-4a8c-8edf-5bbf8afcf509', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('2e0fded8-32c4-444e-a262-b20b0fb04806', '2016-10-21 15:31:29', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1241,6 +1261,7 @@ INSERT INTO `xy_log` VALUES ('2e984332-9532-4218-879a-03ab9a33cd05', '2016-10-21
 INSERT INTO `xy_log` VALUES ('2e98a298-6349-48f5-91ef-f2e7e87f2ad1', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('2e9cdcf8-0bce-4b2e-85e4-aa41a4afa65e', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('2ea81013-8243-4c9a-a785-82857fdf0e82', '2016-10-21 16:07:23', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('2ed8ee24-54d0-4ecb-99d3-cfeee2248c4a', '2016-11-19 21:55:46', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('2ee01431-0164-4dd3-90a6-4c7d7e87be9f', '2016-10-24 13:21:30', '10.60.140.146【访问】/xyan/plug/img/lunbo', 'LV');
 INSERT INTO `xy_log` VALUES ('2ee1d211-b842-4acb-9cb2-7edcadfad299', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('2ef1b70a-352f-48c0-b2ff-fa57b2ad5e11', '2016-10-20 14:26:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1338,6 +1359,7 @@ INSERT INTO `xy_log` VALUES ('3295982f-a730-4a9b-8e4e-e001b1816cd2', '2016-10-21
 INSERT INTO `xy_log` VALUES ('32aa0adb-5b34-4e37-9220-08c8d7152ef3', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('32b3af52-060f-4238-80ea-9ca2fae82806', '2016-10-21 16:23:58', '10.60.140.212【访问】/xyan/', 'LV');
 INSERT INTO `xy_log` VALUES ('32ba9067-b717-4223-92c9-4ffc5c65a349', '2016-11-15 17:22:27', '10.60.141.145【访问】/xyan/blog/talk', 'LV');
+INSERT INTO `xy_log` VALUES ('32bd63db-c9b8-4dc9-95f5-53c1c5b81fba', '2016-11-19 21:55:46', '192.168.156.103【访问】/xyan/blog/board/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('32bf0da5-9166-4b8d-8ffd-8fd69fa6a056', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('32db4810-627a-4554-a62b-d6764c9e3259', '2016-11-03 11:15:51', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('32ddc752-b160-4542-93d5-d73702ae9cf7', '2016-10-21 15:36:21', '10.60.140.212【访问】/xyan/admin/error-500', 'LV');
@@ -1354,8 +1376,11 @@ INSERT INTO `xy_log` VALUES ('33227a80-91cc-47bd-ba78-c3d65ba62007', '2016-10-21
 INSERT INTO `xy_log` VALUES ('33354d77-2182-4871-b69f-eae83ce374b1', '2016-10-21 16:50:13', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('3340d1b2-2bd3-4598-b3e6-a18956cddb97', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('334474f3-3e68-4fa9-8354-3fa4395d68d3', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('33587d5d-430f-4839-bb49-216dcf8f2d81', '2016-11-19 21:52:49', '192.168.156.103【访问】/xyan/page/404', 'LV');
+INSERT INTO `xy_log` VALUES ('335c00b1-513f-41af-bd70-5028ff1a3fb1', '2016-11-22 09:32:59', '10.60.141.33【访问】/xyan/admin/article/edit', 'LV');
 INSERT INTO `xy_log` VALUES ('335db190-a3be-4b25-9ae7-4d10aa107de2', '2016-10-21 15:58:10', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('336c3f10-945c-4a1c-a4c7-0208cca5b414', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('336f36d6-4106-47b4-8827-5187842a2faf', '2016-11-19 21:52:59', '192.168.156.103【访问】/xyan/admin/article/getChildren', 'LV');
 INSERT INTO `xy_log` VALUES ('338f2997-5de6-4947-978f-1642252c826f', '2016-10-21 15:30:18', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('33925d1f-52ba-4dd6-bf10-ba8fee505d01', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3395e120-1f2b-4ba6-b64f-ff8952d8f547', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1412,6 +1437,7 @@ INSERT INTO `xy_log` VALUES ('35d8e2ce-17ea-4af6-8f08-859fce7fb2fa', '2016-10-21
 INSERT INTO `xy_log` VALUES ('35f8a65f-9302-4dd9-b0b4-fd9b326c24fe', '2016-10-21 16:02:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('35faa871-626a-4460-9ee8-ccc17b9c89e1', '2016-10-21 15:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('35fc3756-d1f5-47a4-8b99-86ea57197825', '2016-10-21 15:24:00', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('360ce333-3571-48e1-8d64-29ba337ee5c1', '2016-11-19 21:52:48', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('36185222-0cfe-4288-92fe-ad5c78c08756', '2016-10-21 15:57:52', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('36207b69-bb87-425a-9448-3405f12ac4ed', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('362f8712-7fc4-4cf5-ab05-346890b07203', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1466,6 +1492,7 @@ INSERT INTO `xy_log` VALUES ('384c5a9c-1d93-4466-a780-20b5356319ae', '2016-10-21
 INSERT INTO `xy_log` VALUES ('385c97e5-7a11-4373-a61e-b61c1da03879', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('386572cd-5b49-4324-ae7a-7e099c34e764', '2016-10-24 17:02:14', '10.60.140.146【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('386d3f47-a2e5-42dd-ae54-4b84265876e7', '2016-10-21 15:24:16', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('386e3e78-b344-4d40-be22-c93507840650', '2016-11-19 21:54:56', '192.168.156.103【访问】/xyan/blog/type/99998', 'LV');
 INSERT INTO `xy_log` VALUES ('387d81ca-b917-4689-8b38-4d3ae9cd8135', '2016-11-03 10:18:44', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('3884a193-6e48-4267-854f-c6075f2b2a51', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('388e2536-3e58-4f37-984e-577592f02e59', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1528,6 +1555,7 @@ INSERT INTO `xy_log` VALUES ('3b34369c-b106-46c7-bbf9-5c5e7bd5ca97', '2016-11-17
 INSERT INTO `xy_log` VALUES ('3b3592e5-7d1e-411d-a5d5-d8303e65c626', '2016-10-24 17:20:26', '10.60.140.146【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('3b366f50-103e-47d0-985c-f7ce4ecd4b1b', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3b38bf0e-ecb0-4020-8525-98c77ac6bb6c', '2016-11-15 17:17:09', '10.60.141.145【访问】/xyan/blog/getLastArticle', 'LV');
+INSERT INTO `xy_log` VALUES ('3b4ff83f-7d9a-47f4-af24-3c0cd6c62cc7', '2016-11-19 21:49:30', '192.168.156.103【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('3b5104c9-1cb2-4b79-8d13-edba313130cb', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3b681d36-608a-4d09-b6a5-ebace0354af4', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3b6930cb-f1de-499c-82d3-30928dc42373', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1568,6 +1596,7 @@ INSERT INTO `xy_log` VALUES ('3d1ffaeb-edab-4874-b4b6-9377f14bd92e', '2016-10-21
 INSERT INTO `xy_log` VALUES ('3d26e9fa-9f49-4454-a314-b102440a31f8', '2016-10-21 14:41:38', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('3d274493-e346-4f5b-a652-1bdd3387b5ef', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3d6fe6a6-4606-4756-8233-9ce154157dcb', '2016-10-21 16:29:16', '10.60.140.212【访问】/xyan/blog/article/view/1', 'LV');
+INSERT INTO `xy_log` VALUES ('3d728e5a-b3ab-488f-86ac-af3030c9a65f', '2016-11-22 09:45:54', '10.60.141.33【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('3d87f7a2-8a1c-4c17-b7db-5e9b6aad827d', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3d8df87d-df08-4205-a5f7-6cd8bdb30ffe', '2016-10-21 16:07:21', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3d995597-1426-4c26-9eb4-9d5f534efd55', '2016-10-21 16:09:04', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
@@ -1606,10 +1635,12 @@ INSERT INTO `xy_log` VALUES ('3f190a95-aa15-45c3-a9a0-83374f0d95c8', '2016-10-21
 INSERT INTO `xy_log` VALUES ('3f1ee1ad-1b07-44ce-99bc-2ab2d2b3a47a', '2016-10-21 16:07:50', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('3f1f07bd-9b44-440f-8737-a118ebe5ec94', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3f3495ff-eb2e-4be5-bdb3-a409e381e1cf', '2016-11-03 10:17:11', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
+INSERT INTO `xy_log` VALUES ('3f448a02-5b16-4a13-8954-a7120677e9b2', '2016-11-19 21:50:21', '192.168.156.103【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('3f7d81b8-a6ba-4ada-afda-e2253721e69f', '2016-10-21 15:24:17', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('3f80d563-278d-4e89-93a6-f88739bc625b', '2016-10-21 15:24:07', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('3f8f8377-b822-48be-aa50-1a4d6755cb45', '2016-11-15 17:41:10', '10.60.141.145【访问】/xyan/blog/article', 'LV');
 INSERT INTO `xy_log` VALUES ('3f959385-e57b-4d1d-b42a-eb2017416e9d', '2016-10-21 15:24:24', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('3f96684b-8423-45ae-9a94-00490cf509a3', '2016-11-19 21:49:27', '192.168.156.103【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('3f9accb1-a8d4-4005-aae7-aa9f4c92836f', '2016-10-21 16:07:23', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3f9eda17-16f0-4bd0-9ad1-a4378479455a', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('3fa18226-e644-4b02-a541-e5e2de373d13', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1629,6 +1660,7 @@ INSERT INTO `xy_log` VALUES ('4094ed7a-cfd6-4ebb-8a81-4f4ce30fdb85', '2016-10-21
 INSERT INTO `xy_log` VALUES ('40959304-a0b7-4e9a-a6a0-9ce2777e7bea', '2016-10-21 16:07:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('40a43047-bbed-486b-b2f2-eec878106089', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('40d272c6-f933-4d8a-9c36-a22cc8047ce1', '2016-10-21 16:18:52', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
+INSERT INTO `xy_log` VALUES ('40d9640d-119d-48ba-823e-1a58f12943d3', '2016-11-19 21:49:18', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('40e2d5d0-373d-492a-9017-6e96897dbf51', '2016-10-21 17:09:35', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('40ea2064-f16e-47ca-90ba-0a87f3966f41', '2016-10-21 14:47:43', '10.60.140.212【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('40eef813-85f4-4ef2-a056-c1b00b1aea8d', '2016-11-15 17:32:55', '10.60.141.145【访问】/xyan/blog/article/view/emotions.data', 'LV');
@@ -1679,6 +1711,7 @@ INSERT INTO `xy_log` VALUES ('43188748-17b1-4bf6-bd95-a934bef0c4bb', '2016-10-21
 INSERT INTO `xy_log` VALUES ('431adfb1-4c51-4d86-bc39-a6e40f91b77d', '2016-10-20 14:26:51', '【异常】d:\\tmp\\2016-10-20\\6457376527389597.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('432ba3c3-91d5-4229-8faf-22a32db2b3ee', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('4338a677-91e4-4689-b22a-d5f646a63c38', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('433a153c-181a-430c-b89d-8a79f8f40a5d', '2016-11-19 21:50:23', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('43653efa-2cb1-4f2d-b065-9c5070ca7051', '2016-10-20 14:30:43', '10.60.140.212【访问】/xyan/admin/article/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('43785168-a645-411c-ae92-53f4ae75320f', '2016-10-21 15:19:15', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('437d4025-22c6-4740-b75d-46f65a18d986', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1742,6 +1775,7 @@ INSERT INTO `xy_log` VALUES ('46264534-df88-416f-a069-48874d932592', '2016-10-21
 INSERT INTO `xy_log` VALUES ('465bc8de-3698-4d04-8881-5f82d1aa20b7', '2016-10-21 16:10:52', '10.60.140.212【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('4660726f-c4de-4644-9650-137166cd5070', '2016-10-21 15:57:52', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('466f4f9c-2ce4-4693-b774-5df1bde529d4', '2016-10-21 15:24:21', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('467cb7fb-c7b1-4fc2-ba68-5610772f4113', '2016-11-19 21:52:05', '192.168.156.103【访问】/xyan/', 'LV');
 INSERT INTO `xy_log` VALUES ('46840f99-518e-4cb0-a2d5-92c955c5194f', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('4684e64d-c1a0-43a9-93ca-6d0e812445a7', '2016-10-21 15:24:24', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('46879c32-bd68-41da-9f1d-dba20f9c914f', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1796,6 +1830,7 @@ INSERT INTO `xy_log` VALUES ('48e0a216-6abb-43a2-99f3-c0732295e78e', '2016-10-21
 INSERT INTO `xy_log` VALUES ('48f5213a-b06a-4708-abc4-c58b6ed721cf', '2016-10-31 11:15:25', '10.60.140.147【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('48fc5bd1-bc43-4754-80e6-62e291cabaac', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('48feb6fd-78bd-48a6-9598-0d3c8fa5f0e0', '2016-11-16 09:24:00', '10.60.141.145【访问】/xyan/index', 'LV');
+INSERT INTO `xy_log` VALUES ('490910ec-987d-487e-8842-79b5ac164411', '2016-11-22 09:45:59', '10.60.141.33【访问】/xyan/', 'LV');
 INSERT INTO `xy_log` VALUES ('493797ec-ec16-46c2-ae8f-abac66716334', '2016-10-21 14:41:40', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('493d24ca-b4c5-4466-b58a-ea95cd75b2cc', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('493f41ee-47e1-42a7-b86b-8a821f3b66d3', '2016-10-21 16:56:33', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
@@ -1827,6 +1862,7 @@ INSERT INTO `xy_log` VALUES ('4a81c980-1ebf-46e4-8f17-8c42a9cc5d09', '2016-10-21
 INSERT INTO `xy_log` VALUES ('4a8a6562-0184-43ad-a9d1-8976c55e9e6f', '2016-10-21 14:41:40', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('4a8f5ab5-864a-416f-b55e-0ffade7e1130', '2016-10-21 17:26:33', '10.60.140.212【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('4a936be5-d4b3-4a4b-a24a-012d14208aaf', '2016-10-21 16:19:27', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
+INSERT INTO `xy_log` VALUES ('4a96beb0-e1eb-497c-ac12-2c0b55d626d5', '2016-11-19 21:55:45', '192.168.156.103【访问】/xyan/blog/board/saveMess', 'LV');
 INSERT INTO `xy_log` VALUES ('4ab4d65a-95be-478f-be37-2c94af8abfe4', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('4ab68de5-179a-42c2-a9c2-9925a743be85', '2016-10-20 14:30:25', '10.60.140.212【访问】/xyan/blog/talk', 'LV');
 INSERT INTO `xy_log` VALUES ('4acd514e-b1b4-4829-867c-13cd5aa3a848', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1878,6 +1914,7 @@ INSERT INTO `xy_log` VALUES ('4c8c0e79-b6df-4061-a729-d897aee1ec39', '2016-10-21
 INSERT INTO `xy_log` VALUES ('4cada602-2bf8-4f27-bb6a-52ee3a6a0e0b', '2016-10-21 15:57:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('4cb50a26-3a73-431e-b2ab-2a8dee20d0da', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('4cb67a45-c864-44ea-aafb-491cd16d05a2', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('4cbe4126-b249-4481-9d36-07c36fb771ec', '2016-11-19 21:53:03', '192.168.156.103【访问】/xyan/admin/article/dialog/img', 'LV');
 INSERT INTO `xy_log` VALUES ('4cc52231-a095-4190-988b-83c7e82b97af', '2016-10-31 11:20:45', '10.60.140.147【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('4cdfc5d8-3dc0-4731-b6f5-7905277a1a90', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('4ceab597-e10e-4def-ab89-416fc51879e0', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1913,6 +1950,7 @@ INSERT INTO `xy_log` VALUES ('4e34549d-7848-41b7-96ad-4a69b91328f9', '2016-10-24
 INSERT INTO `xy_log` VALUES ('4e451dd2-109a-4945-a53a-8d4c7846b40b', '2016-11-02 16:56:09', '10.60.140.147【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('4e6f25ca-72e2-4a35-843a-94206dc00fc0', '2016-10-21 16:07:54', '10.60.140.212【访问】/xyan/blog/article/view/17', 'LV');
 INSERT INTO `xy_log` VALUES ('4e7324fd-314b-4369-af4f-92b348625f4b', '2016-10-21 16:07:23', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('4e765de7-409c-48be-993e-f7a82f6a54cb', '2016-11-19 21:49:15', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('4e7bee29-8550-484b-97ae-806429deda2e', '2016-11-02 16:58:31', '10.60.140.147【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('4e7dddbe-2a44-4e34-8290-651a949869ad', '2016-10-21 15:18:50', '10.60.140.212【访问】/xyan/admin/message', 'LV');
 INSERT INTO `xy_log` VALUES ('4e861d76-3930-4fc9-8778-bdbba1679f20', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1986,6 +2024,7 @@ INSERT INTO `xy_log` VALUES ('51b98da1-11d1-47a5-811b-3f10a2f6d2a0', '2016-10-21
 INSERT INTO `xy_log` VALUES ('51cc1302-5983-4855-ba15-031f0d44f3d7', '2016-10-21 15:24:25', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('51cfb111-622a-4dfc-a8a6-3aa52adf4eda', '2016-10-21 15:23:57', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('51d549e3-bc96-48e0-9249-8c0ee5e1ca0e', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('51e27f45-4255-41f8-8ecd-a63b4bdf2503', '2016-11-19 21:50:34', '192.168.156.103【访问】/xyan/admin/article', 'LV');
 INSERT INTO `xy_log` VALUES ('5204521a-7bff-40cb-8933-56bd25f7ddca', '2016-10-21 15:58:10', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('5206222d-8681-47f1-986f-1c131a56d0cf', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('52211516-ffdb-4744-940b-4721807908ab', '2016-10-21 15:24:25', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -1999,6 +2038,7 @@ INSERT INTO `xy_log` VALUES ('523e4167-b277-40bf-a4c9-b766e3b7b09c', '2016-10-21
 INSERT INTO `xy_log` VALUES ('524376c0-98c6-48b3-93fb-7f19a5baadc3', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('5246829b-d886-4170-9186-b843588b56a9', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('5248f34f-b36d-4cca-a9cb-69e210ccf36f', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('5250e76f-e7e0-4b8b-a7b8-1dd605db2dad', '2016-11-19 21:50:57', '192.168.156.103【访问】/xyan/admin/article/getChildren', 'LV');
 INSERT INTO `xy_log` VALUES ('525da6f6-28e8-47ea-8089-b451e7eb7738', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('5260a13c-d4fd-48c5-801b-31dbebf2f152', '2016-10-21 14:41:40', '【异常】d:\\tmp\\2016-10-20\\05989625891640804.jpg (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('526231aa-1aa7-4d6d-979a-cdc52b42c637', '2016-10-21 15:23:57', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
@@ -2023,6 +2063,7 @@ INSERT INTO `xy_log` VALUES ('531a357f-fcd3-4e91-bff8-17f35b53d557', '2016-10-21
 INSERT INTO `xy_log` VALUES ('53216693-e9b1-4924-a037-28483299ea06', '2016-10-21 15:19:17', '10.60.140.212【访问】/xyan/admin/message/del77', 'LV');
 INSERT INTO `xy_log` VALUES ('532f9b25-c8b9-43d7-bdbb-c1673be60b20', '2016-11-16 09:23:50', '10.60.141.145【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('5343405b-381c-443e-82da-70bc70dfda5b', '2016-10-21 16:39:10', '10.60.140.212【访问】/xyan/blog/gdList', 'LV');
+INSERT INTO `xy_log` VALUES ('534f3e72-0701-4402-b4cb-91770024b50d', '2016-11-22 09:45:10', '10.60.141.33【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('536487f9-368d-4776-8ef3-d37c3bab267e', '2016-10-20 14:23:45', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('53867f3e-f6c1-4970-8e66-71bb1ddc4e75', '2016-10-21 15:24:10', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('538d430b-9eeb-40d6-a9ca-b4d71755f60c', '2016-10-21 15:24:18', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
@@ -2137,11 +2178,13 @@ INSERT INTO `xy_log` VALUES ('5900584f-3fb5-4157-8b70-6f132d17af9b', '2016-10-21
 INSERT INTO `xy_log` VALUES ('59011082-a1ce-4f23-9716-9e5e020a1311', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('5905bfea-f8d3-45aa-b336-8f695d359527', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('590f5222-9bc3-4e24-8dad-1711e29c222d', '2016-10-21 15:24:24', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('5912bcef-ebc5-4e93-924d-ae7f430f74f7', '2016-11-22 09:43:44', '10.60.141.33【访问】/xyan/admin/article/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('5917955d-cd77-4de9-bdfc-8df00bb76c3a', '2016-11-17 10:12:54', '10.60.141.145【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('5923b611-567d-42d0-8b50-10481efb10e2', '2016-10-21 16:19:28', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
 INSERT INTO `xy_log` VALUES ('59298f6e-d6a6-4646-bda2-04e507fa03c2', '2016-10-24 17:17:46', '10.60.140.146【访问】/xyan/blog/gdList', 'LV');
 INSERT INTO `xy_log` VALUES ('5937e492-d019-4acf-8f26-ff31bcf1bf5b', '2016-10-24 13:15:49', '10.60.140.146【访问】/xyan/plug/img/lunbo', 'LV');
 INSERT INTO `xy_log` VALUES ('59398d5b-4fe1-412e-b645-4e0986e5c71d', '2016-10-24 17:09:14', '127.0.0.1【访问】/xyan/blog/board/pageData', 'LV');
+INSERT INTO `xy_log` VALUES ('59425ca9-cf7f-47ac-9a43-4da00a271262', '2016-11-19 21:51:56', '192.168.156.103【访问】/xyan/admin/article', 'LV');
 INSERT INTO `xy_log` VALUES ('5947bf98-ef41-49c1-92de-f3b24235b93f', '2016-10-21 14:42:58', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('594f759f-1f56-4e4b-b125-3be3a3ce1631', '2016-11-03 10:17:13', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('595be0f4-0917-4171-8405-dfb82e78b420', '2016-10-21 15:25:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -2199,6 +2242,7 @@ INSERT INTO `xy_log` VALUES ('5c26a6ab-9f2d-4c20-abe2-5e8fc84f91f5', '2016-10-21
 INSERT INTO `xy_log` VALUES ('5c3421a9-e536-4374-8b2a-1cbbb445f209', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('5c373556-41fc-4ca3-accf-ef4b194d238e', '2016-10-20 14:30:44', '10.60.140.212【访问】/xyan/admin/preference', 'LV');
 INSERT INTO `xy_log` VALUES ('5c3fce1e-5f69-4f72-b4a1-2001e3e78b30', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('5c4d169e-7021-4375-bcfe-4f3259eb319c', '2016-11-19 21:50:13', '192.168.156.103【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('5c50e408-89ab-4ec2-9b62-150d36a191d9', '2016-10-21 15:20:33', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('5c5366d2-59c8-4bcd-8eee-aa9c4c9b8bbc', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('5c5b00c2-475e-4fb8-bb63-100d5f0d1c40', '2016-10-21 16:07:23', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -2312,12 +2356,14 @@ INSERT INTO `xy_log` VALUES ('610a7ae8-08c1-4f5b-8bd3-3bbe1a5a742a', '2016-10-21
 INSERT INTO `xy_log` VALUES ('6114dcb2-581e-4e29-a224-4c4e0b35ffec', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('6116ccc7-dfdc-4cd4-af00-275c4c72c844', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('611d9041-779e-4705-abaa-279c43b6caba', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('611ed696-1b27-41f5-adae-7ad358f9ff39', '2016-11-19 21:49:16', '192.168.156.103【访问】/xyan/blog/article/view/15', 'LV');
 INSERT INTO `xy_log` VALUES ('61224c62-b84c-4264-8af0-9e3b6ac157ed', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('6125b9a7-7dbf-4e98-8e50-802d753e2acf', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('61343b46-8257-4424-a4a2-70f1c3413898', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('614b9ff3-fac6-45b0-9459-c72d472ff436', '2016-10-21 15:23:58', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('614e2a92-e335-4b20-aa34-5118b509222f', '2016-10-21 16:45:07', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('616f7dcb-d198-4f02-8799-7157ad7dccbe', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('6172e09a-d997-4633-8a70-d51b7eeb6e38', '2016-11-19 21:54:40', '192.168.156.103【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('617be20b-8e2f-4e80-bf3e-8f1b3048faae', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('617fe8ce-c0c2-448a-8f2d-7e68d290c67b', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('61954c36-e240-487d-bb29-3ce2c9f941f3', '2016-10-21 15:24:25', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -2329,6 +2375,7 @@ INSERT INTO `xy_log` VALUES ('61d6eb08-355d-4360-bc6a-da4b0746a555', '2016-10-21
 INSERT INTO `xy_log` VALUES ('61d8ffbe-7eb9-4903-9dbf-14fa97033839', '2016-10-21 16:07:15', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('61da6a9c-c445-4d2a-8b44-bf6b32b823a6', '2016-10-21 15:25:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('61f2bda3-4af6-4ae1-a16e-feebe7dc888b', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('61fe703e-6e41-4203-947e-285e7c899321', '2016-11-19 21:52:56', '192.168.156.103【访问】/xyan/admin/article/dialog/open', 'LV');
 INSERT INTO `xy_log` VALUES ('62096008-b50a-4276-b004-0535ed48a70c', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('620e3dea-2208-457a-a398-8fc858d81691', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('621655f1-bcac-4e2a-97bc-04bf418cbb4c', '2016-10-20 14:24:10', '10.60.140.212【访问】/xyan/admin/login', 'LV');
@@ -2382,6 +2429,7 @@ INSERT INTO `xy_log` VALUES ('63fbf2a0-8d46-4e98-8351-16222f26072d', '2016-10-20
 INSERT INTO `xy_log` VALUES ('64104ab2-b64e-4e11-8d0a-61c80eb55c2b', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('641587d6-bbaa-4975-8aa7-4902e70c8bbe', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('6416660e-6866-4dfe-99b5-0adc86c5fde3', '2016-11-15 17:29:24', '10.60.141.145【访问】/xyan/blog/article/view/14', 'LV');
+INSERT INTO `xy_log` VALUES ('641dd553-14c9-4a9b-8575-ccd54b019bdb', '2016-11-19 21:52:56', '192.168.156.103【访问】/xyan/admin/article/getChildren', 'LV');
 INSERT INTO `xy_log` VALUES ('641dd930-5c2c-4434-ab98-489d5f769d48', '2016-10-31 11:20:45', '10.60.140.147【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('641de5a0-073c-4710-956f-2bab1c34c1ed', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('642ae19e-a269-490b-a8f4-5393d31b3471', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -2393,6 +2441,7 @@ INSERT INTO `xy_log` VALUES ('6480590e-ed15-4722-9d1f-698034ad6971', '2016-11-02
 INSERT INTO `xy_log` VALUES ('6492f3dd-2e4b-47ce-b4f0-9490bca437e0', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('649462d7-9145-4854-868d-493c3b4ad1ff', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('649a6df4-e672-4241-9a71-444b4fba220e', '2016-11-17 10:09:59', '10.60.141.145【访问】/xyan/blog/getLastArticle', 'LV');
+INSERT INTO `xy_log` VALUES ('64a641fb-8352-4aaf-8c09-34c7eba27c41', '2016-11-19 21:54:28', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('64b28551-67d2-4a5a-8820-cedb42f5e379', '2016-10-24 17:10:18', '127.0.0.1【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('64b584af-3580-460b-9a3c-9723fc79925c', '2016-10-24 17:25:42', '10.60.140.146【访问】/xyan/blog/board/saveMess', 'LV');
 INSERT INTO `xy_log` VALUES ('64bca7df-13e5-4c16-9763-89dcb3e87286', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -2406,6 +2455,7 @@ INSERT INTO `xy_log` VALUES ('651574d4-3eb5-4390-b410-08585dd5315e', '2016-10-21
 INSERT INTO `xy_log` VALUES ('65184c75-2694-40f7-8d1e-d75a4bbe75d9', '2016-10-21 16:07:10', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('6530264b-7b63-4cd6-a57f-d7e868c87fc0', '2016-10-20 14:25:37', '【异常】d:\\tmp\\2016-10-20\\05989625891640804.jpg (系统找不到指定的路径。)', 'LE');
 INSERT INTO `xy_log` VALUES ('653775cd-d171-4514-896c-3938a096568d', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('653ed5ca-dd8b-46db-b9d4-a87009af87de', '2016-11-19 21:52:01', '192.168.156.103【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('655d4759-7405-44f1-8213-608383e47170', '2016-10-21 16:07:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('6565cabb-bf7b-40c7-8b5d-759d90e8b79a', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('65662ace-7f6c-435e-98a7-2caf860ab50a', '2016-10-31 09:46:08', '10.60.140.147【访问】/xyan/attach/wangEditor/upload', 'LV');
@@ -2584,6 +2634,7 @@ INSERT INTO `xy_log` VALUES ('6d936974-4ba4-4d57-b000-7be20b4b0a82', '2016-10-21
 INSERT INTO `xy_log` VALUES ('6dad5634-5400-41ce-84f3-f378100efb15', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('6db37c21-307d-40cb-abf0-86e15710abf4', '2016-10-21 16:19:27', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
 INSERT INTO `xy_log` VALUES ('6db917ce-5a8c-40e1-894b-208c85ea54b5', '2016-11-16 09:32:56', '10.60.141.145【访问】/xyan/page/400', 'LV');
+INSERT INTO `xy_log` VALUES ('6dc060a9-525c-4b5c-adca-f3d48f0a3ae6', '2016-11-19 21:55:57', '192.168.156.103【访问】/xyan/page/500', 'LV');
 INSERT INTO `xy_log` VALUES ('6dc0a036-fa12-41d7-9cab-0707ef3fc157', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('6dc42bbc-b898-4bcb-aad1-aaf25fc1d0fa', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('6dc48543-40da-408b-b470-87ca8737d628', '2016-10-24 13:15:12', '10.60.140.146【访问】/xyan/plug/img/lunbo', 'LV');
@@ -2612,6 +2663,7 @@ INSERT INTO `xy_log` VALUES ('6e77c47f-23a6-4430-b026-57f5a0e3b3f1', '2016-10-21
 INSERT INTO `xy_log` VALUES ('6e987e78-e8d2-4e85-b9f7-5c32181a4d6e', '2016-10-21 16:09:02', '10.60.140.212【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('6eacacea-b829-405f-8ddf-a6c446bddc62', '2016-10-24 17:20:04', '10.60.140.146【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('6ecd180c-992f-4370-b224-1a699192c5bb', '2016-11-02 10:55:45', '10.60.140.147【访问】/xyan/blog/board/pageData', 'LV');
+INSERT INTO `xy_log` VALUES ('6ece3e9d-4e1f-4132-a552-316dfe5c6e3d', '2016-11-22 09:32:51', '10.60.141.33【访问】/xyan/admin/index', 'LV');
 INSERT INTO `xy_log` VALUES ('6eebc17a-777f-4279-9c29-87c4e247f939', '2016-10-24 13:15:55', '10.60.140.146【访问】/xyan/plug/img/lunbo', 'LV');
 INSERT INTO `xy_log` VALUES ('6ef9cd71-3c62-41bc-88ba-0936971e1e67', '2016-10-21 16:39:09', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('6f0aa64a-e09b-461b-ad0f-549f8f77bdde', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -2781,11 +2833,13 @@ INSERT INTO `xy_log` VALUES ('771ecda7-71cb-4860-8e60-9e938cd60d13', '2016-10-21
 INSERT INTO `xy_log` VALUES ('772a1899-2245-4113-a78a-3d8c715371f9', '2016-10-20 14:26:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('773a075a-160e-4b52-a40f-f1fe9ec2d1db', '2016-10-20 14:18:11', '10.60.140.212【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('773d33ea-46eb-4c26-8914-41f903c5dc48', '2016-10-21 15:24:08', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('77459b8b-3f26-4941-a3ae-d503f27a6e4c', '2016-11-19 21:49:07', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('77577aad-a370-44d1-acab-db8357af1a5a', '2016-10-21 14:47:26', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('7757b695-6e74-43d9-9df2-45712f2ea438', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('77689f86-79c5-4775-a4a8-9bfe51bb3b1a', '2016-10-21 15:24:01', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('776ef9f6-f4db-49e2-87ce-d96b8acf7246', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('7770b7f5-0bdf-46a7-93e3-d9efc6b35d3b', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('777268f4-bf57-45e4-9b86-8abc8916be76', '2016-11-19 21:49:27', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('77748479-1288-4f96-8553-894419895b84', '2016-10-20 14:30:26', '10.60.140.212【访问】/xyan/blog/article', 'LV');
 INSERT INTO `xy_log` VALUES ('7791937a-d57e-4bb8-88ec-36aaf337fcb2', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('779f178b-0ed0-4a50-a324-f4c9995d87ec', '2016-10-21 15:57:52', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -2828,6 +2882,7 @@ INSERT INTO `xy_log` VALUES ('78f06fdc-a2d8-4c82-9c96-76ee084b58d5', '2016-11-03
 INSERT INTO `xy_log` VALUES ('7901500c-2ef9-4398-9e8d-311be0dc2a21', '2016-10-31 09:46:08', '10.60.140.147【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('79034f4a-6b00-4b7e-9eb7-247a26a50a11', '2016-10-31 11:27:35', '10.60.140.147【访问】/xyan/blog/board', 'LV');
 INSERT INTO `xy_log` VALUES ('791ccba7-6079-4557-87a8-b7781b6186c7', '2016-10-21 14:42:58', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('79351ca2-0182-4f03-901f-68b20c9b741e', '2016-11-19 21:55:00', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('7946238b-f83e-4e61-9903-5c9b4659db91', '2016-10-21 16:12:04', '10.60.140.212【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('794fd934-9085-455b-808f-e4b7d4471714', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('795d0437-9ebf-4b0f-8d8a-66f1c0bf3ef3', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -2845,6 +2900,7 @@ INSERT INTO `xy_log` VALUES ('79f1b34b-dc5f-4d3d-bc6b-bc9f0f2c9657', '2016-10-21
 INSERT INTO `xy_log` VALUES ('79ff4ddb-2418-4ee4-9443-d72bff1b7818', '2016-10-21 15:30:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('7a009596-94b1-4f05-ac9a-9ac06b54ca82', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('7a0d948f-d00e-4fa5-827b-cde3c14dc5a7', '2016-11-02 17:25:48', '10.60.140.147【访问】/xyan/blog/talk', 'LV');
+INSERT INTO `xy_log` VALUES ('7a11fabe-7fb7-43de-9326-d7a24d4ac8fe', '2016-11-19 21:50:56', '192.168.156.103【访问】/xyan/admin/article/getChildren', 'LV');
 INSERT INTO `xy_log` VALUES ('7a202ee2-2a86-481e-8de8-7e07a0cbcf8c', '2016-10-21 15:57:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('7a27b65b-ee9c-4955-82be-312ea473fdae', '2016-10-21 15:24:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('7a2e867c-9037-4b20-8557-dbc60ce30e95', '2016-10-21 17:01:29', '10.60.140.212【访问】/xyan/admin/gallery', 'LV');
@@ -2917,6 +2973,7 @@ INSERT INTO `xy_log` VALUES ('7d283e47-8367-45f9-9c0a-2ee9fc172a4e', '2016-10-21
 INSERT INTO `xy_log` VALUES ('7d33f2c8-79f5-4557-9b4d-9d966ff274ca', '2016-10-21 16:19:29', '10.60.140.212【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('7d44d2c0-1b42-4a63-945d-26df8ce1d9bb', '2016-10-21 15:58:10', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('7d52123f-1fa2-4eb2-bf21-879b58c64e47', '2016-10-31 09:46:08', '10.60.140.147【访问】/xyan/attach/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('7d5aad5a-c73d-487c-ba4d-60ac3334023d', '2016-11-19 21:54:21', '192.168.156.103【访问】/xyan/admin/article', 'LV');
 INSERT INTO `xy_log` VALUES ('7d7289c9-d262-452c-bbe1-a9f3b527e429', '2016-10-21 14:42:58', '【异常】d:\\tmp\\2016-10-20\\47550782800201463.jpg (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('7d75baf9-bc1d-4aa4-a3a9-ea6ab04f9468', '2016-11-15 17:21:33', '10.60.141.145【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('7d798dfa-df37-43ec-8aa4-5d1b0168de46', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -2934,6 +2991,7 @@ INSERT INTO `xy_log` VALUES ('7dd50020-0a7e-470c-864d-f747a302c64c', '2016-10-20
 INSERT INTO `xy_log` VALUES ('7ddcb2a0-bae2-4734-84da-5253498d78bb', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('7ddd2ebf-e02d-4971-bb3f-ecc0c7a4c49a', '2016-10-21 15:18:18', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('7de55d78-ad1a-47ad-9c39-e8aae71460dd', '2016-10-21 15:09:33', '10.60.140.212【访问】/xyan/index', 'LV');
+INSERT INTO `xy_log` VALUES ('7dee2439-d3e5-4732-9203-934471219181', '2016-11-19 21:49:26', '192.168.156.103【访问】/xyan/', 'LV');
 INSERT INTO `xy_log` VALUES ('7df906b3-cbd7-4e9f-8723-3fdd3fd64364', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('7e01956d-3401-4a1d-931c-44f0e144d786', '2016-10-21 15:58:10', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('7e0b0006-1d34-4c92-ba42-74a4e27e8558', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3015,6 +3073,7 @@ INSERT INTO `xy_log` VALUES ('813dec84-cc18-46e2-8db2-960a98b82afa', '2016-10-21
 INSERT INTO `xy_log` VALUES ('814a9a77-e0da-47de-9fb0-9d9e6e3e8357', '2016-11-15 17:29:24', '10.60.141.145【访问】/xyan/blog/article/view/14', 'LV');
 INSERT INTO `xy_log` VALUES ('81517df0-c7de-4343-a4a9-8cff0511b0bb', '2016-10-21 15:24:24', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8155f211-21b4-46f9-a859-1ea5fdc0a9e7', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('816bf228-ad19-4137-88e4-b741f7861d60', '2016-11-19 21:50:22', '192.168.156.103【访问】/xyan/admin/index', 'LV');
 INSERT INTO `xy_log` VALUES ('816c0d44-ac8b-4cd8-8651-dad909725d8f', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8181c0de-7c8f-41fc-986e-82e483fbeda0', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8183506b-b08e-4f74-af62-f58aecda01de', '2016-10-21 15:55:29', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
@@ -3079,6 +3138,7 @@ INSERT INTO `xy_log` VALUES ('83e19502-c2fd-42d5-8776-bb81d642e9b9', '2016-10-21
 INSERT INTO `xy_log` VALUES ('83e70dc6-cb77-4b11-8857-ee8a6b1cbcc0', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('83edd0c1-512c-4045-8128-223aa1ae9d6c', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('83fb1222-3b39-4976-aaed-435a1507ab22', '2016-10-21 17:24:11', '10.60.140.212【访问】/xyan/page/404', 'LV');
+INSERT INTO `xy_log` VALUES ('83fe368a-5a22-46a4-ade7-b5695d5cdc9a', '2016-11-19 21:52:01', '192.168.156.103【访问】/xyan/blog/article/view/1', 'LV');
 INSERT INTO `xy_log` VALUES ('8400b9be-4b1a-4017-9f54-8134bddd6438', '2016-10-21 16:07:23', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('840b5b02-2e3f-4af3-bcc0-e118a42790b3', '2016-11-02 17:26:40', '10.60.140.147【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('842a371c-496c-4e10-a27c-c0db53414d3d', '2016-11-17 10:12:53', '10.60.141.145【访问】/xyan/blog/board', 'LV');
@@ -3124,6 +3184,7 @@ INSERT INTO `xy_log` VALUES ('853c99cd-3642-4be8-8815-e88ed25708c5', '2016-10-20
 INSERT INTO `xy_log` VALUES ('854641cb-48d1-4d62-b811-4a407fc061de', '2016-10-21 16:00:05', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('8547312b-0555-47d2-aee4-aa2b29f12b7f', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('85478045-b2db-4b29-9a5b-c5d4c0da4be9', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('855b2501-3763-4320-bc0e-3fccd50f87e0', '2016-11-19 21:52:01', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('8564945c-b3de-4997-b50a-7c4950aa959b', '2016-10-20 14:30:48', '10.60.140.212【访问】/xyan/admin/article', 'LV');
 INSERT INTO `xy_log` VALUES ('856531dd-cb60-41f9-a476-9742a58423f9', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8565c1f3-0199-4e3c-9d9e-857ec8c1916c', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3165,6 +3226,7 @@ INSERT INTO `xy_log` VALUES ('86594148-55fa-40ab-9652-45ceb2d3853e', '2016-10-21
 INSERT INTO `xy_log` VALUES ('865e5cda-5c72-4d02-9e65-8381af2e97a7', '2016-10-21 15:58:10', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('865ef6f6-981f-46a8-b709-91bbd2129285', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('866c0cab-277e-4109-b831-176a45d0626d', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('86724fca-e39f-4696-aaa3-7591d8de4bf6', '2016-11-19 21:49:06', '192.168.156.103【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('86730446-7f9f-4f26-9b29-084de295b06c', '2016-10-24 17:20:40', '10.60.140.146【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('86838f25-2758-4479-aefe-24086d37dc58', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8684f7f3-65d5-41a8-b5a2-f335ec34df93', '2016-10-21 14:40:59', '【异常】d:\\tmp\\2016-10-20\\4785769866185494.jpg (系统找不到指定的文件。)', 'LE');
@@ -3250,6 +3312,7 @@ INSERT INTO `xy_log` VALUES ('891efd9e-6c89-4f88-aae0-164987006c1a', '2016-10-21
 INSERT INTO `xy_log` VALUES ('89444f85-a634-4507-bbe5-cfcfae0e5ad5', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8951a25d-fc7c-41f8-8b3e-fcaaece12f23', '2016-10-21 15:23:32', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('896a2fa0-b8e8-4e8d-a262-36708fbdb373', '2016-10-21 15:23:35', '【异常】d:\\tmp\\2016-10-20\\4701028876792944.jpeg (系统找不到指定的文件。)', 'LE');
+INSERT INTO `xy_log` VALUES ('897b2e57-8bae-49c6-85a6-96d1f8cba560', '2016-11-19 21:54:22', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('89891e45-f3e0-49bb-83ea-99e440df8971', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('899bc5a0-b822-4e2a-a144-8ddb1009d85e', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('89a002b3-907f-4157-96a8-66b8ad7211fd', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3261,6 +3324,7 @@ INSERT INTO `xy_log` VALUES ('89d98299-5ffb-4013-814d-fb42b8414840', '2016-10-21
 INSERT INTO `xy_log` VALUES ('89dafa64-959f-476a-a212-68bd9aede32b', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('89e90135-b937-4c92-8822-da4277a70003', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('89fc66ba-d180-4df5-873a-538599501f09', '2016-11-03 11:15:53', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
+INSERT INTO `xy_log` VALUES ('8a0276a2-e8b0-4f0e-9ef1-2364115be276', '2016-11-19 22:00:00', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('8a1f1467-42dc-4607-930b-96dc461f0b5a', '2016-10-21 15:24:07', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('8a281e0d-8cd1-42ba-9ecb-8289d72d0667', '2016-10-21 15:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8a28a8fd-3f23-4dbf-92f7-ad31192cac39', '2016-10-24 17:20:06', '10.60.140.146【访问】/xyan/blog/talk', 'LV');
@@ -3340,6 +3404,7 @@ INSERT INTO `xy_log` VALUES ('8cf3ad90-bf50-48e4-a6f8-a501f4df1e90', '2016-10-21
 INSERT INTO `xy_log` VALUES ('8cf5fda2-327b-4dc9-a817-d309800b71a7', '2016-10-21 15:34:19', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('8cffcaae-732b-4017-a65f-5a95360423e4', '2016-10-21 15:23:23', '【异常】d:\\tmp\\2016-10-20\\9748525276530429.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('8d114ea3-00e5-4a80-8b5a-9e85ddc5eee5', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('8d2bcde2-54b3-4133-9802-f180ea7ad623', '2016-11-19 21:49:23', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('8d2e0c69-9ad9-4373-81c6-fb1d194e2e58', '2016-10-21 16:19:28', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
 INSERT INTO `xy_log` VALUES ('8d3b2b52-584b-4259-91bf-90078766c155', '2016-11-15 17:21:00', '10.60.141.145【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('8d3e2a4f-23d6-4942-8b4c-4e9bf683f3aa', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3382,6 +3447,7 @@ INSERT INTO `xy_log` VALUES ('8ec1f203-f23e-46b4-8f93-99075664a4c2', '2016-10-24
 INSERT INTO `xy_log` VALUES ('8ec5b8a1-6ba0-47e6-9b3e-b2b018b534dc', '2016-10-20 14:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8ec66366-5005-45ab-869b-ee2fff5c1b6e', '2016-10-21 15:24:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8ecc754e-6116-4d9e-b9b6-fa47f909edd8', '2016-10-21 15:24:21', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('8eccf4d5-ddf7-4d3c-91bc-d9321e88554e', '2016-11-19 21:55:32', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('8ed99953-b820-4fb2-b01d-3faffe98d581', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8f02a91e-e6d3-43eb-802e-6b227c70a5ea', '2016-11-02 17:24:33', '10.60.140.147【访问】/xyan/blog/article', 'LV');
 INSERT INTO `xy_log` VALUES ('8f30d745-3e0b-44df-9286-d11459c95042', '2016-10-21 15:55:28', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
@@ -3399,6 +3465,7 @@ INSERT INTO `xy_log` VALUES ('8fb4d8eb-852b-402a-b923-e21f4c4ae275', '2016-10-21
 INSERT INTO `xy_log` VALUES ('8fb9f493-64df-41b7-a5f4-171f31098681', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8fbd720a-886c-46eb-ac38-5b9d4d92e803', '2016-10-20 14:18:10', '【异常】d:\\tmp\\2016-10-20\\31085409660851004.png (系统找不到指定的路径。)', 'LE');
 INSERT INTO `xy_log` VALUES ('8fc2fd24-6794-4aa5-bbae-43dbb0bf2a1e', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('8fc59967-3fe6-462c-b371-618798f70d58', '2016-11-22 09:32:55', '10.60.141.33【访问】/xyan/admin/article', 'LV');
 INSERT INTO `xy_log` VALUES ('8fca9739-9994-4af9-8379-4c7ce4003cc4', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('8fd6bb32-9a78-4efe-86e9-830a6c730ca6', '2016-10-21 16:53:01', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('8fdc6917-8ad8-447b-bf33-92735b8d6f2a', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3504,6 +3571,7 @@ INSERT INTO `xy_log` VALUES ('93ada763-aaf1-41a1-b153-bfb064798dcf', '2016-10-21
 INSERT INTO `xy_log` VALUES ('93b2ca04-56ec-456e-9c7c-37acfa9d1849', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('93d480c5-ccc4-46b8-ad42-5cb907740e77', '2016-10-21 16:19:28', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
 INSERT INTO `xy_log` VALUES ('93fab813-f6d0-4456-b7c9-35c1b9769040', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('94046332-f6c3-4f83-94eb-294ef6f8292a', '2016-11-22 09:45:51', '10.60.141.33【访问】/xyan/admin/article/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('94182e28-c993-4101-922a-851008b16649', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('942e40b0-1f2a-4054-b3eb-56e15589f75a', '2016-10-21 16:19:26', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
 INSERT INTO `xy_log` VALUES ('94367a81-32e7-4c64-bbc7-da512c5f8bf4', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3525,6 +3593,7 @@ INSERT INTO `xy_log` VALUES ('94b6ad0d-4759-4185-9391-88088dc7a482', '2016-11-03
 INSERT INTO `xy_log` VALUES ('94c9f5ff-914b-4fe7-b487-c7e3150af3a7', '2016-10-21 14:41:40', '【异常】d:\\tmp\\2016-10-20\\31085409660851004.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('94cd1b52-7dca-4702-8778-82f3fb9788d8', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('94e3c0b7-546b-46e2-8f62-a02c50dfa669', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('94eb1b43-5a90-4364-83ee-1f98fab3fea8', '2016-11-22 09:43:48', '10.60.141.33【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('94f64c46-37c6-468c-b2d3-1854d55f179c', '2016-10-20 14:30:31', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('94fd18d7-316d-4ac9-bb3f-84a92232c67e', '2016-10-21 15:24:07', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('94fd55b3-f15c-45ca-b748-804aaa1341fa', '2016-10-21 16:07:23', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3551,6 +3620,7 @@ INSERT INTO `xy_log` VALUES ('95eb527d-e735-47f7-8b0c-355aaf7bf045', '2016-10-21
 INSERT INTO `xy_log` VALUES ('96119de4-e6c2-485e-b97f-58968e7900ca', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('96203995-aa68-4b92-a219-8cd10cd4ac46', '2016-10-21 15:24:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('962726b8-72fe-40fb-b4c8-b91612236c13', '2016-10-21 16:19:23', '10.60.140.212【访问】/xyan/page/400', 'LV');
+INSERT INTO `xy_log` VALUES ('963368b7-0abb-4b44-af15-3d3bcae0f523', '2016-11-19 21:49:18', '192.168.156.103【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('9642740b-4c90-4e24-b9e4-17420b83957f', '2016-10-21 15:57:52', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('96514cfc-8da6-4092-86ce-90a32e9ec9c3', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('965f4cce-ea73-4118-a063-340690d0613e', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3620,6 +3690,7 @@ INSERT INTO `xy_log` VALUES ('994c5ca3-6ee0-4db1-ad67-2dc06ec26230', '2016-11-17
 INSERT INTO `xy_log` VALUES ('994ea3cd-7993-4d12-8325-0a50d17d683e', '2016-10-21 14:44:03', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('9952fb30-9b92-4624-a650-abf4b69f716e', '2016-10-31 09:46:08', '10.60.140.147【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('996cd3b2-789e-49db-9cf2-721fa7c579d3', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('99771aaa-e01d-4b28-966c-9913469d5195', '2016-11-22 09:45:54', '10.60.141.33【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('997b5ab5-4249-4753-9fd7-7fee2f72fa40', '2016-10-31 10:01:24', '10.60.140.147【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('998dbb55-2607-4b52-b6ad-023ea197e661', '2016-10-21 16:10:29', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('99931d83-b188-4970-b112-39ebab935640', '2016-10-21 15:24:14', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3627,6 +3698,7 @@ INSERT INTO `xy_log` VALUES ('9996f581-8854-4f8a-8710-cbaee21e4944', '2016-10-21
 INSERT INTO `xy_log` VALUES ('9998e210-5ea8-4ecb-bc20-2ea921f91604', '2016-10-21 15:24:07', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('999a86d6-ad19-4a86-b870-6a006e9da2b7', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('99a76b40-0f68-4a26-9c3f-ea41507c4c2b', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('99b0ec3f-befb-4436-9248-b5321172a271', '2016-11-22 09:31:51', '10.60.141.33【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('99ba61f8-3d4b-4cd2-b566-4b74ae26d465', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('99c349b0-16be-4ff6-a484-df9b48043c4f', '2016-10-20 14:26:51', '【异常】d:\\tmp\\2016-10-20\\31085409660851004.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('99c69e16-6930-4603-8525-285f9c1fbd9a', '2016-10-21 14:41:40', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3652,6 +3724,7 @@ INSERT INTO `xy_log` VALUES ('9b499234-cc7a-46e1-974c-5abcbfe7f05f', '2016-10-21
 INSERT INTO `xy_log` VALUES ('9b4fe3d4-14f4-4448-b3d6-37247992f100', '2016-10-21 15:57:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('9b541e6c-906d-46b2-b791-23353645ed8c', '2016-10-21 16:07:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('9b5afd79-dec0-45c9-b440-ecbe5a27ab5e', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('9b6476cd-1070-4e82-af1d-e7cdbb0c2972', '2016-11-22 09:32:10', '10.60.141.33【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('9b8d4023-1975-485c-bd3b-704afeceb40c', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('9b8eb3bc-ecb3-419f-9dab-a15fd281e829', '2016-10-31 09:45:36', '10.60.140.147【访问】/xyan/admin/article/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('9b94b5f6-1774-4160-b338-47df5a265c28', '2016-10-21 16:07:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3720,6 +3793,7 @@ INSERT INTO `xy_log` VALUES ('9e2ba0ba-066c-4416-a0c9-c86562342b27', '2016-10-21
 INSERT INTO `xy_log` VALUES ('9e36cef7-84ae-44b4-873b-e61ca248ab9d', '2016-10-21 16:07:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('9e39002e-2148-452e-8b4c-f2c4a754c7fa', '2016-10-21 15:24:18', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('9e3e468f-389f-4424-9f48-cd88959a2de6', '2016-10-21 14:47:15', '10.60.140.212【访问】/xyan/admin/login', 'LV');
+INSERT INTO `xy_log` VALUES ('9e401324-97f1-4f4c-a9c9-a2ac77421d6a', '2016-11-19 21:49:23', '192.168.156.103【访问】/xyan/blog/board/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('9e437bab-32cc-4414-b3a5-30935391f55c', '2016-11-15 17:23:50', '10.60.141.145【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('9e5b0107-ae00-4de9-aa5b-95fe3cabfdc4', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('9e60e4f3-d094-4ec4-a7ae-e50323ae5215', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3751,6 +3825,7 @@ INSERT INTO `xy_log` VALUES ('9fd92a35-a3ec-47b7-b8dd-caa1399b4495', '2016-10-21
 INSERT INTO `xy_log` VALUES ('9fe33c03-fa47-474a-95b4-df1dae682fc7', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('9ffe4717-40c7-4bce-9e41-c3d58f9ff6da', '2016-10-20 14:26:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a00346e9-3302-4788-a307-1533f4bcf460', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('a005d0ba-ef93-4a91-947f-30938bead57f', '2016-11-19 21:55:45', '192.168.156.103【访问】/xyan/blog/board', 'LV');
 INSERT INTO `xy_log` VALUES ('a025fb53-af96-42ff-bde6-58b34a9d2348', '2016-10-21 15:25:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a02c7b4a-5590-4692-b8df-33aef7442170', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a0380643-aa1c-4e25-9308-e8295475640e', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3892,6 +3967,7 @@ INSERT INTO `xy_log` VALUES ('a56b091d-b094-4f73-a7b5-824632abb1d6', '2016-10-21
 INSERT INTO `xy_log` VALUES ('a5736b97-4d37-4b7d-af5e-6a34e2565ee2', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a573f233-e8bb-4ffe-a0ec-31d347013af2', '2016-10-21 15:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a57e0855-7cb1-4bf8-bf2e-e5cf22bb9bcb', '2016-10-21 15:24:18', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('a598590b-c752-47ea-bcfa-a56f6ca71b6a', '2016-11-19 21:55:32', '192.168.156.103【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('a59b66b4-688d-492e-b475-22e37c70edf5', '2016-10-21 15:24:16', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('a5b0dddf-740c-4ffa-a78c-59c5fd319094', '2016-11-03 10:42:00', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('a5b51d6a-e650-49d3-b728-d528c7bc5faf', '2016-10-24 17:08:30', '127.0.0.1【访问】/xyan/blog/board/saveMess', 'LV');
@@ -3911,10 +3987,12 @@ INSERT INTO `xy_log` VALUES ('a630316c-b949-4ec6-9780-48a253b07bc7', '2016-10-21
 INSERT INTO `xy_log` VALUES ('a632366e-6580-469c-8ea7-40791198367c', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a63bda13-3df4-4332-86bc-9c86d1f29b72', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a63c0e8b-c17b-4292-bae0-7748f8ca2824', '2016-10-31 09:46:19', '10.60.140.147【访问】/xyan/admin/article/pageData', 'LV');
+INSERT INTO `xy_log` VALUES ('a656280f-82e5-4904-948e-14b28d593c6f', '2016-11-19 21:51:09', '192.168.156.103【访问】/xyan/admin/article/dialog/img', 'LV');
 INSERT INTO `xy_log` VALUES ('a65659fb-e6a5-484b-899d-6eca299dadcf', '2016-10-21 15:24:25', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a6582328-92c9-4960-9048-cd2acd260763', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a65bb53d-67af-4188-8605-a586263beb9a', '2016-11-03 10:55:04', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('a66fec61-4e8a-4dc0-9e0b-30ead6342672', '2016-10-21 17:03:48', '10.60.140.212【访问】/xyan/blog/talk', 'LV');
+INSERT INTO `xy_log` VALUES ('a68243cf-de7f-4f8f-b6a0-cef6854aaf61', '2016-11-19 21:50:44', '192.168.156.103【访问】/xyan/admin/article/edit', 'LV');
 INSERT INTO `xy_log` VALUES ('a68b0ff1-ef18-4d89-adba-835c7a3c6e38', '2016-10-21 15:24:25', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a68e45f2-e8f5-4a0b-bde3-2eefbcebde5b', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a68ea4c2-6df4-42e3-ae0d-8cf467b5088c', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -3984,6 +4062,8 @@ INSERT INTO `xy_log` VALUES ('a9884855-33d3-47ca-99fa-288b5a54717b', '2016-10-21
 INSERT INTO `xy_log` VALUES ('a989576a-eeb2-41e7-87c2-26f43f14ba10', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a98979e6-9b24-49c4-92d4-57a99dddf076', '2016-10-20 14:23:45', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a98bb992-64f4-4fb4-8a4b-bea315fefcad', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('a9a143fe-93b6-46e9-be0e-a79162e37088', '2016-11-22 09:43:48', '10.60.141.33【访问】/xyan/blog/getLastArticle', 'LV');
+INSERT INTO `xy_log` VALUES ('a9a6434a-5a8b-4bdc-aded-7b4f45f15133', '2016-11-19 21:54:21', '192.168.156.103【访问】/xyan/admin/article/save', 'LV');
 INSERT INTO `xy_log` VALUES ('a9b6c4aa-f494-41c1-b202-8a9c4d149b20', '2016-11-03 10:54:15', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('a9b7a57c-29fa-4b09-b7b2-ebb55c1328bd', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('a9d25896-1501-48b4-9460-70f2a7554f04', '2016-10-21 15:31:42', '10.60.140.212【访问】/xyan/admin/message', 'LV');
@@ -4067,6 +4147,7 @@ INSERT INTO `xy_log` VALUES ('acee1d59-1afd-4c2c-b666-2ff42b5c5253', '2016-10-21
 INSERT INTO `xy_log` VALUES ('ad02096c-6bcc-454f-bb5c-fa6fedb5d1c0', '2016-10-21 16:43:54', '10.60.140.212【访问】/xyan/blog/board/saveMess', 'LV');
 INSERT INTO `xy_log` VALUES ('ad04a95d-6b2a-4aa5-abcd-edab47a6dcb6', '2016-10-21 15:57:02', '10.60.140.212【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('ad0ea1ce-e74d-4450-a3a3-e0f0d8382da0', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('ad3f7173-8c7c-4f34-843d-38f8f01b008c', '2016-11-22 09:32:56', '10.60.141.33【访问】/xyan/admin/article/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('ad44811e-f58c-4fa5-a551-c11d6e3fb4d9', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ad470899-5452-4858-9bdc-c3316db7511e', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ad47579d-f2f8-4bba-b519-ced6154f1c04', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4169,6 +4250,7 @@ INSERT INTO `xy_log` VALUES ('b16c9538-82b9-4af0-829e-33a17b26b7d8', '2016-10-21
 INSERT INTO `xy_log` VALUES ('b16d246d-f523-4317-9e55-cf15cff61681', '2016-11-02 17:01:38', '10.60.140.147【访问】/xyan/blog/life', 'LV');
 INSERT INTO `xy_log` VALUES ('b178a990-a5d9-41b3-9111-560ee538ce53', '2016-10-21 15:57:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('b180996d-a6e4-4b2c-96a3-4f757de5b91e', '2016-10-21 15:24:07', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('b1a4cd08-4c0a-4b50-b593-c4cc192cac9a', '2016-11-19 21:55:51', '192.168.156.103【访问】/xyan/page/500', 'LV');
 INSERT INTO `xy_log` VALUES ('b1ae7a48-d6f6-45b0-9937-c49a335135de', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('b1aec421-b45d-4761-8bdf-1eecdd02d550', '2016-10-24 13:23:00', '10.60.140.146【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('b1cbed14-a031-4fb3-9529-9df931ea4897', '2016-10-20 14:18:02', '10.60.140.212【访问】/xyan/blog/article', 'LV');
@@ -4267,6 +4349,7 @@ INSERT INTO `xy_log` VALUES ('b57587c2-25c7-4aa7-b002-ebc228a2974f', '2016-10-21
 INSERT INTO `xy_log` VALUES ('b57cd690-9bec-4cb3-b34b-b74b64169bb2', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('b57ce8b0-4809-4ee5-a9bb-cccec1fec429', '2016-10-20 14:30:33', '10.60.140.212【访问】/xyan/blog/board/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('b58473b2-62ad-4568-abff-e6cdb13b40fb', '2016-10-21 15:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('b5883f56-2874-40a7-b6e0-b1ec39a5b666', '2016-11-19 21:49:52', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('b5ac77b3-dfdd-4f7e-be25-658a6056b02e', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('b5ae8579-fa1e-44e5-92e5-7a2c23dbfe11', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('b5aefb79-e522-4d0b-af3b-debf431e2500', '2016-10-31 09:46:08', '10.60.140.147【访问】/xyan/attach/wangEditor/upload', 'LV');
@@ -4371,6 +4454,7 @@ INSERT INTO `xy_log` VALUES ('ba0842dc-94b1-4457-aac5-feded0cd1a65', '2016-10-21
 INSERT INTO `xy_log` VALUES ('ba0bf56c-5293-497b-a0a4-2d5045c293b1', '2016-10-21 14:41:34', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('ba0c2027-67b9-437f-85dc-28f1ebf748f1', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ba0ea85a-79ec-4f71-907e-32ac82e80363', '2016-10-21 15:23:32', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('ba1ab7ae-4409-42eb-b5df-e1f44c14ff89', '2016-11-19 21:55:31', '192.168.156.103【访问】/xyan/', 'LV');
 INSERT INTO `xy_log` VALUES ('ba1e7914-cee2-4922-8acc-8e50d6c9ce2a', '2016-10-31 11:27:27', '10.60.140.147【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('ba1ec22b-cd4c-4c0c-abd2-a6f5d8e41129', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ba1fd690-234a-4973-a3b2-9797ab5f582a', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4380,12 +4464,14 @@ INSERT INTO `xy_log` VALUES ('ba459d74-3f42-40a2-8fae-ffe22fb6f817', '2016-10-21
 INSERT INTO `xy_log` VALUES ('ba642029-c4fd-4fa0-a77a-e8f45386416c', '2016-10-20 14:26:51', '【异常】d:\\tmp\\2016-10-20\\5949647366025395.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('ba698979-c8e7-4823-9e21-acb2c9ebb6a5', '2016-10-21 15:25:13', '10.60.140.212【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('ba847c13-860d-41b5-90eb-91224158b0b9', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('ba8526df-551e-48f7-9b31-d4d0ad3b993e', '2016-11-19 21:54:40', '192.168.156.103【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('ba8b9c5c-1c86-4b77-90a7-3b6eeeb799f3', '2016-10-20 14:16:58', '10.60.140.212【访问】/xyan/blog/board', 'LV');
 INSERT INTO `xy_log` VALUES ('baa9832f-5353-49e1-b4bc-7d3df015198d', '2016-10-21 16:07:46', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('bab0a72f-7ec3-4e04-afe0-01c90e5e2ee2', '2016-10-21 15:25:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('bab5fd24-21eb-410a-bb42-f7502a2f59a7', '2016-10-24 11:25:52', '10.60.140.146【访问】/xyan/plug/ss', 'LV');
 INSERT INTO `xy_log` VALUES ('bac3cfeb-190e-47c0-a1ba-17f54439056b', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('bacf7f46-978a-472e-8902-3c7a17f76536', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('bad55001-77c1-4857-8b06-22c418150e3d', '2016-11-19 21:54:51', '192.168.156.103【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('badd6e1d-4b08-4e11-a496-6d346985c1ca', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('baec0136-14ad-497c-96d8-914482e2c003', '2016-10-24 12:13:14', '10.60.140.146【访问】/xyan/plug/img/lunbo', 'LV');
 INSERT INTO `xy_log` VALUES ('baf67273-e6b0-4165-89b7-9a1c357f1711', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4448,6 +4534,7 @@ INSERT INTO `xy_log` VALUES ('bd6bd254-6b25-49d6-9c08-8f8454eaca10', '2016-10-21
 INSERT INTO `xy_log` VALUES ('bd75c355-27f6-4f29-b3ff-ac74f1bd2e2f', '2016-10-20 14:26:51', '【异常】d:\\tmp\\2016-10-20\\31085409660851004.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('bd75e5f5-c2d3-4f21-9ffe-5d998d706a48', '2016-10-21 16:39:06', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('bd8777f0-08cd-42b3-8b32-8985ec79a14b', '2016-10-21 15:25:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('bd8b4491-a8ef-4ac1-989d-5c00d1465bb7', '2016-11-19 21:53:10', '192.168.156.103【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('bd8f4b5e-93a0-4b95-92a2-cb6e071fd07d', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('bda53db6-2762-4bde-9dbf-2dc9ac349353', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('bdae17ad-4b7b-49e0-a1e2-4e8f32307447', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4472,6 +4559,7 @@ INSERT INTO `xy_log` VALUES ('be7acf7c-8997-4707-bd66-b3812fc74a54', '2016-10-21
 INSERT INTO `xy_log` VALUES ('beaf2962-90ca-422f-9f42-aab48fd2ef21', '2016-10-21 15:24:18', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('beb0f266-8dd3-434c-a789-17991264ef89', '2016-10-21 14:47:16', '10.60.140.212【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('beb47225-a444-4d6f-bf87-1b6cec6dcc6c', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('beb553f4-5156-4770-928b-23a5b2de296c', '2016-11-19 21:52:05', '192.168.156.103【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('becf308a-c7cf-47e7-b344-edc8d0817be3', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('bed38e98-142a-481a-a5bb-ef90a72fe749', '2016-10-21 15:24:05', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('befb193f-ca08-4db3-af12-3fe4f8139808', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4481,6 +4569,7 @@ INSERT INTO `xy_log` VALUES ('bf21a701-c3c9-4858-99d1-bc11db944d84', '2016-11-16
 INSERT INTO `xy_log` VALUES ('bf2c8258-339f-4b4d-9708-d6191f630824', '2016-10-21 14:42:49', '10.60.140.212【访问】/xyan/page/500', 'LV');
 INSERT INTO `xy_log` VALUES ('bf340ee1-4795-4a6a-9fb1-0cb40d585fd0', '2016-10-21 15:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('bf3fefeb-09d5-4a1b-8cb4-eff57cef9796', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('bf439cd0-184e-4a9d-8ef5-076bb9aa6b1b', '2016-11-19 21:51:56', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('bf457a20-b6bc-402d-bd9b-3cc3f56ebdd9', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('bf4c7dd7-bc46-4e30-9bbd-627d311215f5', '2016-11-02 16:56:09', '10.60.140.147【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('bf5ff4c2-6316-42a4-92af-36ab4148f328', '2016-10-21 15:55:28', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
@@ -4530,6 +4619,7 @@ INSERT INTO `xy_log` VALUES ('c11317b3-5a0e-4d95-b215-86758eea1227', '2016-10-21
 INSERT INTO `xy_log` VALUES ('c128791c-a8ee-481e-8e73-315dadb24a89', '2016-10-21 15:24:18', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('c12bc482-205e-4622-b1c4-f8c3fafa378d', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('c1309ebc-b8cc-4f8e-a32a-7995fae534b0', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('c132e83d-5364-4ab9-bf36-a805d90ce772', '2016-11-22 09:33:00', '10.60.141.33【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('c13ac272-b230-4602-8867-e98fb77fc7d0', '2016-10-21 14:40:59', '【异常】d:\\tmp\\2016-10-20\\9748525276530429.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('c14e3320-4663-460d-b15b-d378098f7e7d', '2016-10-21 16:07:23', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('c159c56a-0e91-4830-94dd-d7843b37d41b', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4541,6 +4631,7 @@ INSERT INTO `xy_log` VALUES ('c1b8dbda-f581-45db-bb39-5426e84fe2ff', '2016-10-21
 INSERT INTO `xy_log` VALUES ('c1c9e40e-a4a5-48c4-b6c5-4332c91d1528', '2016-10-21 16:07:15', '10.60.140.212【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('c1d63813-a041-476b-b305-0cece1203982', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('c1dcabd7-add3-4ae3-804e-7430edddbea0', '2016-10-21 14:42:58', '【异常】d:\\tmp\\2016-10-20\\4401975850036871.png (系统找不到指定的文件。)', 'LE');
+INSERT INTO `xy_log` VALUES ('c1eda564-5213-41db-95ac-a528756de168', '2016-11-19 21:49:29', '192.168.156.103【访问】/xyan/blog/article/view/14', 'LV');
 INSERT INTO `xy_log` VALUES ('c1f2aae3-fa49-47d8-bcd9-f5a3f756eb00', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('c20861cb-eb21-4460-99da-9b2b7bfb9d01', '2016-10-21 15:24:25', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('c20d13d7-d7d5-4552-993b-9dfe0b9e33bc', '2016-10-20 14:18:10', '10.60.140.212【访问】/xyan/blog/article/view/17', 'LV');
@@ -4621,6 +4712,7 @@ INSERT INTO `xy_log` VALUES ('c61b430d-4f25-43d4-aca8-b763ce29b1d0', '2016-10-21
 INSERT INTO `xy_log` VALUES ('c63172ab-1924-4986-894e-24a6d0be35db', '2016-10-21 16:51:58', '10.60.140.212【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('c6547cad-23d4-4316-b4b5-e4817b2112bd', '2016-10-21 15:30:18', '10.60.140.212【访问】/xyan/blog/gdList', 'LV');
 INSERT INTO `xy_log` VALUES ('c668d4fe-2623-4353-8a0d-73b25eb815c7', '2016-10-21 15:24:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('c66d660a-a821-4ce7-864e-247fd186a70e', '2016-11-19 21:49:30', '192.168.156.103【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('c672b1c2-30b3-4ef7-b43c-347af910beb7', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('c673e1c6-bc8f-4204-8d12-174e3a841edf', '2016-10-24 17:02:09', '10.60.140.146【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('c677a71b-ed30-4c28-8956-ab6d05bbdb41', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4707,6 +4799,7 @@ INSERT INTO `xy_log` VALUES ('c98092eb-e73d-43f2-b072-3f1cf7df6aee', '2016-10-21
 INSERT INTO `xy_log` VALUES ('c984c66f-40b6-471f-aa21-40be2135fe13', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('c98f5171-14cc-4467-bdcf-d8e56649beac', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('c9939070-420c-4831-b0b1-a791aa085db5', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('c99c2eb0-d82b-4568-8cf8-6c534006fb6b', '2016-11-22 09:45:59', '10.60.141.33【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('c99f2302-2c4a-4288-91c9-db9a162ea989', '2016-10-21 16:52:28', '10.60.140.212【访问】/xyan/blog/board/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('c9a78450-2cbe-4583-bdc3-ebcde7c89567', '2016-10-24 13:29:34', '10.60.140.146【访问】/xyan/plug/img/lunbo', 'LV');
 INSERT INTO `xy_log` VALUES ('c9aec747-84d1-420e-8f65-66b74643f245', '2016-10-24 17:28:55', '10.60.140.146【访问】/xyan/blog/board', 'LV');
@@ -4744,10 +4837,12 @@ INSERT INTO `xy_log` VALUES ('cb1ebdb8-de00-468f-9cd1-653870f8fcda', '2016-10-20
 INSERT INTO `xy_log` VALUES ('cb29e69d-94e8-4640-890b-2c98f8f24c0e', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cb44940f-cae4-41f3-92cd-27c8178bb415', '2016-10-21 15:17:12', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('cb50264d-f3fa-4c05-b8fb-1865c31e84a5', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('cb72d13a-a246-45e4-9ec1-9ac94527438b', '2016-11-22 09:43:47', '10.60.141.33【访问】/xyan/blog/article/view/18', 'LV');
 INSERT INTO `xy_log` VALUES ('cba1bb0d-d875-4f9b-9c16-c2d92cd106d0', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cbabc101-f2ff-41f4-b783-13fb94dcddc2', '2016-10-31 11:11:32', '10.60.140.147【访问】/xyan/blog/board', 'LV');
 INSERT INTO `xy_log` VALUES ('cbadbd75-c45a-4318-841d-2bc7608e55b5', '2016-10-31 11:21:25', '10.60.140.147【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('cbae75cc-b471-4306-9286-beeca8b13b03', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('cbcc9579-187d-4822-8554-a128389f56d8', '2016-11-19 21:49:14', '192.168.156.103【访问】/xyan/blog/article', 'LV');
 INSERT INTO `xy_log` VALUES ('cbd2b7a4-c395-4f13-b979-5ce0839d5ca3', '2016-10-21 15:25:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cbd582af-ffe3-41d2-9f8d-0fc297de30b7', '2016-10-21 15:24:24', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cbe9d3d0-40a8-4b1d-90aa-23a6f1758236', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4763,6 +4858,7 @@ INSERT INTO `xy_log` VALUES ('cc31c32f-d32a-45b0-b683-4e771a3e903e', '2016-10-21
 INSERT INTO `xy_log` VALUES ('cc4c990e-72c3-40d5-9f19-43236159f2d6', '2016-11-15 17:14:40', '10.60.141.145【访问】/xyan/', 'LV');
 INSERT INTO `xy_log` VALUES ('cc4e6fc9-716e-427c-81a4-6ddba495fc80', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cc57484f-dee2-47ac-a4ca-5cf85b0b8fc3', '2016-10-21 15:24:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('cc5ac58b-dd9f-463f-8b20-88044e728442', '2016-11-19 21:52:06', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('cc5d50b0-fbf1-417c-a332-50bd637c413f', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cca2a0af-d980-41c2-8608-633ba13fb9c0', '2016-10-21 16:46:14', '10.60.140.212【访问】/xyan/blog/board/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('cca52f17-490d-498c-aa61-1d273f140b32', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4798,6 +4894,7 @@ INSERT INTO `xy_log` VALUES ('cd9eb189-583f-4a6d-980e-802ccff17313', '2016-10-21
 INSERT INTO `xy_log` VALUES ('cda05369-9c5c-4938-b5db-b7bfb274ad53', '2016-10-21 15:24:18', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cda09e9c-0581-49d1-8fc4-eb0521e18bed', '2016-10-21 14:41:40', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cdaac30b-1c7b-4631-bede-fe009e020ded', '2016-10-21 14:40:59', '【异常】d:\\tmp\\2016-10-20\\4502976770163809.jpg (系统找不到指定的文件。)', 'LE');
+INSERT INTO `xy_log` VALUES ('cdb91102-b830-4f89-8d4d-98290e3097ae', '2016-11-19 21:51:55', '192.168.156.103【访问】/xyan/admin/article/save', 'LV');
 INSERT INTO `xy_log` VALUES ('cddab598-8646-4404-ae5c-7620ac5bb122', '2016-10-21 15:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cdfa0d98-d77b-4142-83ef-fecaf5bb5089', '2016-10-21 15:23:57', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('ce00b075-5fd6-4bb6-92a4-11b73fad7dac', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4818,6 +4915,7 @@ INSERT INTO `xy_log` VALUES ('ce7f3b9c-181e-4bb6-b7ba-100c55b01e00', '2016-10-21
 INSERT INTO `xy_log` VALUES ('ce94f610-5d79-42c2-b705-b85d5f477474', '2016-10-20 14:23:45', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cea8a8a5-365a-4da6-80a7-01cb90bdafc6', '2016-10-21 15:19:18', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('ceb5bdfc-55b5-4333-bac6-4367a69fd049', '2016-10-21 15:23:32', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('cec8ca72-bb21-4241-af18-d20e806fd47c', '2016-11-22 09:45:59', '10.60.141.33【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('cecebe33-c8d1-415e-b4f1-8b78de7320e3', '2016-10-21 15:55:29', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('cecf6bc0-3c0d-4757-99f0-535a14c2a004', '2016-10-21 14:47:42', '10.60.140.212【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('cedd448c-1cdf-48a6-a709-ff576208af1f', '2016-10-21 15:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4834,6 +4932,7 @@ INSERT INTO `xy_log` VALUES ('cf3bd810-efe8-4c91-9284-461c67de1417', '2016-10-21
 INSERT INTO `xy_log` VALUES ('cf400549-5eec-4f28-824c-dce8592875fd', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cf4261e1-91e7-4054-908c-587c06790fee', '2016-10-24 11:26:16', '10.60.140.146【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('cf52aa6b-27e8-4249-9f29-ef395ecba11d', '2016-10-20 14:26:52', '10.60.140.212【访问】/xyan/blog/article/view/emotions.data', 'LV');
+INSERT INTO `xy_log` VALUES ('cf767a3e-a929-484f-8966-4619e8e9547c', '2016-11-19 21:54:40', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('cfb3ea06-2692-4884-8d9e-6c960dff5880', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('cfb88b95-d570-4b4e-867e-3e274fe76846', '2016-10-21 15:24:06', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('cfba2483-2978-427b-8254-62e0e162f0bd', '2016-10-21 16:50:11', '10.60.140.212【访问】/xyan/blog/life', 'LV');
@@ -4844,6 +4943,7 @@ INSERT INTO `xy_log` VALUES ('cfed2a36-d077-491f-b6dc-3e3ccd82eb0a', '2016-10-21
 INSERT INTO `xy_log` VALUES ('cffce6ad-dbee-4068-bafb-fa2364ef1cee', '2016-10-21 16:19:26', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
 INSERT INTO `xy_log` VALUES ('cffe9261-8694-45a0-aeea-172b3911913d', '2016-10-21 15:35:06', '10.60.140.212【访问】/xyan/admin/wysiwyg', 'LV');
 INSERT INTO `xy_log` VALUES ('d00725d5-e20d-4eda-9ae0-684ce8e11103', '2016-10-21 14:42:58', '【异常】d:\\tmp\\2016-10-20\\31085409660851004.png (系统找不到指定的文件。)', 'LE');
+INSERT INTO `xy_log` VALUES ('d01932e1-72f3-437a-bd6c-82d96fdc74ad', '2016-11-19 21:50:52', '192.168.156.103【访问】/xyan/admin/article/getChildren', 'LV');
 INSERT INTO `xy_log` VALUES ('d0217511-e3c6-4c19-8b60-94962593c725', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d0288d76-b828-418f-84c7-ea2ea96f29f2', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d032097b-56a0-4bb7-8e7f-0d3c27011841', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4857,6 +4957,7 @@ INSERT INTO `xy_log` VALUES ('d07eefbd-ec33-4a85-ace1-7d9e9aabc448', '2016-11-02
 INSERT INTO `xy_log` VALUES ('d0830baf-5b50-49b7-a640-1c24353a3d1d', '2016-10-21 15:23:58', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('d0874a0f-9f0e-4f8c-a533-75a80461f9d3', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d093f6dc-860b-4322-8bcf-123bd2a5cd7c', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('d097a2ea-806f-495c-8288-b3e76e5793d8', '2016-11-19 21:54:39', '192.168.156.103【访问】/xyan/blog/article/view/18', 'LV');
 INSERT INTO `xy_log` VALUES ('d09977b1-bfe3-406d-a5fd-d092b6f54193', '2016-10-24 17:10:11', '127.0.0.1【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('d0a19524-ae89-4b29-8ea2-2f3c9ae2061b', '2016-10-20 14:31:27', '10.60.140.212【访问】/xyan/admin/widgets', 'LV');
 INSERT INTO `xy_log` VALUES ('d0a372cd-eb58-4504-9a5f-5e6da759c496', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4879,6 +4980,7 @@ INSERT INTO `xy_log` VALUES ('d159c64e-a96b-4462-b375-bd0ad54ea911', '2016-10-21
 INSERT INTO `xy_log` VALUES ('d167dc86-ce2c-4f8f-9d91-13a72c303c1e', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d178fc3d-38d4-4199-9773-ecf5eafd167b', '2016-10-31 11:11:31', '10.60.140.147【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('d1885d45-16ad-45a5-b56a-b2d85a736ce5', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('d19d1f7b-9608-4e23-8f56-5143da85d7af', '2016-11-19 21:50:45', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('d19ff845-458e-4350-812b-a0e2f354d5ea', '2016-10-21 15:09:48', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('d1b3fa52-a9e3-452b-8296-cdaf9c13c8fd', '2016-11-02 11:08:00', '10.60.140.147【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('d1c6be7a-ae2d-4a15-a031-12a005e1575b', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4904,6 +5006,7 @@ INSERT INTO `xy_log` VALUES ('d282731d-73bd-4447-a0fd-69dfc013cad9', '2016-10-21
 INSERT INTO `xy_log` VALUES ('d28b4ce8-b33d-4030-a612-6b55e1a8e817', '2016-10-21 15:30:26', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('d29fcf79-003a-475a-9050-7bdca9cc910b', '2016-11-15 17:31:05', '10.60.141.145【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('d2a35b8a-af4c-4020-a420-032f80df2bb4', '2016-10-24 17:01:45', '10.60.140.146【访问】/xyan/admin/index', 'LV');
+INSERT INTO `xy_log` VALUES ('d2b22b3f-0413-4f22-aba2-5f1b3b51f6d1', '2016-11-19 21:54:51', '192.168.156.103【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('d2c3bfdc-4cc4-45d6-94d0-6e496ad69c39', '2016-10-21 14:42:57', '10.60.140.212【访问】/xyan/blog/article/view/17', 'LV');
 INSERT INTO `xy_log` VALUES ('d2c8c2c7-640c-4f65-bfcc-74652f02e984', '2016-10-21 15:24:24', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d2cee57e-78a0-4dda-a881-7fb22010b70d', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -4922,6 +5025,7 @@ INSERT INTO `xy_log` VALUES ('d357350c-5840-47d9-b3e9-eeba9b8c7d84', '2016-10-24
 INSERT INTO `xy_log` VALUES ('d3587fef-18f4-45e7-8ddf-03728d607049', '2016-11-16 09:27:14', '10.60.141.145【访问】/xyan/blog/article/view/1', 'LV');
 INSERT INTO `xy_log` VALUES ('d35ae59f-b553-4abc-afcf-b4ca3cb62bcd', '2016-10-21 15:24:00', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('d366bab2-0070-480f-8c9c-c55805a2a884', '2016-10-31 11:21:30', '10.60.140.147【访问】/xyan/page/404', 'LV');
+INSERT INTO `xy_log` VALUES ('d36b6adf-21c8-4eac-a566-449ff70a5e46', '2016-11-19 21:52:01', '192.168.156.103【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('d39a660a-5101-462c-8649-50e0d6feb09e', '2016-10-21 15:55:28', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('d3a575ba-a36e-41e9-82c9-ab2a54801227', '2016-10-24 17:25:43', '10.60.140.146【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('d3a8bf2a-5eb6-4ee9-b8c5-3bc790c3001b', '2016-11-02 11:33:35', '10.60.140.147【访问】/xyan/admin/login', 'LV');
@@ -4971,10 +5075,12 @@ INSERT INTO `xy_log` VALUES ('d4f15182-9a0d-4203-be54-70710ef25643', '2016-11-17
 INSERT INTO `xy_log` VALUES ('d5006a43-6ae0-44e1-92d2-8ed66c7fe01b', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d50fc087-2371-4616-937a-5b7ff0d6ae64', '2016-10-21 14:41:21', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('d529860a-2d9f-455b-ad5a-a96c743ba2af', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('d543cd15-53b0-42c0-8b63-ecd03a4194f5', '2016-11-19 21:51:56', '192.168.156.103【访问】/xyan/admin/article/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('d564d7b7-6b42-42bd-8a35-3689840ca9ae', '2016-10-21 15:24:15', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('d56698b7-81b9-4890-be3a-a8a28886f528', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d5844778-31d9-4b33-951f-4a416c9c57f0', '2016-10-31 11:27:26', '10.60.140.147【访问】/xyan/blog/article', 'LV');
 INSERT INTO `xy_log` VALUES ('d5899d5c-f43f-4bd6-b26c-3cb4f1ecc8ac', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('d5919a89-442b-4078-a342-8c84553d143c', '2016-11-22 09:45:54', '10.60.141.33【访问】/xyan/blog/article/view/emotions.data', 'LV');
 INSERT INTO `xy_log` VALUES ('d5a15023-395b-4f81-896b-28cb9d39ae0d', '2016-11-15 17:21:19', '10.60.141.145【访问】/xyan/blog/board/saveMess', 'LV');
 INSERT INTO `xy_log` VALUES ('d5c0feb4-3177-4c6c-88e0-29a079bc07c4', '2016-10-21 15:58:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d5ceb523-ca16-4250-a6d8-9d721d090492', '2016-10-31 09:45:18', '10.60.140.147【访问】/xyan/blog/board/saveMess', 'LV');
@@ -5021,6 +5127,7 @@ INSERT INTO `xy_log` VALUES ('d77702d3-1b78-4fcd-9d6f-52bf708686d0', '2016-10-20
 INSERT INTO `xy_log` VALUES ('d77f5f98-74e2-4761-ad73-6c7e61238738', '2016-10-21 15:23:35', '【异常】d:\\tmp\\2016-10-20\\4502976770163809.jpg (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('d7861d40-0baf-48d2-95ef-33a06fb8be3a', '2016-11-15 17:14:43', '10.60.141.145【访问】/xyan/blog/talk', 'LV');
 INSERT INTO `xy_log` VALUES ('d788e82a-c3b8-4f75-b148-1816ff7abd20', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('d7940593-5b51-4cbe-800d-25b829efe23f', '2016-11-19 21:49:13', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('d79e1ab4-6dce-4afd-a77c-9bfe9bdcac0d', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d7a09f03-e6f8-43c4-a29d-49437f081992', '2016-10-31 11:26:14', '10.60.140.147【访问】/xyan/admin/article', 'LV');
 INSERT INTO `xy_log` VALUES ('d7af0d26-6e07-4079-ad20-5ef598ad7f78', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5055,6 +5162,7 @@ INSERT INTO `xy_log` VALUES ('d8bfb4e8-4464-4751-8cd0-06f8b7a8e360', '2016-10-31
 INSERT INTO `xy_log` VALUES ('d8c26640-dee9-4236-af81-324d9f64be9b', '2016-11-15 17:27:47', '10.60.141.145【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('d8ca2e04-4752-4047-a31b-b62468c1da0d', '2016-10-20 14:30:25', '10.60.140.212【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('d8d22870-be7d-496a-b576-4cc5acc0a6b3', '2016-11-16 09:25:14', '10.60.141.145【访问】/xyan/page/404', 'LV');
+INSERT INTO `xy_log` VALUES ('d8d5f3d5-0c6e-4965-8e4e-32e41ad029bc', '2016-11-19 21:49:12', '192.168.156.103【访问】/xyan/blog/life', 'LV');
 INSERT INTO `xy_log` VALUES ('d8d70870-7079-4c0b-bfa6-ea32febdb77b', '2016-10-21 15:58:10', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d8dd7f7f-ec62-4466-b1b9-751f93f1606f', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('d8df0a76-b761-4dcc-b5ba-25737268f667', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5121,6 +5229,7 @@ INSERT INTO `xy_log` VALUES ('dae72f52-6d3b-47a8-8ec7-511ab8f4f230', '2016-10-21
 INSERT INTO `xy_log` VALUES ('dae9c967-5f1b-4493-8147-9e0b1c469d29', '2016-10-21 14:40:59', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('daebb23b-89b2-4e57-bae4-dbcd23778a9f', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('daf11ac8-4520-4312-9ec5-f4b6aaaebf51', '2016-10-21 16:07:46', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
+INSERT INTO `xy_log` VALUES ('daf7a6d2-2053-4d31-9dc6-a501a2a40fd2', '2016-11-22 09:45:09', '10.60.141.33【访问】/xyan/admin/article/edit', 'LV');
 INSERT INTO `xy_log` VALUES ('dafd3712-89c4-43f1-85bb-d593db514288', '2016-10-21 15:24:34', '10.60.140.212【访问】/xyan/admin/article/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('dafe33f2-54aa-4de5-8df5-08e6acb15a15', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('dafefcae-5d1d-48f6-bd0e-bcdbfb51572c', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5159,17 +5268,20 @@ INSERT INTO `xy_log` VALUES ('dc692ba7-df45-4c24-a4f8-b673bf4f3c18', '2016-10-31
 INSERT INTO `xy_log` VALUES ('dc804e18-1de1-4d03-ba63-bf08576a4db7', '2016-10-20 14:33:32', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('dc81de08-de1e-4a89-95b3-8a54350ccf4a', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('dc8434fe-cdf7-47bf-bf58-1fcdbebbdfd4', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('dc993938-c71e-42a1-9165-561a0390715d', '2016-11-19 21:54:27', '192.168.156.103【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('dc9d7f3d-1293-477c-85f0-37cb74d6a7f8', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('dcb0a657-2b39-41c9-8289-0ee12661ee15', '2016-10-21 15:20:06', '10.60.140.212【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('dcb576e8-d55a-4fbc-b3af-46bee61699c6', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('dcbabec7-52df-4215-b541-33db30bb27f6', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('dcbafd4e-0a9d-43da-8eb0-8d4ea400c9fc', '2016-10-21 15:24:08', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('dcbbccc6-79eb-4d17-ae71-6f2b5eddb454', '2016-10-20 14:30:55', '10.60.140.212【访问】/xyan/page/404', 'LV');
+INSERT INTO `xy_log` VALUES ('dcc4a797-f274-46d5-9bef-82e9a43864bc', '2016-11-19 21:50:35', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('dcc904a0-3cac-44e1-a0a6-2085107235df', '2016-10-21 16:56:27', '10.60.140.212【访问】/xyan/blog/board/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('dccbbbad-96b2-4980-ab9a-d893030058cf', '2016-10-31 11:27:33', '10.60.140.147【访问】/xyan/blog/talk', 'LV');
 INSERT INTO `xy_log` VALUES ('dcd10591-1478-43ea-b404-74d163f7034f', '2016-11-02 10:55:45', '10.60.140.147【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('dcd850a9-9939-48fa-98a7-133173f8b3ad', '2016-10-31 11:25:57', '10.60.140.147【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('dcdfb452-649b-4267-9add-15c8b5f7a994', '2016-10-21 16:07:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('dcea5902-c11b-4bbf-aaa2-56ff33591aef', '2016-11-19 22:00:00', '192.168.156.103【访问】/xyan/blog/board/pageData', 'LV');
 INSERT INTO `xy_log` VALUES ('dcf16ca2-c7fa-4c52-b851-90448a90fe73', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('dd1bec98-1a4e-4fed-9f16-2379923bf8fc', '2016-10-21 16:07:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('dd1e4c57-e4aa-49ea-9430-d3eb56385b97', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5198,6 +5310,7 @@ INSERT INTO `xy_log` VALUES ('de01697d-55c7-4329-b0f2-6a3af58ce70b', '2016-10-21
 INSERT INTO `xy_log` VALUES ('de19cae7-6d06-4164-9b20-493b16794da3', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('de19f935-e908-4dd1-8823-902afadb7e04', '2016-10-21 14:41:40', '【异常】d:\\tmp\\2016-10-20\\9748525276530429.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('de25bc9f-a898-4af9-a7ba-e04605c180dd', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('de268f4e-a971-4c37-93a8-74f9294f3aed', '2016-11-19 21:49:52', '192.168.156.103【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('de2e9205-335a-4791-9a3e-6e78f6cc95f7', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('de2fdb6c-2f78-42cd-9a78-f29346935573', '2016-10-21 16:34:48', '10.60.140.212【访问】/xyan/blog/article/view/14', 'LV');
 INSERT INTO `xy_log` VALUES ('de31ac44-d12e-4dc1-9228-25ab6f03d729', '2016-10-21 14:42:58', '【异常】d:\\tmp\\2016-10-20\\31085409660851004.png (系统找不到指定的文件。)', 'LE');
@@ -5219,6 +5332,7 @@ INSERT INTO `xy_log` VALUES ('dec8e361-c7c1-47de-96ab-fa3c0333311e', '2016-10-21
 INSERT INTO `xy_log` VALUES ('decbfa5f-c042-43a0-b422-9de0c111ab0f', '2016-10-21 15:24:07', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('ded1468c-ea46-426f-9ad3-fa730803a305', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('dedb11a4-7357-45c3-a28e-cf9a1cbce4ed', '2016-10-24 16:37:15', '10.60.140.146【访问】/xyan/blog/article/view/17', 'LV');
+INSERT INTO `xy_log` VALUES ('dee4278e-74f0-4f0d-820d-f8ae87d66e4c', '2016-11-19 21:50:51', '192.168.156.103【访问】/xyan/admin/article/dialog/open', 'LV');
 INSERT INTO `xy_log` VALUES ('dee634c3-b925-4be0-84a0-249c0b6f6291', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('dee6ca08-2555-4729-87e2-37a07fe254da', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('deea1609-213b-4b51-b1ca-1925ac21ec17', '2016-10-21 15:24:07', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
@@ -5284,6 +5398,7 @@ INSERT INTO `xy_log` VALUES ('e122e8f8-51f6-48ad-989c-a9aa8701fe84', '2016-10-21
 INSERT INTO `xy_log` VALUES ('e14594ad-5bc1-4a18-8115-85f66bb6fbd2', '2016-10-21 15:30:04', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e154cb24-6557-492b-9333-b025d1927a52', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e15eefe4-a498-4589-9cf0-5f48ff2f0991', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('e161b47f-0195-4c05-8693-1aec0556038c', '2016-11-19 21:49:30', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('e1731827-4dcb-46fa-bd70-6cfec7737b31', '2016-11-03 10:35:19', '10.60.140.113【访问】/xyan/blog/talk', 'LV');
 INSERT INTO `xy_log` VALUES ('e17586fb-ce0b-4b05-a204-702fb90ad836', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e17647e8-d1d1-4a01-9e7c-9da109a923eb', '2016-10-21 15:24:21', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5346,6 +5461,7 @@ INSERT INTO `xy_log` VALUES ('e46abf4a-3da5-4089-bba8-c88e8f9589b7', '2016-10-21
 INSERT INTO `xy_log` VALUES ('e4876b15-f048-455d-b52f-e97e0b3be24e', '2016-10-21 15:57:50', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e4b682c3-d7b7-4d38-b85c-f6fcfdc3310c', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e4c4da92-ec97-4638-acfb-0c9842269531', '2016-10-21 15:24:20', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('e4c62a37-e1d1-4c09-9714-a81e46f8e9ef', '2016-11-19 21:59:59', '192.168.156.103【访问】/xyan/blog/board/saveMess', 'LV');
 INSERT INTO `xy_log` VALUES ('e4db9369-9a93-4607-beb9-92e8f23cde88', '2016-10-21 15:58:10', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e4de247e-8e7a-424c-9da3-6a63d00f728e', '2016-11-03 10:49:23', '10.60.140.113【访问】/xyan/', 'LV');
 INSERT INTO `xy_log` VALUES ('e4dfd31d-27f1-4f4c-be64-7b72e710d9e2', '2016-10-20 14:25:37', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5354,6 +5470,7 @@ INSERT INTO `xy_log` VALUES ('e4ea84bc-2eee-47ff-86a7-a186ba085eea', '2016-10-21
 INSERT INTO `xy_log` VALUES ('e4f87958-f7f7-48bd-959f-5b951e4c8e5a', '2016-10-21 15:57:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e4f97a1d-533a-40ae-a12c-3683aa55801b', '2016-10-24 11:25:46', '10.60.140.146【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('e4fc8b7b-9719-446c-bf3a-f2753586eb4d', '2016-11-16 09:33:46', '10.60.141.145【访问】/xyan/admin/index', 'LV');
+INSERT INTO `xy_log` VALUES ('e4ff0f41-2d4b-4f3b-aaae-1f8e4336d40c', '2016-11-19 21:55:46', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('e5080fce-faa8-448a-888e-c6ad11b61629', '2016-10-21 15:25:12', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e50f5138-0008-4382-afad-f5d56c394a59', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e5292c36-ef87-483c-988f-98f28ce9ec97', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5402,6 +5519,7 @@ INSERT INTO `xy_log` VALUES ('e74e6bc2-f0a0-4b4b-ad55-137cc8c515b8', '2016-10-21
 INSERT INTO `xy_log` VALUES ('e7614e7a-8c4f-438c-a54d-1f98f8dd158e', '2016-10-21 15:57:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e76515b0-55d8-400b-99cd-5c5478053c4f', '2016-10-20 14:30:51', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e773d526-0226-4b50-a0a6-2812ba48b243', '2016-11-02 16:55:19', '10.60.140.147【访问】/xyan/index', 'LV');
+INSERT INTO `xy_log` VALUES ('e77bf033-a757-4ed1-a349-c9616926492a', '2016-11-22 09:31:52', '10.60.141.33【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('e78edf83-e80b-4b8b-85b6-71d5f800ba31', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e793367e-666d-444b-9fc1-605862c3dbf5', '2016-10-21 17:09:33', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('e7a72a88-4f9d-4521-89f3-dadc909fbed9', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5418,12 +5536,14 @@ INSERT INTO `xy_log` VALUES ('e8070453-1d42-4056-afc2-65ea55cb1712', '2016-10-21
 INSERT INTO `xy_log` VALUES ('e80e2c22-21a4-4673-929f-5b01453f6718', '2016-11-03 10:41:55', '10.60.140.113【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('e813e54e-ea93-4ec1-873c-99b93739a53b', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e821d9e8-8af0-47d5-a5cb-0f9dc0ee49f5', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('e825a436-84fa-404f-8033-be95f29e9612', '2016-11-22 09:43:48', '10.60.141.33【访问】/xyan/page/400', 'LV');
 INSERT INTO `xy_log` VALUES ('e834ec4a-58a5-446c-b532-d164470fcbf2', '2016-11-17 10:51:21', '10.60.141.145【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('e83e4336-df6b-4d38-b137-22de32c20756', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e845815c-67ee-4795-acc4-29924206a52e', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e864e177-8d83-4890-96ae-041120baec67', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e87d8958-70f6-4237-ad21-9adb1d3c8cec', '2016-10-21 15:17:31', '10.60.140.212【访问】/xyan/admin/mail/del2', 'LV');
 INSERT INTO `xy_log` VALUES ('e8805bfa-3ee9-4e7c-b3f5-f97c29e6c9fd', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('e88c766c-8eb1-463f-b9e3-312b9fdb3ac8', '2016-11-22 09:45:53', '10.60.141.33【访问】/xyan/blog/article/view/18', 'LV');
 INSERT INTO `xy_log` VALUES ('e897e94c-ebb2-4cf3-9c4b-2c6eb1d8e0a4', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e8a5ff0a-7370-4d83-9f35-01ad4ebd7fbe', '2016-10-21 15:25:08', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('e8ada242-5672-4c18-922a-e301ade91353', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5503,6 +5623,7 @@ INSERT INTO `xy_log` VALUES ('ebd04d3c-d538-4343-b484-999fd5c13e6f', '2016-10-21
 INSERT INTO `xy_log` VALUES ('ebd9266f-91c9-4a7a-a4d4-dafbf0be8910', '2016-10-21 15:24:15', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ebdd7f45-de52-4914-b4f4-2637ebcd0333', '2016-10-21 15:30:06', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ebf43226-2066-4ea4-942c-7dbad939efd8', '2016-10-21 15:57:52', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('ebf9ddee-73eb-42b8-b450-e9c8f9096b1f', '2016-11-22 09:43:43', '10.60.141.33【访问】/xyan/admin/article/save', 'LV');
 INSERT INTO `xy_log` VALUES ('ec029024-0c59-4cbc-8cc1-7f41f449eb62', '2016-10-21 15:24:15', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('ec1792f1-bb3b-4c32-940a-6e6ecb065df5', '2016-10-21 16:00:26', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ec335767-5f77-4a7d-9b41-0a8849ce69f6', '2016-10-21 16:19:28', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
@@ -5523,6 +5644,7 @@ INSERT INTO `xy_log` VALUES ('eccccba7-708f-4c55-964a-deb874dec8b7', '2016-10-21
 INSERT INTO `xy_log` VALUES ('ecce718b-d99b-46e5-b3a9-106482a22f38', '2016-11-17 10:48:31', '10.60.141.145【访问】/xyan/admin/login', 'LV');
 INSERT INTO `xy_log` VALUES ('ece59672-de5d-43c6-a533-84ab14e7886e', '2016-10-21 15:55:28', '10.60.140.212【访问】/xyan/attach/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('ecf60544-590f-4573-84a4-026ddfe1230c', '2016-10-21 15:58:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('ecf84b34-0355-4c86-be8c-722b785b0de3', '2016-11-22 09:32:10', '10.60.141.33【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('ecfa8b33-189a-4ce6-9764-0af994aa6dc2', '2016-10-21 15:24:33', '10.60.140.212【访问】/xyan/admin/article/save', 'LV');
 INSERT INTO `xy_log` VALUES ('ed0149b5-ded8-4d85-9cf4-df124672123e', '2016-10-21 15:18:50', '10.60.140.212【访问】/xyan/admin/message/del80', 'LV');
 INSERT INTO `xy_log` VALUES ('ed02566f-e84f-461b-9a67-a46f82d5fb0b', '2016-10-21 15:24:21', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5537,6 +5659,7 @@ INSERT INTO `xy_log` VALUES ('ed7aefc7-4abe-4b5d-b307-20fc3b200af5', '2016-11-16
 INSERT INTO `xy_log` VALUES ('ed7b5fea-6ed5-4b12-871d-4cc369705913', '2016-10-21 15:24:06', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('ed96d668-64bc-4dd2-8c5e-f50947d4d0b8', '2016-10-21 14:41:40', '【异常】d:\\tmp\\2016-10-20\\9748525276530429.png (系统找不到指定的文件。)', 'LE');
 INSERT INTO `xy_log` VALUES ('edae5c34-4879-4d59-a19a-9047e0422637', '2016-11-15 17:32:25', '10.60.141.145【访问】/xyan/blog/article/view/14', 'LV');
+INSERT INTO `xy_log` VALUES ('edb9fcec-7a49-4fc2-944c-0f78feb0d3e8', '2016-11-19 21:52:47', '192.168.156.103【访问】/xyan/admin/article/add', 'LV');
 INSERT INTO `xy_log` VALUES ('edbdc1e9-9c7a-4efc-bc2a-aef47d179769', '2016-11-02 16:58:41', '10.60.140.147【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('edcc9af8-d379-4fba-9944-014c8b9c69de', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('edcd5e83-0b77-432c-91ba-14af6dab01c5', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5603,6 +5726,7 @@ INSERT INTO `xy_log` VALUES ('f0cbdeff-8d3a-4d49-9482-02821f614097', '2016-10-21
 INSERT INTO `xy_log` VALUES ('f0d5d770-80f5-49d1-8357-03816c517ea4', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('f0f1630f-0860-40f8-8b7d-f19ed287c5da', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('f0f4f4e5-9b68-49e9-a74d-ab31c149bc5a', '2016-11-15 17:21:33', '10.60.141.145【访问】/xyan/blog/getLastArticle', 'LV');
+INSERT INTO `xy_log` VALUES ('f0fa60e8-5f19-48c5-852a-7ffd3333ecc5', '2016-11-19 21:54:51', '192.168.156.103【访问】/xyan/blog/getLastArticle', 'LV');
 INSERT INTO `xy_log` VALUES ('f102f526-b1f9-43ef-a820-798a77977ba9', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('f10beb6d-b250-40ac-9175-bae957ed218b', '2016-11-02 16:56:52', '10.60.140.147【访问】/xyan/index', 'LV');
 INSERT INTO `xy_log` VALUES ('f1112b7e-0936-43fc-9f66-0bb23d40a437', '2016-10-21 15:24:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5721,6 +5845,7 @@ INSERT INTO `xy_log` VALUES ('f612d33f-026b-4092-ac4a-e6a14598bca1', '2016-10-21
 INSERT INTO `xy_log` VALUES ('f641cc8c-9dbb-4769-95e3-79dcf5d2e23b', '2016-10-21 15:24:43', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('f6564970-93b5-456a-b8af-e60a98fa7f72', '2016-10-21 15:24:06', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('f659770d-d554-4416-b65e-8a72c856150f', '2016-11-03 10:54:29', '10.60.140.113【访问】/xyan/index', 'LV');
+INSERT INTO `xy_log` VALUES ('f661d1de-2040-4f04-86ba-a975c659f60e', '2016-11-19 22:00:00', '192.168.156.103【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('f66b61d1-1960-442c-813f-6f467d865809', '2016-10-21 15:24:01', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('f692aa89-1259-4833-af00-23af7e172004', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('f69e3cec-6687-4143-b10b-0ef697a6d99f', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5845,6 +5970,7 @@ INSERT INTO `xy_log` VALUES ('fb6d61a9-9b17-4bd9-a9ed-996d457534dd', '2016-10-21
 INSERT INTO `xy_log` VALUES ('fb6f9a8b-d3b0-4c3b-9e20-651fe94d7519', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('fb8856c6-cb7f-4ebb-8db9-cd09811be6e0', '2016-10-21 16:47:50', '10.60.140.212【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('fb90a9ce-27af-47de-9725-41d16c949070', '2016-10-20 14:23:45', '【异常】d:\\tmp\\2016-10-20\\31085409660851004.png (系统找不到指定的路径。)', 'LE');
+INSERT INTO `xy_log` VALUES ('fba006cc-5c31-4b77-9b7f-7b094b46a095', '2016-11-19 21:54:50', '192.168.156.103【访问】/xyan/blog/article/view/18', 'LV');
 INSERT INTO `xy_log` VALUES ('fba1b0cb-26db-4674-8e27-0d184e53bff6', '2016-10-31 11:26:45', '10.60.140.147【访问】/xyan/page/404', 'LV');
 INSERT INTO `xy_log` VALUES ('fba8a34f-38dd-44d4-9669-f42fac3ed85f', '2016-10-21 16:19:28', '10.60.140.212【访问】/xyan/blog/article/view/15', 'LV');
 INSERT INTO `xy_log` VALUES ('fba98ba6-3d4f-4bc9-89cb-f9dc045ff775', '2016-10-21 15:24:18', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
@@ -5878,6 +6004,7 @@ INSERT INTO `xy_log` VALUES ('fcf3ab3e-e7c1-43e7-9996-19aed482981f', '2016-10-21
 INSERT INTO `xy_log` VALUES ('fd109d4f-b9de-4d71-bb01-f548358c5f30', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('fd15d87c-17b6-4d9c-8e8e-d927be185d44', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('fd21e4cc-ed79-49f6-9e60-79b54d0c1216', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('fd259afb-9d51-48ce-b1b4-08d36f9b32ff', '2016-11-22 09:45:51', '10.60.141.33【访问】/xyan/admin/article', 'LV');
 INSERT INTO `xy_log` VALUES ('fd2e2c18-58c7-4a3c-bbab-9503c1857ecd', '2016-10-21 15:24:07', '10.60.140.212【访问】/xyan/index/wangEditor/upload', 'LV');
 INSERT INTO `xy_log` VALUES ('fd3694fe-9ae2-4413-ae63-8ecc499b6936', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('fd3ff4a2-2849-4409-ad17-38ec2e6ea512', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5931,6 +6058,7 @@ INSERT INTO `xy_log` VALUES ('ff499b0c-fc72-4cd9-9155-441daa3fba9e', '2016-10-24
 INSERT INTO `xy_log` VALUES ('ff5df680-3c57-4647-b4cc-e0292aae3be5', '2016-10-21 15:25:09', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ff662f87-6f68-4473-8126-17e198c76baa', '2016-10-21 15:24:42', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ff6ff1f2-0a37-4482-9b18-d04672baf8d6', '2016-10-21 16:07:22', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('ff77d55d-559a-4425-80e4-a3b652f2da79', '2016-11-19 21:49:21', '192.168.156.103【访问】/xyan/blog/board', 'LV');
 INSERT INTO `xy_log` VALUES ('ff8434de-6355-4fc2-b162-b024f2d71d3e', '2016-10-21 15:30:06', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ff8dddab-7d63-4b3f-86f4-a91795ef7517', '2016-10-21 16:00:27', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ff930917-7f46-41d3-ae7d-145c00754f12', '2016-10-21 15:30:05', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
@@ -5941,6 +6069,7 @@ INSERT INTO `xy_log` VALUES ('ffc1dae5-4a21-4414-a2ee-d1b81e2b01bd', '2016-10-21
 INSERT INTO `xy_log` VALUES ('ffea1d0b-3570-4e6b-9ee2-39ca16242569', '2016-10-21 16:00:01', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('ffec34bb-f649-489b-8553-a6b54383fed3', '2016-10-21 15:23:32', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 INSERT INTO `xy_log` VALUES ('fff038f8-d7c4-4d81-8f29-8b692a96bb43', '2016-10-21 16:07:11', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
+INSERT INTO `xy_log` VALUES ('fff26acd-f521-4aa1-8356-2c52d19cca6a', '2016-11-19 21:49:06', '192.168.156.103【访问】/xyan/', 'LV');
 INSERT INTO `xy_log` VALUES ('fffeab5f-2aaf-4d88-92ea-9db26f744573', '2016-10-21 16:00:02', '10.60.140.212【访问】/xyan/attach/viewPic', 'LV');
 
 -- ----------------------------
@@ -5964,6 +6093,7 @@ CREATE TABLE `xy_mail` (
 INSERT INTO `xy_mail` VALUES ('1', '1255321142@qq.com', '网站', '您有紧急留言啦<p><p>您好<br></p>', '网站留言', '10', '2016-10-20 13:24:59');
 INSERT INTO `xy_mail` VALUES ('5', '1255321142@qq.com', '网站', '您有紧急留言啦<p><p>您好，我现在很迷茫，不知道学习的方向了，该怎么办？<br></p>', '网站留言', '10', '2016-10-21 15:20:31');
 INSERT INTO `xy_mail` VALUES ('6', '1255321142@qq.com', '网站', '您有紧急留言啦<p><br><p>持之以恒，坚持吧。送你一个赏心的美女。</p><p><img src=\"/img/2016-10-21/677cc1dd-f2dd-4a33-aed1-ea14b19b3123.jpg\" alt=\"1E5028B756C1ED564FC1C2AA38B0C6E7\" style=\"max-width:100%;\"></p><p><br></p>', '网站留言', '10', '2016-10-21 15:22:34');
+INSERT INTO `xy_mail` VALUES ('7', '1255321142@qq.com', '网站', '您有紧急留言啦<p><p>sadsad <br></p><p>asdasdas <br></p><p><br></p><p>678967</p><p><br></p><p>6986986<br></p>', '网站留言', '10', '2016-11-19 21:59:59');
 
 -- ----------------------------
 -- Table structure for xy_message
@@ -5985,6 +6115,8 @@ CREATE TABLE `xy_message` (
 -- Records of xy_message
 -- ----------------------------
 INSERT INTO `xy_message` VALUES ('100', '1', '-1', '【留言版】', '<p>u[u<br></p>', '2016-10-31 11:27:49', null, 'false');
+INSERT INTO `xy_message` VALUES ('101', '1', '-1', '【留言版】', '<p>sadsad <br></p>', '2016-11-19 21:55:45', null, 'false');
+INSERT INTO `xy_message` VALUES ('102', '1', '-1', '【留言版】', '<p>sadsad <br></p><p>asdasdas <br></p><p><br></p><p>678967</p><p><br></p><p>6986986<br></p>', '2016-11-19 21:59:59', 'true', 'false');
 
 -- ----------------------------
 -- Table structure for xy_page
