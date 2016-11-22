@@ -18,9 +18,10 @@ import com.xyan.frame.util.SHA1Utils;
 public class WebSocketServer {
 
 	private ServerSocketChannel ssc;
+	
 	private Selector selector;
-	private Set<SocketChannel> keylist = Collections
-			.synchronizedSet(new HashSet<SocketChannel>());
+	
+	private Set<SocketChannel> keylist = Collections.synchronizedSet(new HashSet<SocketChannel>());
 
 	public WebSocketServer() throws IOException {
 		init();
@@ -57,12 +58,11 @@ public class WebSocketServer {
 			while (keys.hasNext()) {
 				SelectionKey key = keys.next();
 				keys.remove();
-				if (key.isAcceptable()) {
-					acceptOperation(key);
-
-				} else if (key.isReadable()) {
+				if (key.isAcceptable()) {//连接建立
+					acceptOperation(key); 
+				} else if (key.isReadable()) {//有内容可读
 					readOperation(key);
-				}else if(key.isWritable()){
+				}else if(key.isWritable()){//有内容可写
 					writeOperation(key);
 				}
 			}
@@ -70,15 +70,14 @@ public class WebSocketServer {
 	}
 
 	private void writeOperation(SelectionKey key) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	private void acceptOperation(SelectionKey key) throws IOException {
 
-		ServerSocketChannel server = (ServerSocketChannel) key.channel();
+		ServerSocketChannel server = (ServerSocketChannel) key.channel();//客户端连接
 		SocketChannel client = server.accept();
-		client.configureBlocking(false);
+		client.configureBlocking(false);//非阻塞
 		client.register(selector, SelectionKey.OP_READ);
 		System.out.println("coming:  " + client.socket().getReuseAddress());
 		
@@ -91,8 +90,7 @@ public class WebSocketServer {
 		sb.append(client + "arrival");
 		dst.put(sb.toString().getBytes());
 		dst.flip();
-		broadcast(keylist, dst, client);
-		
+		broadcast(keylist, dst, client);//广播告诉所有客户端有新的连接进入
 	}
 
 	private void readOperation(SelectionKey key) throws IOException {
@@ -122,7 +120,7 @@ public class WebSocketServer {
 				dst.flip();
 				/**处理协议*/
 				ByteBuffer buffer = processProtocol(dst);
-				writeHTTP(keylist, buffer, client);
+				writeHTTP(keylist, buffer, client);//回应客户端
 			} else {
 				dst.flip();
 				broadcast(keylist, dst, client);
