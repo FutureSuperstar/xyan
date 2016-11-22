@@ -30,6 +30,9 @@
 		</div>
 	</div>
 </div>
+
+
+
 <script type="text/javascript" src="${path}/static/plugin/wangEditor-2.1.12/js/wangEditor.js"></script>
 <script type="text/javascript">
 var editor =null;
