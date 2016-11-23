@@ -6,6 +6,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
+/**
+ * @author wangming
+ * 使用nio的文件工具
+ */
 public class FileUtil {
 	
 	/**

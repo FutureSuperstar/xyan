@@ -185,6 +185,6 @@ public class WebSocketServer {
 
 	
 	public static void main(String[] args) throws IOException {
-		WebSocketServer wss = new WebSocketServer();
+		//WebSocketServer wss = new WebSocketServer();
 	}
 }
