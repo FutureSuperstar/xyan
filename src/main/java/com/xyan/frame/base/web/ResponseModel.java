@@ -7,20 +7,19 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.springframework.dao.DataAccessException;
 
 import com.xyan.frame.base.model.BaseModel;
+import com.xyan.frame.feature.web.exception.XyanException;
 
 public class ResponseModel{
 	/**消息*/
 	private String message;
+	/**模块*/
+	private String module;
 	/**返回的状态码*/
 	private String returnCode;
 	/**字符串1*/
-	private String str1;
-	/**字符串2*/
-	private String str2;
+	private String str;
 	/**整型数1*/
-	private Long long1;
-	/**整型数2*/
-	private Long long2;
+	private Long lon;
 	/**是否成功*/
 	private boolean success;
 	/**是否登录*/
@@ -37,7 +36,14 @@ public class ResponseModel{
 	public ResponseModel() {
 		
 	}
-	
+	public String getModule() {
+		return module;
+	}
+	public ResponseModel setModule(String module) {
+		this.module = module;
+		return this;
+	}
+
 	public ResponseModel(boolean success) {
 		this.success=success;
 	}
@@ -85,39 +91,21 @@ public class ResponseModel{
 		return this;
 	}
 
-	public String getStr1() {
-		return str1;
+	public String getStr() {
+		return str;
 	}
 
-	public ResponseModel setStr1(String str1) {
-		this.str1 = str1;
+	public ResponseModel setStr(String str) {
+		this.str = str;
 		return this;
 	}
 
-	public String getStr2() {
-		return str2;
+	public Long getLon() {
+		return lon;
 	}
 
-	public ResponseModel setStr2(String str2) {
-		this.str2 = str2;
-		return this;
-	}
-
-	public Long getLong1() {
-		return long1;
-	}
-
-	public ResponseModel setLong1(Long long1) {
-		this.long1 = long1;
-		return this;
-	}
-
-	public Long getLong2() {
-		return long2;
-	}
-
-	public ResponseModel setLong2(Long long2) {
-		this.long2 = long2;
+	public ResponseModel setLon(Long lon) {
+		this.lon = lon;
 		return this;
 	}
 
@@ -162,6 +150,10 @@ public class ResponseModel{
 		response.setReturnCode("500");
 		response.setMessage(getTextFromException(e));
 		response.setTimestamp(System.currentTimeMillis());
+		if(e instanceof XyanException){
+			XyanException ee=(XyanException) e;
+			response.setModule(ee.getModule().getCode());
+		}
 		return response;
 	}
 	

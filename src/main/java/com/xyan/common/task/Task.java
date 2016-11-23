@@ -33,17 +33,24 @@ public class Task {
 	private MailService mailService;
 	
 	
+	private MailModel mailModel;
+	
+	public Task() {
+		mailModel=new MailModel();
+		mailModel.setState("00");
+	}
+	
+	
 	@Scheduled(cron = "${scheduled.mailSend}")
 	public void mailSend(){
 		logger.info("检查邮件start。。。");
-		MailModel model=new MailModel();
-		model.setState("00");
-		List<MailModel> dbList=mailService.selectModelByExample(model);
+		List<MailModel> dbList=mailService.selectModelByExample(mailModel);
 		for (MailModel mailModel : dbList) {
 			MailUtil.send(mailModel);
 			mailModel.setState("10");
 		}
 		mailService.updateModels(dbList);
+		logger.info("检查邮件end。。。");
 	}
 	
 	/**
@@ -64,6 +71,7 @@ public class Task {
 			Cache.reset(cache);
 		}
 		logger.info("清理拦截end。。。"+cache.size());
+		cache=null;
 	}
 	
 	@Scheduled(cron = "${scheduled.articleType}")
@@ -80,7 +88,6 @@ public class Task {
 		if(CollectionUtils.isEmpty(typeList)){
 			logger.info("更新博客分类");
 			dictService.insert(example);
-			
 			DictModel model=new DictModel();
 			model.setType(DictType.DICT_GD.getCode());
 			List<DictModel> dictList=dictService.selectModelByExample(model);

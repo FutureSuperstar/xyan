@@ -37,6 +37,7 @@ public class SpringListener implements ApplicationListener<ContextRefreshedEvent
 	@Override
 	public void onApplicationEvent(ContextRefreshedEvent event) {
 		logger.info("spring启动成功。。。");
+		logger.info("当前时间："+event.getTimestamp());
 		ApplicationContext applicationContext=event.getApplicationContext();
 		if(applicationContext instanceof WebApplicationContext){
 			logger.info("当前是web环境");

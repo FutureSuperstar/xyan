@@ -9,12 +9,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.xyan.admin.model.MailModel;
 import com.xyan.admin.service.MailService;
-import com.xyan.admin.service.PreferenceService;
 import com.xyan.blog.dao.MessageDao;
 import com.xyan.blog.model.MessageModel;
 import com.xyan.blog.service.MessageService;
 import com.xyan.blog.vo.MessageVO;
 import com.xyan.common.cache.CacheUtil;
+import com.xyan.common.enums.Module;
 import com.xyan.common.enums.PreferenceType;
 import com.xyan.frame.base.dao.GenericDao;
 import com.xyan.frame.base.service.impl.GenericServiceImpl;
@@ -47,7 +47,7 @@ public class MessageServiceImpl extends GenericServiceImpl<MessageModel, Long> i
 	public int insert(MessageModel model) {
 		UserModel user=SessionUtil.getLoginUser();
 		if(user==null){
-			throw new XyanException("尚未登陆！");
+			throw new XyanException(Module.PUBLISH_MESAAGE,"尚未登陆！");
 		}
 		model.setRead("false");
 		model.setCreateTime(new Date());

@@ -2,6 +2,7 @@ package com.xyan.frame.feature.web.exception;
 
 import org.springframework.util.StringUtils;
 
+import com.xyan.common.enums.Module;
 import com.xyan.frame.util.MessageUtils;
 
 /**
@@ -17,7 +18,7 @@ public class XyanException extends RuntimeException {
 	private static final long serialVersionUID = -8857917068219327955L;
 
 	//所属模块
-    private String module;
+    private Module module;
 
     /**
      * 错误码
@@ -35,18 +36,18 @@ public class XyanException extends RuntimeException {
     private String defaultMessage;
 
 
-    public XyanException(String module, String code, Object[] args, String defaultMessage) {
+    public XyanException(Module module, String code, Object[] args, String defaultMessage) {
         this.module = module;
         this.code = code;
         this.args = args;
         this.defaultMessage = defaultMessage;
     }
 
-    public XyanException(String module, String code, Object[] args) {
+    public XyanException(Module module, String code, Object[] args) {
         this(module, code, args, null);
     }
 
-    public XyanException(String module, String defaultMessage) {
+    public XyanException(Module module, String defaultMessage) {
         this(module, null, null, defaultMessage);
     }
 
@@ -71,7 +72,7 @@ public class XyanException extends RuntimeException {
     }
 
 
-    public String getModule() {
+    public Module getModule() {
         return module;
     }
 
@@ -90,7 +91,7 @@ public class XyanException extends RuntimeException {
     @Override
     public String toString() {
         return this.getClass() + "{" +
-                "module='" + module + '\'' +
+                "module='" + module.getText() + '\'' +
                 ", message='" + getMessage() + '\'' +
                 '}';
     }
