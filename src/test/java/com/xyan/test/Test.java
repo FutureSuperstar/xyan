@@ -66,6 +66,7 @@ class ReadUnit implements Runnable{
 public class Test {
 	
 	public static void main(String[] args) throws InterruptedException {
+		TestDate.Inner in=new TestDate().new Inner();
 		System.out.println(Md5Crypt.apr1Crypt(new String("123456").getBytes()));
 	}
 }
