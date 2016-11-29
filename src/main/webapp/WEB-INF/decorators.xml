@@ -6,7 +6,7 @@
 		<pattern>/**/**/pageData</pattern><!-- 分页数据-->
 		<pattern>/**/**/pageData**</pattern>
 		<pattern>/**/**/dialog/**</pattern>
-		<pattern>/admin/login</pattern><!-- POST登陆 -->
+		<pattern>/admin/login**</pattern><!-- POST登陆 -->
 		<pattern>/admin/login/**</pattern><!--进入登陆页 -->
 	</excludes>
 	

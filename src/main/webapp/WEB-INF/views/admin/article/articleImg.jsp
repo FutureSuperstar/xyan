@@ -24,22 +24,24 @@ $("#preview").onload=function(){
 };
 	function upload(){
 		var formData = new FormData();
-		formData.append('file', $('#toSelect')[0].files[0]);
-		$.ajax({
-		    url: '${path}/attach/wangEditor/upload',
-		    type: 'POST',
-		    cache: false,
-		    data: formData,
-		    processData: false,
-		    contentType: false,
-		    success:function(data){
-		    	$("#imgUrl").val(data);
-		    	$.closeDialog("showImg");
-		    },
-		    error:function(){
-		    	console.log("error");
-		    }
-		});
+		if(!!($('#toSelect')[0].files[0])){
+			formData.append('file', $('#toSelect')[0].files[0]);
+			$.ajax({
+			    url: '${path}/attach/wangEditor/upload',
+			    type: 'POST',
+			    cache: false,
+			    data: formData,
+			    processData: false,
+			    contentType: false,
+			    success:function(data){
+			    	$("#imgUrl").val(data);
+			    	$.closeDialog("showImg");
+			    },
+			    error:function(){
+			    	console.log("error");
+			    }
+			});
+		}
 	}
 	function selectFile(){
 		$("#toSelect").trigger("click");

@@ -19,11 +19,18 @@
 			<div class="col-xs-12">
 				<div class="tabbable">
 					<ul id="inbox-tabs" class="inbox-tabs nav nav-tabs padding-16 tab-size-bigger tab-space-1">
-						<!-- ./li-new-mail -->
-						<li class="active">
-							<a data-toggle="tab" href="#inbox" data-target="inbox"> 
-								<i class="blue icon-inbox bigger-130"></i><span class="bigger-110">消息</span>
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle"> 
+								<i class="pink icon-envelope"></i>
+								<span class="bigger-110">
+									消息
+									<i class="icon-caret-down"></i>
+								</span>
 							</a>
+							<ul class="dropdown-menu  dropdown-caret dropdown-close" style="min-width: 104px">
+								<li><a href="${path}/admin/message?read=false" class="green" style="padding-left: 24px">未读</a></li>
+								<li><a href="${path}/admin/message?read=true" class=""  style="padding-left: 24px">已读</a></li>
+							</ul>
 						</li>
 					</ul>
 					<div class="tab-content no-border no-padding">
@@ -50,7 +57,7 @@
 
 								<!-- 底部 -->
 								<div class="message-footer clearfix">
-									<div class="pull-left">151 messages total</div>
+									<div class="pull-left"></div>
 									<div class="pull-right">
 										<div class="inline middle">page 1 of 16</div>
 										&nbsp; &nbsp;
@@ -82,7 +89,7 @@
 									<div class="pull-left">simpler footer</div>
 
 									<div class="pull-right">
-										<div class="inline middle">message 1 of 151</div>
+										<div class="inline middle"></div>
 
 										&nbsp; &nbsp;
 										<ul class="pagination middle">
@@ -184,7 +191,8 @@
 				$('.message-container').find('.message-loading-overlay').remove();
 				message.addClass('message-inline-open').append('<div class="message-content" />')
 				var content = message.find('.message-content:last').html($('#id-message-content'+messageId).html());
-				content.find('.message-body').slimScroll({height : 200,railVisible : true});
+				var height=content.find('.message-body').height();
+				content.find('.message-body').slimScroll({height : height,railVisible : true});
 			}, 500 + parseInt(Math.random() * 500));
 		});
 

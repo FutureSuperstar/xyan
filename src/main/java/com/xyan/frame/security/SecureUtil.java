@@ -2,6 +2,8 @@ package com.xyan.frame.security;
 
 import java.security.MessageDigest;
 
+import javax.xml.bind.DatatypeConverter;
+
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -74,6 +76,7 @@ public class SecureUtil {
     /**
      * @Author:wangming
      * @Description:base64加密
+     * <small><i>加密：DatatypeConverter.printBase64Binary</i></small>
      * @param str
      * @return
      * @since 2016年11月1日下午3:04:54
@@ -83,7 +86,8 @@ public class SecureUtil {
     }
     /**
      * @Author:wangming
-     * @Description:base64加密
+     * @Description:base64解密
+     * <small><i>解密：DatatypeConverter.parseBase64Binary</i></small>
      * @param str
      * @return
      * @since 2016年11月1日下午3:04:54
@@ -96,5 +100,10 @@ public class SecureUtil {
     	String str="你好。。。";
     	System.out.println(base64Encode(str));
     	System.out.println(base64Decode(base64Encode(str)));
+    	
+    	String out=DatatypeConverter.printBase64Binary(str.getBytes());
+    	System.out.println("----------");
+    	System.out.println(new String(DatatypeConverter.parseBase64Binary(out)));
+    	System.out.println(out);
 	}
 }

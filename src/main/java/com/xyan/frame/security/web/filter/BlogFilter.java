@@ -47,6 +47,7 @@ public class BlogFilter implements Filter {
 			if(between>30){
 				chain.doFilter(request, response);
 			}else{
+				logger.info("拦截本次请求："+date);
 				request.setAttribute("message", "访问速度太快啦！");
 				request.getRequestDispatcher(errorPage).forward(request, response);
 			}
