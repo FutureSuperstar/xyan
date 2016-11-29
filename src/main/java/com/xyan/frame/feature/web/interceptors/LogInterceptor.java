@@ -1,6 +1,7 @@
 package com.xyan.frame.feature.web.interceptors;
 
 import java.util.Date;
+import java.util.Enumeration;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -51,6 +52,13 @@ public class LogInterceptor implements HandlerInterceptor {
     	model.setKind(PreferenceType.SWITCH.getCode());
     	model.setName("log");
     	log=Boolean.valueOf(CacheUtil.getCache("log",PreferenceType.SWITCH.getCode()));
+    	/*logger.info("请求头信息：start");
+    	Enumeration<String> names=request.getHeaderNames();
+    	while (names.hasMoreElements()) {
+			String name =  names.nextElement();
+			logger.info(name+":"+request.getHeader(name));
+		}
+    	logger.info("请求头信息：end");*/
     	if(log){
     		LogModel logModel=new LogModel();
     		logModel.setLogDate(new Date());
