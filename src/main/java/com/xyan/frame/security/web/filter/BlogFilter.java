@@ -16,6 +16,7 @@ import org.apache.log4j.Logger;
 import com.xyan.frame.security.Cache;
 import com.xyan.frame.util.ApplicationUtils;
 import com.xyan.frame.util.DateUtil;
+import com.xyan.frame.util.PropertiesUtil;
 
 /**
  * @author wangming
@@ -26,6 +27,9 @@ public class BlogFilter implements Filter {
 	private static Logger logger=Logger.getLogger(BlogFilter.class);
 	
 	private String errorPage=null;
+	
+	/**安全间隔时间*/
+	private static final int SECURE_INTERVAL=Integer.valueOf(PropertiesUtil.getProperties("SECURE_INTERVAL"));
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
 		//初始化
@@ -44,7 +48,7 @@ public class BlogFilter implements Filter {
 			chain.doFilter(request, response);
 		}else{
 			long between=DateUtil.getDiff(date, new Date())/1000;//秒
-			if(between>30){
+			if(between>SECURE_INTERVAL){//此处应该写入配置
 				chain.doFilter(request, response);
 			}else{
 				logger.info("拦截本次请求："+date);
