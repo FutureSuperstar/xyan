@@ -30,6 +30,10 @@
 			</ul>
 		</c:forEach>
 	</div>
+	<div class="pageInfo">
+		<span class="down" id="pagedown">下一页</span>
+		<span class="up" id="pageup">上一页</span>
+	</div>
 </div>
 <style type="text/css">
 	.pageInfo{margin-top: 15px;margin-right: 20px;	height: 24px;}
@@ -41,10 +45,6 @@
 	<input name="pageNum" type="hidden" value="${page.pageNum}" id="pageNum"/>
 	<input name="pages"  type="hidden" value="${page.pages}" id="pages"/>
 </form>
-<div class="pageInfo">
-	<span class="down" id="pagedown">下一页</span>
-	<span class="up" id="pageup">上一页</span>
-</div>
 <script type="text/javascript">
 	$(".pageInfo span").click(function(){
 		var pagenum=parseInt($("#pageNum").val());

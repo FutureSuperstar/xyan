@@ -35,6 +35,7 @@ a:link, a:visited {text-decoration: none;color: #333;}
 .articleBody pre{background-color: #f8f8f8;border: 1px solid #ccc;border-radius: 3px;font-size: 0.8em;margin: 5px 0;padding: 10px;}
 .articleBody pre code{line-height: 1.5;}
 .articleBody p{text-indent: 2em;}
+.article img{max-width: 100%;}
 
 /*
 响应式

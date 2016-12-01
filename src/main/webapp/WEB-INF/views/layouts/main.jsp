@@ -16,7 +16,7 @@
 <body>
 <%@ include file="/WEB-INF/views/layouts/header.jsp"%>
 <article>
-	<div id="sitemeshBody" style="float: left;width:750px">
+	<div id="sitemeshBody" style="float: left;width:75%">
 		<sitemesh:body></sitemesh:body>
 	</div>
 	<aside class="navsidebar">
