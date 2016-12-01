@@ -8,8 +8,8 @@
 <title><sitemesh:title default="花气袭人是酒香"/></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
-<meta name="Keywords" content="">
-<meta name="Description" content="">
+<meta name="Keywords" content="java,博客,xyan">
+<meta name="Description" content="java爱好者的乐园">
  <%@ include file="/WEB-INF/views/layouts/static.jsp"%>
  <sitemesh:head></sitemesh:head>
 </head>
