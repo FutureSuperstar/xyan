@@ -40,7 +40,7 @@
 						<div class="timeline-items">
 							<div class="timeline-item clearfix">
 								<div class="timeline-info">
-									<img alt="Susan't Avatar" src="${path}/static/assets/avatars/avatar1.png" />
+									<img alt="Susan't Avatar" src="${staticUrl}/static/assets/avatars/avatar1.png" />
 									<span class="label label-info label-sm">16:22</span>
 								</div>
 
@@ -202,10 +202,10 @@
 
 												<div class="pull-right">
 													<i class="icon-chevron-left blue bigger-110"></i> &nbsp; 
-													<img alt="Image 4" width="36" src="${path}/static/assets/images/gallery/thumb-4.jpg" /> 
-													<img alt="Image 3" width="36" src="${path}/static/assets/images/gallery/thumb-3.jpg" /> 
-													<img alt="Image 2" width="36" src="${path}/static/assets/images/gallery/thumb-2.jpg" /> 
-													<img alt="Image 1" width="36" src="${path}/static/assets/images/gallery/thumb-1.jpg" /> &nbsp; 
+													<img alt="Image 4" width="36" src="${staticUrl}/static/assets/images/gallery/thumb-4.jpg" /> 
+													<img alt="Image 3" width="36" src="${staticUrl}/static/assets/images/gallery/thumb-3.jpg" /> 
+													<img alt="Image 2" width="36" src="${staticUrl}/static/assets/images/gallery/thumb-2.jpg" /> 
+													<img alt="Image 1" width="36" src="${staticUrl}/static/assets/images/gallery/thumb-1.jpg" /> &nbsp; 
 													<i class="icon-chevron-right blue bigger-110"></i>
 												</div>
 											</div>
@@ -434,10 +434,10 @@
 
 												<div class="pull-right">
 													<i class="icon-chevron-left blue bigger-110"></i> &nbsp; 
-													<img alt="Image 4" width="36" src="${path}/static/assets/images/gallery/thumb-4.jpg" /> 
-													<img alt="Image 3" width="36" src="${path}/static/assets/images/gallery/thumb-3.jpg" />
-													<img alt="Image 2" width="36" src="${path}/static/assets/images/gallery/thumb-2.jpg" />
-													<img alt="Image 1" width="36" src="${path}/static/assets/images/gallery/thumb-1.jpg" /> &nbsp; 
+													<img alt="Image 4" width="36" src="${staticUrl}/static/assets/images/gallery/thumb-4.jpg" /> 
+													<img alt="Image 3" width="36" src="${staticUrl}/static/assets/images/gallery/thumb-3.jpg" />
+													<img alt="Image 2" width="36" src="${staticUrl}/static/assets/images/gallery/thumb-2.jpg" />
+													<img alt="Image 1" width="36" src="${staticUrl}/static/assets/images/gallery/thumb-1.jpg" /> &nbsp; 
 													<i class="icon-chevron-right blue bigger-110"></i>
 												</div>
 											</div>

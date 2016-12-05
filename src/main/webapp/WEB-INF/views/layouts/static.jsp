@@ -7,4 +7,5 @@
 <script type="text/javascript" src="${staticUrl}/static/js/jqPaginator.js"></script>
 <script type="text/javascript">
 var path='${path}';
+var staticUrl='${staticUrl}';
 </script>

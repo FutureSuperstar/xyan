@@ -924,7 +924,7 @@
 							<div class="dialogs">
 								<div class="itemdiv dialogdiv">
 									<div class="user">
-										<img alt="Alexa's Avatar" src="${path}/static/assets/avatars/avatar1.png" />
+										<img alt="Alexa's Avatar" src="${staticUrl}/static/assets/avatars/avatar1.png" />
 									</div>
 
 									<div class="body">
@@ -947,7 +947,7 @@
 
 								<div class="itemdiv dialogdiv">
 									<div class="user">
-										<img alt="John's Avatar" src="${path}/static/assets/avatars/avatar.png" />
+										<img alt="John's Avatar" src="${staticUrl}/static/assets/avatars/avatar.png" />
 									</div>
 
 									<div class="body">
@@ -970,7 +970,7 @@
 
 								<div class="itemdiv dialogdiv">
 									<div class="user">
-										<img alt="Bob's Avatar" src="${path}/static/assets/avatars/user.jpg" />
+										<img alt="Bob's Avatar" src="${staticUrl}/static/assets/avatars/user.jpg" />
 									</div>
 
 									<div class="body">
@@ -994,7 +994,7 @@
 
 								<div class="itemdiv dialogdiv">
 									<div class="user">
-										<img alt="Jim's Avatar" src="${path}/static/assets/avatars/avatar4.png" />
+										<img alt="Jim's Avatar" src="${staticUrl}/static/assets/avatars/avatar4.png" />
 									</div>
 
 									<div class="body">
@@ -1017,7 +1017,7 @@
 
 								<div class="itemdiv dialogdiv">
 									<div class="user">
-										<img alt="Alexa's Avatar" src="${path}/static/assets/avatars/avatar1.png" />
+										<img alt="Alexa's Avatar" src="${staticUrl}/static/assets/avatars/avatar1.png" />
 									</div>
 
 									<div class="body">

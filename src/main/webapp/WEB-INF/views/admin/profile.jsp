@@ -1,10 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
 <title>用户信息</title>
 <!-- page specific plugin styles -->
-<link rel="stylesheet" href="${path}/static/assets/css/jquery-ui-1.10.3.custom.min.css" />
-<link rel="stylesheet" href="${path}/static/assets/css/jquery.gritter.css" />
-<link rel="stylesheet" href="${path}/static/assets/css/select2.css" />
-<link rel="stylesheet" href="${path}/static/assets/css/bootstrap-editable.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/jquery-ui-1.10.3.custom.min.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/jquery.gritter.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/select2.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/bootstrap-editable.css" />
 <div class="page-header">
 	<h1>
 		User Profile Page <small> <i class="icon-double-angle-right"></i>
@@ -309,7 +309,7 @@
 									<div class="profile-activity clearfix">
 										<div>
 											<img class="pull-left" alt="David Palms's avatar"
-												src="${path}/static/assets/avatars/avatar4.png" /> <a class="user"
+												src="${staticUrl}/static/assets/avatars/avatar4.png" /> <a class="user"
 												href="#"> David Palms </a> left a comment on Alex's wall.
 											<div class="time">
 												<i class="icon-time bigger-110"></i> 8 hours ago
@@ -348,7 +348,7 @@
 									<div class="profile-activity clearfix">
 										<div>
 											<img class="pull-left" alt="Alex Doe's avatar"
-												src="${path}/static/assets/avatars/avatar5.png" /> <a class="user"
+												src="${staticUrl}/static/assets/avatars/avatar5.png" /> <a class="user"
 												href="#"> Alex Doe </a> upgraded his skills.
 											<div class="time">
 												<i class="icon-time bigger-110"></i> 12 hours ago
@@ -463,7 +463,7 @@
 								<div class="col-xs-12 col-sm-3 center">
 									<span class="profile-picture"> <img
 										class="editable img-responsive" alt="Alex's Avatar"
-										id="avatar2" src="${path}/static/assets/avatars/profile-pic.jpg" />
+										id="avatar2" src="${staticUrl}/static/assets/avatars/profile-pic.jpg" />
 									</span>
 
 									<div class="space space-4"></div>
@@ -690,7 +690,7 @@
 									<div class="profile-activity clearfix">
 										<div>
 											<img class="pull-left" alt="Alex Doe's avatar"
-												src="${path}/static/assets/avatars/avatar5.png" /> <a class="user"
+												src="${staticUrl}/static/assets/avatars/avatar5.png" /> <a class="user"
 												href="#"> Alex Doe </a> changed his profile photo. <a
 												href="#">Take a look</a>
 
@@ -711,7 +711,7 @@
 									<div class="profile-activity clearfix">
 										<div>
 											<img class="pull-left" alt="Susan Smith's avatar"
-												src="${path}/static/assets/avatars/avatar1.png" /> <a class="user"
+												src="${staticUrl}/static/assets/avatars/avatar1.png" /> <a class="user"
 												href="#"> Susan Smith </a> is now friends with Alex Doe.
 											<div class="time">
 												<i class="icon-time bigger-110"></i> 2 hours ago
@@ -769,7 +769,7 @@
 									<div class="profile-activity clearfix">
 										<div>
 											<img class="pull-left" alt="David Palms's avatar"
-												src="${path}/static/assets/avatars/avatar4.png" /> <a class="user"
+												src="${staticUrl}/static/assets/avatars/avatar4.png" /> <a class="user"
 												href="#"> David Palms </a> left a comment on Alex's wall.
 											<div class="time">
 												<i class="icon-time bigger-110"></i> 8 hours ago
@@ -811,7 +811,7 @@
 									<div class="profile-activity clearfix">
 										<div>
 											<img class="pull-left" alt="Alex Doe's avatar"
-												src="${path}/static/assets/avatars/avatar5.png" /> <a class="user"
+												src="${staticUrl}/static/assets/avatars/avatar5.png" /> <a class="user"
 												href="#"> Alex Doe </a> upgraded his skills.
 											<div class="time">
 												<i class="icon-time bigger-110"></i> 12 hours ago
@@ -901,7 +901,7 @@
 								<div class="itemdiv memberdiv">
 									<div class="inline position-relative">
 										<div class="user">
-											<a href="#"> <img src="${path}/static/assets/avatars/avatar4.png"
+											<a href="#"> <img src="${staticUrl}/static/assets/avatars/avatar4.png"
 												alt="Bob Doe's avatar" />
 											</a>
 										</div>
@@ -944,7 +944,7 @@
 								<div class="itemdiv memberdiv">
 									<div class="inline position-relative">
 										<div class="user">
-											<a href="#"> <img src="${path}/static/assets/avatars/avatar1.png"
+											<a href="#"> <img src="${staticUrl}/static/assets/avatars/avatar1.png"
 												alt="Rose Doe's avatar" />
 											</a>
 										</div>
@@ -987,7 +987,7 @@
 								<div class="itemdiv memberdiv">
 									<div class="inline position-relative">
 										<div class="user">
-											<a href="#"> <img src="${path}/static/assets/avatars/avatar.png"
+											<a href="#"> <img src="${staticUrl}/static/assets/avatars/avatar.png"
 												alt="Jim Doe's avatar" />
 											</a>
 										</div>
@@ -1030,7 +1030,7 @@
 								<div class="itemdiv memberdiv">
 									<div class="inline position-relative">
 										<div class="user">
-											<a href="#"> <img src="${path}/static/assets/avatars/avatar5.png"
+											<a href="#"> <img src="${staticUrl}/static/assets/avatars/avatar5.png"
 												alt="Alex Doe's avatar" />
 											</a>
 										</div>
@@ -1073,7 +1073,7 @@
 								<div class="itemdiv memberdiv">
 									<div class="inline position-relative">
 										<div class="user">
-											<a href="#"> <img src="${path}/static/assets/avatars/avatar2.png"
+											<a href="#"> <img src="${staticUrl}/static/assets/avatars/avatar2.png"
 												alt="Phil Doe's avatar" />
 											</a>
 										</div>
@@ -1116,7 +1116,7 @@
 								<div class="itemdiv memberdiv">
 									<div class="inline position-relative">
 										<div class="user">
-											<a href="#"> <img src="${path}/static/assets/avatars/avatar3.png"
+											<a href="#"> <img src="${staticUrl}/static/assets/avatars/avatar3.png"
 												alt="Susan Doe's avatar" />
 											</a>
 										</div>
@@ -1159,7 +1159,7 @@
 								<div class="itemdiv memberdiv">
 									<div class="inline position-relative">
 										<div class="user">
-											<a href="#"> <img src="${path}/static/assets/avatars/avatar1.png"
+											<a href="#"> <img src="${staticUrl}/static/assets/avatars/avatar1.png"
 												alt="Jennifer Doe's avatar" />
 											</a>
 										</div>
@@ -1202,7 +1202,7 @@
 								<div class="itemdiv memberdiv">
 									<div class="inline position-relative">
 										<div class="user">
-											<a href="#"> <img src="${path}/static/assets/avatars/avatar3.png"
+											<a href="#"> <img src="${staticUrl}/static/assets/avatars/avatar3.png"
 												alt="Alexa Doe's avatar" />
 											</a>
 										</div>
@@ -1256,7 +1256,7 @@
 						<div id="pictures" class="tab-pane">
 							<ul class="ace-thumbnails">
 								<li><a href="#" data-rel="colorbox"> <img alt="150x150"
-										src="${path}/static/assets/images/gallery/thumb-1.jpg" />
+										src="${staticUrl}/static/assets/images/gallery/thumb-1.jpg" />
 										<div class="text">
 											<div class="inner">Sample Caption on Hover</div>
 										</div>
@@ -1271,7 +1271,7 @@
 									</div></li>
 
 								<li><a href="#" data-rel="colorbox"> <img alt="150x150"
-										src="${path}/static/assets/images/gallery/thumb-2.jpg" />
+										src="${staticUrl}/static/assets/images/gallery/thumb-2.jpg" />
 										<div class="text">
 											<div class="inner">Sample Caption on Hover</div>
 										</div>
@@ -1286,7 +1286,7 @@
 									</div></li>
 
 								<li><a href="#" data-rel="colorbox"> <img alt="150x150"
-										src="${path}/static/assets/images/gallery/thumb-3.jpg" />
+										src="${staticUrl}/static/assets/images/gallery/thumb-3.jpg" />
 										<div class="text">
 											<div class="inner">Sample Caption on Hover</div>
 										</div>
@@ -1301,7 +1301,7 @@
 									</div></li>
 
 								<li><a href="#" data-rel="colorbox"> <img alt="150x150"
-										src="${path}/static/assets/images/gallery/thumb-4.jpg" />
+										src="${staticUrl}/static/assets/images/gallery/thumb-4.jpg" />
 										<div class="text">
 											<div class="inner">Sample Caption on Hover</div>
 										</div>
@@ -1316,7 +1316,7 @@
 									</div></li>
 
 								<li><a href="#" data-rel="colorbox"> <img alt="150x150"
-										src="${path}/static/assets/images/gallery/thumb-5.jpg" />
+										src="${staticUrl}/static/assets/images/gallery/thumb-5.jpg" />
 										<div class="text">
 											<div class="inner">Sample Caption on Hover</div>
 										</div>
@@ -1331,7 +1331,7 @@
 									</div></li>
 
 								<li><a href="#" data-rel="colorbox"> <img alt="150x150"
-										src="${path}/static/assets/images/gallery/thumb-6.jpg" />
+										src="${staticUrl}/static/assets/images/gallery/thumb-6.jpg" />
 										<div class="text">
 											<div class="inner">Sample Caption on Hover</div>
 										</div>
@@ -1346,7 +1346,7 @@
 									</div></li>
 
 								<li><a href="#" data-rel="colorbox"> <img alt="150x150"
-										src="${path}/static/assets/images/gallery/thumb-1.jpg" />
+										src="${staticUrl}/static/assets/images/gallery/thumb-1.jpg" />
 										<div class="text">
 											<div class="inner">Sample Caption on Hover</div>
 										</div>
@@ -1361,7 +1361,7 @@
 									</div></li>
 
 								<li><a href="#" data-rel="colorbox"> <img alt="150x150"
-										src="${path}/static/assets/images/gallery/thumb-2.jpg" />
+										src="${staticUrl}/static/assets/images/gallery/thumb-2.jpg" />
 										<div class="text">
 											<div class="inner">Sample Caption on Hover</div>
 										</div>
@@ -1676,23 +1676,23 @@
 <!-- page specific plugin scripts -->
 
 <!--[if lte IE 8]>
-		  <script src="assets/js/excanvas.min.js"></script>
-		<![endif]-->
+  <script src="assets/js/excanvas.min.js"></script>
+<![endif]-->
 
-<script src="${path}/static/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="${path}/static/assets/js/jquery.ui.touch-punch.min.js"></script>
-<script src="${path}/static/assets/js/jquery.gritter.min.js"></script>
-<script src="${path}/static/assets/js/bootbox.min.js"></script>
-<script src="${path}/static/assets/js/jquery.slimscroll.min.js"></script>
-<script src="${path}/static/assets/js/jquery.easy-pie-chart.min.js"></script>
-<script src="${path}/static/assets/js/jquery.hotkeys.min.js"></script>
-<script src="${path}/static/assets/js/bootstrap-wysiwyg.min.js"></script>
-<script src="${path}/static/assets/js/select2.min.js"></script>
-<script src="${path}/static/assets/js/date-time/bootstrap-datepicker.min.js"></script>
-<script src="${path}/static/assets/js/fuelux/fuelux.spinner.min.js"></script>
-<script src="${path}/static/assets/js/x-editable/bootstrap-editable.min.js"></script>
-<script src="${path}/static/assets/js/x-editable/ace-editable.min.js"></script>
-<script src="${path}/static/assets/js/jquery.maskedinput.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.gritter.min.js"></script>
+<script src="${staticUrl}/static/assets/js/bootbox.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.slimscroll.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.easy-pie-chart.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.hotkeys.min.js"></script>
+<script src="${staticUrl}/static/assets/js/bootstrap-wysiwyg.min.js"></script>
+<script src="${staticUrl}/static/assets/js/select2.min.js"></script>
+<script src="${staticUrl}/static/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+<script src="${staticUrl}/static/assets/js/fuelux/fuelux.spinner.min.js"></script>
+<script src="${staticUrl}/static/assets/js/x-editable/bootstrap-editable.min.js"></script>
+<script src="${staticUrl}/static/assets/js/x-editable/ace-editable.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.maskedinput.min.js"></script>
 
 <!-- inline scripts related to this page -->
 

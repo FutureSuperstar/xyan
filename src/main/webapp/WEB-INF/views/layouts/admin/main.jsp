@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="${staticUrl}/static/jQuery.cxDialog/css/jquery.cxdialog.css" />
 <script type="text/javascript">
 	var path="${path}";
+	var staticUrl="${staticUrl}";
 </script>
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="${staticUrl}/static/assets/css/ace-ie.min.css" />
@@ -203,7 +204,7 @@
 				</li>
 				<li class="light-blue">
 					<a data-toggle="dropdown" href="#" class="dropdown-toggle"> 
-						<img class="nav-user-photo" src="${path}/static/assets/avatars/user.jpg" alt="Jason's Photo" /> 
+						<img class="nav-user-photo" src="${staticUrl}/static/assets/avatars/user.jpg" alt="Jason's Photo" /> 
 						<span class="user-info"> <small>欢迎光临,</small> Jason </span> 
 						<i class="icon-caret-down"></i>
 					</a>

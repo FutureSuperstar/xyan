@@ -72,7 +72,7 @@
 	<div class="table-responsive">
 		<div class="widget-header">
 			<h5>文章列表</h5>
-			<a href="${path}/admin/article/add" class="smallButton table-add-btn" title="新增"><img src="${path}/static/images/icon/16/plus.png"></a>
+			<a href="${path}/admin/article/add" class="smallButton table-add-btn" title="新增"><img src="${staticUrl}/static/images/icon/16/plus.png"></a>
 		</div>
 		<table class="table table-bordered align-center font12 mar-bottom-0 dataTable" id="dataTable">
 			<thead>

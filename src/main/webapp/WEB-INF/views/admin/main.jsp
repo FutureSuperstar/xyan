@@ -182,7 +182,7 @@
 						<li class="dropdown-header"><i class="icon-envelope-alt"></i> 5条消息</li>
 						<li>
 							<a href="#"> 
-								<img src="${path}/static/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" /> 
+								<img src="${staticUrl}/static/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" /> 
 								<span class="msg-body">
 									<span class="msg-title"> 
 										<span class="blue">Alex:</span> 不知道写啥 ...
@@ -193,7 +193,7 @@
 						</li>
 						<li>
 							<a href="#"> 
-								<img src="${path}/static/assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" /> 
+								<img src="${staticUrl}/static/assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" /> 
 								<span class="msg-body"> 
 									<span class="msg-title"> 
 										<span class="blue">Susan:</span> 不知道翻译...
@@ -203,7 +203,7 @@
 								</span>
 							</a>
 						</li>
-						<li><a href="#"> <img src="${path}/static/assets/avatars/avatar4.png"
+						<li><a href="#"> <img src="${staticUrl}/static/assets/avatars/avatar4.png"
 								class="msg-photo" alt="Bob's Avatar" /> <span class="msg-body">
 									<span class="msg-title"> <span class="blue">Bob:</span>
 										到底是不是英文 ...
@@ -219,7 +219,7 @@
 				</li>
 				<li class="light-blue">
 					<a data-toggle="dropdown" href="#" class="dropdown-toggle"> 
-						<img class="nav-user-photo" src="${path}/static/assets/avatars/user.jpg" alt="Jason's Photo" /> 
+						<img class="nav-user-photo" src="${staticUrl}/static/assets/avatars/user.jpg" alt="Jason's Photo" /> 
 						<span class="user-info"> <small>欢迎光临,</small> Jason </span> 
 						<i class="icon-caret-down"></i>
 					</a>
