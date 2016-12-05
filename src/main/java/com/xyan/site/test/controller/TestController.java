@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import com.xyan.component.activemq.service.ProducerService;
 import com.xyan.frame.quartz.common.JobUtils;
 import com.xyan.frame.quartz.model.ScheduleJobModel;
 import com.xyan.frame.quartz.service.ScheduleJobService;
@@ -40,6 +41,18 @@ public class TestController {
 	
 	@Autowired
 	private ScheduleJobService jobServicee;
+	
+	/*@Autowired
+	private ProducerService producerService;
+	
+	@RequestMapping(value = "testActiveMQ")
+	@ResponseBody
+	public void testActiveMQ(){
+		for (int i=0;i<10;i++) {
+			producerService.sendMessage("【消息】"+i);
+		}
+		
+	}*/
 	
 	@RequestMapping(value = "testJob")
 	@ResponseBody

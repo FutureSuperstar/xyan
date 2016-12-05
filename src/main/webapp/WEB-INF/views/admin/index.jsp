@@ -478,7 +478,7 @@
 									<div class="clearfix">
 										<div class="itemdiv memberdiv">
 											<div class="user">
-												<img alt="Bob Doe's avatar" src="${path}/static/assets/avatars/user.jpg" />
+												<img alt="Bob Doe's avatar" src="${staticUrl}/static/assets/avatars/user.jpg" />
 											</div>
 
 											<div class="body">
@@ -528,7 +528,7 @@
 
 										<div class="itemdiv memberdiv">
 											<div class="user">
-												<img alt="Joe Doe's avatar" src="${path}/static/assets/avatars/avatar2.png" />
+												<img alt="Joe Doe's avatar" src="${staticUrl}/static/assets/avatars/avatar2.png" />
 											</div>
 
 											<div class="body">
@@ -578,7 +578,7 @@
 
 										<div class="itemdiv memberdiv">
 											<div class="user">
-												<img alt="Jim Doe's avatar" src="${path}/static/assets/avatars/avatar.png" />
+												<img alt="Jim Doe's avatar" src="${staticUrl}/static/assets/avatars/avatar.png" />
 											</div>
 
 											<div class="body">
@@ -629,7 +629,7 @@
 										<div class="itemdiv memberdiv">
 											<div class="user">
 												<img alt="Alex Doe's avatar"
-													src="${path}/static/assets/avatars/avatar5.png" />
+													src="${staticUrl}/static/assets/avatars/avatar5.png" />
 											</div>
 
 											<div class="body">
@@ -649,7 +649,7 @@
 
 										<div class="itemdiv memberdiv">
 											<div class="user">
-												<img alt="Bob Doe's avatar" src="${path}/static/assets/avatars/avatar2.png" />
+												<img alt="Bob Doe's avatar" src="${staticUrl}/static/assets/avatars/avatar2.png" />
 											</div>
 
 											<div class="body">
@@ -669,7 +669,7 @@
 
 										<div class="itemdiv memberdiv">
 											<div class="user">
-												<img alt="Susan's avatar" src="${path}/static/assets/avatars/avatar3.png" />
+												<img alt="Susan's avatar" src="${staticUrl}/static/assets/avatars/avatar3.png" />
 											</div>
 
 											<div class="body">
@@ -690,7 +690,7 @@
 										<div class="itemdiv memberdiv">
 											<div class="user">
 												<img alt="Phil Doe's avatar"
-													src="${path}/static/assets/avatars/avatar4.png" />
+													src="${staticUrl}/static/assets/avatars/avatar4.png" />
 											</div>
 
 											<div class="body">
@@ -713,7 +713,7 @@
 										<div class="itemdiv memberdiv">
 											<div class="user">
 												<img alt="Alexa Doe's avatar"
-													src="${path}/static/assets/avatars/avatar1.png" />
+													src="${staticUrl}/static/assets/avatars/avatar1.png" />
 											</div>
 
 											<div class="body">
@@ -746,7 +746,7 @@
 									<div class="comments">
 										<div class="itemdiv commentdiv">
 											<div class="user">
-												<img alt="Bob Doe's Avatar" src="${path}/static/assets/avatars/avatar.png" />
+												<img alt="Bob Doe's Avatar" src="${staticUrl}/static/assets/avatars/avatar.png" />
 											</div>
 
 											<div class="body">
@@ -800,7 +800,7 @@
 										<div class="itemdiv commentdiv">
 											<div class="user">
 												<img alt="Jennifer's Avatar"
-													src="${path}/static/assets/avatars/avatar1.png" />
+													src="${staticUrl}/static/assets/avatars/avatar1.png" />
 											</div>
 
 											<div class="body">
@@ -830,7 +830,7 @@
 
 										<div class="itemdiv commentdiv">
 											<div class="user">
-												<img alt="Joe's Avatar" src="${path}/static/assets/avatars/avatar2.png" />
+												<img alt="Joe's Avatar" src="${staticUrl}/static/assets/avatars/avatar2.png" />
 											</div>
 
 											<div class="body">
@@ -861,7 +861,7 @@
 
 										<div class="itemdiv commentdiv">
 											<div class="user">
-												<img alt="Rita's Avatar" src="${path}/static/assets/avatars/avatar3.png" />
+												<img alt="Rita's Avatar" src="${staticUrl}/static/assets/avatars/avatar3.png" />
 											</div>
 
 											<div class="body">

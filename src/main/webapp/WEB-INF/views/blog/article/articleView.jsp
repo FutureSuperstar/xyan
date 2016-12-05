@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <title>${model.title}</title>
-<link rel="stylesheet" type="text/css" href="${path}/static/plugin/wangEditor-2.1.12/css/wangEditor.min.css">
+<link rel="stylesheet" type="text/css" href="${staticUrl}/static/plugin/wangEditor-2.1.12/css/wangEditor.min.css">
 <div class="content2">
 	<section class="article" style="padding: 20px">
 		<div class="page-header">
@@ -72,7 +72,7 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="${path}/static/plugin/wangEditor-2.1.12/js/wangEditor.js"></script>
+<script type="text/javascript" src="${staticUrl}/static/plugin/wangEditor-2.1.12/js/wangEditor.js"></script>
 <script type="text/javascript">
 var editor =null;
 $(function(){

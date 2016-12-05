@@ -88,14 +88,13 @@ $(function () {
         return false;  
     });  
     
-    $("img").each(function(){
-    	if(this.naturalWidth<=0){
-    		$(this).hide();
-    	}
-    });
-    /* $("img").error(function(){
-   	  $(this).hide();
-   	}); */
+    setTimeout(function(){
+    	$("img").each(function(){
+        	if(this.naturalWidth<=0){
+        		$(this).hide();
+        	}
+        });
+    },500);
     $.ajax({
     	url:path+"/blog/getLastArticle",
     	cache:true,

@@ -145,7 +145,7 @@
 
 
 <!-- page specific plugin scripts -->
-<script src="${path}/static/assets/js/jquery.slimscroll.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.slimscroll.min.js"></script>
 
 <!-- inline scripts related to this page -->
 <script type="text/javascript">

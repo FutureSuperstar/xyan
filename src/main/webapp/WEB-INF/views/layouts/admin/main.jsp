@@ -9,34 +9,34 @@
 <title><sitemesh:title default="后台管理"/></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- basic styles -->
-<link href="${path}/static/assets/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="${path}/static/assets/css/font-awesome.min.css" />
+<link href="${staticUrl}/static/assets/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/font-awesome.min.css" />
 
 <!--[if IE 7]>
-<link rel="stylesheet" href="${path}/static/assets/css/font-awesome-ie7.min.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/font-awesome-ie7.min.css" />
 <![endif]-->
 <!-- page specific plugin styles -->
 <!-- fonts -->
-<link rel="stylesheet" href="${path}/static/googleapis/css.css"/>
+<link rel="stylesheet" href="${staticUrl}/static/googleapis/css.css"/>
 <!-- ace styles -->
-<link rel="stylesheet" href="${path}/static/assets/css/ace.min.css" />
-<link rel="stylesheet" href="${path}/static/assets/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="${path}/static/assets/css/ace-skins.min.css" />
-<link rel="stylesheet" href="${path}/static/assets/css/style.css" />
-<link rel="stylesheet" href="${path}/static/jQuery.cxDialog/css/jquery.cxdialog.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/ace.min.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/ace-skins.min.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/style.css" />
+<link rel="stylesheet" href="${staticUrl}/static/jQuery.cxDialog/css/jquery.cxdialog.css" />
 <script type="text/javascript">
 	var path="${path}";
 </script>
 <!--[if lte IE 8]>
-<link rel="stylesheet" href="${path}/static/assets/css/ace-ie.min.css" />
+<link rel="stylesheet" href="${staticUrl}/static/assets/css/ace-ie.min.css" />
 <![endif]-->
 <!-- inline styles related to this page -->
 <!-- ace settings handler -->
-<script src="${path}/static/assets/js/ace-extra.min.js"></script>
+<script src="${staticUrl}/static/assets/js/ace-extra.min.js"></script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-<script src="${path}/static/assets/js/html5shiv.js"></script>
-<script src="${path}/static/assets/js/respond.min.js"></script>
+<script src="${staticUrl}/static/assets/js/html5shiv.js"></script>
+<script src="${staticUrl}/static/assets/js/respond.min.js"></script>
 <![endif]-->
 <!-- basic scripts -->
 <!--[if IE]>
@@ -44,26 +44,26 @@
 <![endif]-->
 <!--[if !IE]> -->
 <script type="text/javascript">
-	window.jQuery|| document.write("<script src='${path}/static/assets/js/jquery-2.0.3.min.js'>"+ "<"+"script>");
+	window.jQuery|| document.write("<script src='${staticUrl}/static/assets/js/jquery-2.0.3.min.js'>"+ "<"+"script>");
 </script>
 <!-- <![endif]-->
 <!--[if IE]>
 <script type="text/javascript">
- window.jQuery || document.write("<script src='${path}/static/assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+ window.jQuery || document.write("<script src='${staticUrl}/static/assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
 </script>
 <![endif]-->
 <script type="text/javascript">
 	if ("ontouchend" in document)
-		document .write("<script src='${path}/static/assets/js/jquery.mobile.custom.min.js'>" + "<"+"script>");
+		document .write("<script src='${staticUrl}/static/assets/js/jquery.mobile.custom.min.js'>" + "<"+"script>");
 </script>
-<script src="${path}/static/assets/js/bootstrap.min.js"></script>
-<script src="${path}/static/assets/js/typeahead-bs2.min.js"></script>
+<script src="${staticUrl}/static/assets/js/bootstrap.min.js"></script>
+<script src="${staticUrl}/static/assets/js/typeahead-bs2.min.js"></script>
 <!-- page specific plugin scripts -->
 <!--[if lte IE 8]>
-<script src="${path}/static/assets/js/excanvas.min.js"></script>
+<script src="${staticUrl}/static/assets/js/excanvas.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="${path}/static/js/jqPaginator.js"></script>
-<script type="text/javascript" src="${path}/static/js/tablePage.js"></script>
+<script type="text/javascript" src="${staticUrl}/static/js/jqPaginator.js"></script>
+<script type="text/javascript" src="${staticUrl}/static/js/tablePage.js"></script>
 </head>
 <body>
 <div class="navbar navbar-default" id="navbar">
@@ -443,19 +443,19 @@
 	</a>
 </div>
 <!-- /.main-container -->
-<script src="${path}/static/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="${path}/static/assets/js/jquery.ui.touch-punch.min.js"></script>
-<script src="${path}/static/assets/js/jquery.slimscroll.min.js"></script>
-<script src="${path}/static/assets/js/jquery.easy-pie-chart.min.js"></script>
-<script src="${path}/static/assets/js/jquery.sparkline.min.js"></script>
-<script src="${path}/static/assets/js/flot/jquery.flot.min.js"></script>
-<script src="${path}/static/assets/js/flot/jquery.flot.pie.min.js"></script>
-<script src="${path}/static/assets/js/flot/jquery.flot.resize.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.slimscroll.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.easy-pie-chart.min.js"></script>
+<script src="${staticUrl}/static/assets/js/jquery.sparkline.min.js"></script>
+<script src="${staticUrl}/static/assets/js/flot/jquery.flot.min.js"></script>
+<script src="${staticUrl}/static/assets/js/flot/jquery.flot.pie.min.js"></script>
+<script src="${staticUrl}/static/assets/js/flot/jquery.flot.resize.min.js"></script>
 <!-- ace scripts -->
-<script src="${path}/static/assets/js/ace-elements.min.js"></script>
-<script src="${path}/static/assets/js/ace.min.js"></script>
-<script src="${path}/static/js/app.js"></script>
-<script src="${path}/static/jQuery.cxDialog/js/jquery.cxdialog.js"></script>
+<script src="${staticUrl}/static/assets/js/ace-elements.min.js"></script>
+<script src="${staticUrl}/static/assets/js/ace.min.js"></script>
+<script src="${staticUrl}/static/js/app.js"></script>
+<script src="${staticUrl}/static/jQuery.cxDialog/js/jquery.cxdialog.js"></script>
 <!-- inline scripts related to this page -->
 
 </body>

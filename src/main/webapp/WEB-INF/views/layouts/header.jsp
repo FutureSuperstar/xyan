@@ -7,7 +7,7 @@
 	<p>这夏天里流动的风情，是停不住的舞步和唱不完的情歌，当玫瑰花瓣飘飞的那一刻，风会带走所有的想念.......</p>
 </header>
 <div class="navswf">
-	<object id="customMenu" width="528" height="70"
+	<!-- <object id="customMenu" width="528" height="70"
 		type="application/x-shockwave-flash">
 		<param name="allowScriptAccess" value="always">
 		<param name="allownetworking" value="all">
@@ -16,7 +16,7 @@
 		<param name="menu" value="false">
 		<param name="scale" value="noScale">
 		<param name="salign" value="1">
-	</object>
+	</object> -->
 	<div id="nav">
 		<ul>
 			<li><a href="${path}">网站首页</a></li>
@@ -25,7 +25,7 @@
 			<li><a href="${path}/blog/talk" title="碎言碎语">碎言碎语</a></li>
 			<li><a href="${path}/blog/board" title="留言版">留言版</a></li>
 		</ul>
-		<script src="${path}/static/js/silder.js"></script>
+		<script src="${staticUrl}/static/js/silder.js"></script>
 		<!--获取当前页导航 高亮显示标题-->
 	</div>
 </div>

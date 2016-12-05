@@ -30,7 +30,9 @@ public class Constant implements ServletContextListener{
 		//设置项目的部署路径
 		MultiViewResover.setViewPath(sc.getServletContext().getRealPath("/")+"WEB-INF\\views\\");
 		String path=sc.getServletContext().getContextPath();
+		String staticUrl=PropertiesUtil.getProperties("image.url");
 		sc.getServletContext().setAttribute("path", path);
+		sc.getServletContext().setAttribute("staticUrl", staticUrl);
 		
 		
 	}

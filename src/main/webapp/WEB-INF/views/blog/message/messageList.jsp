@@ -1,6 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<link rel="stylesheet" type="text/css" href="${path}/static/plugin/wangEditor-2.1.12/css/wangEditor.min.css">
+<link rel="stylesheet" type="text/css" href="${staticUrl}/static/plugin/wangEditor-2.1.12/css/wangEditor.min.css">
 <div class="content">
 	<div class="mar15">
 		<div class="col-xs-12">
@@ -21,7 +21,7 @@
 	<div class="mar15" id="messageData">
 		<div class="mbox" style="width:768px;">
 			<div class="mbox-left" style="float: left;width:14%" >
-				<img src="${path}/static/img/head/girl-1.jpg" class="user-head"/>
+				<img src="${staticUrl}/static/img/head/girl-1.jpg" class="user-head"/>
 			</div>
 			<div class="mbox-right" style="float: left;width:83%">
 				<div class="mbox-text">博主，您做这个网站花了多长时间？我也想做，你能教我吗？</div>
@@ -33,7 +33,7 @@
 
 
 
-<script type="text/javascript" src="${path}/static/plugin/wangEditor-2.1.12/js/wangEditor.js"></script>
+<script type="text/javascript" src="${staticUrl}/static/plugin/wangEditor-2.1.12/js/wangEditor.js"></script>
 <script type="text/javascript">
 var editor =null;
 $(function(){
@@ -57,7 +57,7 @@ $(function(){
 function sendMess(){
 	var html = editor.$txt.html();
 	var div=$("<div class='exception' id='exception'>内容长度不符</div>");
-	if(html.length>555){
+	if(html.length>5550){
 		div.prependTo("body").fadeOut(2000);
 		return ;
 	}else if(html.length<5){

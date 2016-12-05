@@ -9,8 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- basic styles -->
 
-	<link href="${path}/static/assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="${path}/static/assets/css/font-awesome.min.css" />
+	<link href="${staticUrl}/static/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="${staticUrl}/static/assets/css/font-awesome.min.css" />
 
 	<!--[if IE 7]>
 	  <link rel="stylesheet" href="${path}/static/assets/css/font-awesome-ie7.min.css" />
@@ -20,21 +20,21 @@
 
 	<!-- fonts -->
 
-	<link rel="stylesheet" href="${path}/static/googleapis/css?family=Open+Sans:400,300" />
+	<link rel="stylesheet" href="${staticUrl}/static/googleapis/css?family=Open+Sans:400,300" />
 
 	<!-- ace styles -->
 
-	<link rel="stylesheet" href="${path}/static/assets/css/ace.min.css" />
-	<link rel="stylesheet" href="${path}/static/assets/css/ace-rtl.min.css" />
+	<link rel="stylesheet" href="${staticUrl}/static/assets/css/ace.min.css" />
+	<link rel="stylesheet" href="${staticUrl}/static/assets/css/ace-rtl.min.css" />
 
 	<!--[if lte IE 8]>
-	  <link rel="stylesheet" href="${path}/static/assets/css/ace-ie.min.css" />
+	  <link rel="stylesheet" href="${staticUrl}/static/assets/css/ace-ie.min.css" />
 	<![endif]-->
 	<!-- inline styles related to this page -->
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-	<script src="${path}/static/assets/js/html5shiv.js"></script>
-	<script src="${path}/static/assets/js/respond.min.js"></script>
+	<script src="${staticUrl}/static/assets/js/html5shiv.js"></script>
+	<script src="${staticUrl}/static/assets/js/respond.min.js"></script>
 	<![endif]-->
 	<style type="text/css">
 		.borderRequried{
@@ -268,9 +268,9 @@
 </div><!-- /.main-container -->
 <input type="hidden" value="${saveUrl}" id="saveUrl"/>
 <!-- basic scripts -->
-<script src="${path}/static/js/jquery/jquery-1.10.1.js"></script>
+<script src="${staticUrl}/static/js/jquery/jquery-1.10.1.js"></script>
 <script type="text/javascript">
-	if("ontouchend" in document) document.write("<script src='${path}/static/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+	if("ontouchend" in document) document.write("<script src='${staticUrl}/static/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 </script>
 <!-- inline scripts related to this page -->
 <script type="text/javascript">
@@ -280,8 +280,8 @@ function show_box(id) {
 	 jQuery('#'+id).addClass('visible');
 }
 </script>
-<script type="text/javascript" src="${path}/static/js/jquery/jquery.md5.js"></script>
-<script type="text/javascript" src="${path}/static/js/login.js"></script>
-<div style="display:none"><script src='${path}/static/googleapis/stat.js' charset='utf-8'></script></div>
+<script type="text/javascript" src="${staticUrl}/static/js/jquery/jquery.md5.js"></script>
+<script type="text/javascript" src="${staticUrl}/static/js/login.js"></script>
+<div style="display:none"><script src='${staticUrl}/static/googleapis/stat.js' charset='utf-8'></script></div>
 </body>
 </html>

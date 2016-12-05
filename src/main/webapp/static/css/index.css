@@ -12,7 +12,7 @@ header h1{ font-size:22px; text-shadow:#fff 1px 1px 1px; }
 header h1 a{color:#000;-webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s;}
 header h1 a:hover{ padding-left:20px}
 header p{margin:17px 0 0 0;text-shadow:#000 1px 1px 1px;color:#fff}
-.navswf{ position:relative; width:50%; margin:auto}
+.navswf{ position:relative; width:50%;height: 40px;margin:auto;}
 #nav{width: 873px;line-height: 40px;height: 40px;margin: auto;position: absolute;left: 62px;top: 30px;}
 /* navÔ²½Ç±³¾° rgba Í¸Ã÷¶È0.2 */
 #nav ul{ list-style:none; margin:auto; width:1030px}

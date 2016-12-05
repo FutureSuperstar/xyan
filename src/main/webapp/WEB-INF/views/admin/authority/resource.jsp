@@ -1,9 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <title>资源管理</title>
-<link href="${path}/static/zTree/css/demo.css" rel="stylesheet">
-<link href="${path}/static/zTree/css/zTreeStyle/zTreeStyle.css" rel="stylesheet">
-<script src="${path}/static/zTree/js/jquery.ztree.all.min.js"></script>
+<link href="${staticUrl}/static/zTree/css/demo.css" rel="stylesheet">
+<link href="${staticUrl}/static/zTree/css/zTreeStyle/zTreeStyle.css" rel="stylesheet">
+<script src="${staticUrl}/static/zTree/js/jquery.ztree.all.min.js"></script>
 <style>
 .ztree li span.button.add {margin-left:2px; margin-right: -1px; background-position:-144px 0; vertical-align:top; *vertical-align:middle}
 </style>

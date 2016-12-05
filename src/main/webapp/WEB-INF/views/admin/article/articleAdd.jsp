@@ -1,7 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!--引入wangEditor.css-->
-<link rel="stylesheet" type="text/css" href="${path}/static/plugin/wangEditor-2.1.12/css/wangEditor.min.css">
+<link rel="stylesheet" type="text/css" href="${staticUrl}/static/plugin/wangEditor-2.1.12/css/wangEditor.min.css">
 <title>完善文章信息</title>
 <div class="breadcrumbs" id="breadcrumbs">
 	<script type="text/javascript">
@@ -103,8 +103,9 @@
 </div>
 
 
-<!--引入jquery和wangEditor.js-->   <!--注意：javascript必须放在body最后，否则可能会出现问题-->
-<script type="text/javascript" src="${path}/static/plugin/wangEditor-2.1.12/js/wangEditor.js"></script>
+<!--引入jquery和wangEditor.js-->  
+<!--注意：javascript必须放在body最后，否则可能会出现问题-->
+<script type="text/javascript" src="${staticUrl}/static/plugin/wangEditor-2.1.12/js/wangEditor.js"></script>
 <script type="text/javascript">
 var editor =null;
 $(function(){
@@ -138,4 +139,4 @@ function show(){
 	});		
 }
 </script>
-<script type="text/javascript" src="${path}/static/js/dialog.js"></script>
+<script type="text/javascript" src="${staticUrl}/static/js/dialog.js"></script>
