@@ -1,7 +1,7 @@
 <%-- 头部 --%>
 <%@ page contentType="text/html;charset=UTF-8"%>
 <style type="text/css">  
-
+/* 
     header span{float:left;position: relative;}  
     header span:nth-child(1){-webkit-animation:jump 1s linear 0s infinite alternate;}  
     header span:nth-child(2){-webkit-animation:jump 1s linear 0.05s infinite alternate;}  
@@ -50,7 +50,7 @@
     header span:nth-child(45){-webkit-animation:jump 1s linear 2.2s infinite alternate;}
     header span:nth-child(46){-webkit-animation:jump 1s linear 2.25s infinite alternate;}
     header span:nth-child(47){-webkit-animation:jump 1s linear 2.3s infinite alternate;}
-    header span:nth-child(48){-webkit-animation:jump 1s linear 2.35s infinite alternate;}
+    header span:nth-child(48){-webkit-animation:jump 1s linear 2.35s infinite alternate;} 
     @-webkit-keyframes jump  
     {  
         0%{  
@@ -65,8 +65,9 @@
             top:3px;  
             color:blue;  
         }  
-    }  
-
+    } 
+    */
+    header p span{color: #333;} 
 </style>  
 <header>
 	<h1>
