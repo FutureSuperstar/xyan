@@ -1,5 +1,6 @@
 package com.xyan.frame.security.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.xyan.frame.base.model.BaseModel;
@@ -9,7 +10,12 @@ import com.xyan.frame.base.model.BaseModel;
  * @author wangming
  * @since 2016年3月5日 下午5:39:24
  */
-public class UserModel extends BaseModel {
+public class UserModel extends BaseModel implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5665731143475685484L;
 	
 	private String loginName;//登陆名
 	private String userName;//用户名

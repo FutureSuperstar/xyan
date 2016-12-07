@@ -17,7 +17,7 @@
 <![endif]-->
 <!-- page specific plugin styles -->
 <!-- fonts -->
-<link rel="stylesheet" href="${staticUrl}/static/googleapis/css.css"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300"/>
 <!-- ace styles -->
 <link rel="stylesheet" href="${staticUrl}/static/assets/css/ace.min.css" />
 <link rel="stylesheet" href="${staticUrl}/static/assets/css/ace-rtl.min.css" />
