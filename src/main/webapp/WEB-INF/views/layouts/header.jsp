@@ -70,7 +70,7 @@
 </style>  
 <header>
 	<h1>
-		<a href="${path}">花气袭人是酒香</a>
+		<a href="/">花气袭人是酒香</a>
 	</h1>
 	<p><span>这</span><span>夏</span><span>天</span><span>里</span><span>流</span><span>动</span><span>的</span><span>风</span><span>情</span><span>，</span><span>是</span><span>停</span><span>不</span><span>住</span><span>的</span><span>舞</span><span>步</span><span>和</span><span>唱</span><span>不</span><span>完</span><span>的</span><span>情</span><span>歌</span><span>，</span><span>当</span><span>玫</span><span>瑰</span><span>花</span><span>瓣</span><span>飘</span><span>飞</span><span>的</span><span>那</span><span>一</span><span>刻</span><span>，</span><span>风</span><span>会</span><span>带</span><span>走</span><span>所</span><span>有</span><span>的</span><span>想</span><span>念</span><span>...</span><span>....</span></p>
 </header>
@@ -87,7 +87,7 @@
 	</object> -->
 	<div id="nav">
 		<ul>
-			<li><a href="${path}">网站首页</a></li>
+			<li><a href="/">网站首页</a></li>
 			<li><a href="${path}/blog/life"  title="慢生活">慢生活</a></li>
 			<li><a href="${path}/blog/article"  title="技术探讨">技术探讨</a></li>
 			<li><a href="${path}/blog/talk" title="碎言碎语">碎言碎语</a></li>

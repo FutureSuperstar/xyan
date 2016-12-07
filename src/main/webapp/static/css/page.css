@@ -1,6 +1,5 @@
 @CHARSET "UTF-8";
 /**页面*/
-
 /*标签*/
 html, body {margin: 0;padding: 0;}
 body {color: #333;font-size: 14px;line-height: 1.336}
@@ -36,15 +35,3 @@ a:link, a:visited {text-decoration: none;color: #333;}
 .articleBody pre code{line-height: 1.5;}
 .articleBody p{text-indent: 2em;}
 .article img{max-width: 100%;}
-
-/*
-响应式
-*/
- 
-@media only screen and (min-width: 650px) and (max-width:1349px) {
-    .mbox{width:458px;}
-}
-
-@media only screen and  (max-width:649px) {
-    .mbox{width:458px;}
-}

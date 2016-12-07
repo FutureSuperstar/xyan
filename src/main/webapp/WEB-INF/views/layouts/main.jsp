@@ -10,6 +10,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
 <meta name="Keywords" content="java,博客,xyan">
 <meta name="Description" content="java爱好者的乐园">
+<link rel="shortcut icon" type="image/x-icon" href="${staticUrl}/static/xyan.ico" />
  <%@ include file="/WEB-INF/views/layouts/static.jsp"%>
  <sitemesh:head></sitemesh:head>
 </head>

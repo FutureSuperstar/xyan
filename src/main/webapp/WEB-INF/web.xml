@@ -191,5 +191,4 @@
 			<taglib-location>/WEB-INF/xyan.tld</taglib-location>
 		</taglib>
 	</jsp-config>
-	<distributable/>
 </web-app>

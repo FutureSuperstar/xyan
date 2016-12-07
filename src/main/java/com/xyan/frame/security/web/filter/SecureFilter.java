@@ -10,6 +10,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
 import com.xyan.frame.feature.web.constant.Constant;
@@ -48,7 +49,12 @@ public class SecureFilter implements Filter {
 		if(check(url,user)){
 			chain.doFilter(request, response);
 		}else{
-			request.setAttribute("saveUrl", url);
+			String path=(String)request.getServletContext().getAttribute("path");
+			if(StringUtils.isBlank(path)){
+				request.setAttribute("saveUrl", url.replaceAll(request.getServletContext().getContextPath(), ""));
+			}else{
+				request.setAttribute("saveUrl", url);
+			}
 			request.getRequestDispatcher(errorPage).forward(request, response);
 		}
 		

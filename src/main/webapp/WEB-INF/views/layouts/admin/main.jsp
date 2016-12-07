@@ -24,9 +24,10 @@
 <link rel="stylesheet" href="${staticUrl}/static/assets/css/ace-skins.min.css" />
 <link rel="stylesheet" href="${staticUrl}/static/assets/css/style.css" />
 <link rel="stylesheet" href="${staticUrl}/static/jQuery.cxDialog/css/jquery.cxdialog.css" />
+<link rel="shortcut icon" type="image/x-icon" href="${staticUrl}/static/xyan.ico" />
 <script type="text/javascript">
-	var path="${path}";
-	var staticUrl="${staticUrl}";
+var path="${path}";
+var staticUrl="${staticUrl}";
 </script>
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="${staticUrl}/static/assets/css/ace-ie.min.css" />
