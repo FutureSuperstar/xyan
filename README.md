@@ -22,6 +22,6 @@
 2.导入xyan.sql
 
 ***
-访问：
--前端入口：localhosst/xyan<br>
--后端入口：localhosst/xyan/admin/index<br>
+###访问：
+-前端入口：localhosst/xyan
+-后端入口：localhosst/xyan/admin/index
