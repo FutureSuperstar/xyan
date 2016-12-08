@@ -23,6 +23,6 @@
 
 ***
 ###访问：
--前端入口：localhosst/xyan
+-前端入口：localhost/xyan
 
--后端入口：localhosst/xyan/admin/index
+-后端入口：localhost/xyan/admin/index
