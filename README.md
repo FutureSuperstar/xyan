@@ -10,19 +10,17 @@
 + 后端包括文章管理、留言管理、邮件管理、配置管理。
 + 其中留言、评论以及后台需要登录。后台为系统账户登录，其它为合作方登录。系统登录有三次错误密码机会，否则将会锁住账号。
 
-***
-### 动静分离：
-这个版本采用了动静分离，静态资源是有nginx加载的。<br/>
-由此可以延伸，将java程序部署到内网，静止外网直接访问，提高系统的安全性(反向代理)。
-
 ### 项目部署：
-1. 在tomcat中server.xml的host节点中增加 &lt;Context docBase="D:\tmp" path="/img" reloadable="true"/&gt;<br/>
-	   其中docBase的目录要和application.properties中的file.upload.path保持一致，否则会导致文件上传问题。
-	  
-2. 导入xyan.sql
+1. 复制静态资源(图片,css,js,字体等)到nginx的静态资源目录下
+2. 保持项目的appliation.propeties的静态资源目录和nginx一致  
+3. 导入xyan.sql
 
 ***
 ### 访问：
 
 + 前端入口：localhost/xyan
 + 后端入口：localhost/xyan/admin/index
+
+***
+### 动静分离：
+- 2016-12-08 <br/>这个版本采用了动静分离，静态资源是有nginx加载的。由此可以延伸，将java程序部署到内网，静止外网直接访问，提高系统的安全性(反向代理)。
