@@ -34,7 +34,6 @@ import com.xyan.frame.util.PropertiesUtil;
  * @author wangming
  */
 @Controller
-@RequestMapping(value="/index")
 public class IndexController {
 	
 	protected Logger logger = Logger.getLogger(UserController.class);
@@ -42,7 +41,7 @@ public class IndexController {
 	@Autowired 
 	private ArticleService articleService;
 	
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(value={"/index","/"},method=RequestMethod.GET)
 	public ModelAndView index(){
 		ArticleVO queryModel=new ArticleVO();
 		queryModel.setTypeId(ArticleType.TYPE_LIFE.getCode());
@@ -57,17 +56,17 @@ public class IndexController {
 				.addObject("page", page);
 	}
 	
-	@RequestMapping(value="about",method=RequestMethod.GET)
+	@RequestMapping(value="/index/about",method=RequestMethod.GET)
 	public String about(){
 		return "aboutMe";
 	}
 	
-	@RequestMapping(value="iconfont",method=RequestMethod.GET)
+	@RequestMapping(value="/index/iconfont",method=RequestMethod.GET)
 	public String iconfont(){
 		return "iconfont/iconfont";
 	}
 	
-	@RequestMapping(value="ajaxUploadProcess")
+	@RequestMapping(value="/index/ajaxUploadProcess")
 	@ResponseBody
 	public ResponseModel ajaxUploadProcess(HttpServletRequest request,HttpServletResponse response){
 		try {
@@ -82,7 +81,7 @@ public class IndexController {
 		}
 	}
 	
-	@RequestMapping(value="wangEditor/upload")
+	@RequestMapping(value="/index/wangEditor/upload")
 	public void ueConfig(HttpServletRequest request,HttpServletResponse response) throws IOException{
 		String projectUrl=PropertiesUtil.getProperties("project.url");
 		String basePath =PropertiesUtil.getProperties("file.upload.path");

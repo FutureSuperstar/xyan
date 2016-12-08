@@ -52,7 +52,7 @@ aside h2 p{ background:#333; width:180px; height:25px; margin:15px 0 0 10px; lin
 #copright a{color:#fff}
 
 @media (min-width: 650px) and (max-width:1349px) {
-    .mbox{width:458px;}
+    .mbox{width:100% !important;}
      #nav{width: 873px;}
      #nav ul{width: 100%}
      #nav ul li{width: 20%}

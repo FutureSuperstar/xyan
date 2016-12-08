@@ -26,6 +26,7 @@
     <decorator name="front" page="main.jsp">
      	<pattern>/blog/**</pattern>
      	<pattern>/index</pattern>
+     	<pattern>/</pattern>
     </decorator>
     
     <!-- 插件 -->

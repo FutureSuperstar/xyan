@@ -75,6 +75,7 @@
     
     <!-- 首页访问控制 -->
 	<mvc:view-controller path="/" view-name="redirect:/index" />
+	<mvc:view-controller path="/xyan" view-name="redirect:/index" />
 	
 	<!--配置拦截器, 多个拦截器,顺序执行 -->  
     <mvc:interceptors>
