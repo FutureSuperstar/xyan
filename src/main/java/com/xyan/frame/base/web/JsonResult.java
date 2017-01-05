@@ -11,29 +11,56 @@ public class JsonResult {
 	private boolean suucess;
 	
 	private Object data;
+	
+	public JsonResult() {}
+	
+	public JsonResult(int code,boolean success){
+		this.code=code;
+		this.suucess=success;
+	}
+	
+	public JsonResult(boolean success,Object data){
+		this.suucess=success;
+		if(data instanceof Exception){
+			Exception e=(Exception) data;
+			this.data=e.getMessage();
+		}
+	}
+	
+	public JsonResult(int code,boolean success,Object data) {
+		this.code=code;
+		this.suucess=success;
+		if(data instanceof Exception){
+			Exception e=(Exception) data;
+			this.data=e.getMessage();
+		}
+	}
 
 	public int getCode() {
 		return code;
 	}
 
-	public void setCode(int code) {
+	public JsonResult setCode(int code) {
 		this.code = code;
+		return this;
 	}
 
 	public boolean isSuucess() {
 		return suucess;
 	}
 
-	public void setSuucess(boolean suucess) {
+	public JsonResult setSuucess(boolean suucess) {
 		this.suucess = suucess;
+		return this;
 	}
 
 	public Object getData() {
 		return data;
 	}
 
-	public void setData(Object data) {
+	public JsonResult setData(Object data) {
 		this.data = data;
+		return this;
 	}
 	
 	

@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
 import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,9 +15,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartRequest;
 
+import com.xyan.frame.base.web.JsonResult;
 import com.xyan.frame.util.FileUtil;
 import com.xyan.frame.util.PropertiesUtil;
 
@@ -83,4 +87,26 @@ public class AttachController {
 		//输出文件访问路径
 		response.getWriter().write(imageUrl+"/"+now+"/"+prefix+"."+suffix);
 	}
+	
+	@RequestMapping(value="upload", method = RequestMethod.POST)
+	@ResponseBody
+	public JsonResult upload(
+			HttpServletRequest request, HttpServletResponse response) throws Exception{
+		JsonResult jsonResult=null;
+		try {
+			MultipartRequest multipartRequest = (MultipartRequest) request;
+			Map<String, MultipartFile> fileMap = multipartRequest.getFileMap();
+			for (MultipartFile attach : fileMap.values()) {
+				//对文件进行处理
+				System.out.println(attach.getOriginalFilename());
+			}
+			jsonResult=new JsonResult(JsonResult.SERVER_SUCCESS,true);
+		}catch(Exception e) {
+			e.printStackTrace();
+			jsonResult=new JsonResult(JsonResult.SERVER_SUCCESS,false,e);
+		}
+		return jsonResult;
+	}
+	
+	
 }

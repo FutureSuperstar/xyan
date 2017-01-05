@@ -24,6 +24,20 @@ public class FileUtil {
 		}
 	}
 	
+	/**
+	 * @Author：wangming
+	 * @Description：
+	 * @param file：文件
+	 * @return
+	 * @since 2017年1月5日下午2:23:50
+	 */
+	public static String getFileExtName(String file){
+		int pos = file.lastIndexOf(".");
+		if (pos == -1) {
+			return file;
+		}
+		return file.substring(pos + 1);
+	}
 	
 	/**
 	 * 写文件
