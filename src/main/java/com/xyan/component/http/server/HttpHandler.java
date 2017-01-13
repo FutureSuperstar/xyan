@@ -59,7 +59,9 @@ public class HttpHandler implements Runnable {
 			}
 			builder.append("</body></html>");
 			buffer=ByteBuffer.wrap(builder.toString().getBytes(localCharset));
-			channel.write(buffer);
+			while(buffer.hasRemaining()){
+				channel.write(buffer);
+			}
 			channel.close();
 		}
 	}
