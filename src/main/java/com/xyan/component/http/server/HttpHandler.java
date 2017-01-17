@@ -24,8 +24,15 @@ public class HttpHandler implements Runnable {
 		this.key=key;
 	}
 	
+	@SuppressWarnings("static-access")
 	public void accept() throws IOException{
 		SocketChannel channel=((ServerSocketChannel)key.channel()).accept();
+		if(channel!=null&&!channel.isOpen()){
+			channel=channel.open();
+		}else if(channel==null){
+			System.out.println("socket已关闭");
+			return ;
+		}
 		channel.configureBlocking(false);
 		channel.register(key.selector(), SelectionKey.OP_READ, ByteBuffer.allocate(bufferSize));
 	}
@@ -34,6 +41,7 @@ public class HttpHandler implements Runnable {
 		SocketChannel channel=(SocketChannel)key.channel();
 		ByteBuffer buffer=(ByteBuffer) key.attachment();
 		buffer.clear();
+		System.out.println("收到请求，准备返回");
 		if(channel.read(buffer)==-1){
 			channel.close();
 		}else{
@@ -76,7 +84,7 @@ public class HttpHandler implements Runnable {
 				read();//这里仅作测试，实际的http服务器远比这个复杂。要根据不同的url返回不同的结果。另外这里也只是返回了html。
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 

@@ -28,11 +28,12 @@ public class HttpServer {
 			if(selector.select(3000)==0){//每三秒检查一次，如果没有就继续
 				continue;
 			}
+			System.out.println("有请求到达。。。");
 			Iterator<SelectionKey> keys=selector.selectedKeys().iterator();
 			while (keys.hasNext()) {
 				SelectionKey selectionKey = (SelectionKey) keys.next();
-				new Thread(new HttpHandler(selectionKey)).start();
 				keys.remove();
+				new Thread(new HttpHandler(selectionKey)).start();
 			}
 		}
 	}
