@@ -22,13 +22,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
-import com.xyan.component.activemq.service.ProducerService;
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.xyan.frame.quartz.common.JobUtils;
 import com.xyan.frame.quartz.model.ScheduleJobModel;
 import com.xyan.frame.quartz.service.ScheduleJobService;
 import com.xyan.site.test.model.MyTestModel;
 import com.xyan.site.test.model.OtherModel;
 import com.xyan.site.test.model.TestModel;
+import com.xyan.site.test.service.DubboService;
 import com.xyan.site.test.service.TestService;
 
 @Controller
@@ -42,6 +43,9 @@ public class TestController {
 	@Autowired
 	private ScheduleJobService jobServicee;
 	
+	@Autowired
+	private DubboService dubboService;
+	
 	/*@Autowired
 	private ProducerService producerService;
 	
@@ -53,6 +57,11 @@ public class TestController {
 		}
 		
 	}*/
+	@RequestMapping(value = "testDubbo")
+	@ResponseBody	
+	public String testDubbo(){
+		return dubboService.getName();
+	}	
 	
 	@RequestMapping(value = "testJob")
 	@ResponseBody
