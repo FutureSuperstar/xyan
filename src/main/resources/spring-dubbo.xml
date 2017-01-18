@@ -11,21 +11,33 @@
     http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd"
     default-lazy-init="false" >
+    
+    
+      <!-- 提供方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="dubbo_provider"/>
 
-<!-- 提供方应用名称信息，这个相当于起一个名字，我们dubbo管理页面比较清晰是哪个应用暴露出来的 -->
+    <!-- 使用multicast广播注册中心暴露服务地址 -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:provider timeout="10000" group="test" />
+    
+  <!--   <dubbo:provide groupId="map"/> -->
+
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="20897"/>
+    <!-- 用rest协议在9090端口暴露服务 
+    <dubbo:protocol name="rest" port="9097" threads="500" contextpath="services" server="tomcat" accepts="500"/>
+-->
+
+    <!--扫描的方式-->
+    <dubbo:annotation package="com.xyan" />
+    
+
+<!--  提供方应用名称信息，这个相当于起一个名字，我们dubbo管理页面比较清晰是哪个应用暴露出来的 
    <dubbo:application name="dubbo_provider"></dubbo:application>
-   <dubbo:annotation package="com.xyan" />
-   <!-- 使用zookeeper注册中心暴露服务地址 -->  
+   使用zookeeper注册中心暴露服务地址  
    <dubbo:registry address="zookeeper://127.0.0.1:2181" check="false" subscribe="false" register=""></dubbo:registry>
-  <!-- 要暴露的服务接口 -->  
+  要暴露的服务接口  
   <dubbo:service interface="com.xyan.site.test.service.DubboService" ref="dubboService" />
 
-<bean id="dubboService" class="com.xyan.site.test.service.impl.DubboServiceImpl" />
-   <!-- <dubbo:application name="dubbo_consumer" logger="log4j"></dubbo:application>
-   
-   <dubbo:annotation package="com.xyan" />
-   使用zookeeper注册中心暴露服务地址  
-   <dubbo:registry address="zookeeper://127.0.0.1:2181" check="false"></dubbo:registry> 
-     要引用的服务  
-   <dubbo:reference interface="com.xyan.site.test.service.DubboService" ref="dubboService"></dubbo:reference> -->
+<bean id="dubboService" class="com.xyan.site.test.service.impl.DubboServiceImpl" /> -->
 </beans>
