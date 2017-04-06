@@ -1,6 +1,6 @@
 # xyan
 
-*xyan*是由王明开发的一个【个人网站】。
+*xyan*是由王明开发的一个【个人博客】。
 
 项目使用的框架为spring+springMVC+mybatis。
 
